@@ -1,0 +1,43 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Environment variables
+.env
+.env.*
+
+# IDE/editor files
+.vscode/
+.idea/
+.DS_Store
+
+# Dataset files
+data/
+*.csv
+*.xlsx
+*.zip
+
+# Model outputs and results
+results/
+*.pt
+*.pth
+*.pkl
+*.joblib
+
+# Logs
+*.log
+
+# Kaggle files
+kaggle.json
+
+# OS files
+Thumbs.db

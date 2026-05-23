@@ -1,0 +1,27 @@
+1. Create a virtual environment
+On macOS/Linux:
+python3 -m venv venv
+
+On Windows:
+python -m venv venv
+
+2. Activate the virtual environment
+On macOS/Linux:
+source venv/bin/activate
+
+On Windows:
+venv\Scripts\activate
+
+////////////////////////
+cd fraud-detection-thesis
+
+python3 -m venv venv
+
+source venv/bin/activate
+
+pip install --upgrade pip
+
+pip install -r requirements.txt
+
+//////////////////////
+python src/train_mlp.py
