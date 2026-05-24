@@ -23,5 +23,23 @@ pip install --upgrade pip
 
 pip install -r requirements.txt
 
+Then install PyTorch separately with:
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+
+to test if gpu is recognized:
+python -c "import torch; print(torch.__version__); print(torch.cuda.is_available()); print(torch.cuda.get_device_name(0))"
+
 //////////////////////
-python src/train_mlp.py
+IEEE-CIS dataset:
+
+To run every IEEE-CIS model in order:
+python src/run_ieee_all.py
+
+For GNN baselines, install PyTorch Geometric after PyTorch:
+pip install torch-geometric
+
+//////////////////////
+Elliptic Bitcoin dataset:
+
+To run every Elliptic model in order:
+python src/run_elliptic_all.py

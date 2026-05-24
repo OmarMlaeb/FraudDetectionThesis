@@ -1,12 +1,13 @@
 import torch
 import torch.nn as nn
 import torch.optim as optim
+from pathlib import Path
 
 from torch.utils.data import TensorDataset, DataLoader
 
-from preprocessing import load_ieee_cis, preprocess_ieee_cis, temporal_train_val_test_split
-from models import MLPFraudDetector
-from metrics import evaluate_binary_classification
+from common.metrics import evaluate_binary_classification, save_results_to_csv
+from .models import MLPFraudDetector
+from .preprocessing import load_ieee_cis, preprocess_ieee_cis, temporal_train_val_test_split
 
 
 TRANSACTION_PATH = "data/ieee-cis/train_transaction.csv"
@@ -50,6 +51,7 @@ def train():
 
     best_val_pr_auc = 0
     best_model_path = "results/best_mlp_model.pt"
+    Path(best_model_path).parent.mkdir(parents=True, exist_ok=True)
 
     for epoch in range(EPOCHS):
         model.train()
@@ -92,7 +94,7 @@ def train():
 
     print("\nLoading best model for testing...")
 
-    model.load_state_dict(torch.load(best_model_path))
+    model.load_state_dict(torch.load(best_model_path, map_location=device, weights_only=True))
     model.eval()
 
     with torch.no_grad():
@@ -110,6 +112,9 @@ def train():
     print(f"ROC-AUC: {test_results['ROC-AUC']:.4f}")
     print("Confusion Matrix:")
     print(test_results["Confusion Matrix"])
+
+    save_results_to_csv("MLP", test_results)
+    print("\nSaved test results to results/model_results.csv")
 
 
 if __name__ == "__main__":
