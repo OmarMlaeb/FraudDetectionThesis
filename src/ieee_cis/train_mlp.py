@@ -1,3 +1,5 @@
+import random
+import numpy as np
 import torch
 import torch.nn as nn
 import torch.optim as optim
@@ -5,7 +7,7 @@ from pathlib import Path
 
 from torch.utils.data import TensorDataset, DataLoader
 
-from common.metrics import evaluate_binary_classification, save_results_to_csv
+from common.metrics import evaluate_binary_classification, find_best_threshold, save_results_to_csv
 from .models import MLPFraudDetector
 from .preprocessing import load_ieee_cis, preprocess_ieee_cis, temporal_train_val_test_split
 
@@ -18,7 +20,19 @@ EPOCHS = 20
 LEARNING_RATE = 0.001
 
 
+def set_seed(seed=42):
+    random.seed(seed)
+    np.random.seed(seed)
+    torch.manual_seed(seed)
+    torch.cuda.manual_seed_all(seed)
+
+    torch.backends.cudnn.deterministic = True
+    torch.backends.cudnn.benchmark = False
+
+
 def train():
+    set_seed(42)
+
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
     print(f"Using device: {device}")
@@ -98,10 +112,21 @@ def train():
     model.eval()
 
     with torch.no_grad():
+        val_logits = model(X_val_tensor)
+        val_probs = torch.sigmoid(val_logits).cpu().numpy()
         test_logits = model(X_test_tensor)
         test_probs = torch.sigmoid(test_logits).cpu().numpy()
 
-    test_results = evaluate_binary_classification(y_test, test_probs)
+    best_threshold, best_val_f1 = find_best_threshold(y_val, val_probs)
+
+    print(f"Best threshold: {best_threshold:.2f}")
+    print(f"Best validation F1: {best_val_f1:.4f}")
+
+    test_results = evaluate_binary_classification(
+        y_test,
+        test_probs,
+        threshold=best_threshold,
+    )
 
     print("\nFinal Test Results - MLP")
     print("-------------------------")

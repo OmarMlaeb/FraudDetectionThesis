@@ -63,3 +63,14 @@ python src/run_elliptic_all.py
 ```
 
 All final metrics are appended to `results/model_results.csv`.
+
+Rank the latest result for each model on each dataset:
+
+```powershell
+python src/rank_models.py
+```
+
+Rankings are printed in the terminal and saved to:
+
+- `results/model_rankings.csv` for PR-AUC ranking
+- `results/model_rankings_by_recall.csv` for recall ranking

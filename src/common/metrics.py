@@ -31,6 +31,23 @@ def evaluate_binary_classification(y_true, y_prob, threshold=0.5):
     return results
 
 
+def find_best_threshold(y_true, y_prob):
+    best_threshold = 0.5
+    best_f1 = 0.0
+
+    thresholds = np.arange(0.01, 0.99, 0.01)
+
+    for threshold in thresholds:
+        y_pred = (y_prob >= threshold).astype(int)
+        f1 = f1_score(y_true, y_pred, zero_division=0)
+
+        if f1 > best_f1:
+            best_f1 = f1
+            best_threshold = threshold
+
+    return best_threshold, best_f1
+
+
 def save_results_to_csv(model_name, results, output_path="results/model_results.csv"):
     output_path = Path(output_path)
     output_path.parent.mkdir(parents=True, exist_ok=True)

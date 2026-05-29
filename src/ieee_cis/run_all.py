@@ -1,3 +1,5 @@
+from common.ranking import print_pr_auc_and_recall_rankings
+
 from .train_gnn import train as train_gnn
 from .train_lstm import train as train_lstm
 from .train_mlp import train as train_mlp
@@ -11,6 +13,7 @@ def run_all():
     train_gnn(model_name="gcn")
     train_gnn(model_name="sage")
     train_gnn(model_name="gat")
+    print_pr_auc_and_recall_rankings()
 
 
 if __name__ == "__main__":

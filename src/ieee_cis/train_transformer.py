@@ -1,3 +1,5 @@
+import random
+import numpy as np
 import torch
 import torch.nn as nn
 import torch.optim as optim
@@ -5,7 +7,7 @@ from pathlib import Path
 
 from torch.utils.data import Dataset, DataLoader
 
-from common.metrics import evaluate_binary_classification, save_results_to_csv
+from common.metrics import evaluate_binary_classification, find_best_threshold, save_results_to_csv
 from .models import TransformerFraudDetector
 from .preprocessing import load_ieee_cis, preprocess_ieee_cis, temporal_train_val_test_split
 
@@ -17,6 +19,16 @@ BATCH_SIZE = 512
 EPOCHS = 20
 LEARNING_RATE = 0.001
 SEQUENCE_LENGTH = 10
+
+
+def set_seed(seed=42):
+    random.seed(seed)
+    np.random.seed(seed)
+    torch.manual_seed(seed)
+    torch.cuda.manual_seed_all(seed)
+
+    torch.backends.cudnn.deterministic = True
+    torch.backends.cudnn.benchmark = False
 
 
 class FraudSequenceDataset(Dataset):
@@ -54,6 +66,8 @@ def predict(model, data_loader, device):
 
 
 def train():
+    set_seed(42)
+
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
     print(f"Using device: {device}")
@@ -124,8 +138,24 @@ def train():
 
     model.load_state_dict(torch.load(best_model_path, map_location=device, weights_only=True))
 
+    y_val_seq, val_probs = predict(model, val_loader, device)
+    best_threshold, best_val_f1 = find_best_threshold(y_val_seq, val_probs)
+
+    print(f"Best threshold: {best_threshold:.2f}")
+    print(f"Best validation F1: {best_val_f1:.4f}")
+
     y_test_seq, test_probs = predict(model, test_loader, device)
-    test_results = evaluate_binary_classification(y_test_seq, test_probs)
+
+    print("Min probability:", test_probs.min())
+    print("Max probability:", test_probs.max())
+    print("Mean probability:", test_probs.mean())
+    print("Fraud predictions:", (test_probs >= 0.5).sum())
+
+    test_results = evaluate_binary_classification(
+        y_test_seq,
+        test_probs,
+        threshold=best_threshold,
+    )
 
     print("\nFinal Test Results - Transformer")
     print("--------------------------------")

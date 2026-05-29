@@ -1,11 +1,13 @@
 import argparse
+import random
 from pathlib import Path
 
+import numpy as np
 import torch
 import torch.nn as nn
 import torch.optim as optim
 
-from common.metrics import evaluate_binary_classification, save_results_to_csv
+from common.metrics import evaluate_binary_classification, find_best_threshold, save_results_to_csv
 from .data import load_or_build_elliptic_graph
 from .gnn_models import create_gnn_model
 
@@ -14,7 +16,17 @@ EPOCHS = 20
 LEARNING_RATE = 0.001
 
 
-def evaluate(model, data, mask):
+def set_seed(seed=42):
+    random.seed(seed)
+    np.random.seed(seed)
+    torch.manual_seed(seed)
+    torch.cuda.manual_seed_all(seed)
+
+    torch.backends.cudnn.deterministic = True
+    torch.backends.cudnn.benchmark = False
+
+
+def predict(model, data, mask):
     model.eval()
 
     with torch.no_grad():
@@ -22,10 +34,17 @@ def evaluate(model, data, mask):
         probs = torch.sigmoid(logits[mask]).cpu().numpy()
         targets = data.y[mask].cpu().numpy()
 
-    return evaluate_binary_classification(targets, probs)
+    return targets, probs
+
+
+def evaluate(model, data, mask, threshold=0.5):
+    targets, probs = predict(model, data, mask)
+    return evaluate_binary_classification(targets, probs, threshold=threshold)
 
 
 def train(model_name, epochs=EPOCHS, rebuild_graph=False):
+    set_seed(42)
+
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
     print(f"Using device: {device}")
@@ -83,7 +102,14 @@ def train(model_name, epochs=EPOCHS, rebuild_graph=False):
     print("\nLoading best model for testing...")
 
     model.load_state_dict(torch.load(best_model_path, map_location=device, weights_only=True))
-    test_results = evaluate(model, data, data.test_mask)
+
+    val_targets, val_probs = predict(model, data, data.val_mask)
+    best_threshold, best_val_f1 = find_best_threshold(val_targets, val_probs)
+
+    print(f"Best threshold: {best_threshold:.2f}")
+    print(f"Best validation F1: {best_val_f1:.4f}")
+
+    test_results = evaluate(model, data, data.test_mask, threshold=best_threshold)
 
     model_label = {
         "gcn": "Elliptic-GCN",
