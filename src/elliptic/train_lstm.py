@@ -7,6 +7,7 @@ from pathlib import Path
 
 from torch.utils.data import DataLoader
 
+from common.early_stopping import EarlyStopping
 from common.metrics import evaluate_binary_classification, find_best_threshold, save_results_to_csv
 from .data import load_elliptic_tabular_data
 from .models import LSTMFraudDetector
@@ -14,7 +15,8 @@ from .sequence import EllipticSequenceDataset, predict_sequence_model
 
 
 BATCH_SIZE = 512
-EPOCHS = 20
+EPOCHS = 50
+EARLY_STOPPING_PATIENCE = 10
 LEARNING_RATE = 0.001
 SEQUENCE_LENGTH = 10
 
@@ -58,9 +60,9 @@ def train():
     criterion = nn.BCEWithLogitsLoss(pos_weight=pos_weight)
     optimizer = optim.Adam(model.parameters(), lr=LEARNING_RATE, weight_decay=1e-5)
 
-    best_val_pr_auc = 0
     best_model_path = "results/best_elliptic_lstm_model.pt"
     Path(best_model_path).parent.mkdir(parents=True, exist_ok=True)
+    early_stopping = EarlyStopping(patience=EARLY_STOPPING_PATIENCE)
 
     for epoch in range(EPOCHS):
         model.train()
@@ -90,9 +92,13 @@ def train():
             f"Val ROC-AUC: {val_results['ROC-AUC']:.4f}"
         )
 
-        if val_results["PR-AUC"] > best_val_pr_auc:
-            best_val_pr_auc = val_results["PR-AUC"]
-            torch.save(model.state_dict(), best_model_path)
+        if early_stopping.step(val_results["PR-AUC"], model, best_model_path, epoch + 1):
+            print(
+                f"Early stopping at epoch {epoch + 1}. "
+                f"Best Val PR-AUC: {early_stopping.best_score:.4f} "
+                f"at epoch {early_stopping.best_epoch}."
+            )
+            break
 
     print("\nLoading best model for testing...")
 
@@ -121,7 +127,13 @@ def train():
     print("Confusion Matrix:")
     print(test_results["Confusion Matrix"])
 
-    save_results_to_csv("Elliptic-LSTM", test_results)
+    save_results_to_csv(
+        "Elliptic-LSTM",
+        test_results,
+        threshold=best_threshold,
+        threshold_strategy="f1",
+        validation_f1=best_val_f1,
+    )
     print("\nSaved test results to results/model_results.csv")
 
 

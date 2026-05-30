@@ -19,6 +19,11 @@ The models are evaluated using metrics suitable for imbalanced fraud detection:
 - PR-AUC
 - ROC-AUC
 
+Training uses PR-AUC based early stopping:
+
+- MLP, LSTM, Transformer: 50 maximum epochs, patience 10
+- GCN, GraphSAGE, GAT: 100 maximum epochs, patience 15
+
 ## Project Structure
 
 ```text
@@ -62,6 +67,21 @@ Run every Elliptic Bitcoin model:
 python src/run_elliptic_all.py
 ```
 
+Graph models compare validation thresholds before final testing. By default they
+select the threshold that maximizes validation F1:
+
+```powershell
+$env:PYTHONPATH="src"; python -m ieee_cis.train_gnn --model gcn --threshold-strategy f1
+$env:PYTHONPATH="src"; python -m elliptic.train_gnn --model gat --threshold-strategy f1
+```
+
+To prefer a threshold that balances recall and precision, use:
+
+```powershell
+$env:PYTHONPATH="src"; python -m ieee_cis.train_gnn --model sage --threshold-strategy balanced
+$env:PYTHONPATH="src"; python -m elliptic.train_gnn --model sage --threshold-strategy balanced
+```
+
 All final metrics are appended to `results/model_results.csv`.
 
 Rank the latest result for each model on each dataset:
@@ -73,4 +93,5 @@ python src/rank_models.py
 Rankings are printed in the terminal and saved to:
 
 - `results/model_rankings.csv` for PR-AUC ranking
+- `results/model_rankings_by_f1.csv` for F1 ranking
 - `results/model_rankings_by_recall.csv` for recall ranking

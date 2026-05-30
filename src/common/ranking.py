@@ -5,6 +5,7 @@ from pathlib import Path
 
 DEFAULT_RESULTS_PATH = "results/model_results.csv"
 DEFAULT_RANKINGS_PATH = "results/model_rankings.csv"
+DEFAULT_F1_RANKINGS_PATH = "results/model_rankings_by_f1.csv"
 DEFAULT_RECALL_RANKINGS_PATH = "results/model_rankings_by_recall.csv"
 RANKING_METRICS = ("pr_auc", "f1_score", "roc_auc", "recall", "precision")
 NUMERIC_FIELDS = (
@@ -179,6 +180,12 @@ def print_pr_auc_and_recall_rankings(results_path=DEFAULT_RESULTS_PATH, datasets
         results_path=results_path,
         output_path=DEFAULT_RANKINGS_PATH,
         primary_metric="pr_auc",
+        datasets=datasets,
+    )
+    print_model_rankings(
+        results_path=results_path,
+        output_path=DEFAULT_F1_RANKINGS_PATH,
+        primary_metric="f1_score",
         datasets=datasets,
     )
     print_model_rankings(

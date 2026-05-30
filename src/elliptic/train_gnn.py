@@ -7,12 +7,19 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 
-from common.metrics import evaluate_binary_classification, find_best_threshold, save_results_to_csv
+from common.early_stopping import EarlyStopping
+from common.metrics import (
+    evaluate_binary_classification,
+    find_best_threshold,
+    print_threshold_comparison,
+    save_results_to_csv,
+)
 from .data import load_or_build_elliptic_graph
 from .gnn_models import create_gnn_model
 
 
-EPOCHS = 20
+EPOCHS = 100
+EARLY_STOPPING_PATIENCE = 15
 LEARNING_RATE = 0.001
 
 
@@ -42,7 +49,7 @@ def evaluate(model, data, mask, threshold=0.5):
     return evaluate_binary_classification(targets, probs, threshold=threshold)
 
 
-def train(model_name, epochs=EPOCHS, rebuild_graph=False):
+def train(model_name, epochs=EPOCHS, rebuild_graph=False, threshold_strategy="f1"):
     set_seed(42)
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -70,9 +77,9 @@ def train(model_name, epochs=EPOCHS, rebuild_graph=False):
     criterion = nn.BCEWithLogitsLoss(pos_weight=pos_weight)
     optimizer = optim.Adam(model.parameters(), lr=LEARNING_RATE, weight_decay=1e-5)
 
-    best_val_pr_auc = 0
     best_model_path = f"results/best_elliptic_{model_name}_model.pt"
     Path(best_model_path).parent.mkdir(parents=True, exist_ok=True)
+    early_stopping = EarlyStopping(patience=EARLY_STOPPING_PATIENCE)
 
     for epoch in range(epochs):
         model.train()
@@ -95,18 +102,34 @@ def train(model_name, epochs=EPOCHS, rebuild_graph=False):
             f"Val ROC-AUC: {val_results['ROC-AUC']:.4f}"
         )
 
-        if val_results["PR-AUC"] > best_val_pr_auc:
-            best_val_pr_auc = val_results["PR-AUC"]
-            torch.save(model.state_dict(), best_model_path)
+        if early_stopping.step(val_results["PR-AUC"], model, best_model_path, epoch + 1):
+            print(
+                f"Early stopping at epoch {epoch + 1}. "
+                f"Best Val PR-AUC: {early_stopping.best_score:.4f} "
+                f"at epoch {early_stopping.best_epoch}."
+            )
+            break
 
     print("\nLoading best model for testing...")
 
     model.load_state_dict(torch.load(best_model_path, map_location=device, weights_only=True))
 
     val_targets, val_probs = predict(model, data, data.val_mask)
-    best_threshold, best_val_f1 = find_best_threshold(val_targets, val_probs)
+    best_threshold, best_val_f1 = find_best_threshold(
+        val_targets,
+        val_probs,
+        strategy=threshold_strategy,
+    )
 
-    print(f"Best threshold: {best_threshold:.2f}")
+    print_threshold_comparison(
+        val_targets,
+        val_probs,
+        selected_threshold=best_threshold,
+        strategy=threshold_strategy,
+    )
+
+    print(f"\nSelected threshold strategy: {threshold_strategy}")
+    print(f"Selected threshold: {best_threshold:.2f}")
     print(f"Best validation F1: {best_val_f1:.4f}")
 
     test_results = evaluate(model, data, data.test_mask, threshold=best_threshold)
@@ -127,7 +150,13 @@ def train(model_name, epochs=EPOCHS, rebuild_graph=False):
     print("Confusion Matrix:")
     print(test_results["Confusion Matrix"])
 
-    save_results_to_csv(model_label, test_results)
+    save_results_to_csv(
+        model_label,
+        test_results,
+        threshold=best_threshold,
+        threshold_strategy=threshold_strategy,
+        validation_f1=best_val_f1,
+    )
     print("\nSaved test results to results/model_results.csv")
 
 
@@ -136,6 +165,12 @@ def parse_args():
     parser.add_argument("--model", choices=["gcn", "sage", "gat"], required=True)
     parser.add_argument("--epochs", type=int, default=EPOCHS)
     parser.add_argument("--rebuild-graph", action="store_true")
+    parser.add_argument(
+        "--threshold-strategy",
+        choices=["f1", "balanced"],
+        default="f1",
+        help="Select validation threshold by max F1 or by balanced recall/precision.",
+    )
     return parser.parse_args()
 
 
@@ -145,4 +180,5 @@ if __name__ == "__main__":
         model_name=args.model,
         epochs=args.epochs,
         rebuild_graph=args.rebuild_graph,
+        threshold_strategy=args.threshold_strategy,
     )
