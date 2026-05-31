@@ -27,7 +27,11 @@ data/
 *.zip
 
 # Model outputs and results
-results/
+# Model outputs and results
+results/*
+!results/
+!results/*.csv
+
 *.pt
 *.pth
 *.pkl
