@@ -1,5 +1,7 @@
 import argparse
 
+from common.graph_stats import print_graph_statistics
+
 from .data import load_or_build_elliptic_graph
 
 
@@ -14,8 +16,7 @@ if __name__ == "__main__":
     data = load_or_build_elliptic_graph(rebuild=args.rebuild_graph)
 
     print("Elliptic graph ready")
-    print(f"Nodes: {data.num_nodes}")
-    print(f"Edges: {data.edge_index.size(1)}")
+    print_graph_statistics(data)
     print(f"Features: {data.x.size(1)}")
     print(f"Train nodes: {int(data.train_mask.sum())}")
     print(f"Validation nodes: {int(data.val_mask.sum())}")

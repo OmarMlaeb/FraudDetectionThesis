@@ -1,5 +1,7 @@
 import argparse
 
+from common.graph_stats import print_graph_statistics
+
 from .graph_data import load_or_build_ieee_cis_graph
 from .preprocessing import load_ieee_cis
 
@@ -26,7 +28,6 @@ if __name__ == "__main__":
     )
 
     print("IEEE-CIS graph ready")
-    print(f"Nodes: {data.num_nodes}")
-    print(f"Edges: {data.edge_index.size(1)}")
+    print_graph_statistics(data)
     print(f"Features: {data.x.size(1)}")
     print("Saved to results/ieee_cis_graph.pt")

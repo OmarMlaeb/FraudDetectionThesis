@@ -19,6 +19,14 @@ The models are evaluated using metrics suitable for imbalanced fraud detection:
 - PR-AUC
 - ROC-AUC
 
+Graph datasets are summarized using:
+
+- Number of nodes
+- Number of edges
+- Average degree
+- Connected components
+- Graph density
+
 Training uses PR-AUC based early stopping:
 
 - MLP, LSTM, Transformer: 50 maximum epochs, patience 10
@@ -98,6 +106,13 @@ Run every Elliptic Bitcoin model:
 
 ```powershell
 python src/run_elliptic_all.py
+```
+
+Build graph data and print graph statistics:
+
+```powershell
+$env:PYTHONPATH="src"; python -m ieee_cis.build_graph --rebuild-graph
+$env:PYTHONPATH="src"; python -m elliptic.build_graph --rebuild-graph
 ```
 
 Graph models compare validation thresholds before final testing. By default they

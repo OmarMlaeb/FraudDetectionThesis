@@ -8,6 +8,7 @@ import torch.nn as nn
 import torch.optim as optim
 
 from common.early_stopping import EarlyStopping
+from common.graph_stats import print_graph_statistics
 from common.metrics import (
     evaluate_binary_classification,
     find_best_threshold,
@@ -60,8 +61,7 @@ def train(model_name, epochs=EPOCHS, rebuild_graph=False, threshold_strategy="f1
     data = load_or_build_elliptic_graph(rebuild=rebuild_graph)
     data = data.to(device)
 
-    print(f"Nodes: {data.num_nodes}")
-    print(f"Edges: {data.edge_index.size(1)}")
+    print_graph_statistics(data)
     print(f"Features: {data.x.size(1)}")
     print(f"Train nodes: {int(data.train_mask.sum())}")
     print(f"Validation nodes: {int(data.val_mask.sum())}")

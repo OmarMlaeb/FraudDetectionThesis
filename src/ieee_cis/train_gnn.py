@@ -8,6 +8,7 @@ import torch.nn as nn
 import torch.optim as optim
 
 from common.early_stopping import EarlyStopping
+from common.graph_stats import print_graph_statistics
 from common.metrics import (
     evaluate_binary_classification,
     find_best_threshold,
@@ -75,8 +76,7 @@ def train(
     )
     data = data.to(device)
 
-    print(f"Nodes: {data.num_nodes}")
-    print(f"Edges: {data.edge_index.size(1)}")
+    print_graph_statistics(data)
     print(f"Features: {data.x.size(1)}")
 
     model = create_gnn_model(model_name, data.x.size(1)).to(device)
