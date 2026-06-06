@@ -143,3 +143,14 @@ Rankings are printed in the terminal and saved to:
 - `results/model_rankings.csv` for PR-AUC ranking
 - `results/model_rankings_by_f1.csv` for F1 ranking
 - `results/model_rankings_by_recall.csv` for recall ranking
+
+Run Wilcoxon signed-rank tests across repeated model runs:
+
+```powershell
+python src/run_wilcoxon_tests.py
+```
+
+The test pairs models by run order within each dataset and metric, then saves
+pairwise significance results to:
+
+- `results/wilcoxon_model_comparisons.csv`
