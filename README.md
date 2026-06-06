@@ -53,6 +53,39 @@ fraud-detection-thesis/
 `-- README.md
 ```
 
+## Setup
+1. Create a virtual environment
+On Windows:
+```powershell
+python -m venv venv
+```
+
+2. Activate the virtual environment
+On Windows:
+```powershell
+venv\Scripts\activate
+```
+
+3. Upgrade pip:
+```powershell
+pip install --upgrade pip
+```
+
+4. Install Requiremnts:
+```powershell
+pip install -r requirements.txt
+```
+
+5. Then install PyTorch separately with:
+```powershell
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+```
+
+6. To test if gpu is recognized:
+```powershell
+python -c "import torch; print(torch.__version__); print(torch.cuda.is_available()); print(torch.cuda.get_device_name(0))"
+```
+
 ## Run Experiments
 
 Run every IEEE-CIS model:
