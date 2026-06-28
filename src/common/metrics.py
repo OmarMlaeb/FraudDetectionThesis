@@ -121,6 +121,7 @@ def save_results_to_csv(
     threshold=None,
     threshold_strategy=None,
     validation_f1=None,
+    seed=None,
 ):
     output_path = Path(output_path)
     output_path.parent.mkdir(parents=True, exist_ok=True)
@@ -141,6 +142,7 @@ def save_results_to_csv(
         "threshold": threshold,
         "threshold_strategy": threshold_strategy,
         "validation_f1_at_threshold": validation_f1,
+        "seed": seed,
     }
 
     if output_path.exists():

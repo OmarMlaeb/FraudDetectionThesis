@@ -1,3 +1,4 @@
+import argparse
 import random
 import numpy as np
 import torch
@@ -21,6 +22,7 @@ EPOCHS = 50
 EARLY_STOPPING_PATIENCE = 10
 LEARNING_RATE = 0.001
 SEQUENCE_LENGTH = 10
+GRADIENT_CLIP_NORM = 1.0
 
 
 def set_seed(seed=42):
@@ -67,12 +69,13 @@ def predict(model, data_loader, device):
     return torch.cat(all_targets).numpy(), torch.cat(all_probs).numpy()
 
 
-def train():
-    set_seed(42)
+def train(seed=42):
+    set_seed(seed)
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
     print(f"Using device: {device}")
+    print(f"Seed: {seed}")
 
     df = load_ieee_cis(TRANSACTION_PATH, IDENTITY_PATH)
     X, y = preprocess_ieee_cis(df)
@@ -98,7 +101,7 @@ def train():
     criterion = nn.BCEWithLogitsLoss(pos_weight=pos_weight)
     optimizer = optim.Adam(model.parameters(), lr=LEARNING_RATE, weight_decay=1e-5)
 
-    best_model_path = "results/best_transformer_model.pt"
+    best_model_path = f"results/best_transformer_seed{seed}_model.pt"
     Path(best_model_path).parent.mkdir(parents=True, exist_ok=True)
     early_stopping = EarlyStopping(patience=EARLY_STOPPING_PATIENCE)
 
@@ -115,30 +118,42 @@ def train():
             logits = model(batch_X)
             loss = criterion(logits, batch_y)
 
+            if not torch.isfinite(loss):
+                print("Stopping early because the training loss became non-finite.")
+                break
+
             loss.backward()
+            torch.nn.utils.clip_grad_norm_(model.parameters(), GRADIENT_CLIP_NORM)
             optimizer.step()
 
             total_loss += loss.item()
+        else:
+            y_val_seq, val_probs = predict(model, val_loader, device)
+            if not np.isfinite(val_probs).all():
+                print("Stopping early because validation probabilities became non-finite.")
+                break
 
-        y_val_seq, val_probs = predict(model, val_loader, device)
-        val_results = evaluate_binary_classification(y_val_seq, val_probs)
+            val_results = evaluate_binary_classification(y_val_seq, val_probs)
 
-        print(
-            f"Epoch [{epoch + 1}/{EPOCHS}] "
-            f"Loss: {total_loss:.4f} "
-            f"Val Recall: {val_results['Recall']:.4f} "
-            f"Val F1: {val_results['F1-score']:.4f} "
-            f"Val PR-AUC: {val_results['PR-AUC']:.4f} "
-            f"Val ROC-AUC: {val_results['ROC-AUC']:.4f}"
-        )
-
-        if early_stopping.step(val_results["PR-AUC"], model, best_model_path, epoch + 1):
             print(
-                f"Early stopping at epoch {epoch + 1}. "
-                f"Best Val PR-AUC: {early_stopping.best_score:.4f} "
-                f"at epoch {early_stopping.best_epoch}."
+                f"Epoch [{epoch + 1}/{EPOCHS}] "
+                f"Loss: {total_loss:.4f} "
+                f"Val Recall: {val_results['Recall']:.4f} "
+                f"Val F1: {val_results['F1-score']:.4f} "
+                f"Val PR-AUC: {val_results['PR-AUC']:.4f} "
+                f"Val ROC-AUC: {val_results['ROC-AUC']:.4f}"
             )
-            break
+
+            if early_stopping.step(val_results["PR-AUC"], model, best_model_path, epoch + 1):
+                print(
+                    f"Early stopping at epoch {epoch + 1}. "
+                    f"Best Val PR-AUC: {early_stopping.best_score:.4f} "
+                    f"at epoch {early_stopping.best_epoch}."
+                )
+                break
+            continue
+
+        break
 
     print("\nLoading best model for testing...")
 
@@ -179,9 +194,17 @@ def train():
         threshold=best_threshold,
         threshold_strategy="f1",
         validation_f1=best_val_f1,
+        seed=seed,
     )
     print("\nSaved test results to results/model_results.csv")
 
 
+def parse_args():
+    parser = argparse.ArgumentParser(description="Train IEEE-CIS Transformer baseline.")
+    parser.add_argument("--seed", type=int, default=42)
+    return parser.parse_args()
+
+
 if __name__ == "__main__":
-    train()
+    args = parse_args()
+    train(seed=args.seed)

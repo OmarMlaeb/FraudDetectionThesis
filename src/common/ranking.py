@@ -45,14 +45,20 @@ def _read_result_rows(results_path):
 
     normalized_rows = []
     for row in rows:
+        if not row.get("timestamp") or not row.get("model"):
+            continue
+
         dataset, model = get_dataset_and_model(row["model"])
         row = row.copy()
         row["dataset"] = dataset
         row["model"] = model
         row["_timestamp"] = _parse_timestamp(row["timestamp"])
 
-        for field in NUMERIC_FIELDS:
-            row[field] = float(row[field])
+        try:
+            for field in NUMERIC_FIELDS:
+                row[field] = float(row[field])
+        except (TypeError, ValueError):
+            continue
 
         normalized_rows.append(row)
 

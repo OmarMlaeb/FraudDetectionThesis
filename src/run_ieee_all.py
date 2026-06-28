@@ -1,5 +1,5 @@
-from ieee_cis.run_all import run_all
+from ieee_cis.run_all import main
 
 
 if __name__ == "__main__":
-    run_all()
+    main()

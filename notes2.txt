@@ -1,0 +1,49 @@
+IEEE-CIS graph ready (original)
+Number of nodes: 590540
+Number of edges: 406769
+Average degree: 1.3776
+Connected components: 255381
+Graph density: 0.00000233
+Features: 358
+
+IEEE-CIS graph ready (sampled_complement)
+Number of nodes: 590540
+Number of edges: 5905400
+Average degree: 20.0000
+Connected components: 1
+Graph density: 0.00003387
+Features: 358
+
+Elliptic graph ready (original)
+Number of nodes: 203769
+Number of edges: 234355
+Average degree: 2.3002
+Connected components: 49
+Graph density: 0.00001129
+Features: 165
+Train nodes: 29894
+Validation nodes: 7829
+Test nodes: 8841
+
+Elliptic graph ready (sampled_complement)
+Number of nodes: 203769
+Number of edges: 2037690
+Average degree: 20.0000
+Connected components: 1
+Graph density: 0.00009815
+Features: 165
+Train nodes: 29894
+Validation nodes: 7829
+Test nodes: 8841
+
+$env:PYTHONPATH="src"; python -m ieee_cis.train_gnn --model gcn --graph-variant sampled_complement --rebuild-graph
+$env:PYTHONPATH="src"; python -m ieee_cis.train_gnn --model gat --graph-variant sampled_complement --rebuild-graph
+$env:PYTHONPATH="src"; python -m ieee_cis.train_gnn --model sage --graph-variant sampled_complement --rebuild-graph
+
+$env:PYTHONPATH="src"; python -m elliptic.train_gnn --model gcn --graph-variant sampled_complement --rebuild-graph
+$env:PYTHONPATH="src"; python -m elliptic.train_gnn --model gat --graph-variant sampled_complement --rebuild-graph
+$env:PYTHONPATH="src"; python -m elliptic.train_gnn --model sage --graph-variant sampled_complement --rebuild-graph
+
+python src/run_ieee_all.py --seeds 43 44 45 46 47 48 49 50 51
+
+python src/run_elliptic_all.py --seeds 42 43 44 45 46 47 48 49 50 51

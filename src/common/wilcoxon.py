@@ -12,6 +12,7 @@ DEFAULT_RESULTS_PATH = "results/model_results.csv"
 DEFAULT_OUTPUT_PATH = "results/wilcoxon_model_comparisons.csv"
 DEFAULT_METRICS = ("pr_auc", "f1_score", "roc_auc", "recall", "precision")
 MIN_PAIRED_RUNS = 3
+PAIR_KEY = "paired_run"
 
 
 def _load_results(results_path):
@@ -29,7 +30,18 @@ def _load_results(results_path):
 
     results = results.dropna(subset=list(DEFAULT_METRICS))
     results = results.sort_values(["dataset", "model_name", "timestamp"])
-    results["run_index"] = results.groupby(["dataset", "model_name"]).cumcount()
+    if "seed" in results.columns:
+        results["seed"] = pd.to_numeric(results["seed"], errors="coerce")
+
+    if "seed" in results.columns and results["seed"].notna().any():
+        results = results.dropna(subset=["seed"]).copy()
+        results = results.drop_duplicates(
+            subset=["dataset", "model_name", "seed"],
+            keep="last",
+        )
+        results[PAIR_KEY] = results["seed"]
+    else:
+        results[PAIR_KEY] = results.groupby(["dataset", "model_name"]).cumcount()
 
     return results
 
@@ -37,14 +49,14 @@ def _load_results(results_path):
 def _paired_metric_values(results, dataset, model_a, model_b, metric):
     model_a_rows = results[
         (results["dataset"] == dataset) & (results["model_name"] == model_a)
-    ][["run_index", metric]]
+    ][[PAIR_KEY, metric]]
     model_b_rows = results[
         (results["dataset"] == dataset) & (results["model_name"] == model_b)
-    ][["run_index", metric]]
+    ][[PAIR_KEY, metric]]
 
     paired = model_a_rows.merge(
         model_b_rows,
-        on="run_index",
+        on=PAIR_KEY,
         suffixes=("_a", "_b"),
     )
 

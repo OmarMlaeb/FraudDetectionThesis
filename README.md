@@ -108,11 +108,43 @@ Run every Elliptic Bitcoin model:
 python src/run_elliptic_all.py
 ```
 
+By default, these commands run each model with seeds `42`, `43`, and `44`.
+To choose different seeds for repeated experiments, pass them explicitly:
+
+```powershell
+python src/run_ieee_all.py --seeds 45 46 47
+python src/run_elliptic_all.py --seeds 45 46 47
+```
+
 Build graph data and print graph statistics:
 
 ```powershell
 $env:PYTHONPATH="src"; python -m ieee_cis.build_graph --rebuild-graph
 $env:PYTHONPATH="src"; python -m elliptic.build_graph --rebuild-graph
+```
+
+Build sampled complement graphs to compare against the original graph structure.
+The exact graph complement is too large for these datasets, so this samples
+non-existing edges from the complement graph and controls density with average
+degree:
+
+```powershell
+$env:PYTHONPATH="src"; python -m ieee_cis.build_graph --rebuild-graph --graph-variant sampled_complement --complement-average-degree 20
+$env:PYTHONPATH="src"; python -m elliptic.build_graph --rebuild-graph --graph-variant sampled_complement --complement-average-degree 20
+```
+
+Train a graph model on the sampled complement graph:
+
+```powershell
+$env:PYTHONPATH="src"; python -m ieee_cis.train_gnn --model gcn --graph-variant sampled_complement --rebuild-graph
+$env:PYTHONPATH="src"; python -m elliptic.train_gnn --model gat --graph-variant sampled_complement --rebuild-graph
+```
+
+For individual GNN runs, use `--seed` to produce paired repeated runs:
+
+```powershell
+$env:PYTHONPATH="src"; python -m ieee_cis.train_gnn --model gcn --seed 43
+$env:PYTHONPATH="src"; python -m elliptic.train_gnn --model sage --seed 43
 ```
 
 Graph models compare validation thresholds before final testing. By default they

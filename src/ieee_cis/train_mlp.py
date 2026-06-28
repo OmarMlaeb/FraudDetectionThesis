@@ -1,3 +1,4 @@
+import argparse
 import random
 import numpy as np
 import torch
@@ -32,12 +33,13 @@ def set_seed(seed=42):
     torch.backends.cudnn.benchmark = False
 
 
-def train():
-    set_seed(42)
+def train(seed=42):
+    set_seed(seed)
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
     print(f"Using device: {device}")
+    print(f"Seed: {seed}")
 
     df = load_ieee_cis(TRANSACTION_PATH, IDENTITY_PATH)
     X, y = preprocess_ieee_cis(df)
@@ -65,7 +67,7 @@ def train():
     criterion = nn.BCEWithLogitsLoss(pos_weight=pos_weight)
     optimizer = optim.Adam(model.parameters(), lr=LEARNING_RATE, weight_decay=1e-5)
 
-    best_model_path = "results/best_mlp_model.pt"
+    best_model_path = f"results/best_mlp_seed{seed}_model.pt"
     Path(best_model_path).parent.mkdir(parents=True, exist_ok=True)
     early_stopping = EarlyStopping(patience=EARLY_STOPPING_PATIENCE)
 
@@ -150,9 +152,17 @@ def train():
         threshold=best_threshold,
         threshold_strategy="f1",
         validation_f1=best_val_f1,
+        seed=seed,
     )
     print("\nSaved test results to results/model_results.csv")
 
 
+def parse_args():
+    parser = argparse.ArgumentParser(description="Train IEEE-CIS MLP baseline.")
+    parser.add_argument("--seed", type=int, default=42)
+    return parser.parse_args()
+
+
 if __name__ == "__main__":
-    train()
+    args = parse_args()
+    train(seed=args.seed)

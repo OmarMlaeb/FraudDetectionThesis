@@ -9,6 +9,7 @@ import torch.optim as optim
 
 from common.early_stopping import EarlyStopping
 from common.graph_stats import print_graph_statistics
+from common.graph_variants import GRAPH_VARIANTS
 from common.metrics import (
     evaluate_binary_classification,
     find_best_threshold,
@@ -60,19 +61,27 @@ def train(
     rebuild_graph=False,
     max_group_size=1000,
     threshold_strategy="f1",
+    graph_variant="original",
+    complement_average_degree=20,
+    complement_seed=42,
+    seed=42,
 ):
-    set_seed(42)
+    set_seed(seed)
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
     print(f"Using device: {device}")
     print(f"Training GNN model: {model_name.upper()}")
+    print(f"Seed: {seed}")
 
     df = load_ieee_cis(TRANSACTION_PATH, IDENTITY_PATH)
     data = load_or_build_ieee_cis_graph(
         df,
         rebuild=rebuild_graph,
         max_group_size=max_group_size,
+        graph_variant=graph_variant,
+        complement_average_degree=complement_average_degree,
+        complement_seed=complement_seed,
     )
     data = data.to(device)
 
@@ -89,7 +98,9 @@ def train(
     criterion = nn.BCEWithLogitsLoss(pos_weight=pos_weight)
     optimizer = optim.Adam(model.parameters(), lr=LEARNING_RATE, weight_decay=1e-5)
 
-    best_model_path = f"results/best_{model_name}_model.pt"
+    checkpoint_suffix = model_name if graph_variant == "original" else f"{model_name}_{graph_variant}"
+    checkpoint_suffix = f"{checkpoint_suffix}_seed{seed}"
+    best_model_path = f"results/best_{checkpoint_suffix}_model.pt"
     Path(best_model_path).parent.mkdir(parents=True, exist_ok=True)
     early_stopping = EarlyStopping(patience=EARLY_STOPPING_PATIENCE)
 
@@ -151,6 +162,8 @@ def train(
         "sage": "GraphSAGE",
         "gat": "GAT",
     }[model_name]
+    if graph_variant != "original":
+        model_label = f"{model_label}-{graph_variant}"
 
     print(f"\nFinal Test Results - {model_label}")
     print("-----------------------------")
@@ -168,6 +181,7 @@ def train(
         threshold=best_threshold,
         threshold_strategy=threshold_strategy,
         validation_f1=best_val_f1,
+        seed=seed,
     )
     print("\nSaved test results to results/model_results.csv")
 
@@ -178,6 +192,10 @@ def parse_args():
     parser.add_argument("--epochs", type=int, default=EPOCHS)
     parser.add_argument("--rebuild-graph", action="store_true")
     parser.add_argument("--max-group-size", type=int, default=1000)
+    parser.add_argument("--graph-variant", choices=GRAPH_VARIANTS, default="original")
+    parser.add_argument("--complement-average-degree", type=int, default=20)
+    parser.add_argument("--complement-seed", type=int, default=42)
+    parser.add_argument("--seed", type=int, default=42)
     parser.add_argument(
         "--threshold-strategy",
         choices=["f1", "balanced"],
@@ -195,4 +213,8 @@ if __name__ == "__main__":
         rebuild_graph=args.rebuild_graph,
         max_group_size=args.max_group_size,
         threshold_strategy=args.threshold_strategy,
+        graph_variant=args.graph_variant,
+        complement_average_degree=args.complement_average_degree,
+        complement_seed=args.complement_seed,
+        seed=args.seed,
     )

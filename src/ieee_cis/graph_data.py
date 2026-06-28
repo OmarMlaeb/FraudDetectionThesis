@@ -1,6 +1,8 @@
 from pathlib import Path
 import torch
 
+from common.graph_variants import apply_graph_variant
+
 from .preprocessing import preprocess_ieee_cis
 
 try:
@@ -85,11 +87,24 @@ def build_edges_from_shared_values(df, edge_columns=None, max_group_size=1000):
     return edge_index
 
 
-def build_ieee_cis_graph(df, max_group_size=1000):
+def build_ieee_cis_graph(
+    df,
+    max_group_size=1000,
+    graph_variant="original",
+    complement_average_degree=20,
+    complement_seed=42,
+):
     df = df.reset_index(drop=True)
 
     X, y = preprocess_ieee_cis(df)
     edge_index = build_edges_from_shared_values(df, max_group_size=max_group_size)
+    edge_index = apply_graph_variant(
+        edge_index,
+        num_nodes=len(df),
+        graph_variant=graph_variant,
+        complement_average_degree=complement_average_degree,
+        complement_seed=complement_seed,
+    )
     train_mask, val_mask, test_mask = build_temporal_masks(len(df))
 
     data = Data(
@@ -100,6 +115,7 @@ def build_ieee_cis_graph(df, max_group_size=1000):
         val_mask=val_mask,
         test_mask=test_mask,
     )
+    data.graph_variant = graph_variant
 
     return data
 
@@ -109,13 +125,27 @@ def load_or_build_ieee_cis_graph(
     cache_path="results/ieee_cis_graph.pt",
     max_group_size=1000,
     rebuild=False,
+    graph_variant="original",
+    complement_average_degree=20,
+    complement_seed=42,
 ):
     cache_path = Path(cache_path)
+    if graph_variant != "original" and cache_path == Path("results/ieee_cis_graph.pt"):
+        cache_path = Path(
+            f"results/ieee_cis_graph_{graph_variant}"
+            f"_deg{complement_average_degree}_seed{complement_seed}.pt"
+        )
 
     if cache_path.exists() and not rebuild:
         return torch.load(cache_path, weights_only=False)
 
-    data = build_ieee_cis_graph(df, max_group_size=max_group_size)
+    data = build_ieee_cis_graph(
+        df,
+        max_group_size=max_group_size,
+        graph_variant=graph_variant,
+        complement_average_degree=complement_average_degree,
+        complement_seed=complement_seed,
+    )
     cache_path.parent.mkdir(parents=True, exist_ok=True)
     torch.save(data, cache_path)
 

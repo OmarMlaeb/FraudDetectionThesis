@@ -4,6 +4,8 @@ import numpy as np
 import pandas as pd
 import torch
 
+from common.graph_variants import apply_graph_variant
+
 
 FEATURES_PATH = "data/elliptic_bitcoin_dataset/elliptic_txs_features.csv"
 CLASSES_PATH = "data/elliptic_bitcoin_dataset/elliptic_txs_classes.csv"
@@ -85,7 +87,11 @@ def build_elliptic_edge_index(df, edgelist_path=EDGELIST_PATH):
     return torch.tensor(edge_index, dtype=torch.long)
 
 
-def build_elliptic_graph():
+def build_elliptic_graph(
+    graph_variant="original",
+    complement_average_degree=20,
+    complement_seed=42,
+):
     try:
         from torch_geometric.data import Data
     except ImportError as exc:
@@ -97,25 +103,50 @@ def build_elliptic_graph():
     tabular_data = load_elliptic_tabular_data()
     df = tabular_data["df"]
 
+    edge_index = build_elliptic_edge_index(df)
+    edge_index = apply_graph_variant(
+        edge_index,
+        num_nodes=len(df),
+        graph_variant=graph_variant,
+        complement_average_degree=complement_average_degree,
+        complement_seed=complement_seed,
+    )
+
     data = Data(
         x=torch.tensor(tabular_data["X"], dtype=torch.float32),
         y=torch.tensor(tabular_data["y"], dtype=torch.float32),
-        edge_index=build_elliptic_edge_index(df),
+        edge_index=edge_index,
         train_mask=torch.tensor(tabular_data["train_mask"], dtype=torch.bool),
         val_mask=torch.tensor(tabular_data["val_mask"], dtype=torch.bool),
         test_mask=torch.tensor(tabular_data["test_mask"], dtype=torch.bool),
     )
+    data.graph_variant = graph_variant
 
     return data
 
 
-def load_or_build_elliptic_graph(cache_path="results/elliptic_graph.pt", rebuild=False):
+def load_or_build_elliptic_graph(
+    cache_path="results/elliptic_graph.pt",
+    rebuild=False,
+    graph_variant="original",
+    complement_average_degree=20,
+    complement_seed=42,
+):
     cache_path = Path(cache_path)
+    if graph_variant != "original" and cache_path == Path("results/elliptic_graph.pt"):
+        cache_path = Path(
+            f"results/elliptic_graph_{graph_variant}"
+            f"_deg{complement_average_degree}_seed{complement_seed}.pt"
+        )
 
     if cache_path.exists() and not rebuild:
         return torch.load(cache_path, weights_only=False)
 
-    data = build_elliptic_graph()
+    data = build_elliptic_graph(
+        graph_variant=graph_variant,
+        complement_average_degree=complement_average_degree,
+        complement_seed=complement_seed,
+    )
     cache_path.parent.mkdir(parents=True, exist_ok=True)
     torch.save(data, cache_path)
 
