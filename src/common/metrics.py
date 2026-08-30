@@ -62,14 +62,28 @@ def _threshold_sort_key(row, strategy):
     raise ValueError("threshold_strategy must be either 'f1' or 'balanced'.")
 
 
-def find_best_threshold(y_true, y_prob, strategy="f1", thresholds=None):
+def find_best_threshold(
+    y_true,
+    y_prob,
+    strategy="f1",
+    thresholds=None,
+    max_positive_rate=None,
+    fallback_threshold=0.5,
+):
     best_threshold = 0.5
     best_score = None
     best_f1 = 0.0
 
     threshold_results = compare_thresholds(y_true, y_prob, thresholds=thresholds)
+    candidate_results = filter_threshold_results(
+        y_true,
+        y_prob,
+        threshold_results,
+        max_positive_rate=max_positive_rate,
+        fallback_threshold=fallback_threshold,
+    )
 
-    for row in threshold_results:
+    for row in candidate_results:
         score = _threshold_sort_key(row, strategy)
 
         if best_score is None or score > best_score:
@@ -80,12 +94,57 @@ def find_best_threshold(y_true, y_prob, strategy="f1", thresholds=None):
     return best_threshold, best_f1
 
 
-def print_threshold_comparison(y_true, y_prob, selected_threshold, strategy="f1"):
+def filter_threshold_results(
+    y_true,
+    y_prob,
+    threshold_results,
+    max_positive_rate=None,
+    fallback_threshold=None,
+):
+    candidate_results = threshold_results
+
+    if max_positive_rate is not None:
+        if not 0.0 <= max_positive_rate <= 1.0:
+            raise ValueError("max_positive_rate must be between 0 and 1.")
+
+        total_count = len(y_true)
+        candidate_results = [
+            row
+            for row in threshold_results
+            if (row["TP"] + row["FP"]) / total_count <= max_positive_rate
+        ]
+
+        if not candidate_results and fallback_threshold is not None:
+            candidate_results = [
+                get_threshold_metrics(y_true, y_prob, fallback_threshold)
+            ]
+
+    return candidate_results
+
+
+def print_threshold_comparison(
+    y_true,
+    y_prob,
+    selected_threshold,
+    strategy="f1",
+    thresholds=None,
+    max_positive_rate=None,
+):
     fixed_thresholds = np.arange(0.10, 1.00, 0.10)
-    thresholds = sorted(set(np.round(np.append(fixed_thresholds, selected_threshold), 2)))
-    threshold_results = compare_thresholds(y_true, y_prob, thresholds=thresholds)
+    display_thresholds = sorted(
+        set(np.round(np.append(fixed_thresholds, selected_threshold), 2))
+    )
+    threshold_results = compare_thresholds(y_true, y_prob, thresholds=display_thresholds)
+    top_threshold_results = compare_thresholds(y_true, y_prob, thresholds=thresholds)
+
+    top_threshold_results = filter_threshold_results(
+        y_true,
+        y_prob,
+        top_threshold_results,
+        max_positive_rate=max_positive_rate,
+    )
     top_results = sorted(
-        compare_thresholds(y_true, y_prob),
+        top_threshold_results,
         key=lambda row: _threshold_sort_key(row, strategy),
         reverse=True,
     )[:5]
@@ -104,7 +163,10 @@ def print_threshold_comparison(y_true, y_prob, selected_threshold, strategy="f1"
             f"| {row['TP']} | {row['FP']} | {row['FN']} | {row['TN']}"
         )
 
-    print(f"\nTop validation thresholds by {strategy}:")
+    cap_label = ""
+    if max_positive_rate is not None:
+        cap_label = f" with positive rate <= {max_positive_rate:.2%}"
+    print(f"\nTop validation thresholds by {strategy}{cap_label}:")
     for row in top_results:
         print(
             f"threshold={row['Threshold']:.2f}, "

@@ -38,10 +38,10 @@ if __name__ == "__main__":
     print_graph_statistics(data)
     print(f"Features: {data.x.size(1)}")
     if args.graph_variant == "original":
-        print("Saved to results/ieee_cis_graph.pt")
+        print("Saved to results/ieee_cis_graph_trainfit.pt")
     else:
         print(
             "Saved to "
-            f"results/ieee_cis_graph_{args.graph_variant}"
+            f"results/ieee_cis_graph_trainfit_{args.graph_variant}"
             f"_deg{args.complement_average_degree}_seed{args.complement_seed}.pt"
         )

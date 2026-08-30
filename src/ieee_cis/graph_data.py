@@ -3,7 +3,7 @@ import torch
 
 from common.graph_variants import apply_graph_variant
 
-from .preprocessing import preprocess_ieee_cis
+from .preprocessing import preprocess_ieee_cis_with_train_fit, sort_ieee_cis_temporally
 
 try:
     from torch_geometric.data import Data
@@ -30,6 +30,7 @@ GRAPH_EDGE_COLUMNS = [
     "id_31",
     "id_33",
 ]
+DEFAULT_GRAPH_CACHE_PATH = Path("results/ieee_cis_graph_trainfit.pt")
 
 
 def build_temporal_masks(num_nodes, train_ratio=0.80, val_ratio=0.10):
@@ -94,9 +95,9 @@ def build_ieee_cis_graph(
     complement_average_degree=20,
     complement_seed=42,
 ):
-    df = df.reset_index(drop=True)
+    df = sort_ieee_cis_temporally(df).reset_index(drop=True)
 
-    X, y = preprocess_ieee_cis(df)
+    X, y = preprocess_ieee_cis_with_train_fit(df)
     edge_index = build_edges_from_shared_values(df, max_group_size=max_group_size)
     edge_index = apply_graph_variant(
         edge_index,
@@ -122,7 +123,7 @@ def build_ieee_cis_graph(
 
 def load_or_build_ieee_cis_graph(
     df,
-    cache_path="results/ieee_cis_graph.pt",
+    cache_path=DEFAULT_GRAPH_CACHE_PATH,
     max_group_size=1000,
     rebuild=False,
     graph_variant="original",
@@ -130,9 +131,9 @@ def load_or_build_ieee_cis_graph(
     complement_seed=42,
 ):
     cache_path = Path(cache_path)
-    if graph_variant != "original" and cache_path == Path("results/ieee_cis_graph.pt"):
+    if graph_variant != "original" and cache_path == DEFAULT_GRAPH_CACHE_PATH:
         cache_path = Path(
-            f"results/ieee_cis_graph_{graph_variant}"
+            f"results/ieee_cis_graph_trainfit_{graph_variant}"
             f"_deg{complement_average_degree}_seed{complement_seed}.pt"
         )
 

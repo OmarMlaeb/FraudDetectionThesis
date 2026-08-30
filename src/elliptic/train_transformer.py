@@ -55,7 +55,7 @@ def train(seed=42):
 
     model = TransformerFraudDetector(X.shape[1], SEQUENCE_LENGTH).to(device)
 
-    train_targets = train_dataset.y[SEQUENCE_LENGTH - 1:].numpy()
+    train_targets = train_dataset.y.numpy()
     positive_count = train_targets.sum()
     negative_count = len(train_targets) - positive_count
     pos_weight = torch.tensor([negative_count / positive_count], dtype=torch.float32).to(device)
@@ -131,7 +131,7 @@ def train(seed=42):
     print("Min probability:", test_probs.min())
     print("Max probability:", test_probs.max())
     print("Mean probability:", test_probs.mean())
-    print("Fraud predictions:", (test_probs >= 0.5).sum())
+    print("Fraud predictions:", (test_probs >= best_threshold).sum())
 
     test_results = evaluate_binary_classification(
         y_test_seq,

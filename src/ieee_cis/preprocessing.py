@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-from sklearn.preprocessing import LabelEncoder, StandardScaler
+from sklearn.preprocessing import StandardScaler
 
 
 def load_ieee_cis(transaction_path, identity_path):
@@ -21,29 +21,133 @@ def remove_high_missing_columns(df, threshold=0.80):
     return df
 
 
-def preprocess_ieee_cis(df):
-    df = remove_high_missing_columns(df)
+def sort_ieee_cis_temporally(df):
+    if "TransactionDT" in df.columns:
+        sort_columns = ["TransactionDT"]
+        if "TransactionID" in df.columns:
+            sort_columns.append("TransactionID")
+        return df.sort_values(sort_columns, kind="mergesort")
 
-    y = df["isFraud"].values
+    return df
 
-    drop_columns = ["isFraud", "TransactionID"]
-    X = df.drop(columns=[col for col in drop_columns if col in df.columns])
 
-    categorical_cols = X.select_dtypes(include=["object"]).columns
-    numerical_cols = X.select_dtypes(exclude=["object"]).columns
+def split_dataframe_temporally(df, train_ratio=0.80, val_ratio=0.10):
+    df = sort_ieee_cis_temporally(df)
 
-    for col in categorical_cols:
-        X[col] = X[col].fillna("Unknown")
-        encoder = LabelEncoder()
-        X[col] = encoder.fit_transform(X[col].astype(str))
+    n = len(df)
 
-    for col in numerical_cols:
-        X[col] = X[col].fillna(X[col].median())
+    train_end = int(n * train_ratio)
+    val_end = int(n * (train_ratio + val_ratio))
+
+    return (
+        df.iloc[:train_end].copy(),
+        df.iloc[train_end:val_end].copy(),
+        df.iloc[val_end:].copy(),
+    )
+
+
+def fit_ieee_cis_preprocessor(train_df, missing_threshold=0.80):
+    missing_ratio = train_df.isnull().mean()
+    columns_to_drop = set(missing_ratio[missing_ratio > missing_threshold].index)
+    columns_to_drop.update(["isFraud", "TransactionID"])
+
+    feature_columns = [
+        column for column in train_df.columns if column not in columns_to_drop
+    ]
+    X_train = train_df[feature_columns].copy()
+
+    categorical_columns = X_train.select_dtypes(
+        include=["object", "category"]
+    ).columns.tolist()
+    numerical_columns = [
+        column for column in feature_columns if column not in categorical_columns
+    ]
+
+    category_maps = {}
+    for column in categorical_columns:
+        values = X_train[column].fillna("Unknown").astype(str)
+        category_map = {
+            value: index for index, value in enumerate(pd.unique(values))
+        }
+        if "Unknown" not in category_map:
+            category_map["Unknown"] = len(category_map)
+        category_maps[column] = category_map
+
+    medians = X_train[numerical_columns].median() if numerical_columns else pd.Series()
+    X_train_numeric = X_train[numerical_columns].fillna(medians)
 
     scaler = StandardScaler()
-    X[numerical_cols] = scaler.fit_transform(X[numerical_cols])
+    if numerical_columns:
+        scaler.fit(X_train_numeric)
+    else:
+        scaler = None
 
-    return X.values.astype(np.float32), y.astype(np.float32)
+    return {
+        "feature_columns": feature_columns,
+        "categorical_columns": categorical_columns,
+        "numerical_columns": numerical_columns,
+        "category_maps": category_maps,
+        "medians": medians,
+        "scaler": scaler,
+    }
+
+
+def transform_ieee_cis_features(df, preprocessor):
+    feature_columns = preprocessor["feature_columns"]
+    categorical_columns = preprocessor["categorical_columns"]
+    numerical_columns = preprocessor["numerical_columns"]
+
+    X = df[feature_columns].copy()
+
+    for column in categorical_columns:
+        category_map = preprocessor["category_maps"][column]
+        unknown_code = category_map["Unknown"]
+        X[column] = (
+            X[column]
+            .fillna("Unknown")
+            .astype(str)
+            .map(category_map)
+            .fillna(unknown_code)
+        )
+
+    if numerical_columns:
+        X[numerical_columns] = X[numerical_columns].fillna(preprocessor["medians"])
+        X[numerical_columns] = preprocessor["scaler"].transform(X[numerical_columns])
+
+    y = df["isFraud"].values.astype(np.float32)
+
+    return X.values.astype(np.float32), y
+
+
+def preprocess_ieee_cis_train_val_test(df, train_ratio=0.80, val_ratio=0.10):
+    train_df, val_df, test_df = split_dataframe_temporally(
+        df,
+        train_ratio=train_ratio,
+        val_ratio=val_ratio,
+    )
+    preprocessor = fit_ieee_cis_preprocessor(train_df)
+
+    X_train, y_train = transform_ieee_cis_features(train_df, preprocessor)
+    X_val, y_val = transform_ieee_cis_features(val_df, preprocessor)
+    X_test, y_test = transform_ieee_cis_features(test_df, preprocessor)
+
+    return X_train, y_train, X_val, y_val, X_test, y_test
+
+
+def preprocess_ieee_cis_with_train_fit(df, train_ratio=0.80, val_ratio=0.10):
+    df = sort_ieee_cis_temporally(df)
+    train_df, _, _ = split_dataframe_temporally(
+        df,
+        train_ratio=train_ratio,
+        val_ratio=val_ratio,
+    )
+    preprocessor = fit_ieee_cis_preprocessor(train_df)
+
+    return transform_ieee_cis_features(df, preprocessor)
+
+
+def preprocess_ieee_cis(df):
+    return preprocess_ieee_cis_with_train_fit(df)
 
 
 def temporal_train_val_test_split(X, y, train_ratio=0.80, val_ratio=0.10):

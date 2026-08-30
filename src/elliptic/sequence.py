@@ -6,19 +6,25 @@ from torch.utils.data import Dataset
 class EllipticSequenceDataset(Dataset):
     def __init__(self, X, y, mask, sequence_length):
         labeled_indices = torch.where(torch.tensor(mask, dtype=torch.bool))[0]
-        if len(labeled_indices) < sequence_length:
-            raise ValueError("Split is smaller than the requested sequence length.")
+        if len(labeled_indices) == 0:
+            raise ValueError("Split has no labeled examples.")
 
         self.X = torch.tensor(X[labeled_indices])
         self.y = torch.tensor(y[labeled_indices])
         self.sequence_length = sequence_length
 
     def __len__(self):
-        return len(self.X) - self.sequence_length + 1
+        return len(self.X)
 
     def __getitem__(self, index):
-        end = index + self.sequence_length
-        return self.X[index:end], self.y[end - 1]
+        start = max(0, index - self.sequence_length + 1)
+        window = self.X[start:index + 1]
+
+        if len(window) < self.sequence_length:
+            padding = window[0:1].repeat(self.sequence_length - len(window), 1)
+            window = torch.cat((padding, window), dim=0)
+
+        return window, self.y[index]
 
 
 def predict_sequence_model(model, data_loader, device):

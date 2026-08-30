@@ -11,7 +11,7 @@ from torch.utils.data import TensorDataset, DataLoader
 from common.early_stopping import EarlyStopping
 from common.metrics import evaluate_binary_classification, find_best_threshold, save_results_to_csv
 from .models import MLPFraudDetector
-from .preprocessing import load_ieee_cis, preprocess_ieee_cis, temporal_train_val_test_split
+from .preprocessing import load_ieee_cis, preprocess_ieee_cis_train_val_test
 
 
 TRANSACTION_PATH = "data/ieee-cis/train_transaction.csv"
@@ -42,9 +42,7 @@ def train(seed=42):
     print(f"Seed: {seed}")
 
     df = load_ieee_cis(TRANSACTION_PATH, IDENTITY_PATH)
-    X, y = preprocess_ieee_cis(df)
-
-    X_train, y_train, X_val, y_val, X_test, y_test = temporal_train_val_test_split(X, y)
+    X_train, y_train, X_val, y_val, X_test, y_test = preprocess_ieee_cis_train_val_test(df)
 
     X_train_tensor = torch.tensor(X_train)
     y_train_tensor = torch.tensor(y_train)

@@ -54,7 +54,7 @@ def train(seed=42):
 
     model = LSTMFraudDetector(X.shape[1]).to(device)
 
-    train_targets = train_dataset.y[SEQUENCE_LENGTH - 1:].numpy()
+    train_targets = train_dataset.y.numpy()
     positive_count = train_targets.sum()
     negative_count = len(train_targets) - positive_count
     pos_weight = torch.tensor([negative_count / positive_count], dtype=torch.float32).to(device)
