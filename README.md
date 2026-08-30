@@ -119,24 +119,81 @@ python src/run_elliptic_all.py --seeds 45 46 47
 Build graph data and print graph statistics:
 
 ```powershell
-$env:PYTHONPATH="src"; python -m ieee_cis.build_graph --rebuild-graph
+$env:PYTHONPATH="src"; python -m ieee_cis.build_graph --graph-construction card --rebuild-graph
 $env:PYTHONPATH="src"; python -m elliptic.build_graph --rebuild-graph
 ```
 
-Build sampled complement graphs to compare against the original graph structure.
-The exact graph complement is too large for these datasets, so this samples
-non-existing edges from the complement graph and controls density with average
-degree:
+IEEE-CIS supports the original main graph plus four meaningful graph constructions.
+Build each one alone:
 
 ```powershell
-$env:PYTHONPATH="src"; python -m ieee_cis.build_graph --rebuild-graph --graph-variant sampled_complement --complement-average-degree 20
-$env:PYTHONPATH="src"; python -m elliptic.build_graph --rebuild-graph --graph-variant sampled_complement --complement-average-degree 20
+$env:PYTHONPATH="src"; python -m ieee_cis.build_graph --graph-construction main --rebuild-graph
+$env:PYTHONPATH="src"; python -m ieee_cis.build_graph --graph-construction card --rebuild-graph
+$env:PYTHONPATH="src"; python -m ieee_cis.build_graph --graph-construction address --rebuild-graph
+$env:PYTHONPATH="src"; python -m ieee_cis.build_graph --graph-construction email_domain --rebuild-graph
+$env:PYTHONPATH="src"; python -m ieee_cis.build_graph --graph-construction identifier_time_window --identifier-window-hours 24 --rebuild-graph
 ```
 
-Train a graph model on the sampled complement graph:
+Each IEEE-CIS graph build saves a separate edge-list CSV in `results/`, for
+example:
+
+- `results/ieee_cis_graph_edges_main_max1000.csv`
+- `results/ieee_cis_graph_edges_card_max1000.csv`
+- `results/ieee_cis_graph_edges_address_max1000.csv`
+- `results/ieee_cis_graph_edges_email_domain_max1000.csv`
+- `results/ieee_cis_graph_edges_identifier_time_window_24h.csv`
+
+Train a GNN on one IEEE-CIS construction at a time:
 
 ```powershell
-$env:PYTHONPATH="src"; python -m ieee_cis.train_gnn --model gcn --graph-variant sampled_complement --rebuild-graph
+$env:PYTHONPATH="src"; python -m ieee_cis.train_gnn --model gcn --graph-construction main --rebuild-graph
+$env:PYTHONPATH="src"; python -m ieee_cis.train_gnn --model gcn --graph-construction card --rebuild-graph
+$env:PYTHONPATH="src"; python -m ieee_cis.train_gnn --model gcn --graph-construction address --rebuild-graph
+$env:PYTHONPATH="src"; python -m ieee_cis.train_gnn --model gcn --graph-construction email_domain --rebuild-graph
+$env:PYTHONPATH="src"; python -m ieee_cis.train_gnn --model gcn --graph-construction identifier_time_window --identifier-window-hours 24 --rebuild-graph
+```
+
+IEEE-CIS graph-model metrics are saved separately to:
+
+- `results/ieee_cis_graph_model_results.csv`
+
+To choose another results file, pass `--output-path`:
+
+```powershell
+$env:PYTHONPATH="src"; python -m ieee_cis.train_gnn --model sage --graph-construction card --output-path results/ieee_cis_card_results.csv
+```
+
+Run graph models only for seeds `42` through `51` across the corrected main
+graph and all four IEEE-CIS graph constructions:
+
+```powershell
+python src/run_ieee_graph_constructions.py --rebuild-graph
+```
+
+After the graph runs finish, rank IEEE-CIS models and compare the constructed
+graphs against the corrected main graph and non-graph baselines:
+
+```powershell
+python src/compare_ieee_graph_constructions.py
+```
+
+This writes:
+
+- `results/ieee_cis_graph_combined_rankings.csv`
+- `results/ieee_cis_graph_vs_baseline_comparisons.csv`
+
+For a shorter identifier graph, use a one-hour window:
+
+```powershell
+$env:PYTHONPATH="src"; python -m ieee_cis.train_gnn --model gcn --graph-construction identifier_time_window --identifier-window-hours 1 --rebuild-graph
+```
+
+Random sampled-complement graphs are not used as the main IEEE-CIS graph
+construction because they do not represent meaningful transaction relationships.
+They remain available only as a stress-test graph variant:
+
+```powershell
+$env:PYTHONPATH="src"; python -m elliptic.build_graph --rebuild-graph --graph-variant sampled_complement --complement-average-degree 20
 $env:PYTHONPATH="src"; python -m elliptic.train_gnn --model gat --graph-variant sampled_complement --rebuild-graph
 ```
 

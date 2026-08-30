@@ -17,7 +17,11 @@ from common.metrics import (
     save_results_to_csv,
 )
 from .gnn_models import create_gnn_model
-from .graph_data import load_or_build_ieee_cis_graph
+from .graph_data import (
+    DEFAULT_IDENTIFIER_WINDOW_HOURS,
+    GRAPH_CONSTRUCTIONS,
+    load_or_build_ieee_cis_graph,
+)
 from .preprocessing import load_ieee_cis
 
 
@@ -27,6 +31,7 @@ IDENTITY_PATH = "data/ieee-cis/train_identity.csv"
 EPOCHS = 100
 EARLY_STOPPING_PATIENCE = 15
 LEARNING_RATE = 0.001
+DEFAULT_GRAPH_RESULTS_PATH = "results/ieee_cis_graph_model_results.csv"
 
 
 def set_seed(seed=42):
@@ -60,10 +65,13 @@ def train(
     epochs=EPOCHS,
     rebuild_graph=False,
     max_group_size=1000,
+    graph_construction="card",
+    identifier_window_hours=DEFAULT_IDENTIFIER_WINDOW_HOURS,
     threshold_strategy="f1",
     graph_variant="original",
     complement_average_degree=20,
     complement_seed=42,
+    output_path=DEFAULT_GRAPH_RESULTS_PATH,
     seed=42,
 ):
     set_seed(seed)
@@ -72,6 +80,9 @@ def train(
 
     print(f"Using device: {device}")
     print(f"Training GNN model: {model_name.upper()}")
+    print(f"Graph construction: {graph_construction}")
+    if graph_construction == "identifier_time_window":
+        print(f"Identifier time window: {identifier_window_hours} hours")
     print(f"Seed: {seed}")
 
     df = load_ieee_cis(TRANSACTION_PATH, IDENTITY_PATH)
@@ -79,6 +90,8 @@ def train(
         df,
         rebuild=rebuild_graph,
         max_group_size=max_group_size,
+        graph_construction=graph_construction,
+        identifier_window_hours=identifier_window_hours,
         graph_variant=graph_variant,
         complement_average_degree=complement_average_degree,
         complement_seed=complement_seed,
@@ -98,7 +111,11 @@ def train(
     criterion = nn.BCEWithLogitsLoss(pos_weight=pos_weight)
     optimizer = optim.Adam(model.parameters(), lr=LEARNING_RATE, weight_decay=1e-5)
 
-    checkpoint_suffix = model_name if graph_variant == "original" else f"{model_name}_{graph_variant}"
+    checkpoint_suffix = f"{model_name}_{graph_construction}"
+    if graph_construction == "identifier_time_window":
+        checkpoint_suffix = f"{checkpoint_suffix}_{identifier_window_hours}h"
+    if graph_variant != "original":
+        checkpoint_suffix = f"{checkpoint_suffix}_{graph_variant}"
     checkpoint_suffix = f"{checkpoint_suffix}_seed{seed}"
     best_model_path = f"results/best_{checkpoint_suffix}_model.pt"
     Path(best_model_path).parent.mkdir(parents=True, exist_ok=True)
@@ -162,6 +179,9 @@ def train(
         "sage": "GraphSAGE",
         "gat": "GAT",
     }[model_name]
+    model_label = f"{model_label}-{graph_construction}"
+    if graph_construction == "identifier_time_window":
+        model_label = f"{model_label}-{identifier_window_hours}h"
     if graph_variant != "original":
         model_label = f"{model_label}-{graph_variant}"
 
@@ -178,12 +198,13 @@ def train(
     save_results_to_csv(
         model_label,
         test_results,
+        output_path=output_path,
         threshold=best_threshold,
         threshold_strategy=threshold_strategy,
         validation_f1=best_val_f1,
         seed=seed,
     )
-    print("\nSaved test results to results/model_results.csv")
+    print(f"\nSaved test results to {output_path}")
 
 
 def parse_args():
@@ -192,9 +213,26 @@ def parse_args():
     parser.add_argument("--epochs", type=int, default=EPOCHS)
     parser.add_argument("--rebuild-graph", action="store_true")
     parser.add_argument("--max-group-size", type=int, default=1000)
+    parser.add_argument(
+        "--graph-construction",
+        choices=GRAPH_CONSTRUCTIONS,
+        default="card",
+        help="Meaningful IEEE-CIS graph construction to train on.",
+    )
+    parser.add_argument(
+        "--identifier-window-hours",
+        type=int,
+        default=DEFAULT_IDENTIFIER_WINDOW_HOURS,
+        help="Time window for identifier_time_window graph edges.",
+    )
     parser.add_argument("--graph-variant", choices=GRAPH_VARIANTS, default="original")
     parser.add_argument("--complement-average-degree", type=int, default=20)
     parser.add_argument("--complement-seed", type=int, default=42)
+    parser.add_argument(
+        "--output-path",
+        default=DEFAULT_GRAPH_RESULTS_PATH,
+        help="CSV path for IEEE-CIS graph-model results.",
+    )
     parser.add_argument("--seed", type=int, default=42)
     parser.add_argument(
         "--threshold-strategy",
@@ -212,9 +250,12 @@ if __name__ == "__main__":
         epochs=args.epochs,
         rebuild_graph=args.rebuild_graph,
         max_group_size=args.max_group_size,
+        graph_construction=args.graph_construction,
+        identifier_window_hours=args.identifier_window_hours,
         threshold_strategy=args.threshold_strategy,
         graph_variant=args.graph_variant,
         complement_average_degree=args.complement_average_degree,
         complement_seed=args.complement_seed,
+        output_path=args.output_path,
         seed=args.seed,
     )
