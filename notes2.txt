@@ -47,3 +47,68 @@ $env:PYTHONPATH="src"; python -m elliptic.train_gnn --model sage --graph-variant
 python src/run_ieee_all.py --seeds 42 43 44 45 46 47 48 49 50 51
 
 python src/run_elliptic_all.py --seeds 42 43 44 45 46 47 48 49 50 51
+
+-----------------------------------------------------------------------------------------------------------------------
+
+$env:PYTHONPATH="src"; python -m ieee_cis.build_graph --graph-construction card --rebuild-graph
+$env:PYTHONPATH="src"; python -m ieee_cis.build_graph --graph-construction address --rebuild-graph
+$env:PYTHONPATH="src"; python -m ieee_cis.build_graph --graph-construction email_domain --rebuild-graph
+$env:PYTHONPATH="src"; python -m ieee_cis.build_graph --graph-construction identifier_time_window --identifier-window-hours 24 --rebuild-graph
+
+$env:PYTHONPATH="src"; python -m ieee_cis.train_gnn --model gcn --graph-construction card --rebuild-graph
+$env:PYTHONPATH="src"; python -m ieee_cis.train_gnn --model gat --graph-construction card --rebuild-graph
+$env:PYTHONPATH="src"; python -m ieee_cis.train_gnn --model sage --graph-construction card --rebuild-graph
+
+$env:PYTHONPATH="src"; python -m ieee_cis.train_gnn --model gcn --graph-construction address --rebuild-graph
+$env:PYTHONPATH="src"; python -m ieee_cis.train_gnn --model gat --graph-construction address --rebuild-graph
+$env:PYTHONPATH="src"; python -m ieee_cis.train_gnn --model sage --graph-construction address --rebuild-graph
+
+
+$env:PYTHONPATH="src"; python -m ieee_cis.train_gnn --model gcn --graph-construction email_domain --rebuild-graph
+$env:PYTHONPATH="src"; python -m ieee_cis.train_gnn --model gat --graph-construction email_domain --rebuild-graph
+$env:PYTHONPATH="src"; python -m ieee_cis.train_gnn --model sage --graph-construction email_domain --rebuild-graph
+
+$env:PYTHONPATH="src"; python -m ieee_cis.train_gnn --model gcn --graph-construction identifier_time_window --identifier-window-hours 24 --rebuild-graph
+$env:PYTHONPATH="src"; python -m ieee_cis.train_gnn --model gat --graph-construction identifier_time_window --identifier-window-hours 24 --rebuild-graph
+$env:PYTHONPATH="src"; python -m ieee_cis.train_gnn --model sage --graph-construction identifier_time_window --identifier-window-hours 24 --rebuild-graph
+
+IEEE-CIS graph ready (card, original)
+Number of nodes: 590540
+Number of edges: 304889
+Average degree: 1.0326
+Connected components: 285651
+Graph density: 0.00000175
+Features: 358
+Saved graph construction: card
+
+IEEE-CIS graph ready (address, original)
+Number of nodes: 590540
+Number of edges: 7424
+Average degree: 0.0251
+Connected components: 583116
+Graph density: 0.00000004
+Features: 358
+Saved graph construction: address
+
+IEEE-CIS graph ready (email_domain, original)
+Number of nodes: 590540
+Number of edges: 16657
+Average degree: 0.0564
+Connected components: 574435
+Graph density: 0.00000010
+Features: 358
+Saved graph construction: email_domain
+
+IEEE-CIS graph ready (identifier_time_window, original)
+Number of nodes: 590540
+Number of edges: 345272
+Average degree: 1.1693
+Connected components: 553796
+Graph density: 0.00000198
+Features: 358
+Saved graph construction: identifier_time_window
+Identifier window hours: 24
+
+
+python src/run_ieee_graph_constructions.py --rebuild-graph
+python src/compare_ieee_graph_constructions.py
