@@ -1,0 +1,361 @@
+dataset,model_a,model_b,metric,paired_runs,mean_model_a,mean_model_b,mean_difference_a_minus_b,wilcoxon_statistic,p_value,significant_at_alpha,better_mean_model,note
+Elliptic,GAT,GAT-sampled_complement,pr_auc,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GAT,GAT-sampled_complement,f1_score,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GAT,GAT-sampled_complement,roc_auc,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GAT,GAT-sampled_complement,recall,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GAT,GAT-sampled_complement,precision,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GAT,GCN,pr_auc,10,0.3419523193315367,0.22325983839721739,0.1186924809343193,0.0,0.001953125,True,GAT,
+Elliptic,GAT,GCN,f1_score,10,0.3702870717075176,0.24720911338191245,0.12307795832560522,0.0,0.001953125,True,GAT,
+Elliptic,GAT,GCN,roc_auc,10,0.8185329634047381,0.7793063780712096,0.03922658533352863,2.0,0.005859375,True,GAT,
+Elliptic,GAT,GCN,recall,10,0.38676470588235295,0.4625,-0.07573529411764705,3.0,0.009765625,True,GCN,
+Elliptic,GAT,GCN,precision,10,0.3693436876794136,0.17460524803601196,0.19473843964340168,0.0,0.001953125,True,GAT,
+Elliptic,GAT,GCN-sampled_complement,pr_auc,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GAT,GCN-sampled_complement,f1_score,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GAT,GCN-sampled_complement,roc_auc,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GAT,GCN-sampled_complement,recall,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GAT,GCN-sampled_complement,precision,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GAT,GraphSAGE,pr_auc,10,0.3419523193315367,0.4089003282055696,-0.06694800887403295,2.0,0.005859375,True,GraphSAGE,
+Elliptic,GAT,GraphSAGE,f1_score,10,0.3702870717075176,0.41159560655215516,-0.04130853484463754,5.0,0.01953125,True,GraphSAGE,
+Elliptic,GAT,GraphSAGE,roc_auc,10,0.8185329634047381,0.7964745758376872,0.02205838756705103,3.0,0.009765625,True,GAT,
+Elliptic,GAT,GraphSAGE,recall,10,0.38676470588235295,0.4183823529411764,-0.03161764705882353,10.0,0.083984375,False,GraphSAGE,
+Elliptic,GAT,GraphSAGE,precision,10,0.3693436876794136,0.41128289635794124,-0.041939208678527594,18.0,0.375,False,GraphSAGE,
+Elliptic,GAT,GraphSAGE-sampled_complement,pr_auc,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GAT,GraphSAGE-sampled_complement,f1_score,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GAT,GraphSAGE-sampled_complement,roc_auc,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GAT,GraphSAGE-sampled_complement,recall,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GAT,GraphSAGE-sampled_complement,precision,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GAT,LSTM,pr_auc,10,0.3419523193315367,0.4749410274557544,-0.13298870812421773,0.0,0.001953125,True,LSTM,
+Elliptic,GAT,LSTM,f1_score,10,0.3702870717075176,0.4990475105464167,-0.12876043883889904,0.0,0.001953125,True,LSTM,
+Elliptic,GAT,LSTM,roc_auc,10,0.8185329634047381,0.8442192620756754,-0.02568629867093729,0.0,0.001953125,True,LSTM,
+Elliptic,GAT,LSTM,recall,10,0.38676470588235295,0.4056372549019608,-0.01887254901960783,15.0,0.232421875,False,LSTM,
+Elliptic,GAT,LSTM,precision,10,0.3693436876794136,0.6503488343829236,-0.28100514670351,0.0,0.001953125,True,LSTM,
+Elliptic,GAT,MLP,pr_auc,10,0.3419523193315367,0.39005764485510597,-0.0481053255235693,10.0,0.083984375,False,MLP,
+Elliptic,GAT,MLP,f1_score,10,0.3702870717075176,0.3826994131247142,-0.012412341417196576,23.0,0.6953125,False,MLP,
+Elliptic,GAT,MLP,roc_auc,10,0.8185329634047381,0.7783213647133229,0.04021159869141537,0.0,0.001953125,True,GAT,
+Elliptic,GAT,MLP,recall,10,0.38676470588235295,0.4556372549019607,-0.06887254901960785,0.0,0.001953125,True,MLP,
+Elliptic,GAT,MLP,precision,10,0.3693436876794136,0.3430102621970709,0.026333425482342725,23.0,0.6953125,False,GAT,
+Elliptic,GAT,Transformer,pr_auc,10,0.3419523193315367,0.5234779017361456,-0.18152558240460892,0.0,0.001953125,True,Transformer,
+Elliptic,GAT,Transformer,f1_score,10,0.3702870717075176,0.5662377472015596,-0.19595067549404205,0.0,0.001953125,True,Transformer,
+Elliptic,GAT,Transformer,roc_auc,10,0.8185329634047381,0.8065494478893172,0.011983515515421006,27.0,1.0,False,GAT,
+Elliptic,GAT,Transformer,recall,10,0.38676470588235295,0.4352941176470589,-0.04852941176470588,0.0,0.00390625,True,Transformer,
+Elliptic,GAT,Transformer,precision,10,0.3693436876794136,0.8129419778615175,-0.44359829018210395,0.0,0.001953125,True,Transformer,
+Elliptic,GAT-sampled_complement,GCN,pr_auc,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GAT-sampled_complement,GCN,f1_score,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GAT-sampled_complement,GCN,roc_auc,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GAT-sampled_complement,GCN,recall,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GAT-sampled_complement,GCN,precision,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GAT-sampled_complement,GCN-sampled_complement,pr_auc,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GAT-sampled_complement,GCN-sampled_complement,f1_score,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GAT-sampled_complement,GCN-sampled_complement,roc_auc,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GAT-sampled_complement,GCN-sampled_complement,recall,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GAT-sampled_complement,GCN-sampled_complement,precision,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GAT-sampled_complement,GraphSAGE,pr_auc,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GAT-sampled_complement,GraphSAGE,f1_score,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GAT-sampled_complement,GraphSAGE,roc_auc,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GAT-sampled_complement,GraphSAGE,recall,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GAT-sampled_complement,GraphSAGE,precision,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GAT-sampled_complement,GraphSAGE-sampled_complement,pr_auc,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GAT-sampled_complement,GraphSAGE-sampled_complement,f1_score,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GAT-sampled_complement,GraphSAGE-sampled_complement,roc_auc,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GAT-sampled_complement,GraphSAGE-sampled_complement,recall,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GAT-sampled_complement,GraphSAGE-sampled_complement,precision,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GAT-sampled_complement,LSTM,pr_auc,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GAT-sampled_complement,LSTM,f1_score,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GAT-sampled_complement,LSTM,roc_auc,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GAT-sampled_complement,LSTM,recall,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GAT-sampled_complement,LSTM,precision,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GAT-sampled_complement,MLP,pr_auc,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GAT-sampled_complement,MLP,f1_score,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GAT-sampled_complement,MLP,roc_auc,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GAT-sampled_complement,MLP,recall,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GAT-sampled_complement,MLP,precision,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GAT-sampled_complement,Transformer,pr_auc,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GAT-sampled_complement,Transformer,f1_score,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GAT-sampled_complement,Transformer,roc_auc,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GAT-sampled_complement,Transformer,recall,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GAT-sampled_complement,Transformer,precision,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GCN,GCN-sampled_complement,pr_auc,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GCN,GCN-sampled_complement,f1_score,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GCN,GCN-sampled_complement,roc_auc,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GCN,GCN-sampled_complement,recall,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GCN,GCN-sampled_complement,precision,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GCN,GraphSAGE,pr_auc,10,0.22325983839721739,0.4089003282055696,-0.18564048980835224,0.0,0.001953125,True,GraphSAGE,
+Elliptic,GCN,GraphSAGE,f1_score,10,0.24720911338191245,0.41159560655215516,-0.16438649317024276,0.0,0.001953125,True,GraphSAGE,
+Elliptic,GCN,GraphSAGE,roc_auc,10,0.7793063780712096,0.7964745758376872,-0.0171681977664776,9.0,0.064453125,False,GraphSAGE,
+Elliptic,GCN,GraphSAGE,recall,10,0.4625,0.4183823529411764,0.04411764705882353,17.0,0.322265625,False,GCN,
+Elliptic,GCN,GraphSAGE,precision,10,0.17460524803601196,0.41128289635794124,-0.23667764832192922,0.0,0.001953125,True,GraphSAGE,
+Elliptic,GCN,GraphSAGE-sampled_complement,pr_auc,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GCN,GraphSAGE-sampled_complement,f1_score,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GCN,GraphSAGE-sampled_complement,roc_auc,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GCN,GraphSAGE-sampled_complement,recall,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GCN,GraphSAGE-sampled_complement,precision,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GCN,LSTM,pr_auc,10,0.22325983839721739,0.4749410274557544,-0.25168118905853704,0.0,0.001953125,True,LSTM,
+Elliptic,GCN,LSTM,f1_score,10,0.24720911338191245,0.4990475105464167,-0.2518383971645043,0.0,0.001953125,True,LSTM,
+Elliptic,GCN,LSTM,roc_auc,10,0.7793063780712096,0.8442192620756754,-0.06491288400446592,0.0,0.001953125,True,LSTM,
+Elliptic,GCN,LSTM,recall,10,0.4625,0.4056372549019608,0.056862745098039236,4.0,0.02734375,True,GCN,
+Elliptic,GCN,LSTM,precision,10,0.17460524803601196,0.6503488343829236,-0.47574358634691166,0.0,0.001953125,True,LSTM,
+Elliptic,GCN,MLP,pr_auc,10,0.22325983839721739,0.39005764485510597,-0.1667978064578886,0.0,0.001953125,True,MLP,
+Elliptic,GCN,MLP,f1_score,10,0.24720911338191245,0.3826994131247142,-0.13549029974280177,0.0,0.001953125,True,MLP,
+Elliptic,GCN,MLP,roc_auc,10,0.7793063780712096,0.7783213647133229,0.0009850133578867438,23.0,0.6953125,False,GCN,
+Elliptic,GCN,MLP,recall,10,0.4625,0.4556372549019607,0.006862745098039219,25.0,0.82421875,False,GCN,
+Elliptic,GCN,MLP,precision,10,0.17460524803601196,0.3430102621970709,-0.16840501416105894,0.0,0.001953125,True,MLP,
+Elliptic,GCN,Transformer,pr_auc,10,0.22325983839721739,0.5234779017361456,-0.3002180633389282,0.0,0.001953125,True,Transformer,
+Elliptic,GCN,Transformer,f1_score,10,0.24720911338191245,0.5662377472015596,-0.31902863381964724,0.0,0.001953125,True,Transformer,
+Elliptic,GCN,Transformer,roc_auc,10,0.7793063780712096,0.8065494478893172,-0.027243069818107625,20.0,0.4921875,False,Transformer,
+Elliptic,GCN,Transformer,recall,10,0.4625,0.4352941176470589,0.02720588235294118,21.0,0.556640625,False,GCN,
+Elliptic,GCN,Transformer,precision,10,0.17460524803601196,0.8129419778615175,-0.6383367298255056,0.0,0.001953125,True,Transformer,
+Elliptic,GCN-sampled_complement,GraphSAGE,pr_auc,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GCN-sampled_complement,GraphSAGE,f1_score,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GCN-sampled_complement,GraphSAGE,roc_auc,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GCN-sampled_complement,GraphSAGE,recall,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GCN-sampled_complement,GraphSAGE,precision,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GCN-sampled_complement,GraphSAGE-sampled_complement,pr_auc,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GCN-sampled_complement,GraphSAGE-sampled_complement,f1_score,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GCN-sampled_complement,GraphSAGE-sampled_complement,roc_auc,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GCN-sampled_complement,GraphSAGE-sampled_complement,recall,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GCN-sampled_complement,GraphSAGE-sampled_complement,precision,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GCN-sampled_complement,LSTM,pr_auc,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GCN-sampled_complement,LSTM,f1_score,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GCN-sampled_complement,LSTM,roc_auc,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GCN-sampled_complement,LSTM,recall,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GCN-sampled_complement,LSTM,precision,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GCN-sampled_complement,MLP,pr_auc,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GCN-sampled_complement,MLP,f1_score,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GCN-sampled_complement,MLP,roc_auc,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GCN-sampled_complement,MLP,recall,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GCN-sampled_complement,MLP,precision,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GCN-sampled_complement,Transformer,pr_auc,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GCN-sampled_complement,Transformer,f1_score,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GCN-sampled_complement,Transformer,roc_auc,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GCN-sampled_complement,Transformer,recall,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GCN-sampled_complement,Transformer,precision,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GraphSAGE,GraphSAGE-sampled_complement,pr_auc,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GraphSAGE,GraphSAGE-sampled_complement,f1_score,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GraphSAGE,GraphSAGE-sampled_complement,roc_auc,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GraphSAGE,GraphSAGE-sampled_complement,recall,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GraphSAGE,GraphSAGE-sampled_complement,precision,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GraphSAGE,LSTM,pr_auc,10,0.4089003282055696,0.4749410274557544,-0.06604069925018478,0.0,0.001953125,True,LSTM,
+Elliptic,GraphSAGE,LSTM,f1_score,10,0.41159560655215516,0.4990475105464167,-0.08745190399426153,0.0,0.001953125,True,LSTM,
+Elliptic,GraphSAGE,LSTM,roc_auc,10,0.7964745758376872,0.8442192620756754,-0.04774468623798832,0.0,0.001953125,True,LSTM,
+Elliptic,GraphSAGE,LSTM,recall,10,0.4183823529411764,0.4056372549019608,0.012745098039215697,14.0,0.359375,False,GraphSAGE,
+Elliptic,GraphSAGE,LSTM,precision,10,0.41128289635794124,0.6503488343829236,-0.23906593802498238,0.0,0.001953125,True,LSTM,
+Elliptic,GraphSAGE,MLP,pr_auc,10,0.4089003282055696,0.39005764485510597,0.018842683350463647,18.0,0.375,False,GraphSAGE,
+Elliptic,GraphSAGE,MLP,f1_score,10,0.41159560655215516,0.3826994131247142,0.028896193427440965,14.0,0.193359375,False,GraphSAGE,
+Elliptic,GraphSAGE,MLP,roc_auc,10,0.7964745758376872,0.7783213647133229,0.018153211124364344,1.0,0.00390625,True,GraphSAGE,
+Elliptic,GraphSAGE,MLP,recall,10,0.4183823529411764,0.4556372549019607,-0.03725490196078431,6.0,0.02734375,True,MLP,
+Elliptic,GraphSAGE,MLP,precision,10,0.41128289635794124,0.3430102621970709,0.06827263416087033,10.0,0.083984375,False,GraphSAGE,
+Elliptic,GraphSAGE,Transformer,pr_auc,10,0.4089003282055696,0.5234779017361456,-0.11457757353057593,0.0,0.001953125,True,Transformer,
+Elliptic,GraphSAGE,Transformer,f1_score,10,0.41159560655215516,0.5662377472015596,-0.1546421406494045,0.0,0.001953125,True,Transformer,
+Elliptic,GraphSAGE,Transformer,roc_auc,10,0.7964745758376872,0.8065494478893172,-0.010074872051630024,20.0,0.4921875,False,Transformer,
+Elliptic,GraphSAGE,Transformer,recall,10,0.4183823529411764,0.4352941176470589,-0.016911764705882355,10.0,0.1640625,False,Transformer,
+Elliptic,GraphSAGE,Transformer,precision,10,0.41128289635794124,0.8129419778615175,-0.4016590815035763,0.0,0.001953125,True,Transformer,
+Elliptic,GraphSAGE-sampled_complement,LSTM,pr_auc,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GraphSAGE-sampled_complement,LSTM,f1_score,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GraphSAGE-sampled_complement,LSTM,roc_auc,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GraphSAGE-sampled_complement,LSTM,recall,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GraphSAGE-sampled_complement,LSTM,precision,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GraphSAGE-sampled_complement,MLP,pr_auc,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GraphSAGE-sampled_complement,MLP,f1_score,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GraphSAGE-sampled_complement,MLP,roc_auc,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GraphSAGE-sampled_complement,MLP,recall,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GraphSAGE-sampled_complement,MLP,precision,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GraphSAGE-sampled_complement,Transformer,pr_auc,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GraphSAGE-sampled_complement,Transformer,f1_score,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GraphSAGE-sampled_complement,Transformer,roc_auc,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GraphSAGE-sampled_complement,Transformer,recall,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,GraphSAGE-sampled_complement,Transformer,precision,1,,,,,,False,,Need at least 3 paired runs.
+Elliptic,LSTM,MLP,pr_auc,10,0.4749410274557544,0.39005764485510597,0.08488338260064845,0.0,0.001953125,True,LSTM,
+Elliptic,LSTM,MLP,f1_score,10,0.4990475105464167,0.3826994131247142,0.11634809742170246,0.0,0.001953125,True,LSTM,
+Elliptic,LSTM,MLP,roc_auc,10,0.8442192620756754,0.7783213647133229,0.06589789736235266,0.0,0.001953125,True,LSTM,
+Elliptic,LSTM,MLP,recall,10,0.4056372549019608,0.4556372549019607,-0.05000000000000001,0.0,0.001953125,True,MLP,
+Elliptic,LSTM,MLP,precision,10,0.6503488343829236,0.3430102621970709,0.3073385721858528,0.0,0.001953125,True,LSTM,
+Elliptic,LSTM,Transformer,pr_auc,10,0.4749410274557544,0.5234779017361456,-0.04853687428039116,0.0,0.001953125,True,Transformer,
+Elliptic,LSTM,Transformer,f1_score,10,0.4990475105464167,0.5662377472015596,-0.06719023665514298,0.0,0.001953125,True,Transformer,
+Elliptic,LSTM,Transformer,roc_auc,10,0.8442192620756754,0.8065494478893172,0.0376698141863583,8.0,0.048828125,True,LSTM,
+Elliptic,LSTM,Transformer,recall,10,0.4056372549019608,0.4352941176470589,-0.029656862745098052,1.0,0.00390625,True,Transformer,
+Elliptic,LSTM,Transformer,precision,10,0.6503488343829236,0.8129419778615175,-0.1625931434785939,0.0,0.001953125,True,Transformer,
+Elliptic,MLP,Transformer,pr_auc,10,0.39005764485510597,0.5234779017361456,-0.1334202568810396,0.0,0.001953125,True,Transformer,
+Elliptic,MLP,Transformer,f1_score,10,0.3826994131247142,0.5662377472015596,-0.18353833407684547,0.0,0.001953125,True,Transformer,
+Elliptic,MLP,Transformer,roc_auc,10,0.7783213647133229,0.8065494478893172,-0.028228083175994366,16.0,0.275390625,False,Transformer,
+Elliptic,MLP,Transformer,recall,10,0.4556372549019607,0.4352941176470589,0.02034313725490196,6.5,0.03125,True,MLP,
+Elliptic,MLP,Transformer,precision,10,0.3430102621970709,0.8129419778615175,-0.4699317156644466,0.0,0.001953125,True,Transformer,
+IEEE-CIS,GAT,GAT-sampled_complement,pr_auc,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GAT,GAT-sampled_complement,f1_score,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GAT,GAT-sampled_complement,roc_auc,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GAT,GAT-sampled_complement,recall,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GAT,GAT-sampled_complement,precision,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GAT,GCN,pr_auc,10,0.0931103712742302,0.1282894341267429,-0.035179062852512696,0.0,0.001953125,True,GCN,
+IEEE-CIS,GAT,GCN,f1_score,10,0.18572550914822564,0.2660210062642932,-0.08029549711606757,0.0,0.001953125,True,GCN,
+IEEE-CIS,GAT,GCN,roc_auc,10,0.7216619197144796,0.7860378555117318,-0.06437593579725207,0.0,0.001953125,True,GCN,
+IEEE-CIS,GAT,GCN,recall,10,0.27288748305467686,0.3488025305015816,-0.07591504744690468,4.0,0.013671875,True,GCN,
+IEEE-CIS,GAT,GCN,precision,10,0.1429141151727263,0.2154973325023702,-0.07258321732964389,0.0,0.001953125,True,GCN,
+IEEE-CIS,GAT,GCN-sampled_complement,pr_auc,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GAT,GCN-sampled_complement,f1_score,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GAT,GCN-sampled_complement,roc_auc,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GAT,GCN-sampled_complement,recall,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GAT,GCN-sampled_complement,precision,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GAT,GraphSAGE,pr_auc,10,0.0931103712742302,0.15356667132025484,-0.060456300046024605,0.0,0.001953125,True,GraphSAGE,
+IEEE-CIS,GAT,GraphSAGE,f1_score,10,0.18572550914822564,0.2708080603989634,-0.08508255125073777,0.0,0.001953125,True,GraphSAGE,
+IEEE-CIS,GAT,GraphSAGE,roc_auc,10,0.7216619197144796,0.7874565810068824,-0.06579466129240276,0.0,0.001953125,True,GraphSAGE,
+IEEE-CIS,GAT,GraphSAGE,recall,10,0.27288748305467686,0.3578400361500226,-0.08495255309534566,3.0,0.009765625,True,GraphSAGE,
+IEEE-CIS,GAT,GraphSAGE,precision,10,0.1429141151727263,0.21959730635238417,-0.07668319117965787,0.0,0.001953125,True,GraphSAGE,
+IEEE-CIS,GAT,GraphSAGE-sampled_complement,pr_auc,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GAT,GraphSAGE-sampled_complement,f1_score,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GAT,GraphSAGE-sampled_complement,roc_auc,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GAT,GraphSAGE-sampled_complement,recall,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GAT,GraphSAGE-sampled_complement,precision,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GAT,LSTM,pr_auc,10,0.0931103712742302,0.39726063872487083,-0.30415026745064067,0.0,0.001953125,True,LSTM,
+IEEE-CIS,GAT,LSTM,f1_score,10,0.18572550914822564,0.4106973012596925,-0.22497179211146695,0.0,0.001953125,True,LSTM,
+IEEE-CIS,GAT,LSTM,roc_auc,10,0.7216619197144796,0.844017007707196,-0.1223550879927164,0.0,0.001953125,True,LSTM,
+IEEE-CIS,GAT,LSTM,recall,10,0.27288748305467686,0.3685494803434252,-0.09566199728874832,1.0,0.00390625,True,LSTM,
+IEEE-CIS,GAT,LSTM,precision,10,0.1429141151727263,0.47395404281161124,-0.33103992763888485,0.0,0.001953125,True,LSTM,
+IEEE-CIS,GAT,MLP,pr_auc,10,0.0931103712742302,0.42845456701080487,-0.33534419573657465,0.0,0.001953125,True,MLP,
+IEEE-CIS,GAT,MLP,f1_score,10,0.18572550914822564,0.43661426735251546,-0.2508887582042899,0.0,0.001953125,True,MLP,
+IEEE-CIS,GAT,MLP,roc_auc,10,0.7216619197144796,0.8524258852312784,-0.13076396551679864,0.0,0.001953125,True,MLP,
+IEEE-CIS,GAT,MLP,recall,10,0.27288748305467686,0.3851784907365567,-0.1122910076818798,0.0,0.001953125,True,MLP,
+IEEE-CIS,GAT,MLP,precision,10,0.1429141151727263,0.5134632979859088,-0.37054918281318255,0.0,0.001953125,True,MLP,
+IEEE-CIS,GAT,Transformer,pr_auc,10,0.0931103712742302,0.23830891110936517,-0.14519853983513495,0.0,0.001953125,True,Transformer,
+IEEE-CIS,GAT,Transformer,f1_score,10,0.18572550914822564,0.18485060957319988,0.0008748995750257144,23.0,0.6953125,False,GAT,
+IEEE-CIS,GAT,Transformer,roc_auc,10,0.7216619197144796,0.7521179638266966,-0.030456044112217008,21.0,0.556640625,False,Transformer,
+IEEE-CIS,GAT,Transformer,recall,10,0.27288748305467686,0.7454134658834162,-0.47252598282873925,1.0,0.00390625,True,Transformer,
+IEEE-CIS,GAT,Transformer,precision,10,0.1429141151727263,0.163251806371255,-0.020337691198528678,21.0,0.556640625,False,Transformer,
+IEEE-CIS,GAT-sampled_complement,GCN,pr_auc,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GAT-sampled_complement,GCN,f1_score,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GAT-sampled_complement,GCN,roc_auc,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GAT-sampled_complement,GCN,recall,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GAT-sampled_complement,GCN,precision,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GAT-sampled_complement,GCN-sampled_complement,pr_auc,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GAT-sampled_complement,GCN-sampled_complement,f1_score,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GAT-sampled_complement,GCN-sampled_complement,roc_auc,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GAT-sampled_complement,GCN-sampled_complement,recall,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GAT-sampled_complement,GCN-sampled_complement,precision,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GAT-sampled_complement,GraphSAGE,pr_auc,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GAT-sampled_complement,GraphSAGE,f1_score,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GAT-sampled_complement,GraphSAGE,roc_auc,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GAT-sampled_complement,GraphSAGE,recall,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GAT-sampled_complement,GraphSAGE,precision,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GAT-sampled_complement,GraphSAGE-sampled_complement,pr_auc,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GAT-sampled_complement,GraphSAGE-sampled_complement,f1_score,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GAT-sampled_complement,GraphSAGE-sampled_complement,roc_auc,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GAT-sampled_complement,GraphSAGE-sampled_complement,recall,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GAT-sampled_complement,GraphSAGE-sampled_complement,precision,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GAT-sampled_complement,LSTM,pr_auc,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GAT-sampled_complement,LSTM,f1_score,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GAT-sampled_complement,LSTM,roc_auc,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GAT-sampled_complement,LSTM,recall,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GAT-sampled_complement,LSTM,precision,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GAT-sampled_complement,MLP,pr_auc,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GAT-sampled_complement,MLP,f1_score,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GAT-sampled_complement,MLP,roc_auc,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GAT-sampled_complement,MLP,recall,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GAT-sampled_complement,MLP,precision,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GAT-sampled_complement,Transformer,pr_auc,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GAT-sampled_complement,Transformer,f1_score,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GAT-sampled_complement,Transformer,roc_auc,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GAT-sampled_complement,Transformer,recall,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GAT-sampled_complement,Transformer,precision,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GCN,GCN-sampled_complement,pr_auc,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GCN,GCN-sampled_complement,f1_score,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GCN,GCN-sampled_complement,roc_auc,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GCN,GCN-sampled_complement,recall,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GCN,GCN-sampled_complement,precision,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GCN,GraphSAGE,pr_auc,10,0.1282894341267429,0.15356667132025484,-0.025277237193511916,18.0,0.375,False,GraphSAGE,
+IEEE-CIS,GCN,GraphSAGE,f1_score,10,0.2660210062642932,0.2708080603989634,-0.004787054134670202,26.0,0.921875,False,GraphSAGE,
+IEEE-CIS,GCN,GraphSAGE,roc_auc,10,0.7860378555117318,0.7874565810068824,-0.0014187254951506857,25.0,0.845703125,False,GraphSAGE,
+IEEE-CIS,GCN,GraphSAGE,recall,10,0.3488025305015816,0.3578400361500226,-0.009037505648440997,21.0,0.556640625,False,GraphSAGE,
+IEEE-CIS,GCN,GraphSAGE,precision,10,0.2154973325023702,0.21959730635238417,-0.0040999738500139635,26.0,0.921875,False,GraphSAGE,
+IEEE-CIS,GCN,GraphSAGE-sampled_complement,pr_auc,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GCN,GraphSAGE-sampled_complement,f1_score,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GCN,GraphSAGE-sampled_complement,roc_auc,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GCN,GraphSAGE-sampled_complement,recall,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GCN,GraphSAGE-sampled_complement,precision,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GCN,LSTM,pr_auc,10,0.1282894341267429,0.39726063872487083,-0.26897120459812796,0.0,0.001953125,True,LSTM,
+IEEE-CIS,GCN,LSTM,f1_score,10,0.2660210062642932,0.4106973012596925,-0.14467629499539938,0.0,0.001953125,True,LSTM,
+IEEE-CIS,GCN,LSTM,roc_auc,10,0.7860378555117318,0.844017007707196,-0.05797915219546433,0.0,0.001953125,True,LSTM,
+IEEE-CIS,GCN,LSTM,recall,10,0.3488025305015816,0.3685494803434252,-0.019746949841843643,12.0,0.130859375,False,LSTM,
+IEEE-CIS,GCN,LSTM,precision,10,0.2154973325023702,0.47395404281161124,-0.258456710309241,0.0,0.001953125,True,LSTM,
+IEEE-CIS,GCN,MLP,pr_auc,10,0.1282894341267429,0.42845456701080487,-0.30016513288406194,0.0,0.001953125,True,MLP,
+IEEE-CIS,GCN,MLP,f1_score,10,0.2660210062642932,0.43661426735251546,-0.17059326108822231,0.0,0.001953125,True,MLP,
+IEEE-CIS,GCN,MLP,roc_auc,10,0.7860378555117318,0.8524258852312784,-0.06638802971954658,0.0,0.001953125,True,MLP,
+IEEE-CIS,GCN,MLP,recall,10,0.3488025305015816,0.3851784907365567,-0.03637596023497512,9.0,0.064453125,False,MLP,
+IEEE-CIS,GCN,MLP,precision,10,0.2154973325023702,0.5134632979859088,-0.29796596548353865,0.0,0.001953125,True,MLP,
+IEEE-CIS,GCN,Transformer,pr_auc,10,0.1282894341267429,0.23830891110936517,-0.11001947698262224,3.0,0.009765625,True,Transformer,
+IEEE-CIS,GCN,Transformer,f1_score,10,0.2660210062642932,0.18485060957319988,0.08117039669109327,12.0,0.130859375,False,GCN,
+IEEE-CIS,GCN,Transformer,roc_auc,10,0.7860378555117318,0.7521179638266966,0.033919891685035064,10.0,0.083984375,False,GCN,
+IEEE-CIS,GCN,Transformer,recall,10,0.3488025305015816,0.7454134658834162,-0.3966109353818347,0.0,0.00390625,True,Transformer,
+IEEE-CIS,GCN,Transformer,precision,10,0.2154973325023702,0.163251806371255,0.05224552613111523,16.0,0.275390625,False,GCN,
+IEEE-CIS,GCN-sampled_complement,GraphSAGE,pr_auc,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GCN-sampled_complement,GraphSAGE,f1_score,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GCN-sampled_complement,GraphSAGE,roc_auc,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GCN-sampled_complement,GraphSAGE,recall,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GCN-sampled_complement,GraphSAGE,precision,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GCN-sampled_complement,GraphSAGE-sampled_complement,pr_auc,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GCN-sampled_complement,GraphSAGE-sampled_complement,f1_score,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GCN-sampled_complement,GraphSAGE-sampled_complement,roc_auc,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GCN-sampled_complement,GraphSAGE-sampled_complement,recall,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GCN-sampled_complement,GraphSAGE-sampled_complement,precision,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GCN-sampled_complement,LSTM,pr_auc,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GCN-sampled_complement,LSTM,f1_score,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GCN-sampled_complement,LSTM,roc_auc,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GCN-sampled_complement,LSTM,recall,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GCN-sampled_complement,LSTM,precision,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GCN-sampled_complement,MLP,pr_auc,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GCN-sampled_complement,MLP,f1_score,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GCN-sampled_complement,MLP,roc_auc,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GCN-sampled_complement,MLP,recall,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GCN-sampled_complement,MLP,precision,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GCN-sampled_complement,Transformer,pr_auc,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GCN-sampled_complement,Transformer,f1_score,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GCN-sampled_complement,Transformer,roc_auc,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GCN-sampled_complement,Transformer,recall,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GCN-sampled_complement,Transformer,precision,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GraphSAGE,GraphSAGE-sampled_complement,pr_auc,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GraphSAGE,GraphSAGE-sampled_complement,f1_score,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GraphSAGE,GraphSAGE-sampled_complement,roc_auc,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GraphSAGE,GraphSAGE-sampled_complement,recall,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GraphSAGE,GraphSAGE-sampled_complement,precision,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GraphSAGE,LSTM,pr_auc,10,0.15356667132025484,0.39726063872487083,-0.24369396740461605,0.0,0.001953125,True,LSTM,
+IEEE-CIS,GraphSAGE,LSTM,f1_score,10,0.2708080603989634,0.4106973012596925,-0.13988924086072918,0.0,0.001953125,True,LSTM,
+IEEE-CIS,GraphSAGE,LSTM,roc_auc,10,0.7874565810068824,0.844017007707196,-0.05656042670031365,0.0,0.001953125,True,LSTM,
+IEEE-CIS,GraphSAGE,LSTM,recall,10,0.3578400361500226,0.3685494803434252,-0.010709444193402645,15.0,0.232421875,False,LSTM,
+IEEE-CIS,GraphSAGE,LSTM,precision,10,0.21959730635238417,0.47395404281161124,-0.25435673645922696,0.0,0.001953125,True,LSTM,
+IEEE-CIS,GraphSAGE,MLP,pr_auc,10,0.15356667132025484,0.42845456701080487,-0.27488789569055005,0.0,0.001953125,True,MLP,
+IEEE-CIS,GraphSAGE,MLP,f1_score,10,0.2708080603989634,0.43661426735251546,-0.16580620695355214,0.0,0.001953125,True,MLP,
+IEEE-CIS,GraphSAGE,MLP,roc_auc,10,0.7874565810068824,0.8524258852312784,-0.06496930422439588,0.0,0.001953125,True,MLP,
+IEEE-CIS,GraphSAGE,MLP,recall,10,0.3578400361500226,0.3851784907365567,-0.02733845458653413,9.0,0.064453125,False,MLP,
+IEEE-CIS,GraphSAGE,MLP,precision,10,0.21959730635238417,0.5134632979859088,-0.2938659916335247,0.0,0.001953125,True,MLP,
+IEEE-CIS,GraphSAGE,Transformer,pr_auc,10,0.15356667132025484,0.23830891110936517,-0.08474223978911033,13.0,0.16015625,False,Transformer,
+IEEE-CIS,GraphSAGE,Transformer,f1_score,10,0.2708080603989634,0.18485060957319988,0.08595745082576348,10.0,0.083984375,False,GraphSAGE,
+IEEE-CIS,GraphSAGE,Transformer,roc_auc,10,0.7874565810068824,0.7521179638266966,0.03533861718018575,12.0,0.130859375,False,GraphSAGE,
+IEEE-CIS,GraphSAGE,Transformer,recall,10,0.3578400361500226,0.7454134658834162,-0.3875734297333936,3.0,0.009765625,True,Transformer,
+IEEE-CIS,GraphSAGE,Transformer,precision,10,0.21959730635238417,0.163251806371255,0.056345499981129185,15.0,0.232421875,False,GraphSAGE,
+IEEE-CIS,GraphSAGE-sampled_complement,LSTM,pr_auc,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GraphSAGE-sampled_complement,LSTM,f1_score,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GraphSAGE-sampled_complement,LSTM,roc_auc,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GraphSAGE-sampled_complement,LSTM,recall,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GraphSAGE-sampled_complement,LSTM,precision,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GraphSAGE-sampled_complement,MLP,pr_auc,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GraphSAGE-sampled_complement,MLP,f1_score,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GraphSAGE-sampled_complement,MLP,roc_auc,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GraphSAGE-sampled_complement,MLP,recall,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GraphSAGE-sampled_complement,MLP,precision,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GraphSAGE-sampled_complement,Transformer,pr_auc,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GraphSAGE-sampled_complement,Transformer,f1_score,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GraphSAGE-sampled_complement,Transformer,roc_auc,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GraphSAGE-sampled_complement,Transformer,recall,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,GraphSAGE-sampled_complement,Transformer,precision,1,,,,,,False,,Need at least 3 paired runs.
+IEEE-CIS,LSTM,MLP,pr_auc,10,0.39726063872487083,0.42845456701080487,-0.031193928285934015,0.0,0.001953125,True,MLP,
+IEEE-CIS,LSTM,MLP,f1_score,10,0.4106973012596925,0.43661426735251546,-0.025916966092822947,4.0,0.013671875,True,MLP,
+IEEE-CIS,LSTM,MLP,roc_auc,10,0.844017007707196,0.8524258852312784,-0.008408877524082236,1.0,0.00390625,True,MLP,
+IEEE-CIS,LSTM,MLP,recall,10,0.3685494803434252,0.3851784907365567,-0.016629010393131482,14.0,0.193359375,False,MLP,
+IEEE-CIS,LSTM,MLP,precision,10,0.47395404281161124,0.5134632979859088,-0.03950925517429771,17.0,0.322265625,False,MLP,
+IEEE-CIS,LSTM,Transformer,pr_auc,10,0.39726063872487083,0.23830891110936517,0.1589517276155057,1.0,0.00390625,True,LSTM,
+IEEE-CIS,LSTM,Transformer,f1_score,10,0.4106973012596925,0.18485060957319988,0.22584669168649266,3.0,0.009765625,True,LSTM,
+IEEE-CIS,LSTM,Transformer,roc_auc,10,0.844017007707196,0.7521179638266966,0.0918990438804994,1.0,0.00390625,True,LSTM,
+IEEE-CIS,LSTM,Transformer,recall,10,0.3685494803434252,0.7454134658834162,-0.37686398553999095,6.0,0.025390625,True,Transformer,
+IEEE-CIS,LSTM,Transformer,precision,10,0.47395404281161124,0.163251806371255,0.31070223644035616,3.0,0.009765625,True,LSTM,
+IEEE-CIS,MLP,Transformer,pr_auc,10,0.42845456701080487,0.23830891110936517,0.19014565590143973,0.0,0.001953125,True,MLP,
+IEEE-CIS,MLP,Transformer,f1_score,10,0.43661426735251546,0.18485060957319988,0.2517636577793156,0.0,0.001953125,True,MLP,
+IEEE-CIS,MLP,Transformer,roc_auc,10,0.8524258852312784,0.7521179638266966,0.10030792140458163,0.0,0.001953125,True,MLP,
+IEEE-CIS,MLP,Transformer,recall,10,0.3851784907365567,0.7454134658834162,-0.3602349751468595,10.0,0.083984375,False,Transformer,
+IEEE-CIS,MLP,Transformer,precision,10,0.5134632979859088,0.163251806371255,0.3502114916146539,0.0,0.001953125,True,MLP,
