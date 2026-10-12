@@ -1,6 +1,6 @@
 IEEE-CIS graph ready (original)
 Number of nodes: 590540
-Number of edges: 406769
+Number of edges: 406767
 Average degree: 1.3776
 Connected components: 255381
 Graph density: 0.00000233

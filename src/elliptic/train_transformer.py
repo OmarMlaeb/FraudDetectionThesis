@@ -49,6 +49,14 @@ def train(seed=42):
     val_dataset = EllipticSequenceDataset(X, y, data["val_mask"], SEQUENCE_LENGTH)
     test_dataset = EllipticSequenceDataset(X, y, data["test_mask"], SEQUENCE_LENGTH)
 
+    expected_test_examples = int(np.asarray(data["test_mask"], dtype=bool).sum())
+    if len(test_dataset) != expected_test_examples:
+        raise RuntimeError(
+            "Sequence preparation changed the test population: "
+            f"expected {expected_test_examples}, got {len(test_dataset)}."
+        )
+    print(f"Test observations: {len(test_dataset)} (no sequence warm-up exclusions)")
+
     train_loader = DataLoader(train_dataset, batch_size=BATCH_SIZE, shuffle=False)
     val_loader = DataLoader(val_dataset, batch_size=BATCH_SIZE, shuffle=False)
     test_loader = DataLoader(test_dataset, batch_size=BATCH_SIZE, shuffle=False)

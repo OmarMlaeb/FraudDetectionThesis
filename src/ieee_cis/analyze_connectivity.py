@@ -31,7 +31,10 @@ GRAPH_EDGE_COLUMNS = [
 
 
 EXPECTED_EDGE_COUNTS = {
-    "Main": 406_769,
+    # Recomputed from the same de-duplicated undirected edge definition used
+    # below.  The previously reported 406,769 was a stale graph-statistics
+    # value; the three label classes partition all 406,767 current edges.
+    "Main": 406_767,
     "Card": 304_889,
     "Address": 7_424,
     "Email domain": 16_657,
