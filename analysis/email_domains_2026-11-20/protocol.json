@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-20",
+  "training_min_transactions": 100,
+  "training_min_fraud_rate_ratio": 2.0,
+  "training_wilson_95_lower_must_exceed_overall_training_rate": true,
+  "screening_rule_fixed_before_validation_test_rates_or_model_subgroups": true,
+  "screening_is_exploratory_not_a_multiple_testing_corrected_discovery_test": true,
+  "graph_max_group_size": 1000,
+  "graph_group_size_scope": "All 590540 nodes, separately per raw email field, as in saved graph.",
+  "splits": "Audited temporal masks, sorted by TransactionDT then TransactionID; 80/10/10.",
+  "outside_definition": "Every split transaction not in the selected domain/domain set, including missing values.",
+  "model_selection": "Accepted historical runs, seeds 42-51, saved validation thresholds, verified prediction hashes.",
+  "metrics": "Average precision (PR-AUC), F1, recall, precision, confusion counts; sample SD ddof=1.",
+  "uncertainty": "Seed SD describes training variation on fixed IDs; Wilson bounds are marginal binomial descriptive bounds.",
+  "tests": "No new significance tests. Paired model differences are descriptive. Existing Holm families unchanged."
+}

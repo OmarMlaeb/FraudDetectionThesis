@@ -1,0 +1,36 @@
+{
+  "raw_nodes": 590540,
+  "raw_frauds": 20663,
+  "raw_hash_matches_prior_audit": true,
+  "node_ids_and_labels_match_audit": true,
+  "split_sizes_match_audit": true,
+  "reconstructed_email_edges_match_saved_csv": true,
+  "directed_edges": 33314,
+  "undirected_edges": 16657,
+  "connected_nodes": 16128,
+  "isolated_nodes": 574412,
+  "test_connected_ids_match_prior_audit": true,
+  "verified_prediction_files": 30,
+  "identical_model_ids_and_labels": true,
+  "all_domain_counts_reconcile": true,
+  "all_inside_outside_confusion_counts_reconcile": true,
+  "per_seed_metric_rows": 2220,
+  "group_definitions": 74,
+  "domain_summary_rows": 484,
+  "selected_domains": {
+    "P_emaildomain": [
+      "aim.com",
+      "mail.com",
+      "outlook.com",
+      "outlook.es"
+    ],
+    "R_emaildomain": [
+      "gmail.com",
+      "hotmail.com",
+      "icloud.com",
+      "mail.com",
+      "outlook.com",
+      "outlook.es"
+    ]
+  }
+}
