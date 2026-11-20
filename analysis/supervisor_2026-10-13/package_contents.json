@@ -1,0 +1,3562 @@
+[
+  {
+    "archive_path": "README.md",
+    "bytes": 7661,
+    "sha256": "327d51aaebc4c0e72b9ae51c66854297f89de097ad4aad65a9f6baab7918b85b"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/GRAPH_PROVENANCE.md",
+    "bytes": 3977,
+    "sha256": "5d28fe00760bceecd61ce42784c4fdaeb3ba0f3a57d91580f9bd585c2a46e417"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/METHODS.md",
+    "bytes": 6522,
+    "sha256": "407a837c5d4fb9f98d22f3629f2916711b315cf6d94b605d139dc7b8ba46da71"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/README.md",
+    "bytes": 8121,
+    "sha256": "8f195cd9e67a1306e05fc46801b3e1ef0a8dc5f9e0beb15f504f361de9edbea0"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/REPRESENTATIVE_TABLES.md",
+    "bytes": 2193,
+    "sha256": "be0e7035fc7df477db4d3fd9d0b893d30da09adc54d2223eea6fd096cf12d426"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/SEQUENCE_INPUTS.md",
+    "bytes": 4545,
+    "sha256": "1d46c58ac067465a38d2052e8354259f7fbf5a6c4e4b7d70d94b609a8ca329f2"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/SUBGROUP_ANALYSIS.md",
+    "bytes": 8400,
+    "sha256": "37548c74a7f326054584d792451befe42288f9bd547906562dba452c1d7d47f7"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/WILCOXON_HOLM.md",
+    "bytes": 3015,
+    "sha256": "76f6e1ba23f094bb9e5beffd256302805922eb3fb58d74876c3bbeaa877d2c92"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/additional_referenced_artifact_hashes.json",
+    "bytes": 17550,
+    "sha256": "c3feb9da4d1637515ddbbc2677c2317d835a97f4a46fbbe3d6f26dff1d3ef0f0"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/analysis_common.py",
+    "bytes": 1717,
+    "sha256": "b75f5fd7076b15bcd4d92a15a1c328bfbccb6edeb3fbd732e6f18e100014d0b9"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/artifact_hashes_before.json",
+    "bytes": 93791,
+    "sha256": "fa0d32ff616862d34906aa21b9aa297ba693dceeebb1beabad7b064db25d4b66"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/blockers_and_limitations.json",
+    "bytes": 1056,
+    "sha256": "5082fd011f75574f5ffc95dea48e2fbdc806a0591ce9db4aa3ba813c1795776c"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checkpoint_reproduction_checks.csv",
+    "bytes": 66996,
+    "sha256": "777fc06c78078e0c2eca637c76be0c0a19677d01ceb194c7d70d7fe078434478"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checkpoint_reproduction_summary.json",
+    "bytes": 291,
+    "sha256": "24828523519930d07a7356705d746a7d72373acc24e7286249ffed859b81355f"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/Elliptic__GAT__seed42.json",
+    "bytes": 1595,
+    "sha256": "77e48e5d28bd8f29982e83ec7fea2d6e56d64c1d271cff3579a62ad2b9635a12"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/Elliptic__GAT__seed43.json",
+    "bytes": 1593,
+    "sha256": "a033b865fe0aea7d6980ba8e375caebaa8610eb6bd77da573d4ac769d1165d04"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/Elliptic__GAT__seed44.json",
+    "bytes": 1576,
+    "sha256": "7a5817078a324dd52aa1df127c1c9f84b575ff34300e7a4cfba22649d2d4daee"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/Elliptic__GAT__seed45.json",
+    "bytes": 1592,
+    "sha256": "9a86dbecab308404ae780afc3b69cac9eb2e6f1c0507c7aff2f4c27ef924e13f"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/Elliptic__GAT__seed46.json",
+    "bytes": 1572,
+    "sha256": "ca097b821cc004254d501f58f9bc0723520da4daabc5162c7dee1de0a31a8536"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/Elliptic__GAT__seed47.json",
+    "bytes": 1594,
+    "sha256": "c6372fc94876eeb481526a167032af7d39e17f9e2c422a05f94731dc94dc9f77"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/Elliptic__GAT__seed48.json",
+    "bytes": 1576,
+    "sha256": "df315f3582f0c5ef52516df16b2a452613242c6644322ac89fbc865852d2d2d5"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/Elliptic__GAT__seed49.json",
+    "bytes": 1575,
+    "sha256": "8c8166ec38d1133d65b370c8e08dad25b016dcc874051152badc4b57335183e5"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/Elliptic__GAT__seed50.json",
+    "bytes": 1612,
+    "sha256": "1c559adae5089a80b2bd3584bde34633318a81fc79522bcdc7d72d6ac2fdbdd4"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/Elliptic__GAT__seed51.json",
+    "bytes": 1588,
+    "sha256": "5dba0d96de155bfb37f589757e81c49067c272b35d55c37d1ca9e08b4f1374e9"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/Elliptic__GCN__seed42.json",
+    "bytes": 1594,
+    "sha256": "e317a9dd6e617f90c43e9058f4657cb4c38b678ba64cfda0b220693fe7d7e4fd"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/Elliptic__GCN__seed43.json",
+    "bytes": 1577,
+    "sha256": "bea5dfeef68c157d0bc60842aeb23adb884902897c8f30ec6f427ff00d96d022"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/Elliptic__GCN__seed44.json",
+    "bytes": 1561,
+    "sha256": "4d85a9bd93b7942d415a3cc721f7480e11befe6fae0bb458b9d1051a303c7b17"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/Elliptic__GCN__seed45.json",
+    "bytes": 1578,
+    "sha256": "f36598cdcbeb5ebd7a41d7aeb1eafce0d0b7dacb8d3a851a0e69676e518737f9"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/Elliptic__GCN__seed46.json",
+    "bytes": 1572,
+    "sha256": "a2bb8206e0c96a6f44cbefebdd09b00192b9fe008a9b0f6f0a7819f8700a8439"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/Elliptic__GCN__seed47.json",
+    "bytes": 1595,
+    "sha256": "a732f2b26f79144f0231250bbd3962f4e6f9f264e4ef1bc5df4f942294ab6b9c"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/Elliptic__GCN__seed48.json",
+    "bytes": 1575,
+    "sha256": "8ecfadf08c363f54d23ebc4bc53669c97b602255fab621bdb6bbf40f857d6105"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/Elliptic__GCN__seed49.json",
+    "bytes": 1576,
+    "sha256": "d6a63bee79dbc8f7ab75053be27afaa17c3649a5d886f4870f6fc831dae2a9e2"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/Elliptic__GCN__seed50.json",
+    "bytes": 1595,
+    "sha256": "0cfaecb49109eadcd9b0f10f56e570333ddb505b2cb9a129886d5cf4c188c958"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/Elliptic__GCN__seed51.json",
+    "bytes": 1577,
+    "sha256": "88df3eec761574ed43ab83d21a394624b45434bd1ea8697116c11241923a2966"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/Elliptic__GraphSAGE__seed42.json",
+    "bytes": 1607,
+    "sha256": "8bc55377f9b9bd893a4a14ed5f6fa16c62906ac8468509f2619b6095b4237efc"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/Elliptic__GraphSAGE__seed43.json",
+    "bytes": 1615,
+    "sha256": "1ad410e2da995c6a8ad21359f23b6c581d8a3fb96bd29dc50e9c33ae9b6b8177"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/Elliptic__GraphSAGE__seed44.json",
+    "bytes": 1589,
+    "sha256": "19d89476722e5c8d1f499e587c118d27aac04698d4fdce456ecdb958d9026ba0"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/Elliptic__GraphSAGE__seed45.json",
+    "bytes": 1617,
+    "sha256": "000831fc90df7024ef8ba9c66d06f59ed3c0b8531199fa0e8a3dde1c25da6376"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/Elliptic__GraphSAGE__seed46.json",
+    "bytes": 1586,
+    "sha256": "f1ebaffe4097751337f3a4674f83022e2bf54be5815aecfdfe00c20d272b454b"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/Elliptic__GraphSAGE__seed47.json",
+    "bytes": 1617,
+    "sha256": "ead17b25e9604301c10c17da3b28e85af94167a61616044d238d4baea256371b"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/Elliptic__GraphSAGE__seed48.json",
+    "bytes": 1618,
+    "sha256": "6fd46a572709ff0b100be78552fdbfe09a22a3bd359c2a5db475395fabc8594b"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/Elliptic__GraphSAGE__seed49.json",
+    "bytes": 1588,
+    "sha256": "0821928905906564f7b13e5f5bf12f06762e7c5968099017c9384f337d9922b0"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/Elliptic__GraphSAGE__seed50.json",
+    "bytes": 1590,
+    "sha256": "268742933aed76727708f9b77154efacafa9d279457e5af94323996859f1d725"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/Elliptic__GraphSAGE__seed51.json",
+    "bytes": 1605,
+    "sha256": "98f189b41f2d7a20fea47a4a5c2d42ed4d9fafb65f66071b2bac48e92fa177ec"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/Elliptic__LSTM__seed42.json",
+    "bytes": 1604,
+    "sha256": "589a4010c63c5d8aa7fa3aa7230c13e5513b97e30536b12f25ec226ee9dc7d88"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/Elliptic__LSTM__seed43.json",
+    "bytes": 1604,
+    "sha256": "b36bcb60e9c7d8198484c3a9d782db8ba9f039ceb975bda14552e7e3825577f1"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/Elliptic__LSTM__seed44.json",
+    "bytes": 1580,
+    "sha256": "d55ebde658b344dfc644e420b00578aca3c04ca4f1ee1e3d59b482b1b36d8a07"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/Elliptic__LSTM__seed45.json",
+    "bytes": 1577,
+    "sha256": "ebc08bc42e9284556f1d9f0ef834f9137607621c4c33e2448dfaa54b3e3a3107"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/Elliptic__LSTM__seed46.json",
+    "bytes": 1577,
+    "sha256": "ee50bb06c8a1b45f6ebd05d34975fe9d17ff9b029d810a65cbddbc4803432e49"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/Elliptic__LSTM__seed47.json",
+    "bytes": 1575,
+    "sha256": "e97da5700609582fbf136f4e50eef0b99732596d2081f4aff6978ac0a906e967"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/Elliptic__LSTM__seed48.json",
+    "bytes": 1576,
+    "sha256": "96acbb117ec5f747a9cd97b1125537c262f952d8ef819df316ed3c288bc7bfd3"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/Elliptic__LSTM__seed49.json",
+    "bytes": 1605,
+    "sha256": "5653770722bb6e36a42e6c765c52cbd805927b3e92ced96c709fe40ff0c096cc"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/Elliptic__LSTM__seed50.json",
+    "bytes": 1605,
+    "sha256": "38a8ae960fb2fa7d88e7fd7b372fa741f05e73d13cbe499304ade954e756dc21"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/Elliptic__LSTM__seed51.json",
+    "bytes": 1577,
+    "sha256": "ecf77576d43a8430fac6f69ea19dc217081bce516a7a990a02e51dcd5203f007"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/Elliptic__MLP__seed42.json",
+    "bytes": 1607,
+    "sha256": "d941971a6a5e6969e0b5f71b5126b58d2da4493c32c8975448786bc424b40491"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/Elliptic__MLP__seed43.json",
+    "bytes": 1564,
+    "sha256": "b77ad7d42158006c59b5abeeb560fe47111cbf490bbaad25efb2ad58412fd84a"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/Elliptic__MLP__seed44.json",
+    "bytes": 1574,
+    "sha256": "f3521c961290bb6d97a055cc94deb4f493adb10d1ef61aa3209f010f62aa6847"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/Elliptic__MLP__seed45.json",
+    "bytes": 1575,
+    "sha256": "f92c2a21f162a541c0fd282f3f26caef7d25ea2adbd1f4816474168bbcb8f300"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/Elliptic__MLP__seed46.json",
+    "bytes": 1606,
+    "sha256": "a84aa5dab80431990beb76db7dc7f936a6f1f9216dac7947898f33683b334557"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/Elliptic__MLP__seed47.json",
+    "bytes": 1576,
+    "sha256": "dfb6fa8c5fc0475c26280e8ea9b9f404767e9aa6cbd6a718c9405a0f69be15fb"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/Elliptic__MLP__seed48.json",
+    "bytes": 1576,
+    "sha256": "29eee379d707097181f328497938cef5047bb1573b72fd50caf2ac074d1f8f74"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/Elliptic__MLP__seed49.json",
+    "bytes": 1576,
+    "sha256": "5c565f26fcfe70cf07d553de32bb82865b3e347943b319832238f0393c33b89e"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/Elliptic__MLP__seed50.json",
+    "bytes": 1576,
+    "sha256": "aba77c57db70dae895144fb794070ffbb6f25d8c1e300a6196ec4e941c617b91"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/Elliptic__MLP__seed51.json",
+    "bytes": 1575,
+    "sha256": "f6ff4336d9fd7daf991e893406700fdba751b67dffcbed8e6ae18f0c2f255208"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/Elliptic__Transformer__seed42.json",
+    "bytes": 1626,
+    "sha256": "bdaaf18723b5f082bb74254286810b4dc64aa333993c8e5a4543c316827e8de9"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/Elliptic__Transformer__seed43.json",
+    "bytes": 1581,
+    "sha256": "4312864d05c2d2bf6037364a169bcb4b75b39573417b452285d238ae79b8a994"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/Elliptic__Transformer__seed44.json",
+    "bytes": 1572,
+    "sha256": "6342046ec912f65577cd68cb5a0b8f9d1a4b9ad764733e3fab0d07ea3aa550d0"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/Elliptic__Transformer__seed45.json",
+    "bytes": 1624,
+    "sha256": "6453364d88ff8d42b884d4c6eb72fe9990be97900eb35dad3c6c045d71dd5de0"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/Elliptic__Transformer__seed46.json",
+    "bytes": 1597,
+    "sha256": "3cc65c497d5bc7f69c3648685ce9f0ed963e86ac700eb2b91a66df3d8c985089"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/Elliptic__Transformer__seed47.json",
+    "bytes": 1597,
+    "sha256": "b7a5565f8e4c3419b9497718f3dde3d02448c482e47fc6e6d403093bc56aa36a"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/Elliptic__Transformer__seed48.json",
+    "bytes": 1597,
+    "sha256": "3f90b1ab6026ac69394cc5f51dc0e7c53e9d0784ff87b628406c39b61ff5f9d3"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/Elliptic__Transformer__seed49.json",
+    "bytes": 1597,
+    "sha256": "bf5ff42e3ed86de9174838180d24cad547aa10679093cf9d106dd3dd6c646789"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/Elliptic__Transformer__seed50.json",
+    "bytes": 1597,
+    "sha256": "9bb5b5e9042273c60fc6a489a2f0887792cbabd106df541b4c4da01fd31e8023"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/Elliptic__Transformer__seed51.json",
+    "bytes": 1598,
+    "sha256": "ec2ef5a91349b3f8dfa8f9003fcb64ebe5585721dd3b842e26db3c6eac2bb403"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GAT-address__seed42.json",
+    "bytes": 1661,
+    "sha256": "0e0c1762b0b45e42b0d4d563f5d3e8e03905f3d3093968651d3ddcc5e5d3b95b"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GAT-address__seed43.json",
+    "bytes": 1636,
+    "sha256": "a13d150ecbf63411a4796649088208f6f8823ac7dd47d1333f4ac46fabb38ff9"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GAT-address__seed44.json",
+    "bytes": 1633,
+    "sha256": "37200104597701dc4eb1294e158379d7f6db852dd8dacbef48ab83bcfaa06d43"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GAT-address__seed45.json",
+    "bytes": 1636,
+    "sha256": "d87bcdace9cd0f4b15d0d50ee72b7e61c5f04f5d24e29563cf63e74297cc1e5a"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GAT-address__seed46.json",
+    "bytes": 1636,
+    "sha256": "83b6fd331f59b27a4e8d4b505079e014b639d38cefdfd600ee53ed29304d7f1f"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GAT-address__seed47.json",
+    "bytes": 1636,
+    "sha256": "d75f3962bec2024191d1ed1b0177395da97fe24849ded0f771f81a1b3da94851"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GAT-address__seed48.json",
+    "bytes": 1635,
+    "sha256": "5cfcf7ef63811e55e2f8d113f00e5473cf2f3e6734ca94e5cf7758e201ba4d44"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GAT-address__seed49.json",
+    "bytes": 1632,
+    "sha256": "a1a47ead71af4fcc3fa9f273012b9fbacdc053a6513cd163ab103f2c2fa63838"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GAT-address__seed50.json",
+    "bytes": 1635,
+    "sha256": "3bdb1edc228f330b4758942a65990803b7700df3478618e9d42a53fd70300162"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GAT-address__seed51.json",
+    "bytes": 1633,
+    "sha256": "146b650cff6f71af3c2ab6608916e3688c1bc85b0c3a6405554a0fd3c8bf149e"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GAT-card__seed42.json",
+    "bytes": 1623,
+    "sha256": "6b748e9a10586482c2c031c4f9ec6b84ba630f8ce0cd647a694fc0fb99afc3a3"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GAT-card__seed43.json",
+    "bytes": 1622,
+    "sha256": "c7caddf556aceaa291a41fdab1a9950e7edf2675169b6b737dec068bf62a007e"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GAT-card__seed44.json",
+    "bytes": 1623,
+    "sha256": "42f265160d6798025243621765f868f60fc7b7e432a6420118eda940ad54d4ab"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GAT-card__seed45.json",
+    "bytes": 1623,
+    "sha256": "c16226c0cedba78fafaaad2446eb9085fad8f7985066ab57eaa5125e4c464237"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GAT-card__seed46.json",
+    "bytes": 1624,
+    "sha256": "7e19750f34046fe1a89ee0ffe5786b4daacb974ffa3aa61b3e660408e9dc2659"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GAT-card__seed47.json",
+    "bytes": 1623,
+    "sha256": "3e9f33e95f5c9dddf11037ee5e0f4554ce855ce12fef900558f7047684c57c0f"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GAT-card__seed48.json",
+    "bytes": 1624,
+    "sha256": "2cd8b1120407c449f54b4f77c1628a1ffac9023669de99c88f711e205e7857a4"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GAT-card__seed49.json",
+    "bytes": 1652,
+    "sha256": "0b407085cf8c22a6ea2407ec4fb648f7ecf0150f021e6cc22616960b0c6eb167"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GAT-card__seed50.json",
+    "bytes": 1624,
+    "sha256": "351403bf676261a07525ee3dff85d93f456be3b383865f75bdf32c299c21365a"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GAT-card__seed51.json",
+    "bytes": 1622,
+    "sha256": "0b489288bf983576f6891e856a619b9a5ff7f03cf0f8aa0276059d77fb65ef13"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GAT-email_domain__seed42.json",
+    "bytes": 1683,
+    "sha256": "316b2cddf2f7cf64e72a476775d3e7ef3a063184e8b19e219c1a46ff31c8d0ee"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GAT-email_domain__seed43.json",
+    "bytes": 1657,
+    "sha256": "1322ed07e60312b6c4bb2271364fab3e9b3b47427fd08193b8cf33d8fb5466d0"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GAT-email_domain__seed44.json",
+    "bytes": 1656,
+    "sha256": "f22ebb557a01629ebbfc9cc32357b265049a24fbab3f4ed2f304877bb9e23faa"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GAT-email_domain__seed45.json",
+    "bytes": 1655,
+    "sha256": "43f9707e6364a2d91ec5ae523b65f3df3cd782434418603479904ba93033ccbb"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GAT-email_domain__seed46.json",
+    "bytes": 1655,
+    "sha256": "881113ad369deb93e45888e14c3947307d3847add1de6124779c2b66fb2d706d"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GAT-email_domain__seed47.json",
+    "bytes": 1683,
+    "sha256": "1bd24a53a3f9a6bdc9233236fe2911a30b8fecb74a99c39a286355a8de8ba051"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GAT-email_domain__seed48.json",
+    "bytes": 1657,
+    "sha256": "839ac368e3ffe221481287eb6e57e875a284023594e3788539203b9907840092"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GAT-email_domain__seed49.json",
+    "bytes": 1656,
+    "sha256": "e19ada7500cef73b70dac7df61042a8aded30e572e86fe1af382249e3ff14225"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GAT-email_domain__seed50.json",
+    "bytes": 1672,
+    "sha256": "ba1a9e33cb0c81e971bba1e23e08bb4fb07b253f226805a425a62a69c48cbf79"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GAT-email_domain__seed51.json",
+    "bytes": 1656,
+    "sha256": "2c11e0ad65a94ed980fcb8fb4057ff86dd3ec40aa52ce6f41e78ccec428c03ed"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GAT-identifier_time_window-24h__seed42.json",
+    "bytes": 1771,
+    "sha256": "2ebedd82188d65b0469174968cf7d15caf366dc9c2d1f5315128d17093735206"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GAT-identifier_time_window-24h__seed43.json",
+    "bytes": 1737,
+    "sha256": "9df4f7f7cdb0d3d41a0c171df651e1b40121bb83e9791660242809ef66cf22b1"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GAT-identifier_time_window-24h__seed44.json",
+    "bytes": 1743,
+    "sha256": "f0fcead3c1d9f2bd6f951ec1b822dca68e6894ab776ec27dfa67ed3d0a517651"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GAT-identifier_time_window-24h__seed45.json",
+    "bytes": 1771,
+    "sha256": "cfc76ab651f99ab46c0907c2b3a6fcc247b8ab0528b8aec006771690fd8e3ad6"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GAT-identifier_time_window-24h__seed46.json",
+    "bytes": 1740,
+    "sha256": "50d3708e607ccc9fe0f658b6318a010ceef6cf47631606e3cc74c07456221963"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GAT-identifier_time_window-24h__seed47.json",
+    "bytes": 1741,
+    "sha256": "d0be25ed72668b7490d6717a6e41e568c8ee643171d2562e61f27b58cd1e80d8"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GAT-identifier_time_window-24h__seed48.json",
+    "bytes": 1745,
+    "sha256": "c4b6f3b30b93957b10c3785ba11d430f878bac6665d4abdfc83a0fa671694f2e"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GAT-identifier_time_window-24h__seed49.json",
+    "bytes": 1769,
+    "sha256": "408a398d5815896a3a36155a865cf037c1793b03f14c83c97017cf87e5a811ce"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GAT-identifier_time_window-24h__seed50.json",
+    "bytes": 1741,
+    "sha256": "597de750339076f0d61a31e2a3a59cc9ad74a9e4d34c7ae55bfa41ae5c1456ed"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GAT-identifier_time_window-24h__seed51.json",
+    "bytes": 1743,
+    "sha256": "e1432d9867c126db9ea3797c18de0ece90bbe9a3797d24e08a89db0ef1dc5f34"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GAT-main__seed42.json",
+    "bytes": 1624,
+    "sha256": "e349ea7311bdaf12be74c1b483873d1dfc3a36506fd9c6d9596b6beafa5cdf0f"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GAT-main__seed43.json",
+    "bytes": 1650,
+    "sha256": "278df2e32cff145e2c5bbf99fb090a66a53d5f7af29baae297333a295252345e"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GAT-main__seed44.json",
+    "bytes": 1642,
+    "sha256": "3f3ff89b49c0da303c9dc6003691ebf5d47b9db3cdf429e5ad6566bb1f5ce0fa"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GAT-main__seed45.json",
+    "bytes": 1643,
+    "sha256": "60feeb8a3cd430c82cf96d0691558bc905764827923f909c0963d13db3cc8c4f"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GAT-main__seed46.json",
+    "bytes": 1624,
+    "sha256": "7f747925e13da669f69a8893d80effd029cfdbc3462cfff63b402c1cdadfc0a6"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GAT-main__seed47.json",
+    "bytes": 1652,
+    "sha256": "ea8cf9bfe26076229a7d25a9f7fe680761e25c27d43fd3941447088d2ae94882"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GAT-main__seed48.json",
+    "bytes": 1652,
+    "sha256": "2853e285cb930557e7555a8924445c8883eb10a491bea9da1111fe2644aa2613"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GAT-main__seed49.json",
+    "bytes": 1651,
+    "sha256": "df9f0f121d63d5227527db1eb07f954625eadd73044face9ade022459abfe018"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GAT-main__seed50.json",
+    "bytes": 1652,
+    "sha256": "6ecd47e70fc0aa9780a09f62640f7e3ddb39b5aab0aa69037316fbc50f88972f"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GAT-main__seed51.json",
+    "bytes": 1622,
+    "sha256": "3fcde01b38bd931860e1d588ab00e4dc210efae4c65a5489f748182ec2d139e6"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GCN-address__seed42.json",
+    "bytes": 1632,
+    "sha256": "29df6566b547c3c33b2af5063f4c23d3efa1843ddd1fe0780899f90846c77d8a"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GCN-address__seed43.json",
+    "bytes": 1662,
+    "sha256": "6dfefd019d2f4cf6214a3ac949b2c91ec798fbba6cd03b8c82eb4fbc26a1896e"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GCN-address__seed44.json",
+    "bytes": 1634,
+    "sha256": "ae77be6ef3307801987bdb2d4eaa1dfd104fb8d9bd9231b512e45f3b3c875620"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GCN-address__seed45.json",
+    "bytes": 1663,
+    "sha256": "2b99832f5417e283a219d3a185aa28dbaca31bceec445bc63154af0978045766"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GCN-address__seed46.json",
+    "bytes": 1637,
+    "sha256": "44ae2a6383fa91641f27105cd3dc5d9723613f0998477045f525ac9f9fac766a"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GCN-address__seed47.json",
+    "bytes": 1634,
+    "sha256": "615e11b401372b9465f92db4fd64a53d809799b4d5997f5e6ad239328d6ae6a6"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GCN-address__seed48.json",
+    "bytes": 1636,
+    "sha256": "fce0128b2102eac8106315243da37ccabe4d1762e61173dc6d6ea6a869318a74"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GCN-address__seed49.json",
+    "bytes": 1662,
+    "sha256": "851e008f20fddab7a24681884a574eccd4660b8f0c53c76890da138cd2258a35"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GCN-address__seed50.json",
+    "bytes": 1636,
+    "sha256": "3a7178e9668b94ba9d47969cf3206f9a4e7f6582f1b2656eb60951050943e4e8"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GCN-address__seed51.json",
+    "bytes": 1664,
+    "sha256": "1063d78d41de497e4132fbbc01ea25132eaa31738b8f40170c297606a5b9d8ec"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GCN-card__seed42.json",
+    "bytes": 1621,
+    "sha256": "44c0762f01d201fa1f600c4854f7876c0432d5227a537f27f4f6617bd8cfcb93"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GCN-card__seed43.json",
+    "bytes": 1623,
+    "sha256": "08ac59b64368800957da9d50e2e3274e7f193da0181b363898882d0fdab174c2"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GCN-card__seed44.json",
+    "bytes": 1624,
+    "sha256": "4cc9afb48bd0cc72f0d0ce81cb67ea608ec4acddf299f9cfbdc866c57cce46ba"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GCN-card__seed45.json",
+    "bytes": 1623,
+    "sha256": "14e3011717702e9d3c4342ec9fd805d6f7c19b8bec6c9583fb9c3707b8326bef"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GCN-card__seed46.json",
+    "bytes": 1610,
+    "sha256": "0ba9748ab630d7c6aa2fc38d188a2d5750689124d05330440e917a7b1641a188"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GCN-card__seed47.json",
+    "bytes": 1624,
+    "sha256": "6ab5b04df2b3d173fc283275ce75590586e5eaac4bb857e9de31d03c696d99a3"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GCN-card__seed48.json",
+    "bytes": 1621,
+    "sha256": "f8b14ac3876aecd1bd7a0eb918e1e17e9d1667eafe4af038fa777810554f55dc"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GCN-card__seed49.json",
+    "bytes": 1625,
+    "sha256": "4e047a3773eb1df9ed6889301bf548da438d7f8285c7c0e84ea7a99846272ca6"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GCN-card__seed50.json",
+    "bytes": 1624,
+    "sha256": "0b1aaac4e29a495164bc10fd573e14ddfbb1aa454f18689b90864e9b9d391f69"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GCN-card__seed51.json",
+    "bytes": 1622,
+    "sha256": "7a6c14b4b5a9812d04077b23fb145252a5cf058305d6f32c2d0d81544275f309"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GCN-email_domain__seed42.json",
+    "bytes": 1654,
+    "sha256": "ffc01f0c7f958f7fe6ac58a2acb028847ed5cf05ae35f5ca7a0624ba3a4a5b7b"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GCN-email_domain__seed43.json",
+    "bytes": 1684,
+    "sha256": "32124e2e7d3d36f7765e7793ddea736e1450e69924eaf6447276a007d151fe9b"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GCN-email_domain__seed44.json",
+    "bytes": 1682,
+    "sha256": "948e073dff5569a561f6e46ca06c8789666b62f6805066013cbb298e16ae3717"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GCN-email_domain__seed45.json",
+    "bytes": 1683,
+    "sha256": "8723c329c816cc21ac209ebb2f0ea0f9d7cc37adf01109c05911ef88f5c13cf9"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GCN-email_domain__seed46.json",
+    "bytes": 1657,
+    "sha256": "2cd01aeaf35ef058123f8a82cb344b7fcbeb588a32c222f343f326c8831e57da"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GCN-email_domain__seed47.json",
+    "bytes": 1656,
+    "sha256": "915a5b2c28226bd1649b2631f6bdbeec933300b734dbd37b95af7983d4eff3da"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GCN-email_domain__seed48.json",
+    "bytes": 1654,
+    "sha256": "30eebfb0a7480d5c5487d9e7985284fffa8035aba94173842085f0772c4d56e3"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GCN-email_domain__seed49.json",
+    "bytes": 1653,
+    "sha256": "7db8dc9bf6a96e4b27c72ce717331550964c9f1d7f2ca88a9bff5754aecd0eb6"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GCN-email_domain__seed50.json",
+    "bytes": 1656,
+    "sha256": "7036bd65f65b4a190c19a249f7f29fa194a161d871015921f6c95b022b345c2d"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GCN-email_domain__seed51.json",
+    "bytes": 1686,
+    "sha256": "c993fe9e35afc65fc98da0e6ae2865949d42901ec5c812c5f2bd37f3893725fd"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GCN-identifier_time_window-24h__seed42.json",
+    "bytes": 1740,
+    "sha256": "1a56a16dde9b731bd8d69612cb2a1c482ccb6d42d286c71fc8886d71f14851da"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GCN-identifier_time_window-24h__seed43.json",
+    "bytes": 1772,
+    "sha256": "ea74e4d033c446c6fecde7ed9da7708c74eb3eda4c32fa8714a504b1956392d4"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GCN-identifier_time_window-24h__seed44.json",
+    "bytes": 1742,
+    "sha256": "729afcbd6f83319ac8254903eef4105b13bbd0e87ad0c9be004d92a0eeab013a"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GCN-identifier_time_window-24h__seed45.json",
+    "bytes": 1739,
+    "sha256": "f80aa877c3b4dc8d0e5c8f8afca559bc3e54b656076f3bd262583c39b9c5585c"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GCN-identifier_time_window-24h__seed46.json",
+    "bytes": 1772,
+    "sha256": "5ad4ceecbb278bf82d72a2a0faaabeb66d9e6ddfc5f8f697bd91ef4cef575af7"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GCN-identifier_time_window-24h__seed47.json",
+    "bytes": 1741,
+    "sha256": "637e7363218815408eeae7ec866b961d5483ea8adc66e724d482326e28925d13"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GCN-identifier_time_window-24h__seed48.json",
+    "bytes": 1740,
+    "sha256": "f61af261e9072f202a76e312b440963ba6b0505eb59f29914f4f0c25b4c4a576"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GCN-identifier_time_window-24h__seed49.json",
+    "bytes": 1737,
+    "sha256": "3ec78364e226b70b73a002143798c68a64b5132b1089a81704a3f1fd3695e004"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GCN-identifier_time_window-24h__seed50.json",
+    "bytes": 1743,
+    "sha256": "3f4d5f75a635afba474c1d24a20823f8a2c189f1cac147c7b870318fe4884ce1"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GCN-identifier_time_window-24h__seed51.json",
+    "bytes": 1740,
+    "sha256": "b0ea5a1bb74b86f78a9e7fb59d5ac1f4fff957238ec6c0796ecf980a7b032a6d"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GCN-main__seed42.json",
+    "bytes": 1650,
+    "sha256": "1cea60dad167875741d53871f747a7742cc2e3f92026d949a02953e5bf39c81d"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GCN-main__seed43.json",
+    "bytes": 1625,
+    "sha256": "25031c0d4fde9d6466a747ef645668f5cd563594986fa59da388b70992a75b4a"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GCN-main__seed44.json",
+    "bytes": 1620,
+    "sha256": "51683ea635af710e2b8f403004c2815e0736d530ef6b619176b50e08a57b1b2f"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GCN-main__seed45.json",
+    "bytes": 1644,
+    "sha256": "23065fee2bab56d74a1b82c682edb310747851d4238c7be88b47d73e4914ccc7"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GCN-main__seed46.json",
+    "bytes": 1624,
+    "sha256": "381eb0be33b7198c81bc8e28597ea4fc798c9a24e37fd7c09a5a671001aefe27"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GCN-main__seed47.json",
+    "bytes": 1652,
+    "sha256": "8aed681dc71f182ac7fbe6d0e090ba550e6fef719776d2d5c854685aa357bf6d"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GCN-main__seed48.json",
+    "bytes": 1623,
+    "sha256": "9d7ec76d548af3c4efe4c1d15bd88fc967b41a391df6bfccc4525eca5dc11494"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GCN-main__seed49.json",
+    "bytes": 1622,
+    "sha256": "ccfd7f8e39b644eb7231e9eb9156c4a170bd6f2ba70fbef42a0dbf8f57ff1d3e"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GCN-main__seed50.json",
+    "bytes": 1620,
+    "sha256": "31a7ffbce41415b97205047e2ffc389e636236090f63bc15da77a82bcca80036"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GCN-main__seed51.json",
+    "bytes": 1624,
+    "sha256": "770d1e5d123df03f1fb1c356673db29c2b99d7011faa7fd38d4d80b47a0cd567"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GraphSAGE-address__seed42.json",
+    "bytes": 1646,
+    "sha256": "628af49c38580363addaedd578acd729d8c8f2c89f48d45331dd8801cd8456b9"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GraphSAGE-address__seed43.json",
+    "bytes": 1648,
+    "sha256": "6562850ea65b026e0cf9cb1568c0b49c509224fd57bf89e5751ad5d049217747"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GraphSAGE-address__seed44.json",
+    "bytes": 1637,
+    "sha256": "83f50df9a2e4ca6d656b9fd64a016d3214c69ad7a62500b6882c538f42ffef1a"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GraphSAGE-address__seed45.json",
+    "bytes": 1648,
+    "sha256": "4e8b2ad75c5a19ead69b99d9d0f17846202c82412162fe5b1fdcfb0ef2c89469"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GraphSAGE-address__seed46.json",
+    "bytes": 1648,
+    "sha256": "cf67ea5ebe1f7886bab43d3393cb4fb0f9d7cc7b23dc113f3a057c63d13b39fd"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GraphSAGE-address__seed47.json",
+    "bytes": 1647,
+    "sha256": "e544c7dbb738386fdd5356743d9757d285c6a95b25ca0bb8c2e83fc457963081"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GraphSAGE-address__seed48.json",
+    "bytes": 1650,
+    "sha256": "80d9f48634e9aa309f18fae5a221364844d0619ecafbbe914e8a9debb477c5dd"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GraphSAGE-address__seed49.json",
+    "bytes": 1648,
+    "sha256": "86c81eb1659735ca5e4038407fc1483fa9338125d603d5b9c2a7dacf28258474"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GraphSAGE-address__seed50.json",
+    "bytes": 1646,
+    "sha256": "d774ac1c5cf3e313a48fbec1ddfc839f519cc8430cb6a38cf9ab87c007fa2fad"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GraphSAGE-address__seed51.json",
+    "bytes": 1647,
+    "sha256": "f6b3af75afb2ad7822e01d79af9ac8507e8943319d240db06c95ddd6f874a779"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GraphSAGE-card__seed42.json",
+    "bytes": 1637,
+    "sha256": "63e6a6481f4928f4819104976b4f5d9060f307d12d514c6a950690d2aff070a1"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GraphSAGE-card__seed43.json",
+    "bytes": 1637,
+    "sha256": "6f60526739fe376a04d5ab148512a1d2d9b2446d3cf6acfd71b746803ccffc76"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GraphSAGE-card__seed44.json",
+    "bytes": 1632,
+    "sha256": "b55d5e376ee30a368996e437cac81363551a76608e7e11bc320b894fae28e1da"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GraphSAGE-card__seed45.json",
+    "bytes": 1638,
+    "sha256": "2c5e9a197ab49612283a9b03c4c462f1da1b150391cf60889af7bfeb6a38afb9"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GraphSAGE-card__seed46.json",
+    "bytes": 1637,
+    "sha256": "b9d45972b6170ec9495133558123ac3b705ac1e380221e217a19e62065cce77e"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GraphSAGE-card__seed47.json",
+    "bytes": 1634,
+    "sha256": "41d4feb63c40c6de28091926e647be2633a47e8afe0dea28fd8d7080a2e6c41c"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GraphSAGE-card__seed48.json",
+    "bytes": 1635,
+    "sha256": "571e6f05e4b7c77e1e422250108c5be211cc992cedeaba7772608a64efb0a5bb"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GraphSAGE-card__seed49.json",
+    "bytes": 1638,
+    "sha256": "e55a4b5edc79f55d195b625d25e67400e299217ac63a0d888adecf888b236c7c"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GraphSAGE-card__seed50.json",
+    "bytes": 1634,
+    "sha256": "2a1b419931740591eb3c4ba0f0abc1b1c28c23caaa94a57f93729ecc56857020"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GraphSAGE-card__seed51.json",
+    "bytes": 1636,
+    "sha256": "31dbf616ce25b5895cce0379c4d5c94bdeb70e087afd66561b6d846ac83edbc3"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GraphSAGE-email_domain__seed42.json",
+    "bytes": 1667,
+    "sha256": "6fdabbec407fa90027a0e8ef5d1d32afc5ac0ec77de12634aa3c34acf563c5a9"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GraphSAGE-email_domain__seed43.json",
+    "bytes": 1668,
+    "sha256": "c75a1accc524d2f09ec38c24fe39e8d9c356ad1f15c42c55c8f9cfae3f2dba60"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GraphSAGE-email_domain__seed44.json",
+    "bytes": 1670,
+    "sha256": "753ecae12bbe915dcc24dc7e6752ff6283e1dc0dbcaccba0ce701941111625a0"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GraphSAGE-email_domain__seed45.json",
+    "bytes": 1669,
+    "sha256": "8094ea1654cac9de07e8d661497dcc0a8d8a368cf4918d8b1c9925bb0d08edea"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GraphSAGE-email_domain__seed46.json",
+    "bytes": 1667,
+    "sha256": "0783a44a980b796dc159d923f83920f9318ec07d7b57e75bb27fb2cc9317b3f8"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GraphSAGE-email_domain__seed47.json",
+    "bytes": 1669,
+    "sha256": "c00c1183ddc309521eea55048a272678cfd38ae5873fbb903652033dc7daf84d"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GraphSAGE-email_domain__seed48.json",
+    "bytes": 1665,
+    "sha256": "0fd39ee861ae6a590754a1b0d72abe528d9cf0853d4c0f55eedaa26726273cc7"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GraphSAGE-email_domain__seed49.json",
+    "bytes": 1669,
+    "sha256": "3931fe7eda8272e65516c08cb7e3d1ce0691b5e4af130d6ca53181088b2b7607"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GraphSAGE-email_domain__seed50.json",
+    "bytes": 1667,
+    "sha256": "2d029ad254ce41b2b5f8f7f0087e922239e45467045100bc61bad3a8c656e675"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GraphSAGE-email_domain__seed51.json",
+    "bytes": 1670,
+    "sha256": "b66e7985a01611456ae6477cf41aa7c4051469a3b95b4e3127d341235c8f2e19"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GraphSAGE-identifier_time_window-24h__seed42.json",
+    "bytes": 1755,
+    "sha256": "a8770aa13634c529d07c396bd2c3e0031b1739377fb27c7ddc9c91adb7e61660"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GraphSAGE-identifier_time_window-24h__seed43.json",
+    "bytes": 1714,
+    "sha256": "066483d916c8d9b1993759c0af8e3976854cf9b91de477f4c488020ed4158d01"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GraphSAGE-identifier_time_window-24h__seed44.json",
+    "bytes": 1718,
+    "sha256": "a09cc7bb0733a3a4143f8e480b6a6e706be62e180c77fd414c927850886fc10b"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GraphSAGE-identifier_time_window-24h__seed45.json",
+    "bytes": 1716,
+    "sha256": "559c58c457b370e89b787521541783edf11fde50729ff070c747ce22e731ffe1"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GraphSAGE-identifier_time_window-24h__seed46.json",
+    "bytes": 1736,
+    "sha256": "34eb1717804185bad889476c99402f82b4210083967c9979f4ba85fce879b5cd"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GraphSAGE-identifier_time_window-24h__seed47.json",
+    "bytes": 1717,
+    "sha256": "abd5f668bcc96b6ae2052255b465b5bc8ac7c801c379649bf1bd1e77efa91278"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GraphSAGE-identifier_time_window-24h__seed48.json",
+    "bytes": 1737,
+    "sha256": "cfd82d7668419af28916e152d2b74cd101d2870b7d0e6fdafe4354ebd6f2e03f"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GraphSAGE-identifier_time_window-24h__seed49.json",
+    "bytes": 1719,
+    "sha256": "104db1be73502dc40a417d76559004622117d5564a7108c624dc42586e15f322"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GraphSAGE-identifier_time_window-24h__seed50.json",
+    "bytes": 1716,
+    "sha256": "aa10dcfa2b1d204463c8c6e0cc9065aa4f0c69b441fc45041081709328c0a12f"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GraphSAGE-identifier_time_window-24h__seed51.json",
+    "bytes": 1716,
+    "sha256": "b7c60fe6cec8c4486ad4cfdf4a7890ead30d405c4db72d831516e98931fb1991"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GraphSAGE-main__seed42.json",
+    "bytes": 1636,
+    "sha256": "40f9f46640dc50f5723963d6f48fb105253a1001d3e9223ecbd9e6924243af50"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GraphSAGE-main__seed43.json",
+    "bytes": 1632,
+    "sha256": "c9b591724075ec6c45e12c92c69538b11e3a3beb6b5ac081a8e1bf8a3313da52"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GraphSAGE-main__seed44.json",
+    "bytes": 1636,
+    "sha256": "5daf374cb53b1a2df3ade80f2fcaa1cd768a55dab52faf56663b7af63306d257"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GraphSAGE-main__seed45.json",
+    "bytes": 1634,
+    "sha256": "3b69ccec12cfcbbcd9a3433a62cfcbb3844ad79a444e167debeaaa9fd58a2bca"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GraphSAGE-main__seed46.json",
+    "bytes": 1637,
+    "sha256": "cce98bf6f6f7f70d190574a25bc01db2e16e2a06a7c9076fcd43f091f1efcf1d"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GraphSAGE-main__seed47.json",
+    "bytes": 1638,
+    "sha256": "6e0e5907d0a2457730f3e5d753b0fe27a7d4e9c6e86e37e84b145c7586c63108"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GraphSAGE-main__seed48.json",
+    "bytes": 1633,
+    "sha256": "8d4f5a14277c03fe837d746d9275606cee6bccec503516f8fa3af66c6a32a907"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GraphSAGE-main__seed49.json",
+    "bytes": 1634,
+    "sha256": "1540084bc8ae5cb0aaf31d37919512c8370b225fce04c0dfc8855a44a2add7ad"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GraphSAGE-main__seed50.json",
+    "bytes": 1635,
+    "sha256": "9095a9fd45cbe1a51dc2d35343a32ed1098b53c1bccd99473cc177279f6ff70f"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__GraphSAGE-main__seed51.json",
+    "bytes": 1636,
+    "sha256": "deebd7ad0824fc26db9f0eb44f9fa45bfeeb0358098f78d19ad71b8e44b9f5dd"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__LSTM__seed42.json",
+    "bytes": 1593,
+    "sha256": "6ef80019a980cd49ec9e4f0a16a33e7b8c9d19519923bdc04901477b5298bc4f"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__LSTM__seed43.json",
+    "bytes": 1600,
+    "sha256": "0c2dc44f6295c9731ed7105e3ad705b675f3ac0384e9363d17125c025f08ea4f"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__LSTM__seed44.json",
+    "bytes": 1598,
+    "sha256": "7c3e7869d0c7a019fc0262cb2e1837e5a4b28780acb6b96d6358a4a710a884f9"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__LSTM__seed45.json",
+    "bytes": 1594,
+    "sha256": "644081a18bd0525d36ab811f80f4038cf9d10c7327bcd16b3f6062ad9d66526c"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__LSTM__seed46.json",
+    "bytes": 1594,
+    "sha256": "894a1caa731f6717e3885a3df47ba58b840af248f916b66506992d31938c904d"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__LSTM__seed47.json",
+    "bytes": 1596,
+    "sha256": "02a1dd75c26a837d180de31e1f0b9ae72df53ea390bfc3217a3fbef530ba8495"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__LSTM__seed48.json",
+    "bytes": 1597,
+    "sha256": "598f9b4c5b1f89dadf4b4592855dd38c51b9efa2b5fe6adad443e0465b177004"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__LSTM__seed49.json",
+    "bytes": 1583,
+    "sha256": "f9da4f05e6ab8e29e5ee9aff09f41f0f8e8eaec9fc5d9bb322e8b4bd276c5969"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__LSTM__seed50.json",
+    "bytes": 1597,
+    "sha256": "24ade9e496bd3d296e22ea98244dcf33b988b9759bd325ab0a1af8cec2760df3"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__LSTM__seed51.json",
+    "bytes": 1595,
+    "sha256": "f8c0f7bc8e60c5cdf1e09ce63382dd5ce5f63027d312fb8a5262213123c2843e"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__MLP__seed42.json",
+    "bytes": 1593,
+    "sha256": "7897b16c59de113a97616e80c77984a7df5e2dea229fe59f1ce6e4ceea5d7246"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__MLP__seed43.json",
+    "bytes": 1595,
+    "sha256": "93b664f7f8c176e0c4c71f4c1f2d453784c314f65390d1ca3a248eff3a58d6bc"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__MLP__seed44.json",
+    "bytes": 1593,
+    "sha256": "b9c737c4f1c4c732cab10bfe27d98e2b926dc5b36eb643b1bf6db6d9052e0f9b"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__MLP__seed45.json",
+    "bytes": 1591,
+    "sha256": "8b37194c1dcc42934ab253345b9a6ec4acf39991c151fc4425a54c32caa0cb5b"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__MLP__seed46.json",
+    "bytes": 1590,
+    "sha256": "9b407482bcc2bd45804e4c7566d75260c0fe88bb4071c13c04e31eaaf03ca773"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__MLP__seed47.json",
+    "bytes": 1593,
+    "sha256": "39a205bb534a856922ca7137070ba320ad942b847bda51c454b9b93062c3e822"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__MLP__seed48.json",
+    "bytes": 1595,
+    "sha256": "cbb2155add30559d92c795366549e547c50876cea992124c20a382851dce05af"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__MLP__seed49.json",
+    "bytes": 1591,
+    "sha256": "f7eb799389f9092da36c167fecdcb770b01c961990b2b4fef85b61d5bb080046"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__MLP__seed50.json",
+    "bytes": 1594,
+    "sha256": "e9f04b644cc526170226ca890b845f286d1ce49e2a4df7cb2ef8bb62c58c90c9"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__MLP__seed51.json",
+    "bytes": 1595,
+    "sha256": "9b69bcc91aa4f29a8e320b4cf2ef3eacde2ffb229ed85bbc119519d053d07579"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__Transformer__seed42.json",
+    "bytes": 1623,
+    "sha256": "535de9029c0e30536cba2708f18ebba43a47a1981a18f3566770ecfd858a6179"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__Transformer__seed43.json",
+    "bytes": 1624,
+    "sha256": "ae1ac6619cdd826ee044b20ec38fe0cc40f9bd7610f81b16b848e2dc89893b98"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__Transformer__seed44.json",
+    "bytes": 1625,
+    "sha256": "cfc3a529f952d6c81336ef2066a5d4341bbb708285a1ea78760e84c95e7cce8b"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__Transformer__seed45.json",
+    "bytes": 1617,
+    "sha256": "c67ada55d8939677d91f9952056b99b34613b9f27891a319f618e2fd7c84d2e0"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__Transformer__seed46.json",
+    "bytes": 1617,
+    "sha256": "360da33ac22f049a8a1fbeff93e4741cb920b6f1cd89da2bebc83518b36d9ad3"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__Transformer__seed47.json",
+    "bytes": 1618,
+    "sha256": "042999352d5505522e4070c560d3e647cee2e1af2e50ae0e303781272212ef91"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__Transformer__seed48.json",
+    "bytes": 1621,
+    "sha256": "310f988375bb01b1b0d2ad9092227e544c3543fb488cc8559056c1785c1513cf"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__Transformer__seed49.json",
+    "bytes": 1615,
+    "sha256": "474a5b7f9c35f193f3f3c7720a66101d14d27a9b9fed3c58e46f044daa21f03f"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__Transformer__seed50.json",
+    "bytes": 1624,
+    "sha256": "605ff990b5e96186008828bc360e4f5128fd15c6d8220eeef32b98e5e59dc243"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/checks/IEEE-CIS__Transformer__seed51.json",
+    "bytes": 1620,
+    "sha256": "dfb075bf86645277da14f86c2a88a77177dc53e6c786af8e4f23d0fc486d54c6"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/compare_graphs.py",
+    "bytes": 3583,
+    "sha256": "aa1786231848491602597f60dff2fe5b24d79e5225f349048043aeff6ffe5592"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/comparison_families.json",
+    "bytes": 42899,
+    "sha256": "04fd89996d52cd1c59738d6bbd500f5d635d4521c7846581bbc34babfda40662"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/diagnose_graph.py",
+    "bytes": 2388,
+    "sha256": "ed5daec0daa5f20ca791c9ffe9b76bf7e7fb0bf0612f745b542dad5aa41519b2"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/environment.json",
+    "bytes": 591,
+    "sha256": "5590e4f9e303eb1ef42fe398412199ddc0bfe8108f4c03602b3524580f5b91d5"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/feature_checks_Elliptic.json",
+    "bytes": 713,
+    "sha256": "3001c1d13132a0225c68e319fccf3848ee659196766401b042db9dd90d328fbd"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/feature_checks_IEEE-CIS.json",
+    "bytes": 3413,
+    "sha256": "7a8e381a42518482dafd95efe63e75da5f6332d6b7d751839b8167e8ba6e5dde"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/finalize.py",
+    "bytes": 26474,
+    "sha256": "4e82a2b9e4ad30302a1f5e88d488e316c5cce9994c4f2bc05acf83d42c3bcb50"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/graph_diagnostics/comparison.log",
+    "bytes": 4352,
+    "sha256": "197936af87603151b8ea5fdbcb99be31cc3694e6c9e54a86409cde5adf9577d2"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/graph_diagnostics/diagnostic_audit_runtime_mergesort.npz",
+    "bytes": 3717520,
+    "sha256": "5e65a825d1c97ff882bb8e34d3930f151a74899b3047461340ac583b20ce572b"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/graph_diagnostics/diagnostic_audit_runtime_quicksort.npz",
+    "bytes": 3717520,
+    "sha256": "5e65a825d1c97ff882bb8e34d3930f151a74899b3047461340ac583b20ce572b"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/graph_diagnostics/diagnostic_experiment_packages_mergesort.npz",
+    "bytes": 3717520,
+    "sha256": "7f5fa81ef5a3950836f33af6e9589d737daeffcee4b12b6c314d8a07589f1892"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/graph_diagnostics/diagnostic_experiment_packages_quicksort.npz",
+    "bytes": 3717572,
+    "sha256": "c6d7a57f5bad7dca56e0c92888eed39b9d3e2786515142c87d01b76bae426eb4"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/graph_diagnostics/diagnostic_experiment_scalar_sort_mergesort.npz",
+    "bytes": 3717520,
+    "sha256": "7f5fa81ef5a3950836f33af6e9589d737daeffcee4b12b6c314d8a07589f1892"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/graph_diagnostics/diagnostic_experiment_scalar_sort_quicksort.npz",
+    "bytes": 3717548,
+    "sha256": "14b137f86785701bec651476e2ee4e170804e40dd1e67fb0c90a7de2810fe62e"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/graph_diagnostics/edge_set_comparisons.json",
+    "bytes": 2173,
+    "sha256": "2e76d49a12f2b749f0c4f31fe6009abe0646d63e40939c8c77904e61df7309e0"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/graph_diagnostics/graph_versions.json",
+    "bytes": 3916,
+    "sha256": "cc15baa0d155c977dfdae249e9febb5f41c57bcc6085ee4341fab7f175ceabb1"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/graph_diagnostics/reconstruction_audit_runtime.json",
+    "bytes": 2797,
+    "sha256": "363051dfa30515996052db1dfcdd95bf80f9a501ef0584f6001f4d53f97e6113"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/graph_diagnostics/reconstruction_experiment_packages.json",
+    "bytes": 2831,
+    "sha256": "481e2766652a0bd4114e547d57f8cb3131a0cc6c13cbb350fa850dfee1f69488"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/graph_diagnostics/reconstruction_experiment_scalar_sort.json",
+    "bytes": 2888,
+    "sha256": "1a145241dd7ac06352f070e7469d221c3918c4cba8e9c367ee52734c8149ebec"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/graph_diagnostics/saved_main_transaction_edges.npz",
+    "bytes": 1858705,
+    "sha256": "00ec9ba01eb907dbfbc5a559446e3accb036cc9a3a905f3e7853023844be4725"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/graph_diagnostics/transaction_id_edge_differences.csv",
+    "bytes": 28615,
+    "sha256": "9c02f8cc26d9dfc5cbf89a42b621a2b91c44f794298ab1800711bc4b17a69b2d"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/infer.py",
+    "bytes": 7314,
+    "sha256": "c19385844fcdf44ff1b3c4507299f411f91670641f2c072282c6c4cc8169f65c"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/inference_elliptic.log",
+    "bytes": 8608,
+    "sha256": "212c6b498b341a4bc4b8d827975f40898225ab0e388c75fc1b24987c112b73e4"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/inference_elliptic_sequences.log",
+    "bytes": 4250,
+    "sha256": "36bac50b54aad360591c744ba3f85efacbf9acdaf4bb13f57de3dfb005f42ae9"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/inference_ieee_sequences.log",
+    "bytes": 4248,
+    "sha256": "6cbcf2205697677634c9ca6d5aa62875a22b09d47a4546828a5f4a8f454763b1"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/node_mappings/Elliptic.npz",
+    "bytes": 513439,
+    "sha256": "024f5294f0d7a6f79a72c86e0848feecdf097caf3fadb8dde7eff7acb53c4e07"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/node_mappings/IEEE-CIS.npz",
+    "bytes": 934715,
+    "sha256": "6e8e0ac2128b4ac9399efae9b933e877a66c5e3e667a0d44c8aed3c6bf4acdfa"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/original_artifact_preservation.json",
+    "bytes": 76,
+    "sha256": "69146fe86b4553e230603a780695362082af8a6dcc60b5b23023bda4ced26417"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/output_validation.json",
+    "bytes": 165,
+    "sha256": "918d5e6365033829facf44201321a18f51e0cc0b2ee538b16d50b08c12568d6e"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/package.py",
+    "bytes": 2026,
+    "sha256": "29f12ae7faa46bfb09f25748b3021e7044edee68936a6472625187c24054f3dd"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/paired_differences_inference_verified.json",
+    "bytes": 731937,
+    "sha256": "17c639e9f1e7618ca7eab05cf825576717a08abdf7a8f1744937f03b37d9176b"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/paired_differences_source_verified.json",
+    "bytes": 731937,
+    "sha256": "17c639e9f1e7618ca7eab05cf825576717a08abdf7a8f1744937f03b37d9176b"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/Elliptic__GAT__seed42.npz",
+    "bytes": 107927,
+    "sha256": "4598188903224503e458647318f32cdcb42c2785f19fb2693406aa57f10bb91f"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/Elliptic__GAT__seed43.npz",
+    "bytes": 107832,
+    "sha256": "41a52a230d956fd27af22dc554758d4e3aa1e9704e1fea087c8fbc9e30a1b203"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/Elliptic__GAT__seed44.npz",
+    "bytes": 108396,
+    "sha256": "23f599d47819f3e562e78bedf19941b301e93503f234f9edfc36bb48ba070757"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/Elliptic__GAT__seed45.npz",
+    "bytes": 108311,
+    "sha256": "6a62d2993f32c282b4870aa5ff600b2bb09ee979c86033ac8009cd50715b923a"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/Elliptic__GAT__seed46.npz",
+    "bytes": 107681,
+    "sha256": "3044130ed26822f570ff6938d164a696bc95041131c9f8c7e904de7ee7d92078"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/Elliptic__GAT__seed47.npz",
+    "bytes": 107995,
+    "sha256": "c70a523d6b3d9507f8ce7b44487387f3e5b1832a008fbaf5f6abdcf5e49e61d6"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/Elliptic__GAT__seed48.npz",
+    "bytes": 108069,
+    "sha256": "4ad083350c62fa14fb4ac0592fc0160ce823ba73f95e71c6196398ea0646c97f"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/Elliptic__GAT__seed49.npz",
+    "bytes": 108129,
+    "sha256": "84345d8090be0dad38b582f89fc57b03000780e3a8a5920d6485fc90026099a1"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/Elliptic__GAT__seed50.npz",
+    "bytes": 107656,
+    "sha256": "0bf9c305ab3a01918819998b682ffb73498791d250f375f191fcf5bab6f57fb0"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/Elliptic__GAT__seed51.npz",
+    "bytes": 107773,
+    "sha256": "5a9759a2391eadae36a504c4a0c484f2b0b11e0a827ab8ef9d52955c7423f702"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/Elliptic__GCN__seed42.npz",
+    "bytes": 104170,
+    "sha256": "6882c3f18d8198a41b45123b3147c66e33bc1cb5bfb19a4613e255f28d34228f"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/Elliptic__GCN__seed43.npz",
+    "bytes": 105078,
+    "sha256": "7d65aacb3710f158c7d40db7c7c22e6bb1cf00ecf057527c5efdb7d40382fe6f"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/Elliptic__GCN__seed44.npz",
+    "bytes": 104528,
+    "sha256": "57efec2ff93137c403f8579bcbd699d8cd26d269bd0a0aa25fe8d19dc342dce1"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/Elliptic__GCN__seed45.npz",
+    "bytes": 104688,
+    "sha256": "e7c8e9e3e19e9eb2b46ba75e6360794720f0abd32cca288f401ecdc557727566"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/Elliptic__GCN__seed46.npz",
+    "bytes": 104494,
+    "sha256": "eb4ec33a9d0a960319b32b9aa38388e842c71809513b0c1cb654384501eda733"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/Elliptic__GCN__seed47.npz",
+    "bytes": 104333,
+    "sha256": "1040be063481771158e5d98dfc997f7b9d8f2356342a362284cd67dda2e739af"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/Elliptic__GCN__seed48.npz",
+    "bytes": 104451,
+    "sha256": "c22e1c365dd850b7835c70d6d33cc73fa040bb64d11be54850762d8407ebd565"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/Elliptic__GCN__seed49.npz",
+    "bytes": 104537,
+    "sha256": "275976e689d8313944e0cfcc665b15c62a58cdb114a24c5e03755126d6058a03"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/Elliptic__GCN__seed50.npz",
+    "bytes": 104169,
+    "sha256": "d0ed3384df074db7a51795397653431fa82224b57a0b79cdfbca013a51fc8c23"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/Elliptic__GCN__seed51.npz",
+    "bytes": 105066,
+    "sha256": "d88cc6bc3e0eb38827118442e492dbe0a28b16e4cd8de4ff63c3045e0b7157c9"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/Elliptic__GraphSAGE__seed42.npz",
+    "bytes": 108796,
+    "sha256": "b0420b6ef199ca04ae733dce7d9feba7c4e988cad2619ae2732e2d04a99ffb7c"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/Elliptic__GraphSAGE__seed43.npz",
+    "bytes": 109048,
+    "sha256": "b511baccab4433e87f09d2d9bad76274befd92eb15a793c7baf7403c7a7b728e"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/Elliptic__GraphSAGE__seed44.npz",
+    "bytes": 108859,
+    "sha256": "ba50578872d89983a39897933b72cc777af21b8195ccb1d6c85bb48e605b3e67"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/Elliptic__GraphSAGE__seed45.npz",
+    "bytes": 108843,
+    "sha256": "997e7c8f994483b77f4e1aa149dc06d5d894cabe1a0f9ed0b55119b1ea7775d9"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/Elliptic__GraphSAGE__seed46.npz",
+    "bytes": 109520,
+    "sha256": "0dc833ee748bdb0040e9c860a6979e56e922b9da3ddd7fa713a75131125cc07d"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/Elliptic__GraphSAGE__seed47.npz",
+    "bytes": 108971,
+    "sha256": "94fa0fcc285ea473f22d54d30fe39a004906d2f8372c813e4dea39beb75bb4c7"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/Elliptic__GraphSAGE__seed48.npz",
+    "bytes": 108887,
+    "sha256": "cbf2ee321d7c450d2c9f6396bfa07b02a6f07a77500c8dd3112939cd12d87a18"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/Elliptic__GraphSAGE__seed49.npz",
+    "bytes": 108801,
+    "sha256": "f917e56ed3e7d5064c28a901cab771a455f091674b0b238a98bc0e4d05249383"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/Elliptic__GraphSAGE__seed50.npz",
+    "bytes": 108986,
+    "sha256": "eee9bf90a3c5e9c8c2364c1655a3886d3916a58c76b71a97905de917d07edce9"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/Elliptic__GraphSAGE__seed51.npz",
+    "bytes": 105715,
+    "sha256": "4286ce4a68de15ed721ecd7aa3b9bcd687e06a3b46bcb871e568dc2e4de77afb"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/Elliptic__LSTM__seed42.npz",
+    "bytes": 108566,
+    "sha256": "76bc860ad0d10d83b6044a3d104f55649f5e0c4331886bd9f4f670af16f48791"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/Elliptic__LSTM__seed43.npz",
+    "bytes": 108754,
+    "sha256": "03fd1455f1aca1683e36728af1b0af3154d359a360cc51480f1da2aa805729e4"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/Elliptic__LSTM__seed44.npz",
+    "bytes": 109026,
+    "sha256": "fbc2c706a21f9e7a2257ee767c6263f7488822cf4ef3e804153a3afef0435ce8"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/Elliptic__LSTM__seed45.npz",
+    "bytes": 108789,
+    "sha256": "134c4f242feda9cfb8ae764496ca83d80eb4657c1fc51e6197019771b6893af9"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/Elliptic__LSTM__seed46.npz",
+    "bytes": 108926,
+    "sha256": "aa2023215831b39912d7fbd68923f99075c388d3769673f8e9a3f973e9e24235"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/Elliptic__LSTM__seed47.npz",
+    "bytes": 108146,
+    "sha256": "4211d1f079db7e8806ccc0f0e424ec852445743fd5a14d4c69a61418e22a671d"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/Elliptic__LSTM__seed48.npz",
+    "bytes": 108993,
+    "sha256": "63ab4f2c785444906aff6d91381a212473110a2374ba78d6201302acac9c893d"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/Elliptic__LSTM__seed49.npz",
+    "bytes": 108513,
+    "sha256": "b75aa48e1299839d4c94cdf1468bc7e56bc44b232dbfff75c5e5e495de0c1008"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/Elliptic__LSTM__seed50.npz",
+    "bytes": 108535,
+    "sha256": "7517b585b51be849ee18ef3306897b3f5d61d69e486573f428eff5af28252c7c"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/Elliptic__LSTM__seed51.npz",
+    "bytes": 109120,
+    "sha256": "a63a117516cebb00af6770de4537cb13513f04958144422024ddcc903d96afd8"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/Elliptic__MLP__seed42.npz",
+    "bytes": 103683,
+    "sha256": "44086855fe86a8b222ed055aadf376d4d48c92de059c7affd0c933f7481d8611"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/Elliptic__MLP__seed43.npz",
+    "bytes": 108244,
+    "sha256": "9ef3009a07a4ea1261838871eaa7b7c74d909629bff149cf0fd06ec3c37539d6"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/Elliptic__MLP__seed44.npz",
+    "bytes": 104425,
+    "sha256": "5511f4f8a868488dd1bb8b08bb74815c39ff63c9268f73c30c65d1fc25409e19"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/Elliptic__MLP__seed45.npz",
+    "bytes": 103889,
+    "sha256": "4ea26a42c9e6b23fe9b450449da6be11c4ae85fe73efa37ceca8a6ff41de9b24"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/Elliptic__MLP__seed46.npz",
+    "bytes": 103485,
+    "sha256": "8300fe633f859f5341a1144b547ec8928ce8aa6110a541ad9bdff021cfb69fcb"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/Elliptic__MLP__seed47.npz",
+    "bytes": 104533,
+    "sha256": "b6a9b735e041e615d0d5f4424786614878f6ce82a2d6ea492e530c8d13c1a978"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/Elliptic__MLP__seed48.npz",
+    "bytes": 108170,
+    "sha256": "eb826984902709e750ded03e0f35c72d93596af6c64e50c87e423d4de637873d"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/Elliptic__MLP__seed49.npz",
+    "bytes": 108286,
+    "sha256": "d3ddf8289e648df23043a92cad4f1725cfc4462dc62038d4d76539e161791448"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/Elliptic__MLP__seed50.npz",
+    "bytes": 104685,
+    "sha256": "535d364be33827b3d657f0b60b1b1acb0d4645f86a21b4a4858a766791ad085d"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/Elliptic__MLP__seed51.npz",
+    "bytes": 103527,
+    "sha256": "1676de6dc28f8b2f07c2ed294960c34f86e20cd2ae1b133dd169ff372b83cf3b"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/Elliptic__Transformer__seed42.npz",
+    "bytes": 107202,
+    "sha256": "2b7c162e3194a23f24a21f31bb22b606b97f3bfcd075f32628c5cfb14b9e85fe"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/Elliptic__Transformer__seed43.npz",
+    "bytes": 107122,
+    "sha256": "69802ff950957bacb16a3b9afe5ffa72c2d6ccda3f45ef0200e06ea800bb5c9c"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/Elliptic__Transformer__seed44.npz",
+    "bytes": 103864,
+    "sha256": "52233810db95be5fb2dd748506dbcd2ba0cc14a67af7f5e9f9d7b5b27ab07cf9"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/Elliptic__Transformer__seed45.npz",
+    "bytes": 107310,
+    "sha256": "19afe2536507cec3bfb08409ec4d4958d03817110d6d3635b4c3ddc4930de4f7"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/Elliptic__Transformer__seed46.npz",
+    "bytes": 107611,
+    "sha256": "0b6ff01c1303942ab1ad3caa3dacbc67301155567258e6dd48fc579657e484db"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/Elliptic__Transformer__seed47.npz",
+    "bytes": 104940,
+    "sha256": "3750876d22920b853d906a5d2640bf6ccde6c56f613bf5e06ca3004497864dd5"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/Elliptic__Transformer__seed48.npz",
+    "bytes": 105322,
+    "sha256": "8ae3b3833f0f3e3c53effe5f06a93a9e1ba999e5e120e7eb4d1c0d3d88f534c2"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/Elliptic__Transformer__seed49.npz",
+    "bytes": 106741,
+    "sha256": "a0c4beec39866c93d4d4645db2a3e5e0f739de6625e36e43e75dbe2711e7e34d"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/Elliptic__Transformer__seed50.npz",
+    "bytes": 103847,
+    "sha256": "f9264b6977abfe235cb7cccc762317139ce604c58ba3cecca5097492d156ce89"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/Elliptic__Transformer__seed51.npz",
+    "bytes": 106240,
+    "sha256": "43347c0addb443745a3b4a205154318f993b3d41f84910b80adfc7ac57b9ea25"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GAT-address__seed42.npz",
+    "bytes": 603547,
+    "sha256": "11ee6c05b6090596ef52ceb2605ff7b7c70e894243e1a582b6fb349e0cafddaf"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GAT-address__seed43.npz",
+    "bytes": 605343,
+    "sha256": "d8fd77cc04882523bb2179775934f2eb7cbbce4a81eecfae72d1f7d3da7a8a4b"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GAT-address__seed44.npz",
+    "bytes": 604191,
+    "sha256": "10468dfbf395cea3a4cb83fb68e44b75f47d6504dc4fe232f125a036dbb55601"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GAT-address__seed45.npz",
+    "bytes": 604169,
+    "sha256": "b657ea467246092e0b3284fce0f4baddbd832ebdb7c5f65f939ddde449ebb8e4"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GAT-address__seed46.npz",
+    "bytes": 605946,
+    "sha256": "ad763857167033112efcef066bfa69c3b5cc323e88c27da713fb6c457e98cc0f"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GAT-address__seed47.npz",
+    "bytes": 607074,
+    "sha256": "c708fb95eda03fed15bc60e873c419a00a3f48745105ddcaad15525c050f7638"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GAT-address__seed48.npz",
+    "bytes": 601404,
+    "sha256": "71fab1be431db70be1b9845cc0c5b20051086a15917f682334c270c0e8ea4179"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GAT-address__seed49.npz",
+    "bytes": 605502,
+    "sha256": "b13b529f8bea6c67f2f82b96ef00049ce392a095f708a6b17ec1e519d2ca4656"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GAT-address__seed50.npz",
+    "bytes": 605991,
+    "sha256": "f299021ddaabaf8919a4e6870235a7884817ab50bff96c7081d7d974f7acdb28"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GAT-address__seed51.npz",
+    "bytes": 604211,
+    "sha256": "923b00e0206497c3a7d677a4c28eccd157d7e383631c394a6dbe98e355808779"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GAT-card__seed42.npz",
+    "bytes": 607215,
+    "sha256": "c892fe02549768114b065258d595b54dbb47e1f7cd4373aad87d9cb111e8a3a4"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GAT-card__seed43.npz",
+    "bytes": 604597,
+    "sha256": "1c61c5917c155cb4c9180b2699261f2d1683bbd6a0bfbe1dddb5283b13e63f02"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GAT-card__seed44.npz",
+    "bytes": 607624,
+    "sha256": "22c4364205b8a6298c1ccdf21b98c9752ba045140d36eea683c03134adcf60b4"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GAT-card__seed45.npz",
+    "bytes": 607939,
+    "sha256": "b07e2ba4f51b428a1cc93462cdca0a7064cde1f6a86f9abaf321023e5d1c7c0b"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GAT-card__seed46.npz",
+    "bytes": 607516,
+    "sha256": "289d187b45943c42bb37ca9825a03f7b296fbb2ea06052141019b8c3b98066f3"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GAT-card__seed47.npz",
+    "bytes": 608314,
+    "sha256": "9e4e08d37dfbc5e0ca52cd45dea1c33e13491a20258aaff4466994868bacfefd"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GAT-card__seed48.npz",
+    "bytes": 601921,
+    "sha256": "f5663713e3ee4952933c4bde7777823b7149ccf04a4d35256a3c95a924675329"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GAT-card__seed49.npz",
+    "bytes": 602057,
+    "sha256": "5d58fad3c059d286657852da720014f3aed4c5a535f71a17ab3dc0679083fc6a"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GAT-card__seed50.npz",
+    "bytes": 607556,
+    "sha256": "cfc6e67db18cdcb301a51de9ff072a6d06f6c48c6980509412a8a140bbc4e93f"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GAT-card__seed51.npz",
+    "bytes": 605168,
+    "sha256": "af00755aa57836a0f7a981025dd5bb4d25d064a558d708974657a528f319db8a"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GAT-email_domain__seed42.npz",
+    "bytes": 603779,
+    "sha256": "b5f5ebab97d43a1300373c9edfd6896799d064a61b98b5a6ec7250bd2811a34d"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GAT-email_domain__seed43.npz",
+    "bytes": 605729,
+    "sha256": "2d5bb58575e3114e49cabf7ea58499ceb28e8f46b5b47450d9ca7300ef594a73"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GAT-email_domain__seed44.npz",
+    "bytes": 604634,
+    "sha256": "cda2bb89f524cf80be546dcd8d2ffcbca38f824943e19eedd72885dc2ea0dd48"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GAT-email_domain__seed45.npz",
+    "bytes": 603772,
+    "sha256": "d51af77fc0ef558064cc6a225f3e00e9652d3e63ffe907fd47208966156440d0"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GAT-email_domain__seed46.npz",
+    "bytes": 605529,
+    "sha256": "938463d6ee59cbbd700d8c342d636f0106ad9bfec95aa8f05a68bdedb8327224"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GAT-email_domain__seed47.npz",
+    "bytes": 606646,
+    "sha256": "323428904d936f21ae46d79987c64a121dab7b0c72087311fd62ca55963dc7c4"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GAT-email_domain__seed48.npz",
+    "bytes": 601451,
+    "sha256": "83f76b9d4a01ee385693007fea63cb54b63a8f64fdb44cdaea750c129aaa0689"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GAT-email_domain__seed49.npz",
+    "bytes": 602831,
+    "sha256": "a4960d4739e3a3be6903c1526a83c35f07d72c4ed5291ceb40a8e6f526d496f8"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GAT-email_domain__seed50.npz",
+    "bytes": 605285,
+    "sha256": "9a57575c8ab72154a8eccdfec758d94f3aa81020556d903a09a62779749f3bdd"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GAT-email_domain__seed51.npz",
+    "bytes": 604516,
+    "sha256": "7b77562331ca4b6a23441a562bb6d30c3e254b290fa30736402ca9da73b49bac"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GAT-identifier_time_window-24h__seed42.npz",
+    "bytes": 598948,
+    "sha256": "e691e5c9b5d1d260277b2bb078571997d3b9d6dc71fc0785b42351faf8add47c"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GAT-identifier_time_window-24h__seed43.npz",
+    "bytes": 600840,
+    "sha256": "59797e96c0e34d21cacece1c2e5a11bf100bb90343b7ed979da3274f51d33900"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GAT-identifier_time_window-24h__seed44.npz",
+    "bytes": 600883,
+    "sha256": "2eb4d4d0bd85176ebf76d1814e254a5648d48decd4d1fdba0a70a8dd5c3cbc2d"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GAT-identifier_time_window-24h__seed45.npz",
+    "bytes": 600951,
+    "sha256": "da9d4502488f4c306d402fe2ff4fad40a7a4d554dea6104c9a363ebe1056b2bc"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GAT-identifier_time_window-24h__seed46.npz",
+    "bytes": 601402,
+    "sha256": "32a1410659e6784a65a2964338b69ebb4a33b4d22e2dc2337529138bbfdd46d2"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GAT-identifier_time_window-24h__seed47.npz",
+    "bytes": 602471,
+    "sha256": "0ff3c674cbc38fe70d63727fbb537a452c9a0d85912588b780d8266b3bcafef6"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GAT-identifier_time_window-24h__seed48.npz",
+    "bytes": 598799,
+    "sha256": "f9cac75ee0ec49da671ea8162f0cb4eed9c1ab702f65864094f8b6f14831f267"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GAT-identifier_time_window-24h__seed49.npz",
+    "bytes": 601142,
+    "sha256": "fe1d44c835583967bf266b58da815fdb888edf02e7386bccfe865126ddaf6afb"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GAT-identifier_time_window-24h__seed50.npz",
+    "bytes": 601086,
+    "sha256": "5461661a2297d175f75f9a4f9eb3c6838de6e5b58a43e34bbb42564ab328c03b"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GAT-identifier_time_window-24h__seed51.npz",
+    "bytes": 599601,
+    "sha256": "e8d1db9dfa9fd5466ad27c72a1a7a04f3022e361f4f63e8a45fac8342cba8f8a"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GAT-main__seed42.npz",
+    "bytes": 607167,
+    "sha256": "ce30226609798fff15f0da821ee66d1f21b599bafb1b2a01b98111b976531cee"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GAT-main__seed43.npz",
+    "bytes": 607858,
+    "sha256": "9280ba297352dd45f65a47b1efd1b18f83ecf66fe6aee04576118ab191d183e9"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GAT-main__seed44.npz",
+    "bytes": 607909,
+    "sha256": "7bbecc0046b646dcf98d477a48395ef553dc5f4785656d141d46894bcae4c844"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GAT-main__seed45.npz",
+    "bytes": 608152,
+    "sha256": "0579f86096d002018eb982aea8c77f4e03f0b047cfddc8b17c211f69f358900d"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GAT-main__seed46.npz",
+    "bytes": 607505,
+    "sha256": "e7965c0eaebf39f5dc0245eb50a1a6d431e52bf0cc10346ef2bd5debba231433"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GAT-main__seed47.npz",
+    "bytes": 608223,
+    "sha256": "c1e4212ad495cac628667f4a0c0dd56705ae96d35165f6fd08d90b7ef086e25f"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GAT-main__seed48.npz",
+    "bytes": 600689,
+    "sha256": "5dbc66230bcc2f0f57e6d4978b69b0405866ce658e0c6a4b6c62715906810dcb"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GAT-main__seed49.npz",
+    "bytes": 606333,
+    "sha256": "a799ee10bbd2b5036ba3cd784e0e2b61bc5720cd47d6e084510966dcecc38873"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GAT-main__seed50.npz",
+    "bytes": 607857,
+    "sha256": "a5ea9aa9ecaf6d76391af534b6eb891c3502e9ef1f738d615935f92898ea719a"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GAT-main__seed51.npz",
+    "bytes": 604979,
+    "sha256": "cd5f959e6a9048069f5d8598676652ba2e90f37e522915965000c4bd62081624"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GCN-address__seed42.npz",
+    "bytes": 611375,
+    "sha256": "3b63bff1e83908e67bbb03722b202874dd4ab039b2bfd6906c851040861c2b2f"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GCN-address__seed43.npz",
+    "bytes": 611577,
+    "sha256": "935b9eca625d2ee7efd890bf1ebb5866c0ac94515c4553c094f30dea2048001f"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GCN-address__seed44.npz",
+    "bytes": 611745,
+    "sha256": "765da617e5066b53a0054354b3cd19102ebbe72b4a0f124b42a0939ecb071675"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GCN-address__seed45.npz",
+    "bytes": 603795,
+    "sha256": "62370ef50fcc394b8e16c138ee32d0a7ca3d544a544421b3c400eed685591f27"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GCN-address__seed46.npz",
+    "bytes": 604176,
+    "sha256": "21d00f49a988141c042a31ada48dd8b74857007967aa1cdf42e9e71f3766528f"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GCN-address__seed47.npz",
+    "bytes": 611065,
+    "sha256": "77357ea0ceaa928f40c0749f8057e5415e75d3180588f69be07afa7bd0afcbac"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GCN-address__seed48.npz",
+    "bytes": 611634,
+    "sha256": "615a889b63b5605bf4d118245ed76d09a2933595b44a077d298440317ec0fcdb"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GCN-address__seed49.npz",
+    "bytes": 611705,
+    "sha256": "9d32e3e8e65772938a535060a2eff61c8b82ff548b45b1fd176f1756d6b0c7ec"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GCN-address__seed50.npz",
+    "bytes": 611079,
+    "sha256": "ac00e472d180207050720e03ae228c2a8bfd1e68cb6736cde089cc194369b9f1"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GCN-address__seed51.npz",
+    "bytes": 607859,
+    "sha256": "7bad35a65bc675793131edb55be1c38291584efe09f530cd0138bd7338753a2d"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GCN-card__seed42.npz",
+    "bytes": 610975,
+    "sha256": "d700e29e83d7d363a651eecee418a21c0ffd1e046bba1a2e42020757f57dcbaa"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GCN-card__seed43.npz",
+    "bytes": 611001,
+    "sha256": "997993fe4d2b73b0f6fe1eea87a8565205beac75d55106aac6c1fffee0cf6269"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GCN-card__seed44.npz",
+    "bytes": 611818,
+    "sha256": "3ba32b6d6b5f9738827d09b29a2481eb4cc3a0d36a122757e1f44ce04fd54f95"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GCN-card__seed45.npz",
+    "bytes": 602116,
+    "sha256": "591d1977c7bfeafe48b16fd195d42c582f4adde3c3dc2d80c01ca7bc0f34284f"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GCN-card__seed46.npz",
+    "bytes": 602229,
+    "sha256": "5facbe6cf58ace903e6b8ce96b02e8cfc403301b0deccc3c0822e6e521e492cf"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GCN-card__seed47.npz",
+    "bytes": 610706,
+    "sha256": "8aef3d81682f380f4085f802c83759ab927f42909b8d1843967d8bb10f014e79"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GCN-card__seed48.npz",
+    "bytes": 610977,
+    "sha256": "d8a191d7d882e54e173c2ab64748cb7ca39dd22140f1f4135f375e68869a6e73"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GCN-card__seed49.npz",
+    "bytes": 611493,
+    "sha256": "7cd0af4559a5621a8fcc95cf4ee6bc73165adc5d49941070fc09b845e35a7a2d"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GCN-card__seed50.npz",
+    "bytes": 610578,
+    "sha256": "0748b639af399e9626c3cd06c17812bc11f2cd2ce0a69341996dd1dcd94f3dfb"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GCN-card__seed51.npz",
+    "bytes": 604976,
+    "sha256": "c6d22fa78405ca2577bb8a34c86fe49e3012728bd61e9eaca1c592c00499af08"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GCN-email_domain__seed42.npz",
+    "bytes": 611393,
+    "sha256": "33530314ed10db4dfcce32610d47697baefe447f6b841baa2c3cb4695a20fc2a"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GCN-email_domain__seed43.npz",
+    "bytes": 611411,
+    "sha256": "91cf5e498e18472b443bd0328643dc4bb71f220ba893fa19b9f5f547047fd80e"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GCN-email_domain__seed44.npz",
+    "bytes": 611632,
+    "sha256": "23a2e05415f0e16b2937d5b89437c6167db3901c37fc04639e44669c8db964e2"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GCN-email_domain__seed45.npz",
+    "bytes": 603682,
+    "sha256": "414b2a821b9238ec3309da595bccfd047d2cf9d9c764baf6f05b7c596317e556"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GCN-email_domain__seed46.npz",
+    "bytes": 604023,
+    "sha256": "2e5ccb3cd4e538b4d1a7eeb2e91e92f5d75d25307bea7dc9fad3aa383eea5688"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GCN-email_domain__seed47.npz",
+    "bytes": 610714,
+    "sha256": "2f8a3b829a48d6f4d36feb60d9a6a6a206fb2ffb1d2a63b11358398dead87c2e"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GCN-email_domain__seed48.npz",
+    "bytes": 611363,
+    "sha256": "cad0f70c918df6b0a95a728a955e4369fbef56c39746f5d91db260ccb5be4f79"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GCN-email_domain__seed49.npz",
+    "bytes": 611766,
+    "sha256": "15bdb8f67d1a04ee4e3b00d3ce6de2ad2491652b2441ca75f2f928af291066bd"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GCN-email_domain__seed50.npz",
+    "bytes": 610976,
+    "sha256": "135f16ac9f0ce6d6b9883f0879aa1908d32eb571ec0abe37793dfc5ea8e5e39d"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GCN-email_domain__seed51.npz",
+    "bytes": 605830,
+    "sha256": "1afa29cdc3ed41a5e398395f3eec42e0dd057bb3b2f02ffc5a16b0284be7bba5"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GCN-identifier_time_window-24h__seed42.npz",
+    "bytes": 606514,
+    "sha256": "efa99b55f6cbc712c01f6cdec56e87e7b314d5d44409e615a55aa3382ef2937b"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GCN-identifier_time_window-24h__seed43.npz",
+    "bytes": 606556,
+    "sha256": "d93b50832990e1a51e5790011693003409acc31c1f561abfd868a477fc039ba9"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GCN-identifier_time_window-24h__seed44.npz",
+    "bytes": 606785,
+    "sha256": "e31f08f728d4383bf37a1384a315d2cbd755762215f846dd99762469d123b21e"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GCN-identifier_time_window-24h__seed45.npz",
+    "bytes": 606418,
+    "sha256": "fde6b598537536502040bbe9113ccb5d497afb342c7ec6f39a945bb18c6d7d78"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GCN-identifier_time_window-24h__seed46.npz",
+    "bytes": 599950,
+    "sha256": "f1b2ff45e9240d495624e01cdb61b3e54921f3852654075b9f0b47157a6ae93d"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GCN-identifier_time_window-24h__seed47.npz",
+    "bytes": 606129,
+    "sha256": "1e9ea318566216888926769f1d62593cd74764b0f78e1a1c04ee6b826b1781c7"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GCN-identifier_time_window-24h__seed48.npz",
+    "bytes": 606961,
+    "sha256": "d3938d4e5d6051919b9db35cac7b0fd60052cd2c7757b89bb2c3d2ea00321f94"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GCN-identifier_time_window-24h__seed49.npz",
+    "bytes": 606553,
+    "sha256": "a79e7b936638167411a7a443883b459c3b8b650b498dc1b107f27867978e3033"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GCN-identifier_time_window-24h__seed50.npz",
+    "bytes": 606006,
+    "sha256": "ccbb1dd022fe72b8a04f51fe42075cb30112985686530c9d1736fada002ef63e"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GCN-identifier_time_window-24h__seed51.npz",
+    "bytes": 602532,
+    "sha256": "8d639493b10dbb04ed5f03299cfd09a14f4a2b5deae7fb55c5430397f035fec0"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GCN-main__seed42.npz",
+    "bytes": 611270,
+    "sha256": "a15a252833edbebed72d159e93c1980b616311c33f3d967f12033a108c25b9d0"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GCN-main__seed43.npz",
+    "bytes": 611224,
+    "sha256": "683514b96d538a47a3294c7fd946d011c623108369de93010077ba4641c9d1c8"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GCN-main__seed44.npz",
+    "bytes": 612110,
+    "sha256": "bdae80de1a93312bea71592bf2d07ce5a464624ab9129ab16d27420b5ca841f6"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GCN-main__seed45.npz",
+    "bytes": 611355,
+    "sha256": "2cd770a800f817482f5fa154578ec03d8547bbd8b733b33d16aadaaf109bff1a"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GCN-main__seed46.npz",
+    "bytes": 601697,
+    "sha256": "6023590af82e5da539c3c0c3b1fef213d59f96b5c5d5b4e6e1f2fb515401d238"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GCN-main__seed47.npz",
+    "bytes": 610979,
+    "sha256": "18c6cbcb91d4c63df79c90372d0c90c55ce33ccb659d5a496d7d6113d0dcc519"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GCN-main__seed48.npz",
+    "bytes": 611187,
+    "sha256": "14ef74068f9282e8826f44bda296d2b89711e68d2f34b099deed25793a7e67c8"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GCN-main__seed49.npz",
+    "bytes": 611566,
+    "sha256": "0b63f6ce611decb6dd1e4d1590d6908e3924311411a539ea3a9ae88fbfd3a02b"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GCN-main__seed50.npz",
+    "bytes": 610938,
+    "sha256": "2c216b782169b57441dbd9bb22bc120f161da2ce5321412e743ac4168122e1c7"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GCN-main__seed51.npz",
+    "bytes": 605243,
+    "sha256": "487819e229b47130b87924dfbcb097bcd8c816b9e256e1b54e32bc11b7c4d287"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GraphSAGE-address__seed42.npz",
+    "bytes": 612879,
+    "sha256": "eb593f9e34995a58c11f0516e94be9fdf1b60a161e9081ffd7aab0108b4608a0"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GraphSAGE-address__seed43.npz",
+    "bytes": 611511,
+    "sha256": "27bea06815c2dd0219cfba0e953d235aa1b2973436d7d0b8b5ba86e5e1683adc"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GraphSAGE-address__seed44.npz",
+    "bytes": 612952,
+    "sha256": "3e95f73ae3d78ee8bd5e0a3beea86274256a243e8f56f0e4df52b611fc09a228"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GraphSAGE-address__seed45.npz",
+    "bytes": 612996,
+    "sha256": "75b7e307a107bedbb94423776567a47a8dd3ced068b6bcc60899382bc77b7dac"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GraphSAGE-address__seed46.npz",
+    "bytes": 612122,
+    "sha256": "fd2d69bae3a56d0e9af32747ede3a59cf45bcb7f6caeaed4dc218b7c84e87dca"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GraphSAGE-address__seed47.npz",
+    "bytes": 612984,
+    "sha256": "6813e6a4e64916e19adbeb19a9328a4e722e8948567048c85db27a4c5622f9fd"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GraphSAGE-address__seed48.npz",
+    "bytes": 612468,
+    "sha256": "1d8c96ff82059c7613b299f092ee1106810bb63fe3d6b6325be113347e070eba"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GraphSAGE-address__seed49.npz",
+    "bytes": 613004,
+    "sha256": "a43cc6571d6ae74da33a34c30104655e63a4af7003bff7cf677f11834783bf3c"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GraphSAGE-address__seed50.npz",
+    "bytes": 612140,
+    "sha256": "6e57c8d074bffca47ff120d90aa79ce1b2a7d8278d11b1104829134f61c722b8"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GraphSAGE-address__seed51.npz",
+    "bytes": 612965,
+    "sha256": "4e0d832131d758440ccee8c2a19b5c6cd5a12ea574e553a4ee1305143d79ba42"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GraphSAGE-card__seed42.npz",
+    "bytes": 613725,
+    "sha256": "948fe9f270d75167e7634a8686c484f05170ce5bcec00911e7056b5b0aa5e4f7"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GraphSAGE-card__seed43.npz",
+    "bytes": 613956,
+    "sha256": "0f9a3ad45e766f8919ad9b36e8c8501755c8397ee621d638dab793fae4087bc5"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GraphSAGE-card__seed44.npz",
+    "bytes": 614023,
+    "sha256": "de235b419e5e6f12a5bd852fb55a6d18850631821f6ed2f01696c7b9ab4cb403"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GraphSAGE-card__seed45.npz",
+    "bytes": 613515,
+    "sha256": "7b515001f9e6cfc35cb04aec59bdd24da6a1353fe4ab5b62fd29a9b9ab99c603"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GraphSAGE-card__seed46.npz",
+    "bytes": 613227,
+    "sha256": "a5d2a878c03e37a0b2103d48dcc78424dd6d8c8f83c240fd285805873f483fba"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GraphSAGE-card__seed47.npz",
+    "bytes": 614117,
+    "sha256": "49c99df1e6d0249e5e2f659245190ec4bd25aba3238e41fdc820e0234546f71d"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GraphSAGE-card__seed48.npz",
+    "bytes": 613507,
+    "sha256": "46ce31c3568343b52ee0d53564890250632a9357a701a555390dfda2342c95d8"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GraphSAGE-card__seed49.npz",
+    "bytes": 614176,
+    "sha256": "228cd8452815d5cc48414d5b2b9b08919b28ded4d4060af9adaee968df64842b"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GraphSAGE-card__seed50.npz",
+    "bytes": 611344,
+    "sha256": "e706814c21fc96fd518abfa7b43203d1c1ffce215db41efb68c1e733ed980168"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GraphSAGE-card__seed51.npz",
+    "bytes": 615231,
+    "sha256": "5a595676fa5ef5aae4a8a1adf24d998f46680d80487ddb9f3a79825081ab21fe"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GraphSAGE-email_domain__seed42.npz",
+    "bytes": 613116,
+    "sha256": "510659a2c4b003b5e57c6616ff795c11d6d88466c325088696ed5ffb13e14c50"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GraphSAGE-email_domain__seed43.npz",
+    "bytes": 612823,
+    "sha256": "21d737dbdac67c220b5553d20fac82c85477dfb4a22d8aaa571e46990507bba3"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GraphSAGE-email_domain__seed44.npz",
+    "bytes": 613177,
+    "sha256": "19ba6852d42b311c2d0b778febc78526c5fd4c2cd5712decea0eacf08ce236ff"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GraphSAGE-email_domain__seed45.npz",
+    "bytes": 612893,
+    "sha256": "464f5a32cdd8432fcc5e8446c3e00b1cc506d0ae57848ed6c14a064b92d43782"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GraphSAGE-email_domain__seed46.npz",
+    "bytes": 612701,
+    "sha256": "1e135800101a77f7e13a08508bb72fb25bd3533dff99ee9fc9a2a3676e0f88cb"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GraphSAGE-email_domain__seed47.npz",
+    "bytes": 613321,
+    "sha256": "60b38a5740b3a736e2a0a323f59b4a41cddba81b0ffa0e5829433f7d41f4890b"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GraphSAGE-email_domain__seed48.npz",
+    "bytes": 612758,
+    "sha256": "69e70b970a8395e8a0d6ab3baf2b81c6161578d11b575d7278d079c2f4b64162"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GraphSAGE-email_domain__seed49.npz",
+    "bytes": 613279,
+    "sha256": "88e41c6a4970a76c665bbd079eb7c4d38ef641006aff28645f4345caff1847bc"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GraphSAGE-email_domain__seed50.npz",
+    "bytes": 612176,
+    "sha256": "bc34c02b200bb55c6170c9bedd152fd8a10816b7686c98afdcf9b8015216dbbb"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GraphSAGE-email_domain__seed51.npz",
+    "bytes": 613548,
+    "sha256": "dc36f074b8cc56d856f77f2d20c1fcc6412ef365194780cfffea831f6782650f"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GraphSAGE-identifier_time_window-24h__seed42.npz",
+    "bytes": 611556,
+    "sha256": "91de00e6052bb08d642388d2627c19da4b93f6e112ad3f76e279703c8ad40ae7"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GraphSAGE-identifier_time_window-24h__seed43.npz",
+    "bytes": 612484,
+    "sha256": "5cdf3430d2b335e4ba97708b6a766bd131b798d77456f5b31eb3f2b4743fe7c2"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GraphSAGE-identifier_time_window-24h__seed44.npz",
+    "bytes": 612763,
+    "sha256": "5c2b880540d5e9abb8b4f085800016e7371307e1d9badf48e283efaddc409cf4"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GraphSAGE-identifier_time_window-24h__seed45.npz",
+    "bytes": 611738,
+    "sha256": "72f1eca91851dabd6a663ed3a35614e7f31d6cc87a727936f5d7dfaa56f6d76b"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GraphSAGE-identifier_time_window-24h__seed46.npz",
+    "bytes": 612402,
+    "sha256": "9ed742057d16c1f8b388165371f4faa2acca40d62f678c781caedafde4b0ee6d"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GraphSAGE-identifier_time_window-24h__seed47.npz",
+    "bytes": 612172,
+    "sha256": "fabaaa340a108d3ef475215ad9d75631c84f5fab0b04cc291bcbf9cb53cadb86"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GraphSAGE-identifier_time_window-24h__seed48.npz",
+    "bytes": 612171,
+    "sha256": "55a52d69cb7692819f1eaf6978f6a9e5a616a7d67fb685a7e1dddabc7b46875d"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GraphSAGE-identifier_time_window-24h__seed49.npz",
+    "bytes": 611309,
+    "sha256": "099046b87f9084855074844711107308dca89d4a1b3c9660aab89084ce893ee6"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GraphSAGE-identifier_time_window-24h__seed50.npz",
+    "bytes": 611876,
+    "sha256": "2e214a7dc9386cbe92a38724a1445e2ed4a0465f27034f140eb880cec88d9725"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GraphSAGE-identifier_time_window-24h__seed51.npz",
+    "bytes": 612461,
+    "sha256": "4722b402cc89afb5ad3f62b1ba169d16a3009c484e4bfd3f84fa97bd39e3fa2f"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GraphSAGE-main__seed42.npz",
+    "bytes": 613814,
+    "sha256": "7e59f2e14d93b6b8856043671b2e58a771de4a21711254949fb08e6a636c9a27"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GraphSAGE-main__seed43.npz",
+    "bytes": 613818,
+    "sha256": "5406c713264fcdb2d645ca81100a59b2c7ba54134ab4256f5528e9bb2dc7bff2"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GraphSAGE-main__seed44.npz",
+    "bytes": 614023,
+    "sha256": "5626de63b2f58b12a84f51387d5623fc7664c795846ed599bb1bc2f4968a70e0"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GraphSAGE-main__seed45.npz",
+    "bytes": 614043,
+    "sha256": "ad5f8eeaca34fc3733cdcd4e77d57cdec44fc6bede90f3d48bf06e75a14705f0"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GraphSAGE-main__seed46.npz",
+    "bytes": 613415,
+    "sha256": "4fe256f8bdc9bc457776dae7f9aec728dc206d6cf31bb9c41e49a54502159012"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GraphSAGE-main__seed47.npz",
+    "bytes": 613759,
+    "sha256": "75136d057a84335d1a6acefd8ee74d373603264e24a37a214019789a36d8a2d3"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GraphSAGE-main__seed48.npz",
+    "bytes": 612595,
+    "sha256": "a65499ce26fa8633099f1958e526f3177815a92985ac87c8ce8183732c4afae9"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GraphSAGE-main__seed49.npz",
+    "bytes": 613900,
+    "sha256": "ac143f5922231e343409ac24fb3e860a2b23f2e2ef0ac7c0d7d658b30d6c0824"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GraphSAGE-main__seed50.npz",
+    "bytes": 613602,
+    "sha256": "0bd50e4808aecf69c7567bc9da5be0176348cde104f77cee39562b357188079f"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__GraphSAGE-main__seed51.npz",
+    "bytes": 614316,
+    "sha256": "bd5e4308fc12f98bcd15253e6a3de09155ab3c49ad3cd7c39fb2d8155f0fc5cb"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__LSTM__seed42.npz",
+    "bytes": 634934,
+    "sha256": "25c654dd6d0b588d98dd4e99494025c877e07f81f06ef3732a693f073b4f4f47"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__LSTM__seed43.npz",
+    "bytes": 629386,
+    "sha256": "e803d425c1507b361a1a059dc731ba55af62e310c59a8025a058b1d3193c5b6f"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__LSTM__seed44.npz",
+    "bytes": 624475,
+    "sha256": "d0a01e2807022a3b612e656cd7cd633f6997bded4f817f51a6db1274f51b99a8"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__LSTM__seed45.npz",
+    "bytes": 629805,
+    "sha256": "e2b8e183c6ca8ccab22e0f78550912b85285a798457c36dace497979e2e8f8ff"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__LSTM__seed46.npz",
+    "bytes": 616570,
+    "sha256": "bb053d37988dac61a6b1b1a49df2aafa7f5400306326f3c329bc25270256c9fb"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__LSTM__seed47.npz",
+    "bytes": 624253,
+    "sha256": "fc3cea9f08c276c0b304e7b1f788b97feaa2d359079216fa988ef4b15f687d04"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__LSTM__seed48.npz",
+    "bytes": 631884,
+    "sha256": "42d2ab658e96f39cff15d8eadb2e3523dd742350adccd6017e74b9524ef4731a"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__LSTM__seed49.npz",
+    "bytes": 624423,
+    "sha256": "f70340f41065cc4eb275020efad6afcc6f7fd9ac2d5e8415987b5efd19c206d2"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__LSTM__seed50.npz",
+    "bytes": 630615,
+    "sha256": "6b418c4145b76d0d0084779853b44149c97985392a622c8266e43e46d6505dda"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__LSTM__seed51.npz",
+    "bytes": 623969,
+    "sha256": "93a50189d553fa721c1073dea0a5c135a8a27ddbfd54458cb001fea8fd778703"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__MLP__seed42.npz",
+    "bytes": 627691,
+    "sha256": "4417adcfbae1ee0bf02d7bac38c996a1e23e87f29277c7b99ec1bbd04618477a"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__MLP__seed43.npz",
+    "bytes": 631639,
+    "sha256": "0bda57b64b69223b6d6bcc75b3f9893d91e276e1ecc8dc651b66e83ea77dce21"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__MLP__seed44.npz",
+    "bytes": 629738,
+    "sha256": "7c537c566974798dab0c64600c58c3a5516cbfd58e86304d22fbc870af36c73b"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__MLP__seed45.npz",
+    "bytes": 630049,
+    "sha256": "ea8cc4448166405a571c389927679817bfb1c9196a3ea705317b7ffe416cdcc0"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__MLP__seed46.npz",
+    "bytes": 624729,
+    "sha256": "ace43a2fc56454d1227917ee4d0664b902cdc38cc0f1dde46c5e61097812b2cd"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__MLP__seed47.npz",
+    "bytes": 627341,
+    "sha256": "281b2544beb342d3eb99d8966b38aab33506560fe80893b1979c344307eacbea"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__MLP__seed48.npz",
+    "bytes": 632824,
+    "sha256": "10e1b9ee5aa67dd3d908633ff456397e076bb77c9ecbdea0743292f58988734a"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__MLP__seed49.npz",
+    "bytes": 628527,
+    "sha256": "1df5d424c126807a628fe34a0115496b10214f09be5c6fa978f31b5050c0e8ae"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__MLP__seed50.npz",
+    "bytes": 629415,
+    "sha256": "b5db9f9b82287bb78b502dae0b03e0615d3159bef3f2216c469da99864e4f604"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__MLP__seed51.npz",
+    "bytes": 628037,
+    "sha256": "0829731fde27df5fa73cbc5a31c4b351020c24d1a81b7d1d07c176339bb94e97"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__Transformer__seed42.npz",
+    "bytes": 618403,
+    "sha256": "9818707bf1d9da2308d6a87279a617e673a242bf4406e30ac5b77d73ba48c0df"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__Transformer__seed43.npz",
+    "bytes": 618576,
+    "sha256": "7a74ff3848d90af510dd26b03c50ea1106f0b0199fcbc5751c7fcff56919898f"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__Transformer__seed44.npz",
+    "bytes": 618885,
+    "sha256": "7edbef2587ccf0996b0d02b7cc6138da899e4bdf12fe39ccd04564701d18eeaa"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__Transformer__seed45.npz",
+    "bytes": 618578,
+    "sha256": "f3334b161f939992c4a744ea4aacad670c1008516d0237071bd43735cac6eb15"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__Transformer__seed46.npz",
+    "bytes": 616474,
+    "sha256": "96b4e8890c52b1d420bd4b78b467e2bc9cc4b67b4f5af923920d3d53879fb9a0"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__Transformer__seed47.npz",
+    "bytes": 620269,
+    "sha256": "a1a7820a1bae6bee468664e6149e870d29ba4249875eab1150a9baa59bf0f5af"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__Transformer__seed48.npz",
+    "bytes": 618517,
+    "sha256": "8145940f1212d674e06753015a4519961c98b81d43ded79f277a31e2a3123432"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__Transformer__seed49.npz",
+    "bytes": 616134,
+    "sha256": "09b00568f12a0e38494485c513080e173110fdea825efb9196744770a817d9d4"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__Transformer__seed50.npz",
+    "bytes": 614630,
+    "sha256": "39388c1f3316356016ee532833e4738aec0a2fcb4c106001c358a6998286c5c0"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/predictions/IEEE-CIS__Transformer__seed51.npz",
+    "bytes": 618286,
+    "sha256": "3a42fe4c35b82a42140f8ad099dfef75b491248891ff2d8a360fa179cca572f9"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/prepare.py",
+    "bytes": 5627,
+    "sha256": "3295747d00d90e6b70bf1ce7a3db388908ceff252badbf9543ae2b32801a05f8"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/reconstructed_ieee_preprocessor.json",
+    "bytes": 102983,
+    "sha256": "17c709c3d32d2d9265d3fb71fe14e51b713ea33287a418822d91b6332b3f8345"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/recovered_result_provenance.json",
+    "bytes": 1818,
+    "sha256": "00944adeeeb5cc954cc15a41f7ca5daa40a287941f61fc01c1f339f9a90790ca"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/representative_seed51.csv",
+    "bytes": 5300,
+    "sha256": "52f5dc2d35ddc7ffafa0a4eac197ed4fe7f8a458cacd61745f7aac76f2ead0e7"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/run_manifest.json",
+    "bytes": 407808,
+    "sha256": "ce6605d3bd9a369efee5cdc4181e16957798fc425ce9ea63d61d7e242dea2dbd"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/selected_per_seed_results.csv",
+    "bytes": 108831,
+    "sha256": "2e5de79d45654571f0566fb8c42a4cbde05094f9c3db30de11d994aeb9c1d138"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/selected_runs.json",
+    "bytes": 261018,
+    "sha256": "6419cfc8b24eb03cc5e9dd0473491f56f9c88b98f8692c00a8bab5a414a3f847"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/sequence_input_checks.json",
+    "bytes": 9212,
+    "sha256": "92996ebb78dcc8047cf7472684c89791922eca35e8813e1bc46128564862f3bc"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/source_snapshots/2be96ee/src/common/early_stopping.py",
+    "bytes": 700,
+    "sha256": "59d3ad52023d954546fb49ae5f85f0a23f82a6f847f75a29ad08adf74992f3ce"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/source_snapshots/2be96ee/src/common/metrics.py",
+    "bytes": 7219,
+    "sha256": "ae0ffd6508004790b2f84b563763b96e306b11ca168c663f7133f49fd80f3ceb"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/source_snapshots/2be96ee/src/elliptic/data.py",
+    "bytes": 5357,
+    "sha256": "f56756adae1ea218be5fbe532e1f7882208667ef7a2ef5dca7451756835aba84"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/source_snapshots/2be96ee/src/elliptic/gnn_models.py",
+    "bytes": 2777,
+    "sha256": "d618ae737a71bdf634338e7625f0474cd6d726f17a09b945bcd8fe269dea1404"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/source_snapshots/2be96ee/src/elliptic/models.py",
+    "bytes": 2466,
+    "sha256": "d6a6fb594b96c5d7b41fda5f3655dc4f92e186e7e5755fd78ac28e2d0336f484"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/source_snapshots/2be96ee/src/elliptic/sequence.py",
+    "bytes": 1343,
+    "sha256": "7f99deac9776a2c52efed9d041024ebc2b224217acc93809b82d5acaf992af4a"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/source_snapshots/2be96ee/src/elliptic/train_gnn.py",
+    "bytes": 6933,
+    "sha256": "0da71234bc9232a0bfde277b42224ed404cb151440bfaebbd7009292ad6a5503"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/source_snapshots/2be96ee/src/elliptic/train_lstm.py",
+    "bytes": 5040,
+    "sha256": "a67839ea212ccfcabd7b4b32c53238b6b9eb235b481a0ef7346111bca9006faf"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/source_snapshots/2be96ee/src/elliptic/train_mlp.py",
+    "bytes": 4956,
+    "sha256": "7cc24ead7433cb7b571760ef599bc252d327738a17a3142a2dce599f6ef4c537"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/source_snapshots/2be96ee/src/elliptic/train_transformer.py",
+    "bytes": 5863,
+    "sha256": "929474a5b6164e98ef69c70e60d5b811259264477d6bb4e694b25e32369ef799"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/source_snapshots/2be96ee/src/ieee_cis/gnn_models.py",
+    "bytes": 2777,
+    "sha256": "d618ae737a71bdf634338e7625f0474cd6d726f17a09b945bcd8fe269dea1404"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/source_snapshots/2be96ee/src/ieee_cis/graph_data.py",
+    "bytes": 4403,
+    "sha256": "bb843db9930389dcd78fd2fc4fd20beb593996feadd1038a78716695b57cb494"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/source_snapshots/2be96ee/src/ieee_cis/models.py",
+    "bytes": 2466,
+    "sha256": "d6a6fb594b96c5d7b41fda5f3655dc4f92e186e7e5755fd78ac28e2d0336f484"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/source_snapshots/2be96ee/src/ieee_cis/preprocessing.py",
+    "bytes": 5003,
+    "sha256": "bfcc97523bc841f0160cee4ad4c0a651f032a721cde5dc0e8400297fcfb85632"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/source_snapshots/2be96ee/src/ieee_cis/train_gnn.py",
+    "bytes": 7108,
+    "sha256": "015981a177d828483addb5f639ce84589a3d25f0e784d12a33d4e9a7e5eba904"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/source_snapshots/2be96ee/src/ieee_cis/train_lstm.py",
+    "bytes": 6238,
+    "sha256": "e5979d5ace10d79e1e379aff4d99931ef13504ae0e84618da88a6384e1a0342d"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/source_snapshots/2be96ee/src/ieee_cis/train_mlp.py",
+    "bytes": 5167,
+    "sha256": "e17b9cc4005ff01f37ebca7cc9175b4b4c7171637d2e3ed5e3b7b88dc4269557"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/source_snapshots/2be96ee/src/ieee_cis/train_transformer.py",
+    "bytes": 8819,
+    "sha256": "60fcdfb06d102c1af1b3dbbc609a7321d974816032710c6e556cd4f2866e4db0"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/source_snapshots/5333c55/src/common/early_stopping.py",
+    "bytes": 700,
+    "sha256": "59d3ad52023d954546fb49ae5f85f0a23f82a6f847f75a29ad08adf74992f3ce"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/source_snapshots/5333c55/src/common/metrics.py",
+    "bytes": 7219,
+    "sha256": "ae0ffd6508004790b2f84b563763b96e306b11ca168c663f7133f49fd80f3ceb"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/source_snapshots/5333c55/src/elliptic/data.py",
+    "bytes": 5357,
+    "sha256": "f56756adae1ea218be5fbe532e1f7882208667ef7a2ef5dca7451756835aba84"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/source_snapshots/5333c55/src/elliptic/gnn_models.py",
+    "bytes": 2777,
+    "sha256": "d618ae737a71bdf634338e7625f0474cd6d726f17a09b945bcd8fe269dea1404"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/source_snapshots/5333c55/src/elliptic/models.py",
+    "bytes": 2466,
+    "sha256": "d6a6fb594b96c5d7b41fda5f3655dc4f92e186e7e5755fd78ac28e2d0336f484"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/source_snapshots/5333c55/src/elliptic/sequence.py",
+    "bytes": 1343,
+    "sha256": "7f99deac9776a2c52efed9d041024ebc2b224217acc93809b82d5acaf992af4a"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/source_snapshots/5333c55/src/elliptic/train_gnn.py",
+    "bytes": 6933,
+    "sha256": "0da71234bc9232a0bfde277b42224ed404cb151440bfaebbd7009292ad6a5503"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/source_snapshots/5333c55/src/elliptic/train_lstm.py",
+    "bytes": 5040,
+    "sha256": "a67839ea212ccfcabd7b4b32c53238b6b9eb235b481a0ef7346111bca9006faf"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/source_snapshots/5333c55/src/elliptic/train_mlp.py",
+    "bytes": 4956,
+    "sha256": "7cc24ead7433cb7b571760ef599bc252d327738a17a3142a2dce599f6ef4c537"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/source_snapshots/5333c55/src/elliptic/train_transformer.py",
+    "bytes": 5863,
+    "sha256": "929474a5b6164e98ef69c70e60d5b811259264477d6bb4e694b25e32369ef799"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/source_snapshots/5333c55/src/ieee_cis/gnn_models.py",
+    "bytes": 2777,
+    "sha256": "d618ae737a71bdf634338e7625f0474cd6d726f17a09b945bcd8fe269dea1404"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/source_snapshots/5333c55/src/ieee_cis/graph_data.py",
+    "bytes": 12397,
+    "sha256": "39c0a8d2ce1656b54962afcc4a66f86c560e2792f5dfa057c247b92dd8a90718"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/source_snapshots/5333c55/src/ieee_cis/models.py",
+    "bytes": 2466,
+    "sha256": "d6a6fb594b96c5d7b41fda5f3655dc4f92e186e7e5755fd78ac28e2d0336f484"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/source_snapshots/5333c55/src/ieee_cis/preprocessing.py",
+    "bytes": 5003,
+    "sha256": "bfcc97523bc841f0160cee4ad4c0a651f032a721cde5dc0e8400297fcfb85632"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/source_snapshots/5333c55/src/ieee_cis/train_gnn.py",
+    "bytes": 8774,
+    "sha256": "216a63cebed361697406b7f2565c75c1e0e371f592d129adf6c55b35ffb58a74"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/source_snapshots/5333c55/src/ieee_cis/train_lstm.py",
+    "bytes": 6238,
+    "sha256": "e5979d5ace10d79e1e379aff4d99931ef13504ae0e84618da88a6384e1a0342d"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/source_snapshots/5333c55/src/ieee_cis/train_mlp.py",
+    "bytes": 5167,
+    "sha256": "e17b9cc4005ff01f37ebca7cc9175b4b4c7171637d2e3ed5e3b7b88dc4269557"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/source_snapshots/5333c55/src/ieee_cis/train_transformer.py",
+    "bytes": 8819,
+    "sha256": "60fcdfb06d102c1af1b3dbbc609a7321d974816032710c6e556cd4f2866e4db0"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/subgroup_confusion_reconciliation.csv",
+    "bytes": 26278,
+    "sha256": "e45a8c7ce852b3e5faa5ea845ee8b8a3654f4b63883f0a198fd1c4b874feb947"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/subgroup_counts.csv",
+    "bytes": 3620,
+    "sha256": "ac2fa06a8dd588619a7bd937b8aa73abff67810a7fa8f7c51b86fa1b8eeac22c"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/subgroup_counts.json",
+    "bytes": 6223,
+    "sha256": "8030597979e89e1f2714a54f6f7357ead6bb28eb9fe07276e4875ee8636753d8"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/subgroup_ids/Elliptic__native__connected.npz",
+    "bytes": 23569,
+    "sha256": "95046a0093ac77f078cf4cc1f8f23f216025306b3aea2b3240d578953d9c77e5"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/subgroup_ids/Elliptic__native__isolated.npz",
+    "bytes": 408,
+    "sha256": "ecffa1e2e91170a85aefd52ac68f7b0736f01c360ccdffafd8c28ca8cf9eddb4"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/subgroup_ids/IEEE-CIS__address__connected.npz",
+    "bytes": 1539,
+    "sha256": "77a9db605c4cb23563be90731c7e40f901fd35365b088d664c980c8d7c997df9"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/subgroup_ids/IEEE-CIS__address__isolated.npz",
+    "bytes": 93136,
+    "sha256": "fc100e618cf9afb3d58771d4c483dbaaec84afa09e7f6ad5e40974eb0c4a019c"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/subgroup_ids/IEEE-CIS__card__connected.npz",
+    "bytes": 49648,
+    "sha256": "75a60207737b2c25f6b527f3b1e05e92fa19472b9289a2907651a617e3d789d1"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/subgroup_ids/IEEE-CIS__card__isolated.npz",
+    "bytes": 45173,
+    "sha256": "ee50044c4bf4b8480029b20a8dfc20e9340788cd86b948d93fe71aa9859802e9"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/subgroup_ids/IEEE-CIS__email_domain__connected.npz",
+    "bytes": 3231,
+    "sha256": "fc48adf14e3beb6437d9ace4ce11ec131a758f9f6be6394ee9f3f94870d2974d"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/subgroup_ids/IEEE-CIS__email_domain__isolated.npz",
+    "bytes": 91567,
+    "sha256": "dbf39aacf75366dd922788ee3b7693582da6f609c3487f679c9786701127ba1f"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/subgroup_ids/IEEE-CIS__identifier_time_window-24h__connected.npz",
+    "bytes": 8710,
+    "sha256": "49766e650c70cdf4e017b0028b0199bfb6f484e4d297dabcdac01b7fdc5ddcbb"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/subgroup_ids/IEEE-CIS__identifier_time_window-24h__isolated.npz",
+    "bytes": 85851,
+    "sha256": "406b981c729840f8a5004b7573271e064636cd23675adcba9b329cd32ae82aa4"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/subgroup_ids/IEEE-CIS__main__connected.npz",
+    "bytes": 54246,
+    "sha256": "86a45822570f8422f160879afeab05e25b166e127add3b41ad0de7bf94af3f0d"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/subgroup_ids/IEEE-CIS__main__isolated.npz",
+    "bytes": 40607,
+    "sha256": "09a3fd4308f0567b87c7340d9b3e9e9616973033b2758ce16f2a03dde27a0ac1"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/subgroup_per_seed.csv",
+    "bytes": 125373,
+    "sha256": "437fbd32b1e5d30bb72f26ff7a42cdf70fbdbe72409cc8ec72b483df3071bbf0"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/subgroup_per_seed.json",
+    "bytes": 377110,
+    "sha256": "04635f05b419b1e0948148fd3424644299af74ffe7648557f3ca36bc2023df73"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/subgroup_summary.csv",
+    "bytes": 20926,
+    "sha256": "3bb8d73d2ca9436e3cb909f8c9ef0761703be13bb911e8ad6d11f02452c97de3"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/subgroup_summary.json",
+    "bytes": 79457,
+    "sha256": "e430a87349308c5a0198c5ce2033e420da8c8bb0f97cefffd49991c05f555f38"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/subgroups.py",
+    "bytes": 6251,
+    "sha256": "77da026299f6dd24199fb7c24df365a805ab58a88dfd313422debb0c887af32b"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/thesis_tables_4_5_to_4_8_alignment.json",
+    "bytes": 70688,
+    "sha256": "3128082d0a8d5a9b836031e828f10ef6836412c9af7b3ad72b01db6d2cb23edd"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/validate_outputs.py",
+    "bytes": 3367,
+    "sha256": "31aa42f6ad31a1d504435a49c0b719de682231a4801af266fb0a11588ba3052a"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/verify_features.py",
+    "bytes": 3586,
+    "sha256": "f6431b3f4015543e40b284f2e68212b902931106cbd987f11258a51c813b5bd8"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/verify_sequences.py",
+    "bytes": 1685,
+    "sha256": "a7c540405b588e94c9ace6308fe488f6ed517c26e7b102bf9d5e2ecbbefbe018"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/wilcoxon_holm.py",
+    "bytes": 5123,
+    "sha256": "4ac51eaeea9ae1e217a3d7a7c08463b535f6d7769c2ecb45bd6ec78b6dfcb0ac"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/wilcoxon_holm_inference_verified.csv",
+    "bytes": 111761,
+    "sha256": "420b670d4624f0a9c046555a704a51c4820d31526ba948df2c308f4c8d7e6124"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/wilcoxon_holm_inference_verified.json",
+    "bytes": 341289,
+    "sha256": "bd827bd68c551f957f68a1c9a360ba9168865d90122b15708d98c1c0014245b3"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/wilcoxon_holm_source_verified.csv",
+    "bytes": 110465,
+    "sha256": "7c87d97d2e23bcddf86b36268223c7b8f2eb0188d55811453b152e08ba4ce6df"
+  },
+  {
+    "archive_path": "analysis/supervisor_2026-10-13/wilcoxon_holm_source_verified.json",
+    "bytes": 339993,
+    "sha256": "0c5cfd0c53e5b0b7f411eb0e51b74dd3281742f82573c14d3732993014a91e9d"
+  },
+  {
+    "archive_path": "audit/THESIS_PROVENANCE.md",
+    "bytes": 19658,
+    "sha256": "b0973c9c83e18d0903c1f1595a1aaa03827de6563b55b51c30af6cdb01928da0"
+  },
+  {
+    "archive_path": "audit/artifact_inventory.json",
+    "bytes": 298137,
+    "sha256": "625d1163b1d008e45ba07f5b3b957ea011fb64f9124da1d363197a58129480b9"
+  },
+  {
+    "archive_path": "audit/build_report.py",
+    "bytes": 20231,
+    "sha256": "49c78b724c6225a550550dad2ce075e40db492bda16d65fde3e0f5aa1cbdd011"
+  },
+  {
+    "archive_path": "audit/elliptic_full_test_ids.json",
+    "bytes": 92016,
+    "sha256": "7e2f3c1489946eb27c503f88fc392e917973544e0808c1d43b97da10887f7c9f"
+  },
+  {
+    "archive_path": "audit/elliptic_original_sequence_test_ids.json",
+    "bytes": 91939,
+    "sha256": "0434a23563ac36dbfb5c2a891a3f64c22e5ac7e46262a5806208438f51f7c97f"
+  },
+  {
+    "archive_path": "audit/ieee_august_all_test_ids.json",
+    "bytes": 531486,
+    "sha256": "4887b32d2a75b6f1e4525e4c17011fa56302d2215b70f324774c539a221b103a"
+  },
+  {
+    "archive_path": "audit/ieee_original_full_test_ids.json",
+    "bytes": 531486,
+    "sha256": "4887b32d2a75b6f1e4525e4c17011fa56302d2215b70f324774c539a221b103a"
+  },
+  {
+    "archive_path": "audit/ieee_original_sequence_test_ids.json",
+    "bytes": 531405,
+    "sha256": "e018084956cbc37e88676440d99e958682c0abf197e07a23774cdd0328410063"
+  },
+  {
+    "archive_path": "audit/inspect_artifacts.py",
+    "bytes": 6176,
+    "sha256": "c2bab4ba188d57f9bf6c91ff0ae6be366007fbd6edb93508c13d78e475c7ff88"
+  },
+  {
+    "archive_path": "audit/recovered_elliptic_gat_seed51.json",
+    "bytes": 593,
+    "sha256": "1e99850da07e39126d243652d0d0094f1f90e9b9a96b12949574329797a7f82d"
+  },
+  {
+    "archive_path": "audit/run_manifest.json",
+    "bytes": 824963,
+    "sha256": "d6745f730b491c7c40e0e6ed24f7b0160906a677b8e1539a740226b367c356c5"
+  },
+  {
+    "archive_path": "audit/saved_result_rows.json",
+    "bytes": 296745,
+    "sha256": "45b56ef635b92b48d0e7a812ba48cf364699a3b52017e8a14320ef4987672374"
+  },
+  {
+    "archive_path": "audit/split_summary.json",
+    "bytes": 2258,
+    "sha256": "71166b902f2740496540a155845dfc810b783f667f21ce265c5271b87cbce0c2"
+  },
+  {
+    "archive_path": "audit/thesis/FINAL_TABLES.md",
+    "bytes": 11593,
+    "sha256": "622162eccf3a108692cf61dab6f3cc1e6e6f59567496adb2c45479fb0d5a5c36"
+  },
+  {
+    "archive_path": "audit/thesis/TABLE_PROVENANCE.md",
+    "bytes": 9482,
+    "sha256": "d5ae19ffdfc43eb9808082940819df3c8eb68374ee7cc7580ed379046056a5be"
+  },
+  {
+    "archive_path": "audit/thesis/extract_and_match.py",
+    "bytes": 10655,
+    "sha256": "71923561cf27186c272f7af466b5a95727e4d692a410b0d54a7a39b91e2d9e6b"
+  },
+  {
+    "archive_path": "audit/thesis/extracted_text.txt",
+    "bytes": 143703,
+    "sha256": "5e819c0c7f47a51adb37075f24b7998a629e5928fbb671c4ebfd36e288889a6e"
+  },
+  {
+    "archive_path": "audit/thesis/final_tables.json",
+    "bytes": 21922,
+    "sha256": "9def770c4f5ca05e1a8148a0b854268acf9a44a83c4f8950640239e2665cc442"
+  },
+  {
+    "archive_path": "audit/thesis/graph_statistics_check.json",
+    "bytes": 2317,
+    "sha256": "745caab1aacae45a5bfc8e54ab40ac95b53b97dd0c05a5fa0d3a0ce3fcb36aee"
+  },
+  {
+    "archive_path": "audit/thesis/pages.json",
+    "bytes": 141657,
+    "sha256": "3036ebab7414b980500882d64db89fed9fe3331d5bbdeca52da292ba47674b7a"
+  },
+  {
+    "archive_path": "audit/thesis/previews/contact_1.png",
+    "bytes": 221839,
+    "sha256": "b27d2945d55fa7000ba1a21247bcdecea58b5b430ea1207880f6fb2492334f03"
+  },
+  {
+    "archive_path": "audit/thesis/previews/contact_2.png",
+    "bytes": 549924,
+    "sha256": "0471455e352647758ac37f3047678fce6566e6e399b2e113304770ccd0796594"
+  },
+  {
+    "archive_path": "audit/thesis/previews/contact_3.png",
+    "bytes": 358431,
+    "sha256": "c935f15e5a4dda99934c13ed5a76a2e59edfb896acc7d924d43f548c8b0e6683"
+  },
+  {
+    "archive_path": "audit/thesis/previews/contact_4.png",
+    "bytes": 119097,
+    "sha256": "d2c9edad0283bdec7d95b5c1ffeb8c2357c57a338a27317a2c2cf96f7b800228"
+  },
+  {
+    "archive_path": "audit/thesis/previews/page_68.png",
+    "bytes": 324320,
+    "sha256": "1b6979e352237690f5b9c9a2e1f77bb9a071771df9d86a0bf9893ee41ecb1bdc"
+  },
+  {
+    "archive_path": "audit/thesis/previews/page_69.png",
+    "bytes": 349997,
+    "sha256": "0717cb51f22a12ea26a1f591a2564c41306d3f3b9b466be7faf65a5f155b53d9"
+  },
+  {
+    "archive_path": "audit/thesis/previews/page_70.png",
+    "bytes": 340352,
+    "sha256": "341c72562f493538d5087f1818fa59294250361404e6902b4cbfe55600867066"
+  },
+  {
+    "archive_path": "audit/thesis/previews/page_72.png",
+    "bytes": 423561,
+    "sha256": "3f412282173c958735054cde9f4407ecc195c4d0e1767a397e6e4398a3870e0d"
+  },
+  {
+    "archive_path": "audit/thesis/previews/page_73.png",
+    "bytes": 376387,
+    "sha256": "807230103d2cf90f1937f1846eae5cf8d8e6aad91054048900c4552181746f40"
+  },
+  {
+    "archive_path": "audit/thesis/previews/page_75.png",
+    "bytes": 343942,
+    "sha256": "523cd3b9e42d8b457847cb63d7de9029978fa89d3ce5c5aab505e5ff53662713"
+  },
+  {
+    "archive_path": "audit/thesis/previews/page_77.png",
+    "bytes": 343850,
+    "sha256": "48c928879208e04bd1611ed4999a7d7b3d7a5a31e1b472de2c3f935b4cec4eb2"
+  },
+  {
+    "archive_path": "audit/thesis/previews/page_79.png",
+    "bytes": 346480,
+    "sha256": "c67070ec06eff89c558c16c240faf5852a16a7cebe443d1718ce2e230e3bab0c"
+  },
+  {
+    "archive_path": "audit/thesis/previews/page_80.png",
+    "bytes": 323108,
+    "sha256": "89d5ad3dc674c24825e9cf6007bd10b17ad7dacc2fa92855dc604c98aeefbfd5"
+  },
+  {
+    "archive_path": "audit/thesis/previews/page_82.png",
+    "bytes": 335993,
+    "sha256": "8213501330e6fd9f5d1c13c5987adc1e7eac048958876d4f2c58a90c7ab58ecd"
+  },
+  {
+    "archive_path": "audit/thesis/previews/page_85.png",
+    "bytes": 320472,
+    "sha256": "01aa8e53ac19a5dc00f1230d4b5381abd19a2a17df5d058134ef40c57dd08611"
+  },
+  {
+    "archive_path": "audit/thesis/previews/page_86.png",
+    "bytes": 327938,
+    "sha256": "52c92571be93642460e901b24a7c361f2ed1a78032c16ea43206333844f6b01f"
+  },
+  {
+    "archive_path": "audit/thesis/previews/table_4_1.png",
+    "bytes": 51353,
+    "sha256": "2d63aded932060bfceb8482fcd6b68e93690c8993fc82a54efcb992a0ec22698"
+  },
+  {
+    "archive_path": "audit/thesis/previews/table_4_10.png",
+    "bytes": 84774,
+    "sha256": "26ddf6dbb224692338081cd536f1917709a49aa1a37e9c18c7d889f284293ba5"
+  },
+  {
+    "archive_path": "audit/thesis/previews/table_4_11.png",
+    "bytes": 85886,
+    "sha256": "b625b4f267012425a2b7b2047be5929e8e3d84308e273d03f9f5a7e513796efe"
+  },
+  {
+    "archive_path": "audit/thesis/previews/table_4_12.png",
+    "bytes": 102566,
+    "sha256": "61fb4986eacb5ad05599a5c27d31298f82e4fb059ff6187cef78ea6aee874397"
+  },
+  {
+    "archive_path": "audit/thesis/previews/table_4_13.png",
+    "bytes": 119097,
+    "sha256": "d2c9edad0283bdec7d95b5c1ffeb8c2357c57a338a27317a2c2cf96f7b800228"
+  },
+  {
+    "archive_path": "audit/thesis/previews/table_4_2.png",
+    "bytes": 64199,
+    "sha256": "b03eb4e7883c780f977d55c6dd46fde58e2c022ffa0465f50d85c49e76073a63"
+  },
+  {
+    "archive_path": "audit/thesis/previews/table_4_3.png",
+    "bytes": 55132,
+    "sha256": "0ff2628c371a8eedaabce7ca20518f51b8a43ec3771f2409b7e7c53aaedafaa8"
+  },
+  {
+    "archive_path": "audit/thesis/previews/table_4_4.png",
+    "bytes": 48392,
+    "sha256": "a6232c101ecbf3bfa7b070c22e7591bc2d0d85298f4ec1d31e153e91c664ebcb"
+  },
+  {
+    "archive_path": "audit/thesis/previews/table_4_5.png",
+    "bytes": 220042,
+    "sha256": "2e147bda961280f68118d081e8889646057cd2727d43e76f95db22962fda41a9"
+  },
+  {
+    "archive_path": "audit/thesis/previews/table_4_6.png",
+    "bytes": 150384,
+    "sha256": "d179551d55ad438b1a575134cc4f2c0195f97bcfd193c8c110f1700f927aea48"
+  },
+  {
+    "archive_path": "audit/thesis/previews/table_4_7.png",
+    "bytes": 86828,
+    "sha256": "1a6574ca9ad7474a379607161a8a96f6946aaae5c129b256a2b702659866024b"
+  },
+  {
+    "archive_path": "audit/thesis/previews/table_4_8.png",
+    "bytes": 85366,
+    "sha256": "39fb4ba2f5e51deb6f5472c65821c728d75fafec6ee5d1ac484f026251e89d81"
+  },
+  {
+    "archive_path": "audit/thesis/previews/table_4_9.png",
+    "bytes": 84748,
+    "sha256": "265a0d0a70f285898a6f1d0c2e11d07f7710dadba665b3353ebb5e921cc66c31"
+  },
+  {
+    "archive_path": "audit/thesis/raw_tables.json",
+    "bytes": 19133,
+    "sha256": "16b906820c2683680cefe0107c479783ff40d075caa1936821d1a8895f124ff0"
+  },
+  {
+    "archive_path": "audit/thesis/table_matches.json",
+    "bytes": 802471,
+    "sha256": "166cc91ced0171ed420ec1d3ece05ee81b9fb634c56e8187c6c7b03f977d252f"
+  },
+  {
+    "archive_path": "notes.txt",
+    "bytes": 1022,
+    "sha256": "24fc275e455b7ca60e069ef1f813bf958c6e8292e500dd9fceccfcccf48ab130"
+  },
+  {
+    "archive_path": "notes2.txt",
+    "bytes": 4811,
+    "sha256": "9594a558e7b9e323677b7e34501f7441f0006b761bc76d1fa6c9412008de3c50"
+  },
+  {
+    "archive_path": "requirements.txt",
+    "bytes": 58,
+    "sha256": "0e06d994dad83941eabe6c92f4d6e3e5fb2d540f4249aef6e8ea9f91c11f075d"
+  },
+  {
+    "archive_path": "results/ieee_cis_graph_combined_rankings.csv",
+    "bytes": 5108,
+    "sha256": "0200a90fad30c64160dcb49adc7ac3da767c9b3e3cd1d5f8e5f6173b9d5229bd"
+  },
+  {
+    "archive_path": "results/ieee_cis_graph_model_results.csv",
+    "bytes": 28322,
+    "sha256": "e1113749c1e313483451d03841aa954f9548f4fb6d91a33bd693f0787b0aa87d"
+  },
+  {
+    "archive_path": "results/ieee_cis_graph_vs_baseline_comparisons.csv",
+    "bytes": 52027,
+    "sha256": "75f1940bd1c022aba32a76c5a91b971babca44ab9648993116a26abd9af99d7d"
+  },
+  {
+    "archive_path": "results/model_rankings_by_f1.csv",
+    "bytes": 3182,
+    "sha256": "cc83dbefaf0f07957429679115ccb014fd0f2be3b8ee6d75c149b096178716fd"
+  },
+  {
+    "archive_path": "results/model_rankings_by_f1_old.csv",
+    "bytes": 2070,
+    "sha256": "f3bc29d65ec6faba9d79af94245b345950bf72525b2da8504109e12fac73aa42"
+  },
+  {
+    "archive_path": "results/model_rankings_by_recall.csv",
+    "bytes": 3146,
+    "sha256": "1eca02e6d83ae54712c77772a31b72606b8b248016ce1ae6535a59d08a137dc6"
+  },
+  {
+    "archive_path": "results/model_rankings_by_recall_old.csv",
+    "bytes": 2046,
+    "sha256": "5a6b9b99bddcf6f35686d42c746a229b5c3dc12267d20d59c099e938d8afe45f"
+  },
+  {
+    "archive_path": "results/model_rankings_old.csv",
+    "bytes": 2046,
+    "sha256": "879758874d2333ca028341b73c4e6153bb7064576790158d1d8f7c3d35c59c44"
+  },
+  {
+    "archive_path": "results/model_rankings_v2.csv",
+    "bytes": 3146,
+    "sha256": "10f27e4458002209e04e1073b056f7624830c7406e97b345d8909b4ea9e6a8c7"
+  },
+  {
+    "archive_path": "results/model_results.csv",
+    "bytes": 44226,
+    "sha256": "f13664e2f2eed994421072d85273f56eb23076f6323ac90f85f6d28cbb780bde"
+  },
+  {
+    "archive_path": "results/model_results_old.csv",
+    "bytes": 15769,
+    "sha256": "0dfd19f1e8806d4f37003daba94cc25d32e6b7b417fc84a856e46d5750631862"
+  },
+  {
+    "archive_path": "results/wilcoxon_model_comparisons.csv",
+    "bytes": 38549,
+    "sha256": "01c93752fb937f147053f38908d0d714bb34afbf4692e01500df0bf6f3f29e0b"
+  },
+  {
+    "archive_path": "results/wilcoxon_model_comparisons_old.csv",
+    "bytes": 17890,
+    "sha256": "b5f2f185176fefc542542996bd8a23cd3cfe11269d0270a0cd17ee74d26ea6d3"
+  },
+  {
+    "archive_path": "results/wilcoxon_model_comparisons_old2.csv",
+    "bytes": 38508,
+    "sha256": "a8b11dfcd955854c3191fd4a1cc9856a4948540411054e768673ea5049b9c7dc"
+  },
+  {
+    "archive_path": "src/__init__.py",
+    "bytes": 1,
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "archive_path": "src/common/__init__.py",
+    "bytes": 1,
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "archive_path": "src/common/early_stopping.py",
+    "bytes": 700,
+    "sha256": "59d3ad52023d954546fb49ae5f85f0a23f82a6f847f75a29ad08adf74992f3ce"
+  },
+  {
+    "archive_path": "src/common/graph_stats.py",
+    "bytes": 2241,
+    "sha256": "4287fc6b4987516a12d4d9dbd3a75fab7408b0b9e49add63ca779c37885a7a99"
+  },
+  {
+    "archive_path": "src/common/graph_variants.py",
+    "bytes": 2489,
+    "sha256": "94f34d4e800f2c8cf8d5d93e52661a6bb8df71f02c958cbb11ff6f08846c479d"
+  },
+  {
+    "archive_path": "src/common/metrics.py",
+    "bytes": 7236,
+    "sha256": "e2465338a11360b61b3baea8c7a5fb095b15a39a15dfdbba0947370adbd1181c"
+  },
+  {
+    "archive_path": "src/common/ranking.py",
+    "bytes": 6146,
+    "sha256": "ac73ec1a41fc986f00f5907cd56b96ddd6bca57bbaec0b368c5cb6e155f90efd"
+  },
+  {
+    "archive_path": "src/common/wilcoxon.py",
+    "bytes": 5958,
+    "sha256": "38e52044633ac4462e93a52d5233aba310c0ccba2a0b6117e61ab19f2058b587"
+  },
+  {
+    "archive_path": "src/compare_ieee_graph_constructions.py",
+    "bytes": 101,
+    "sha256": "12e1c81a621925db3613f8abef91b72f96901bf83492431e3647a763be9b05c3"
+  },
+  {
+    "archive_path": "src/elliptic/__init__.py",
+    "bytes": 1,
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "archive_path": "src/elliptic/build_graph.py",
+    "bytes": 1503,
+    "sha256": "cbc9a37b078708eddc999b1d9b6fff84b3732bf041303606e879f3b3ced5fdda"
+  },
+  {
+    "archive_path": "src/elliptic/data.py",
+    "bytes": 5357,
+    "sha256": "f56756adae1ea218be5fbe532e1f7882208667ef7a2ef5dca7451756835aba84"
+  },
+  {
+    "archive_path": "src/elliptic/gnn_models.py",
+    "bytes": 2777,
+    "sha256": "d618ae737a71bdf634338e7625f0474cd6d726f17a09b945bcd8fe269dea1404"
+  },
+  {
+    "archive_path": "src/elliptic/models.py",
+    "bytes": 2488,
+    "sha256": "5f08e82b1390c0aa0bdf331b26ca36ee664f12fce574a786ef4137a4c2957a7e"
+  },
+  {
+    "archive_path": "src/elliptic/run_all.py",
+    "bytes": 1197,
+    "sha256": "5ec0e190894b771944e081a18cbbd9f1b9d348d21336342fb0a10141c09ccfcb"
+  },
+  {
+    "archive_path": "src/elliptic/sequence.py",
+    "bytes": 1343,
+    "sha256": "7f99deac9776a2c52efed9d041024ebc2b224217acc93809b82d5acaf992af4a"
+  },
+  {
+    "archive_path": "src/elliptic/train_gat.py",
+    "bytes": 86,
+    "sha256": "ffcb008866492537257cd680aed28c54814cb9f2f4418d238d91a65161be0fa4"
+  },
+  {
+    "archive_path": "src/elliptic/train_gcn.py",
+    "bytes": 86,
+    "sha256": "e9bdda710dfe120e5fef28c9e40d45fe41d5f41f2e1c581d7e7162a8c01d9086"
+  },
+  {
+    "archive_path": "src/elliptic/train_gnn.py",
+    "bytes": 7089,
+    "sha256": "5a42ed2ec20b4f6bad2f818439628a3419f489c1848483e327d8d6371ad015dc"
+  },
+  {
+    "archive_path": "src/elliptic/train_graphsage.py",
+    "bytes": 87,
+    "sha256": "bee7746a78639691074c6cc61084b578380ad46b97b1a122ab1d7e2aa610e43f"
+  },
+  {
+    "archive_path": "src/elliptic/train_lstm.py",
+    "bytes": 5598,
+    "sha256": "f704a73ecd1ebe851afcc49d2afdc432f1777a364e0da2a55ab2db9a441e15d2"
+  },
+  {
+    "archive_path": "src/elliptic/train_mlp.py",
+    "bytes": 4956,
+    "sha256": "7cc24ead7433cb7b571760ef599bc252d327738a17a3142a2dce599f6ef4c537"
+  },
+  {
+    "archive_path": "src/elliptic/train_transformer.py",
+    "bytes": 6441,
+    "sha256": "f3ad5fb5e335e008e3e1d6d37e52901ed06370e34b100e2baef146a68fff395d"
+  },
+  {
+    "archive_path": "src/ieee_cis/__init__.py",
+    "bytes": 1,
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "archive_path": "src/ieee_cis/analyze_connectivity.py",
+    "bytes": 6085,
+    "sha256": "967205c73c5e3d00b949d7c725da0e849734744e5afd525d751fc6292fee3a10"
+  },
+  {
+    "archive_path": "src/ieee_cis/build_graph.py",
+    "bytes": 3418,
+    "sha256": "b719f743f08c2bcffac535ca2e463e6aad22a9ff7d329ed2532a44032a76049f"
+  },
+  {
+    "archive_path": "src/ieee_cis/compare_graph_construction_results.py",
+    "bytes": 10140,
+    "sha256": "138139f17940a038a0e40e788bd1d5256dddd12f18805fc4ab05b5630e35255b"
+  },
+  {
+    "archive_path": "src/ieee_cis/gnn_models.py",
+    "bytes": 2777,
+    "sha256": "d618ae737a71bdf634338e7625f0474cd6d726f17a09b945bcd8fe269dea1404"
+  },
+  {
+    "archive_path": "src/ieee_cis/graph_data.py",
+    "bytes": 12397,
+    "sha256": "39c0a8d2ce1656b54962afcc4a66f86c560e2792f5dfa057c247b92dd8a90718"
+  },
+  {
+    "archive_path": "src/ieee_cis/models.py",
+    "bytes": 2488,
+    "sha256": "5f08e82b1390c0aa0bdf331b26ca36ee664f12fce574a786ef4137a4c2957a7e"
+  },
+  {
+    "archive_path": "src/ieee_cis/preprocessing.py",
+    "bytes": 5035,
+    "sha256": "d5ff00750a9ad82050b73a4a1f578366a45e604e9ec81bdf111f05d368e6d3f9"
+  },
+  {
+    "archive_path": "src/ieee_cis/run_all.py",
+    "bytes": 1197,
+    "sha256": "c20bf4b01a6bd79deb599506d3e73423925420a2bfc14d6ea20303fa47cee256"
+  },
+  {
+    "archive_path": "src/ieee_cis/run_graph_construction_experiments.py",
+    "bytes": 3266,
+    "sha256": "26087d39d4fed82a9e1ca81285b25e27c81af7a537fc8ec11e919312503e1268"
+  },
+  {
+    "archive_path": "src/ieee_cis/train_gat.py",
+    "bytes": 86,
+    "sha256": "ffcb008866492537257cd680aed28c54814cb9f2f4418d238d91a65161be0fa4"
+  },
+  {
+    "archive_path": "src/ieee_cis/train_gcn.py",
+    "bytes": 86,
+    "sha256": "e9bdda710dfe120e5fef28c9e40d45fe41d5f41f2e1c581d7e7162a8c01d9086"
+  },
+  {
+    "archive_path": "src/ieee_cis/train_gnn.py",
+    "bytes": 8928,
+    "sha256": "2b496042740d89a1f96612a87ffe17bd971bde17d02c1845cc5517d7d58c1b1d"
+  },
+  {
+    "archive_path": "src/ieee_cis/train_graphsage.py",
+    "bytes": 87,
+    "sha256": "bee7746a78639691074c6cc61084b578380ad46b97b1a122ab1d7e2aa610e43f"
+  },
+  {
+    "archive_path": "src/ieee_cis/train_lstm.py",
+    "bytes": 6238,
+    "sha256": "e5979d5ace10d79e1e379aff4d99931ef13504ae0e84618da88a6384e1a0342d"
+  },
+  {
+    "archive_path": "src/ieee_cis/train_mlp.py",
+    "bytes": 5240,
+    "sha256": "2609fff1bc85c578b169fe44d4595271634ea5bafeb42a12d85f5c9e18b21dc8"
+  },
+  {
+    "archive_path": "src/ieee_cis/train_transformer.py",
+    "bytes": 8819,
+    "sha256": "60fcdfb06d102c1af1b3dbbc609a7321d974816032710c6e556cd4f2866e4db0"
+  },
+  {
+    "archive_path": "src/rank_models.py",
+    "bytes": 128,
+    "sha256": "cd9711457a8d5ed485aa0b49cd76e265eb53c8dd56e54f98dcdb41cea019511f"
+  },
+  {
+    "archive_path": "src/run_elliptic_all.py",
+    "bytes": 74,
+    "sha256": "2ed5750f70d1afbbc5537d8efa4962be138440d968475a9d1e1a781f34cfaf90"
+  },
+  {
+    "archive_path": "src/run_ieee_all.py",
+    "bytes": 74,
+    "sha256": "3639cd5dedf05dcc0e2375f623328f60de0c3bab73fff3424a54ec13ad589975"
+  },
+  {
+    "archive_path": "src/run_ieee_graph_constructions.py",
+    "bytes": 101,
+    "sha256": "968fefe206cd934eb8c0da10aef0f7bf6617c36d944b95feb0e0d5c6cf8468c7"
+  },
+  {
+    "archive_path": "src/run_wilcoxon_tests.py",
+    "bytes": 849,
+    "sha256": "5045dcd597580e6f572f26396c11c9bd93c55da86c58c3438681c39a143ee7e5"
+  }
+]

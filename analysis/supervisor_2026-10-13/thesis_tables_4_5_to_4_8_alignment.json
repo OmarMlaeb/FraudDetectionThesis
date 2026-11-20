@@ -1,0 +1,3350 @@
+[
+  {
+    "table": "4.5",
+    "model": "GraphSAGE-main",
+    "dataset": "IEEE-CIS",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "matches_all_printed_values": true,
+    "expected": [
+      "0.3432\u00b10.0534",
+      "0.3788\u00b10.0190",
+      "0.3972\u00b10.0172"
+    ],
+    "recomputed": [
+      "0.3432\u00b10.0534",
+      "0.3788\u00b10.0190",
+      "0.3972\u00b10.0172"
+    ],
+    "source_lines": [
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 12,
+        "seed": 42
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 13,
+        "seed": 43
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 14,
+        "seed": 44
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 15,
+        "seed": 45
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 16,
+        "seed": 46
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 17,
+        "seed": 47
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 18,
+        "seed": 48
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 19,
+        "seed": 49
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 20,
+        "seed": 50
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 21,
+        "seed": 51
+      }
+    ]
+  },
+  {
+    "table": "4.5",
+    "model": "GraphSAGE-card",
+    "dataset": "IEEE-CIS",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "matches_all_printed_values": true,
+    "expected": [
+      "0.3174\u00b10.0547",
+      "0.3706\u00b10.0229",
+      "0.3951\u00b10.0102"
+    ],
+    "recomputed": [
+      "0.3174\u00b10.0547",
+      "0.3706\u00b10.0229",
+      "0.3951\u00b10.0102"
+    ],
+    "source_lines": [
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 42,
+        "seed": 42
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 43,
+        "seed": 43
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 44,
+        "seed": 44
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 45,
+        "seed": 45
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 46,
+        "seed": 46
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 47,
+        "seed": 47
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 48,
+        "seed": 48
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 49,
+        "seed": 49
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 50,
+        "seed": 50
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 51,
+        "seed": 51
+      }
+    ]
+  },
+  {
+    "table": "4.5",
+    "model": "GraphSAGE-address",
+    "dataset": "IEEE-CIS",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "matches_all_printed_values": true,
+    "expected": [
+      "0.3665\u00b10.0572",
+      "0.3917\u00b10.0146",
+      "0.4175\u00b10.0371"
+    ],
+    "recomputed": [
+      "0.3665\u00b10.0572",
+      "0.3917\u00b10.0146",
+      "0.4175\u00b10.0371"
+    ],
+    "source_lines": [
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 72,
+        "seed": 42
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 73,
+        "seed": 43
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 74,
+        "seed": 44
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 75,
+        "seed": 45
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 76,
+        "seed": 46
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 77,
+        "seed": 47
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 78,
+        "seed": 48
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 79,
+        "seed": 49
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 80,
+        "seed": 50
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 81,
+        "seed": 51
+      }
+    ]
+  },
+  {
+    "table": "4.5",
+    "model": "GraphSAGE-email_domain",
+    "dataset": "IEEE-CIS",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "matches_all_printed_values": true,
+    "expected": [
+      "0.3912\u00b10.0142",
+      "0.4025\u00b10.0100",
+      "0.4099\u00b10.0325"
+    ],
+    "recomputed": [
+      "0.3912\u00b10.0142",
+      "0.4025\u00b10.0100",
+      "0.4099\u00b10.0325"
+    ],
+    "source_lines": [
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 102,
+        "seed": 42
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 103,
+        "seed": 43
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 104,
+        "seed": 44
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 105,
+        "seed": 45
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 106,
+        "seed": 46
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 107,
+        "seed": 47
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 108,
+        "seed": 48
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 109,
+        "seed": 49
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 110,
+        "seed": 50
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 111,
+        "seed": 51
+      }
+    ]
+  },
+  {
+    "table": "4.5",
+    "model": "GraphSAGE-identifier_time_window-24h",
+    "dataset": "IEEE-CIS",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "matches_all_printed_values": true,
+    "expected": [
+      "0.3284\u00b10.0491",
+      "0.3900\u00b10.0125",
+      "0.3815\u00b10.0254"
+    ],
+    "recomputed": [
+      "0.3284\u00b10.0491",
+      "0.3900\u00b10.0125",
+      "0.3815\u00b10.0254"
+    ],
+    "source_lines": [
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 132,
+        "seed": 42
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 133,
+        "seed": 43
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 134,
+        "seed": 44
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 135,
+        "seed": 45
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 136,
+        "seed": 46
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 137,
+        "seed": 47
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 138,
+        "seed": 48
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 139,
+        "seed": 49
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 140,
+        "seed": 50
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 141,
+        "seed": 51
+      }
+    ]
+  },
+  {
+    "table": "4.5",
+    "model": "GCN-main",
+    "dataset": "IEEE-CIS",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "matches_all_printed_values": true,
+    "expected": [
+      "0.2939\u00b10.0899",
+      "0.3470\u00b10.0569",
+      "0.3645\u00b10.0290"
+    ],
+    "recomputed": [
+      "0.2939\u00b10.0899",
+      "0.3470\u00b10.0569",
+      "0.3645\u00b10.0290"
+    ],
+    "source_lines": [
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 2,
+        "seed": 42
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 3,
+        "seed": 43
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 4,
+        "seed": 44
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 5,
+        "seed": 45
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 6,
+        "seed": 46
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 7,
+        "seed": 47
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 8,
+        "seed": 48
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 9,
+        "seed": 49
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 10,
+        "seed": 50
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 11,
+        "seed": 51
+      }
+    ]
+  },
+  {
+    "table": "4.5",
+    "model": "GCN-card",
+    "dataset": "IEEE-CIS",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "matches_all_printed_values": true,
+    "expected": [
+      "0.2746\u00b10.1083",
+      "0.3360\u00b10.0718",
+      "0.3641\u00b10.0243"
+    ],
+    "recomputed": [
+      "0.2746\u00b10.1083",
+      "0.3360\u00b10.0718",
+      "0.3641\u00b10.0243"
+    ],
+    "source_lines": [
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 32,
+        "seed": 42
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 33,
+        "seed": 43
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 34,
+        "seed": 44
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 35,
+        "seed": 45
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 36,
+        "seed": 46
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 37,
+        "seed": 47
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 38,
+        "seed": 48
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 39,
+        "seed": 49
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 40,
+        "seed": 50
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 41,
+        "seed": 51
+      }
+    ]
+  },
+  {
+    "table": "4.5",
+    "model": "GCN-address",
+    "dataset": "IEEE-CIS",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "matches_all_printed_values": true,
+    "expected": [
+      "0.2777\u00b10.1041",
+      "0.3328\u00b10.0564",
+      "0.4033\u00b10.0394"
+    ],
+    "recomputed": [
+      "0.2777\u00b10.1041",
+      "0.3328\u00b10.0564",
+      "0.4033\u00b10.0394"
+    ],
+    "source_lines": [
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 62,
+        "seed": 42
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 63,
+        "seed": 43
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 64,
+        "seed": 44
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 65,
+        "seed": 45
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 66,
+        "seed": 46
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 67,
+        "seed": 47
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 68,
+        "seed": 48
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 69,
+        "seed": 49
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 70,
+        "seed": 50
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 71,
+        "seed": 51
+      }
+    ]
+  },
+  {
+    "table": "4.5",
+    "model": "GCN-email_domain",
+    "dataset": "IEEE-CIS",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "matches_all_printed_values": true,
+    "expected": [
+      "0.2624\u00b10.1042",
+      "0.3243\u00b10.0579",
+      "0.3997\u00b10.0386"
+    ],
+    "recomputed": [
+      "0.2624\u00b10.1042",
+      "0.3243\u00b10.0579",
+      "0.3997\u00b10.0386"
+    ],
+    "source_lines": [
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 92,
+        "seed": 42
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 93,
+        "seed": 43
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 94,
+        "seed": 44
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 95,
+        "seed": 45
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 96,
+        "seed": 46
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 97,
+        "seed": 47
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 98,
+        "seed": 48
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 99,
+        "seed": 49
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 100,
+        "seed": 50
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 101,
+        "seed": 51
+      }
+    ]
+  },
+  {
+    "table": "4.5",
+    "model": "GCN-identifier_time_window-24h",
+    "dataset": "IEEE-CIS",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "matches_all_printed_values": true,
+    "expected": [
+      "0.3256\u00b10.1061",
+      "0.3573\u00b10.0634",
+      "0.3884\u00b10.0418"
+    ],
+    "recomputed": [
+      "0.3256\u00b10.1061",
+      "0.3573\u00b10.0634",
+      "0.3884\u00b10.0418"
+    ],
+    "source_lines": [
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 122,
+        "seed": 42
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 123,
+        "seed": 43
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 124,
+        "seed": 44
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 125,
+        "seed": 45
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 126,
+        "seed": 46
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 127,
+        "seed": 47
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 128,
+        "seed": 48
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 129,
+        "seed": 49
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 130,
+        "seed": 50
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 131,
+        "seed": 51
+      }
+    ]
+  },
+  {
+    "table": "4.5",
+    "model": "GAT-main",
+    "dataset": "IEEE-CIS",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "matches_all_printed_values": true,
+    "expected": [
+      "0.2480\u00b10.1002",
+      "0.2964\u00b10.0640",
+      "0.3306\u00b10.0757"
+    ],
+    "recomputed": [
+      "0.2480\u00b10.1002",
+      "0.2964\u00b10.0640",
+      "0.3306\u00b10.0757"
+    ],
+    "source_lines": [
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 22,
+        "seed": 42
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 23,
+        "seed": 43
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 24,
+        "seed": 44
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 25,
+        "seed": 45
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 26,
+        "seed": 46
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 27,
+        "seed": 47
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 28,
+        "seed": 48
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 29,
+        "seed": 49
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 30,
+        "seed": 50
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 31,
+        "seed": 51
+      }
+    ]
+  },
+  {
+    "table": "4.5",
+    "model": "GAT-card",
+    "dataset": "IEEE-CIS",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "matches_all_printed_values": true,
+    "expected": [
+      "0.2176\u00b10.0993",
+      "0.2745\u00b10.0688",
+      "0.3096\u00b10.0984"
+    ],
+    "recomputed": [
+      "0.2176\u00b10.0993",
+      "0.2745\u00b10.0688",
+      "0.3096\u00b10.0984"
+    ],
+    "source_lines": [
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 52,
+        "seed": 42
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 53,
+        "seed": 43
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 54,
+        "seed": 44
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 55,
+        "seed": 45
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 56,
+        "seed": 46
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 57,
+        "seed": 47
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 58,
+        "seed": 48
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 59,
+        "seed": 49
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 60,
+        "seed": 50
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 61,
+        "seed": 51
+      }
+    ]
+  },
+  {
+    "table": "4.5",
+    "model": "GAT-address",
+    "dataset": "IEEE-CIS",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "matches_all_printed_values": true,
+    "expected": [
+      "0.2032\u00b10.0837",
+      "0.2727\u00b10.0514",
+      "0.3046\u00b10.0635"
+    ],
+    "recomputed": [
+      "0.2032\u00b10.0837",
+      "0.2727\u00b10.0514",
+      "0.3046\u00b10.0635"
+    ],
+    "source_lines": [
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 82,
+        "seed": 42
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 83,
+        "seed": 43
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 84,
+        "seed": 44
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 85,
+        "seed": 45
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 86,
+        "seed": 46
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 87,
+        "seed": 47
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 88,
+        "seed": 48
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 89,
+        "seed": 49
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 90,
+        "seed": 50
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 91,
+        "seed": 51
+      }
+    ]
+  },
+  {
+    "table": "4.5",
+    "model": "GAT-email_domain",
+    "dataset": "IEEE-CIS",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "matches_all_printed_values": true,
+    "expected": [
+      "0.1711\u00b10.0552",
+      "0.2578\u00b10.0401",
+      "0.3251\u00b10.0857"
+    ],
+    "recomputed": [
+      "0.1711\u00b10.0552",
+      "0.2578\u00b10.0401",
+      "0.3251\u00b10.0857"
+    ],
+    "source_lines": [
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 112,
+        "seed": 42
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 113,
+        "seed": 43
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 114,
+        "seed": 44
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 115,
+        "seed": 45
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 116,
+        "seed": 46
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 117,
+        "seed": 47
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 118,
+        "seed": 48
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 119,
+        "seed": 49
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 120,
+        "seed": 50
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 121,
+        "seed": 51
+      }
+    ]
+  },
+  {
+    "table": "4.5",
+    "model": "GAT-identifier_time_window-24h",
+    "dataset": "IEEE-CIS",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "matches_all_printed_values": true,
+    "expected": [
+      "0.2342\u00b10.0926",
+      "0.2942\u00b10.0635",
+      "0.3296\u00b10.0841"
+    ],
+    "recomputed": [
+      "0.2342\u00b10.0926",
+      "0.2942\u00b10.0635",
+      "0.3296\u00b10.0841"
+    ],
+    "source_lines": [
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 142,
+        "seed": 42
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 143,
+        "seed": 43
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 144,
+        "seed": 44
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 145,
+        "seed": 45
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 146,
+        "seed": 46
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 147,
+        "seed": 47
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 148,
+        "seed": 48
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 149,
+        "seed": 49
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 150,
+        "seed": 50
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 151,
+        "seed": 51
+      }
+    ]
+  },
+  {
+    "table": "4.6",
+    "model": "GraphSAGE-main",
+    "dataset": "IEEE-CIS",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "matches_all_printed_values": true,
+    "expected": [
+      "1,561.4\u00b1308.8"
+    ],
+    "recomputed": [
+      "1,561.4\u00b1308.8"
+    ],
+    "source_lines": [
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 12,
+        "seed": 42
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 13,
+        "seed": 43
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 14,
+        "seed": 44
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 15,
+        "seed": 45
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 16,
+        "seed": 46
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 17,
+        "seed": 47
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 18,
+        "seed": 48
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 19,
+        "seed": 49
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 20,
+        "seed": 50
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 21,
+        "seed": 51
+      }
+    ]
+  },
+  {
+    "table": "4.6",
+    "model": "GraphSAGE-card",
+    "dataset": "IEEE-CIS",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "matches_all_printed_values": true,
+    "expected": [
+      "1,649.9\u00b1344.4"
+    ],
+    "recomputed": [
+      "1,649.9\u00b1344.4"
+    ],
+    "source_lines": [
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 42,
+        "seed": 42
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 43,
+        "seed": 43
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 44,
+        "seed": 44
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 45,
+        "seed": 45
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 46,
+        "seed": 46
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 47,
+        "seed": 47
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 48,
+        "seed": 48
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 49,
+        "seed": 49
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 50,
+        "seed": 50
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 51,
+        "seed": 51
+      }
+    ]
+  },
+  {
+    "table": "4.6",
+    "model": "GraphSAGE-address",
+    "dataset": "IEEE-CIS",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "matches_all_printed_values": true,
+    "expected": [
+      "1,586.3\u00b1364.9"
+    ],
+    "recomputed": [
+      "1,586.3\u00b1364.9"
+    ],
+    "source_lines": [
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 72,
+        "seed": 42
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 73,
+        "seed": 43
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 74,
+        "seed": 44
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 75,
+        "seed": 45
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 76,
+        "seed": 46
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 77,
+        "seed": 47
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 78,
+        "seed": 48
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 79,
+        "seed": 49
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 80,
+        "seed": 50
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 81,
+        "seed": 51
+      }
+    ]
+  },
+  {
+    "table": "4.6",
+    "model": "GraphSAGE-email_domain",
+    "dataset": "IEEE-CIS",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "matches_all_printed_values": true,
+    "expected": [
+      "1,391.4\u00b1325.6"
+    ],
+    "recomputed": [
+      "1,391.4\u00b1325.6"
+    ],
+    "source_lines": [
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 102,
+        "seed": 42
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 103,
+        "seed": 43
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 104,
+        "seed": 44
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 105,
+        "seed": 45
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 106,
+        "seed": 46
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 107,
+        "seed": 47
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 108,
+        "seed": 48
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 109,
+        "seed": 49
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 110,
+        "seed": 50
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 111,
+        "seed": 51
+      }
+    ]
+  },
+  {
+    "table": "4.6",
+    "model": "GraphSAGE-identifier_time_window-24h",
+    "dataset": "IEEE-CIS",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "matches_all_printed_values": true,
+    "expected": [
+      "1,273.7\u00b1236.9"
+    ],
+    "recomputed": [
+      "1,273.7\u00b1236.9"
+    ],
+    "source_lines": [
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 132,
+        "seed": 42
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 133,
+        "seed": 43
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 134,
+        "seed": 44
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 135,
+        "seed": 45
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 136,
+        "seed": 46
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 137,
+        "seed": 47
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 138,
+        "seed": 48
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 139,
+        "seed": 49
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 140,
+        "seed": 50
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 141,
+        "seed": 51
+      }
+    ]
+  },
+  {
+    "table": "4.6",
+    "model": "GCN-main",
+    "dataset": "IEEE-CIS",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "matches_all_printed_values": true,
+    "expected": [
+      "1,771.1\u00b11,017.8"
+    ],
+    "recomputed": [
+      "1,771.1\u00b11,017.8"
+    ],
+    "source_lines": [
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 2,
+        "seed": 42
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 3,
+        "seed": 43
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 4,
+        "seed": 44
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 5,
+        "seed": 45
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 6,
+        "seed": 46
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 7,
+        "seed": 47
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 8,
+        "seed": 48
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 9,
+        "seed": 49
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 10,
+        "seed": 50
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 11,
+        "seed": 51
+      }
+    ]
+  },
+  {
+    "table": "4.6",
+    "model": "GCN-card",
+    "dataset": "IEEE-CIS",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "matches_all_printed_values": true,
+    "expected": [
+      "2,049.0\u00b11,448.9"
+    ],
+    "recomputed": [
+      "2,049.0\u00b11,448.9"
+    ],
+    "source_lines": [
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 32,
+        "seed": 42
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 33,
+        "seed": 43
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 34,
+        "seed": 44
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 35,
+        "seed": 45
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 36,
+        "seed": 46
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 37,
+        "seed": 47
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 38,
+        "seed": 48
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 39,
+        "seed": 49
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 40,
+        "seed": 50
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 41,
+        "seed": 51
+      }
+    ]
+  },
+  {
+    "table": "4.6",
+    "model": "GCN-address",
+    "dataset": "IEEE-CIS",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "matches_all_printed_values": true,
+    "expected": [
+      "2,459.0\u00b11,374.4"
+    ],
+    "recomputed": [
+      "2,459.0\u00b11,374.4"
+    ],
+    "source_lines": [
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 62,
+        "seed": 42
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 63,
+        "seed": 43
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 64,
+        "seed": 44
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 65,
+        "seed": 45
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 66,
+        "seed": 46
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 67,
+        "seed": 47
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 68,
+        "seed": 48
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 69,
+        "seed": 49
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 70,
+        "seed": 50
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 71,
+        "seed": 51
+      }
+    ]
+  },
+  {
+    "table": "4.6",
+    "model": "GCN-email_domain",
+    "dataset": "IEEE-CIS",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "matches_all_printed_values": true,
+    "expected": [
+      "2,603.1\u00b11,542.1"
+    ],
+    "recomputed": [
+      "2,603.1\u00b11,542.1"
+    ],
+    "source_lines": [
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 92,
+        "seed": 42
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 93,
+        "seed": 43
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 94,
+        "seed": 44
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 95,
+        "seed": 45
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 96,
+        "seed": 46
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 97,
+        "seed": 47
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 98,
+        "seed": 48
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 99,
+        "seed": 49
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 100,
+        "seed": 50
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 101,
+        "seed": 51
+      }
+    ]
+  },
+  {
+    "table": "4.6",
+    "model": "GCN-identifier_time_window-24h",
+    "dataset": "IEEE-CIS",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "matches_all_printed_values": true,
+    "expected": [
+      "1,950.7\u00b11,370.9"
+    ],
+    "recomputed": [
+      "1,950.7\u00b11,370.9"
+    ],
+    "source_lines": [
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 122,
+        "seed": 42
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 123,
+        "seed": 43
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 124,
+        "seed": 44
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 125,
+        "seed": 45
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 126,
+        "seed": 46
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 127,
+        "seed": 47
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 128,
+        "seed": 48
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 129,
+        "seed": 49
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 130,
+        "seed": 50
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 131,
+        "seed": 51
+      }
+    ]
+  },
+  {
+    "table": "4.6",
+    "model": "GAT-main",
+    "dataset": "IEEE-CIS",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "matches_all_printed_values": true,
+    "expected": [
+      "2,048.9\u00b1866.7"
+    ],
+    "recomputed": [
+      "2,048.9\u00b1866.7"
+    ],
+    "source_lines": [
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 22,
+        "seed": 42
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 23,
+        "seed": 43
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 24,
+        "seed": 44
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 25,
+        "seed": 45
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 26,
+        "seed": 46
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 27,
+        "seed": 47
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 28,
+        "seed": 48
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 29,
+        "seed": 49
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 30,
+        "seed": 50
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 31,
+        "seed": 51
+      }
+    ]
+  },
+  {
+    "table": "4.6",
+    "model": "GAT-card",
+    "dataset": "IEEE-CIS",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "matches_all_printed_values": true,
+    "expected": [
+      "2,156.7\u00b11,360.2"
+    ],
+    "recomputed": [
+      "2,156.7\u00b11,360.2"
+    ],
+    "source_lines": [
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 52,
+        "seed": 42
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 53,
+        "seed": 43
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 54,
+        "seed": 44
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 55,
+        "seed": 45
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 56,
+        "seed": 46
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 57,
+        "seed": 47
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 58,
+        "seed": 48
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 59,
+        "seed": 49
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 60,
+        "seed": 50
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 61,
+        "seed": 51
+      }
+    ]
+  },
+  {
+    "table": "4.6",
+    "model": "GAT-address",
+    "dataset": "IEEE-CIS",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "matches_all_printed_values": true,
+    "expected": [
+      "2,042.2\u00b1403.2"
+    ],
+    "recomputed": [
+      "2,042.2\u00b1403.2"
+    ],
+    "source_lines": [
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 82,
+        "seed": 42
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 83,
+        "seed": 43
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 84,
+        "seed": 44
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 85,
+        "seed": 45
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 86,
+        "seed": 46
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 87,
+        "seed": 47
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 88,
+        "seed": 48
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 89,
+        "seed": 49
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 90,
+        "seed": 50
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 91,
+        "seed": 51
+      }
+    ]
+  },
+  {
+    "table": "4.6",
+    "model": "GAT-email_domain",
+    "dataset": "IEEE-CIS",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "matches_all_printed_values": true,
+    "expected": [
+      "2,617.5\u00b1978.4"
+    ],
+    "recomputed": [
+      "2,617.5\u00b1978.4"
+    ],
+    "source_lines": [
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 112,
+        "seed": 42
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 113,
+        "seed": 43
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 114,
+        "seed": 44
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 115,
+        "seed": 45
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 116,
+        "seed": 46
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 117,
+        "seed": 47
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 118,
+        "seed": 48
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 119,
+        "seed": 49
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 120,
+        "seed": 50
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 121,
+        "seed": 51
+      }
+    ]
+  },
+  {
+    "table": "4.6",
+    "model": "GAT-identifier_time_window-24h",
+    "dataset": "IEEE-CIS",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "matches_all_printed_values": true,
+    "expected": [
+      "2,006.1\u00b1737.0"
+    ],
+    "recomputed": [
+      "2,006.1\u00b1737.0"
+    ],
+    "source_lines": [
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 142,
+        "seed": 42
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 143,
+        "seed": 43
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 144,
+        "seed": 44
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 145,
+        "seed": 45
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 146,
+        "seed": 46
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 147,
+        "seed": 47
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 148,
+        "seed": 48
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 149,
+        "seed": 49
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 150,
+        "seed": 50
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 151,
+        "seed": 51
+      }
+    ]
+  },
+  {
+    "table": "4.7",
+    "model": "MLP",
+    "dataset": "IEEE-CIS",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "matches_all_printed_values": true,
+    "expected": [
+      "0.3709",
+      "0.5482",
+      "0.4407",
+      "0.4249",
+      "0.8586"
+    ],
+    "recomputed": [
+      "0.3709",
+      "0.5482",
+      "0.4407",
+      "0.4249",
+      "0.8586"
+    ],
+    "source_lines": [
+      {
+        "source": "results/model_results.csv",
+        "line": 128,
+        "seed": 42
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 134,
+        "seed": 43
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 140,
+        "seed": 44
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 146,
+        "seed": 45
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 152,
+        "seed": 46
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 158,
+        "seed": 47
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 164,
+        "seed": 48
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 170,
+        "seed": 49
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 176,
+        "seed": 50
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 182,
+        "seed": 51
+      }
+    ]
+  },
+  {
+    "table": "4.7",
+    "model": "LSTM",
+    "dataset": "IEEE-CIS",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "matches_all_printed_values": true,
+    "expected": [
+      "0.4006",
+      "0.4682",
+      "0.4310",
+      "0.4151",
+      "0.8558"
+    ],
+    "recomputed": [
+      "0.4006",
+      "0.4682",
+      "0.4310",
+      "0.4151",
+      "0.8558"
+    ],
+    "source_lines": [
+      {
+        "source": "results/model_results.csv",
+        "line": 129,
+        "seed": 42
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 135,
+        "seed": 43
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 141,
+        "seed": 44
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 147,
+        "seed": 45
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 153,
+        "seed": 46
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 159,
+        "seed": 47
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 165,
+        "seed": 48
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 171,
+        "seed": 49
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 177,
+        "seed": 50
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 183,
+        "seed": 51
+      }
+    ]
+  },
+  {
+    "table": "4.7",
+    "model": "Transformer",
+    "dataset": "IEEE-CIS",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "matches_all_printed_values": true,
+    "expected": [
+      "0.4076",
+      "0.4911",
+      "0.4433",
+      "0.4104",
+      "0.8485"
+    ],
+    "recomputed": [
+      "0.4076",
+      "0.4911",
+      "0.4433",
+      "0.4104",
+      "0.8485"
+    ],
+    "source_lines": [
+      {
+        "source": "results/model_results.csv",
+        "line": 130,
+        "seed": 42
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 136,
+        "seed": 43
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 142,
+        "seed": 44
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 148,
+        "seed": 45
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 154,
+        "seed": 46
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 160,
+        "seed": 47
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 166,
+        "seed": 48
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 172,
+        "seed": 49
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 178,
+        "seed": 50
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 184,
+        "seed": 51
+      }
+    ]
+  },
+  {
+    "table": "4.7",
+    "model": "GraphSAGE-main",
+    "dataset": "IEEE-CIS",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "matches_all_printed_values": true,
+    "expected": [
+      "0.3972",
+      "0.3648",
+      "0.3788",
+      "0.3432",
+      "0.8585"
+    ],
+    "recomputed": [
+      "0.3972",
+      "0.3648",
+      "0.3788",
+      "0.3432",
+      "0.8585"
+    ],
+    "source_lines": [
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 12,
+        "seed": 42
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 13,
+        "seed": 43
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 14,
+        "seed": 44
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 15,
+        "seed": 45
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 16,
+        "seed": 46
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 17,
+        "seed": 47
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 18,
+        "seed": 48
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 19,
+        "seed": 49
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 20,
+        "seed": 50
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 21,
+        "seed": 51
+      }
+    ]
+  },
+  {
+    "table": "4.7",
+    "model": "GCN-main",
+    "dataset": "IEEE-CIS",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "matches_all_printed_values": true,
+    "expected": [
+      "0.3645",
+      "0.3455",
+      "0.3470",
+      "0.2939",
+      "0.8431"
+    ],
+    "recomputed": [
+      "0.3645",
+      "0.3455",
+      "0.3470",
+      "0.2939",
+      "0.8431"
+    ],
+    "source_lines": [
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 2,
+        "seed": 42
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 3,
+        "seed": 43
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 4,
+        "seed": 44
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 5,
+        "seed": 45
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 6,
+        "seed": 46
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 7,
+        "seed": 47
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 8,
+        "seed": 48
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 9,
+        "seed": 49
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 10,
+        "seed": 50
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 11,
+        "seed": 51
+      }
+    ]
+  },
+  {
+    "table": "4.7",
+    "model": "GAT-main",
+    "dataset": "IEEE-CIS",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "matches_all_printed_values": true,
+    "expected": [
+      "0.3306",
+      "0.2798",
+      "0.2964",
+      "0.2480",
+      "0.8187"
+    ],
+    "recomputed": [
+      "0.3306",
+      "0.2798",
+      "0.2964",
+      "0.2480",
+      "0.8187"
+    ],
+    "source_lines": [
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 22,
+        "seed": 42
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 23,
+        "seed": 43
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 24,
+        "seed": 44
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 25,
+        "seed": 45
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 26,
+        "seed": 46
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 27,
+        "seed": 47
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 28,
+        "seed": 48
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 29,
+        "seed": 49
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 30,
+        "seed": 50
+      },
+      {
+        "source": "results/ieee_cis_graph_model_results.csv",
+        "line": 31,
+        "seed": 51
+      }
+    ]
+  },
+  {
+    "table": "4.8",
+    "model": "Transformer",
+    "dataset": "Elliptic",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "matches_all_printed_values": true,
+    "expected": [
+      "0.4304",
+      "0.8149",
+      "0.5620",
+      "0.5125",
+      "0.7994"
+    ],
+    "recomputed": [
+      "0.4304",
+      "0.8149",
+      "0.5620",
+      "0.5125",
+      "0.7994"
+    ],
+    "source_lines": [
+      {
+        "source": "results/model_results.csv",
+        "line": 190,
+        "seed": 42
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 196,
+        "seed": 43
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 202,
+        "seed": 44
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 208,
+        "seed": 45
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 214,
+        "seed": 46
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 220,
+        "seed": 47
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 226,
+        "seed": 48
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 232,
+        "seed": 49
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 238,
+        "seed": 50
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 244,
+        "seed": 51
+      }
+    ]
+  },
+  {
+    "table": "4.8",
+    "model": "LSTM",
+    "dataset": "Elliptic",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "matches_all_printed_values": true,
+    "expected": [
+      "0.4152",
+      "0.6647",
+      "0.5102",
+      "0.4880",
+      "0.8452"
+    ],
+    "recomputed": [
+      "0.4152",
+      "0.6647",
+      "0.5102",
+      "0.4880",
+      "0.8452"
+    ],
+    "source_lines": [
+      {
+        "source": "results/model_results.csv",
+        "line": 189,
+        "seed": 42
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 195,
+        "seed": 43
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 201,
+        "seed": 44
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 207,
+        "seed": 45
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 213,
+        "seed": 46
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 219,
+        "seed": 47
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 225,
+        "seed": 48
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 231,
+        "seed": 49
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 237,
+        "seed": 50
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 243,
+        "seed": 51
+      }
+    ]
+  },
+  {
+    "table": "4.8",
+    "model": "MLP",
+    "dataset": "Elliptic",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "matches_all_printed_values": true,
+    "expected": [
+      "0.4556",
+      "0.3430",
+      "0.3827",
+      "0.3901",
+      "0.7783"
+    ],
+    "recomputed": [
+      "0.4556",
+      "0.3430",
+      "0.3827",
+      "0.3901",
+      "0.7783"
+    ],
+    "source_lines": [
+      {
+        "source": "results/model_results.csv",
+        "line": 188,
+        "seed": 42
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 194,
+        "seed": 43
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 200,
+        "seed": 44
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 206,
+        "seed": 45
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 212,
+        "seed": 46
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 218,
+        "seed": 47
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 224,
+        "seed": 48
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 230,
+        "seed": 49
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 236,
+        "seed": 50
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 242,
+        "seed": 51
+      }
+    ]
+  },
+  {
+    "table": "4.8",
+    "model": "GraphSAGE",
+    "dataset": "Elliptic",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "matches_all_printed_values": true,
+    "expected": [
+      "0.4184",
+      "0.4112",
+      "0.4115",
+      "0.4089",
+      "0.7965"
+    ],
+    "recomputed": [
+      "0.4184",
+      "0.4112",
+      "0.4115",
+      "0.4089",
+      "0.7965"
+    ],
+    "source_lines": [
+      {
+        "source": "results/model_results.csv",
+        "line": 192,
+        "seed": 42
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 198,
+        "seed": 43
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 204,
+        "seed": 44
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 210,
+        "seed": 45
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 216,
+        "seed": 46
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 222,
+        "seed": 47
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 228,
+        "seed": 48
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 234,
+        "seed": 49
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 240,
+        "seed": 50
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 246,
+        "seed": 51
+      }
+    ]
+  },
+  {
+    "table": "4.8",
+    "model": "GAT",
+    "dataset": "Elliptic",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "matches_all_printed_values": true,
+    "expected": [
+      "0.3875",
+      "0.3696",
+      "0.3709",
+      "0.3421",
+      "0.8185"
+    ],
+    "recomputed": [
+      "0.3875",
+      "0.3696",
+      "0.3709",
+      "0.3421",
+      "0.8185"
+    ],
+    "source_lines": [
+      {
+        "source": "results/model_results.csv",
+        "line": 193,
+        "seed": 42
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 199,
+        "seed": 43
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 205,
+        "seed": 44
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 211,
+        "seed": 45
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 217,
+        "seed": 46
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 223,
+        "seed": 47
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 229,
+        "seed": 48
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 235,
+        "seed": 49
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 241,
+        "seed": 50
+      },
+      {
+        "source": "git:2be96ee:results/model_results.csv",
+        "line": 247,
+        "seed": 51
+      }
+    ]
+  },
+  {
+    "table": "4.8",
+    "model": "GCN",
+    "dataset": "Elliptic",
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "matches_all_printed_values": true,
+    "expected": [
+      "0.4625",
+      "0.1746",
+      "0.2472",
+      "0.2233",
+      "0.7793"
+    ],
+    "recomputed": [
+      "0.4625",
+      "0.1746",
+      "0.2472",
+      "0.2233",
+      "0.7793"
+    ],
+    "source_lines": [
+      {
+        "source": "results/model_results.csv",
+        "line": 191,
+        "seed": 42
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 197,
+        "seed": 43
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 203,
+        "seed": 44
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 209,
+        "seed": 45
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 215,
+        "seed": 46
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 221,
+        "seed": 47
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 227,
+        "seed": 48
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 233,
+        "seed": 49
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 239,
+        "seed": 50
+      },
+      {
+        "source": "results/model_results.csv",
+        "line": 245,
+        "seed": 51
+      }
+    ]
+  }
+]

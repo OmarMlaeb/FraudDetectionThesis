@@ -1,0 +1,2383 @@
+=== PDF PAGE 1 ===
+Lebanese American University
+Detecting Financial Fraud Using Graph Neural
+Networks in Comparison with Advanced Deep
+Learning Models
+By
+Omar Malaeb
+A thesis
+submitted in partial fulfillment of the requirements
+for the degree of Master of Science in Applied AI
+School of Arts and Sciences
+May 2026
+
+=== PDF PAGE 2 ===
+©2026
+Omar Malaeb
+All Rights Reserved
+
+=== PDF PAGE 3 ===
+Student Name:       I.D. #:
+Thesis Title: 
+Program:
+Department:
+School: 
+ 
+The undersigned certify that they have examined the final electronic copy of this thesis and approved 
+it in Partial Fulfillment of the requirements for the degree of:
+    in the major of
+  
+ Thesis Advisor’s Name:              
+ Signature: 
+ Committee Member’s Name:             
+ Signature:
+ 
+ Committee Member’s Name:            
+ Signature:
+THESIS APPROVAL FORM
+Date:
+Day Month       Year
+/ /
+Date:
+Day Month       Year
+/ /
+Date:
+Day Month       Year
+/ /
+ii
+ii
+
+=== PDF PAGE 4 ===
+THESIS COPYRIGHT RELEASE FORM
+ LEBANESE AMERICAN UNIVERSITY NON-EXCLUSIVE DISTRIBUTION LICENSE
+By signing and submitting this license, you (the author(s) or copyright owner) grants the Lebanese American University (LAU) the 
+non-exclusive right to reproduce, translate (as defined below), and/or distribute your submission (including the abstract) worldwide 
+in print and electronic formats and in any medium, including but not limited to audio or video. You agree that LAU may, without 
+changing the content, translate the submission to any medium or format for the purpose of preservation. You also agree that 
+LAU may keep more than one copy of this submission for purposes of security, backup and preservation. You represent that the 
+submission is your original work, and that you have the right to grant the rights contained in this license. You also represent that 
+your submission does not, to the best of your knowledge, infringe upon anyone’s copyright. If the submission contains material for 
+which you do not hold copyright, you represent that you have obtained the unrestricted permission of the copyright owner to grant 
+LAU the rights required by this license, and that such third-party owned material is clearly identified and acknowledged within the 
+text or content of the submission. IF THE SUBMISSION IS BASED UPON WORK THAT HAS BEEN SPONSORED OR SUPPORTED BY 
+AN AGENCY OR ORGANIZATION OTHER THAN LAU, YOU REPRESENT THAT YOU HAVE FULFILLED ANY RIGHT OF REVIEW OR OTHER 
+OBLIGATIONS REQUIRED BY SUCH CONTRACT OR AGREEMENT. LAU will clearly identify your name(s) as the author(s) or owner(s) 
+of the submission, and will not make any alteration, other than as allowed by this license, to your submission.
+Name:
+Signature:
+Date:
+iii
+
+=== PDF PAGE 5 ===
+PLAGIARISM POLICY COMPLIANCE STATEMENT
+ I certify that:
+1. I have read and understood LAU’s Plagiarism Policy.
+2. I understand that failure to comply with this Policy can lead to academic and disciplinary actions against me.
+3. This work is substantially my own, and to the extent that any part of this work is not my own I have indicated that by acknowledging 
+its sources.
+Name:
+Signature:
+Date:
+iv
+
+=== PDF PAGE 6 ===
+ACKNOWLEDGEMENTS
+This project would not have been possible without the support of many people.
+Many thanks and appreciations to ...
+v
+
+=== PDF PAGE 7 ===
+Detecting Financial Fraud Using Graph Neural
+Networks in Comparison with Advanced Deep
+Learning Models
+Omar Malaeb
+ABSTRACT
+Detecting financial fraud in digital transactions and cryptocurrencies depends on
+analyzing the usefulness of the information gained from the relationships between
+the transactions. In this thesis, we conduct a comparative benchmarking of three
+neural networks not based on graphs (Multi-Layer Perceptron (MLP), Long Short-
+Term Memory (LSTM), and Transformer) along with three graph neural networks
+(Graph Convolutional Network (GCN), GraphSAGE, and Graph Attention Network
+(GAT)).
+Each transaction is depicted by a node. In IEEE-CIS, five graphs are created, one
+graph that merges matches over selected attributes, and four others according to
+joint card signature, joint address signature, common email domains, and common
+identifiers in 24 hours. The main, card, address, and email-domain constructions
+connect consecutive transactions in chronological order within eligible matching
+groups. The identifier-time-window construction connects all eligible pairs sharing
+vi
+
+=== PDF PAGE 8 ===
+a nonmissing identifier value within 24 hours. Excessively large groups are not used
+for creating edges. Elliptic provides transaction edges that describe Bitcoin flow.
+The GNNs leverage the edges to combine information from adjacent nodes, while
+non-graph baselines do not utilize explicit graph adjacency. Alternative IEEE-CIS
+graphs are considered to see how provided relationships influence each GNN.
+Performance is evaluated based on recall, precision, F1-measure, PR-AUC, ROC-
+AUC, and confusion matrices where PR-AUC and F1-measure are the key perfor-
+mance indicators. Key comparison and graph generation experiments employ ten
+paired random seeds with a fixed time-based train-validation-test split. Paired dif-
+ferences are analyzed with the use of the unadjusted Wilcoxon signed-rank test.
+For IEEE-CIS, the highest average PR-AUC is obtained by MLP, and the highest
+average F1 score is obtained by Transformer. For IEEE-CIS, Email-Domain Links
+achieve the highest average PR-AUC for GraphSAGE, 24-Hour ID Graph achieves
+the highest average PR-AUC for GCN, and Main Graph achieves the highest average
+PR-AUC for GAT. There is no statistically significant difference in PR-AUC between
+MLP and GraphSAGE with Email-Domain Links on the unadjusted test; this does
+not show equivalence. For Elliptic, the highest average PR-AUC and F1 score are
+obtained by Transformer.
+The results have not provided any conclusive evidence regarding the dominance of
+GNNs in comparison to other non-graph neural network models. Graph construction
+influences architecture in different ways, and increased connectivity and coverage of
+fraud nodes do not guarantee improved performance in fraud detection.
+Keywords: Financial Fraud Detection, Graph Neural Networks, Deep Learning,
+vii
+
+=== PDF PAGE 9 ===
+Graph Construction, Class Imbalance, PR-AUC
+viii
+
+=== PDF PAGE 10 ===
+TABLE OF CONTENTS
+1. Introduction 1
+1.1 Overview and Motivation . . . . . . . . . . . . . . . . . . . . . . . . . 1
+1.2 The Shift Toward Relational Learning in Finance . . . . . . . . . . . 3
+1.3 Problem Statement . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+1.4 Research Questions . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+1.5 Objectives and Contributions . . . . . . . . . . . . . . . . . . . . . . 10
+1.6 Significance of the Study . . . . . . . . . . . . . . . . . . . . . . . . . 13
+2. Related Work 17
+2.1 Traditional and Deep Learning Approaches . . . . . . . . . . . . . . . 17
+2.1.1 Multi-Layer Perceptrons and Feature-Based Modeling . . . . . 17
+2.1.2 Sequential Modeling with LSTMs and RNNs . . . . . . . . . . 18
+2.1.3 Transformer Architectures and Self-Attention . . . . . . . . . 19
+2.1.4 Comparative Analysis of Deep Learning Baselines . . . . . . . 19
+2.2 Foundations of Graph Neural Networks . . . . . . . . . . . . . . . . . 20
+2.2.1 Graph Convolutional Networks (GCN) . . . . . . . . . . . . . 20
+2.2.2 GraphSAGE: Inductive Representation Learning . . . . . . . . 21
+2.2.3 Graph Attention Networks (GAT) . . . . . . . . . . . . . . . . 22
+2.2.4 Comparative Analysis of GNN Architectures . . . . . . . . . . 23
+ix
+
+=== PDF PAGE 11 ===
+2.3 GNNs in Financial Fraud Detection: State-of-the-Art (2023–2026) . . 23
+2.3.1 Temporal and Heterogeneous Graph Modeling . . . . . . . . . 23
+2.3.2 Hybrid GNN-Transformer Architectures . . . . . . . . . . . . 24
+2.3.3 Self-Supervised and Contrastive Representation Learning . . . 24
+2.4 Comparative Studies on Benchmark Datasets (IEEE-CIS & Elliptic) . 25
+2.4.1 The Elliptic Bitcoin Dataset . . . . . . . . . . . . . . . . . . . 25
+2.4.2 The IEEE-CIS Fraud Detection Dataset . . . . . . . . . . . . 26
+2.5 Handling Extreme Class Imbalance in Graphs . . . . . . . . . . . . . 26
+2.5.1 Foundations of Imbalance in Fraud Detection . . . . . . . . . 26
+2.5.2 Advanced Imbalance Mitigation Techniques . . . . . . . . . . 27
+2.5.3 Comparative Analysis of Existing Approaches . . . . . . . . . 28
+2.6 Identification of Research Gaps . . . . . . . . . . . . . . . . . . . . . 28
+2.6.1 Positioning of the Present Study . . . . . . . . . . . . . . . . . 30
+3. Proposed Approach 34
+3.1 Research Design and Overview . . . . . . . . . . . . . . . . . . . . . . 34
+3.2 Data Sources and Characterization . . . . . . . . . . . . . . . . . . . 35
+3.2.1 IEEE-CIS Fraud Detection Dataset . . . . . . . . . . . . . . . 35
+3.2.2 Elliptic Bitcoin Dataset . . . . . . . . . . . . . . . . . . . . . 36
+3.3 Data Preprocessing and Feature Engineering . . . . . . . . . . . . . . 37
+3.4 Relational Modeling: Graph Construction from Tabular Data . . . . 38
+3.4.1 Main Transaction Graph Construction . . . . . . . . . . . . . 38
+3.4.2 Alternative IEEE-CIS Graph Constructions . . . . . . . . . . 39
+3.4.3 Edge Representation and Graph Statistics . . . . . . . . . . . 41
+3.4.4 Graph Construction Evaluation Protocol . . . . . . . . . . . . 42
+x
+
+=== PDF PAGE 12 ===
+3.4.5 Graph Access Across Data Partitions . . . . . . . . . . . . . . 43
+3.5 Theoretical Framework: Graph Neural Networks . . . . . . . . . . . . 43
+3.5.1 Graph Convolutional Networks (GCN) . . . . . . . . . . . . . 43
+3.5.2 GraphSAGE (Sample and Aggregate) . . . . . . . . . . . . . . 44
+3.5.3 Graph Attention Networks (GAT) . . . . . . . . . . . . . . . . 45
+3.6 Theoretical Framework: Deep Learning Baselines . . . . . . . . . . . 45
+3.7 Class Imbalance Mitigation Strategies . . . . . . . . . . . . . . . . . . 46
+3.7.1 Cost-Sensitive Learning . . . . . . . . . . . . . . . . . . . . . 46
+3.8 Experimental Setup and Training Configuration . . . . . . . . . . . . 47
+3.9 Evaluation Framework and Metrics . . . . . . . . . . . . . . . . . . . 48
+4. Results 50
+4.1 Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 50
+4.2 Experimental Setup . . . . . . . . . . . . . . . . . . . . . . . . . . . . 51
+4.3 Graph Structure Analysis . . . . . . . . . . . . . . . . . . . . . . . . 53
+4.4 Impact of IEEE-CIS Graph Construction . . . . . . . . . . . . . . . . 56
+4.5 Aggregate Results Across 10 Runs . . . . . . . . . . . . . . . . . . . . 59
+4.5.1 IEEE-CIS Aggregate Results . . . . . . . . . . . . . . . . . . . 60
+4.5.2 Elliptic Aggregate Results . . . . . . . . . . . . . . . . . . . . 61
+4.6 Final Run Model Rankings and Confusion-Matrix Analysis . . . . . . 63
+4.6.1 IEEE-CIS Final Run Results . . . . . . . . . . . . . . . . . . . 63
+4.6.2 Elliptic Final-Run Results . . . . . . . . . . . . . . . . . . . . 65
+4.7 Sampled Complement Graph Ablation . . . . . . . . . . . . . . . . . 66
+4.8 Wilcoxon Signed-Rank Statistical Testing . . . . . . . . . . . . . . . . 68
+4.8.1 Wilcoxon Results on IEEE-CIS . . . . . . . . . . . . . . . . . 69
+xi
+
+=== PDF PAGE 13 ===
+4.8.2 Wilcoxon Results for IEEE-CIS Graph Constructions . . . . . 70
+4.8.3 Wilcoxon Results on Elliptic . . . . . . . . . . . . . . . . . . . 70
+4.9 Discussion . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 71
+4.10 Answering the Research Questions . . . . . . . . . . . . . . . . . . . . 76
+5. Conclusion and Future Work 80
+5.1 Conclusion . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 80
+5.2 Future Work . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 83
+xii
+
+=== PDF PAGE 14 ===
+LIST OF FIGURES
+xiii
+
+=== PDF PAGE 15 ===
+LIST OF TABLES
+2.1 Comparison of Existing Fraud Detection Approaches . . . . . . . . . 28
+4.1 Graph Statistics for Original and Sampled Complement Graphs . . . 53
+4.2 Structural Properties of Alternative IEEE-CIS Graph Constructions . 54
+4.3 Isolated Transactions in IEEE-CIS Graph Constructions . . . . . . . 55
+4.4 Class-Specific Connectivity of Alternative IEEE-CIS Graphs . . . . . 55
+4.5 IEEE-CIS GNN Performance Across Graph Constructions: Mean±
+Standard Deviation Across 10 Runs . . . . . . . . . . . . . . . . . . . 57
+4.6 IEEE-CIS Test-Set False Positives Across Graph Constructions: Mean
+±Sample Standard Deviation Across 10 Runs . . . . . . . . . . . . . 58
+4.7 Mean Performance Across 10 Runs on IEEE-CIS . . . . . . . . . . . . 60
+4.8 Mean Performance Across 10 Runs on Elliptic . . . . . . . . . . . . . 62
+4.9 Final-Run Results and Confusion Matrices on IEEE-CIS . . . . . . . 64
+4.10 Final-Run Results and Confusion Matrices on Elliptic . . . . . . . . . 65
+4.11 Sampled Complement Graph Ablation Results . . . . . . . . . . . . . 67
+4.12 Main Wilcoxon Findings on IEEE-CIS . . . . . . . . . . . . . . . . . 70
+4.13 Main Wilcoxon Findings on Elliptic . . . . . . . . . . . . . . . . . . . 71
+xiv
+
+=== PDF PAGE 16 ===
+Chapter One
+Introduction
+1.1 Overview and Motivation
+One of the most critical problems facing today’s financial systems, digital payment
+systems, and cryptocurrency systems is financial frauds. Due to the huge opportu-
+nities for frauds in today’s digital banking, mobile payments, and online commerce,
+the total losses due to payment frauds alone run into billions of dollars worldwide
+every year. Although conventional rule-based systems and statistical methods were
+quite successful in detecting frauds in the past, today they are facing difficulties in
+identifying complex frauds that exploit complex relationship patterns among differ-
+ent entities, accounts, and transactions.
+Properties of transactions, sequences of transactions, and graph relationships can
+all be considered as distinct representations for fraud detection. By using the graph
+method, it is possible to have the model take into account the information contained
+1
+
+=== PDF PAGE 17 ===
+within related transactions; however, the value of this relationship depends on its
+definition as well as the information in the existing features.
+In the case of this thesis work, nodes of each graph represent individual transac-
+tions. For IEEE-CIS, edges are generated based on the matching and temporal
+rules using shared attributes of transactions. Main edge generation is based on the
+matching of selected card, address, email-domain, device, and identity attributes.
+Four additional edge generation methods consider the joint card signatures, joint ad-
+dress signatures, common email-domains, and common identifiers within 24 hours
+respectively. These edges are attributed based associations, and do not necessarily
+represent payments between transactions nor connections between same customers.
+In the case of Elliptic, dataset provides edges representing the Bitcoin flows between
+transactions. Specific edge generation methods are explained in Section 3.4.
+For GCN, GraphSAGE, and GAT methods, the adjacency of generated graph is
+used for aggregating the features of neighboring transactions along with the features
+of each transaction itself. For MLP, LSTM, and Transformer baselines, their corre-
+sponding representations based on features or sequences are used without transaction-
+graph adjacency. Applications of graph-based models include the credit card fraud
+detection [1], and illicit Bitcoin transactions classification [2, 3].
+Previous research provides results on the success of specific graph-based architec-
+tures and non-graph architectures under their own experimental frameworks. Such
+research inspires comparison despite not showing that the use of graph-based mod-
+els will be better in all datasets. The pertinent issue lies in assessing the impact of
+the available transaction relationship and comparing its performance against other
+2
+
+=== PDF PAGE 18 ===
+non-graph approaches.
+This thesis explores this issue through comparing GCN, GraphSAGE, and GAT with
+MLP, LSTM, and Transformer on IEEE-CIS and Elliptic datasets. The models will
+be compared based on predefined preprocessing methods, chronological splits of
+the datasets, and identical measures of performance. In addition, the experiments
+on the IEEE-CIS dataset differ in the graph construction criteria and assessment of
+structure. The goal here is to assess the conditions where the GNNs are competitive,
+can gain from other relationship types, or fail to beat non-graph baselines.
+1.2 The Shift Toward Relational Learning in Fi-
+nance
+Over the past 20 years, many paradigm shifts have been noticed in the use of ma-
+chine learning for financial fraud detection. In addition, earlier techniques employed
+statistical anomaly detection and rule-based systems, which were not very effective
+in adapting to changing fraud schemes. More complex pattern recognition was made
+possible by the introduction of supervised machine learning techniques, such as ran-
+dom forests, decision trees, and support vector machines, but these techniques were
+still fundamentally limited by their dependence on manually created features and
+independent transaction assumptions.
+Fraud detection now has strong representation learning skills because of the deep
+learning revolution. MLPs provide a baseline for learning non-linear relationships in
+tabular features [4]. In fraud detection, LSTMs have been used to model sequential
+3
+
+=== PDF PAGE 19 ===
+information in transaction histories [5]. More recently, Transformer architectures
+have also been adapted to tabular data, using self-attention to model interactions
+between feature representations [4]. Table comparisons of data have studied deep
+learning models alongside gradient boosted decision trees, highlighting the impor-
+tance of consistency in training methodologies and hyperparameters tuning practices
+[4].
+The difference is in the types of dependencies that these architectures capture. While
+the MLP works on the provided feature vector, the sequence models have the ca-
+pability of working with dependencies within the input sequences. Nevertheless,
+these two architectures do not provide an automatic method of representing the re-
+lationship between the transactions. The graph model provides a way of providing
+this kind of representation. Whether this extra representation will be helpful for
+detecting fraud will depend on the type of relationships retained, architecture used,
+and the features provided.
+Graph Neural Networks directly work with graph data, and offer a way to integrate
+information about a node and its neighboring nodes. Moreover, Graph Convolu-
+tional Networks, which extend convolutional operations to irregular graph struc-
+tures using spectral graph theory, were first introduced in the significant study
+of Kipf and Welling [6]. Thus, this allows neural networks to learn representa-
+tions that encode both structural context and node attributes by aggregating data
+from a node’s local neighborhood. In addition, this framework was expanded by
+Hamilton et al.[7] with GraphSAGE, which introduced inductive learning capabil-
+ities through neighborhood sampling and aggregation functions that allow gener-
+alization to previously unseen nodes—a significant requirement for fraud detection
+4
+
+=== PDF PAGE 20 ===
+systems that have to constantly adapt to new accounts and transaction patterns.
+Furthermore, GNNs have shown great promise when used for fraud detection. Us-
+ing real-world card transaction data, Cheng et al. [8] created a spatial-temporal
+attention GNN (STAGN) that outperforms state-of-the-art baselines by combining
+graph structure with temporal and location-based features. Moreover, Pareja et
+al. evaluated EvolveGCN and static graph-based baselines on the Elliptic dataset,
+examining illicit Bitcoin transaction classification in a temporal setting [2].
+Recent research (2023–2026) has further refined GNN-based fraud detection through
+several key innovations. Temporal heterogeneous graph contrastive learning ap-
+proaches have been developed to capture both relational structure and temporal
+dynamics in credit card transactions [9]. Hybrid architectures have also been intro-
+duced. For instance, STA-GT uses temporal encoding, heterogeneous graph model-
+ing, and Transformer modules for capturing local and global transactions informa-
+tion [10]. Graph-aware sampling [11], cost-sensitive learning [12], rule augmentation
+[13], and dual-view representation learning [14] are some of the advanced techniques
+that have been suggested as a way of handling the problem of extreme class im-
+balance, which is a fundamental problem since fraudulent transactions represent a
+small minority of the total transactions, with the proportion varying across datasets.
+The performance of graph neural networks versus non-graph neural networks thus
+becomes an empirical issue for a specific evaluation environment. This thesis will test
+the performance of both graph and non-graph neural models in the case of IEEE-CIS
+and Elliptic data sets, but also look at the effect of other ways of constructing graphs
+from the IEEE-CIS data set on the performance of GNNs. The study will discuss
+both successes and challenges, drawing connections between the results and the
+5
+
+=== PDF PAGE 21 ===
+properties of graph connectivity and isolation, as well as the relationships between
+classes.
+1.3 Problem Statement
+Financial fraud detection models are challenged by a fundamental modeling issue
+since most fraud models exhibit hidden relationship structures that are not reflected
+in individual transaction-based feature models. Moreover, repetitive transactions
+between two or more entities, device IDs for different accounts, synchronized fraud-
+ulent behavior, and sophisticated money laundering schemes are all network-based
+models that are difficult to identify using traditional deep learning models that
+operate on individual transactions.
+Research Problem:How can relational structures embedded within large-scale fi-
+nancial transaction data be effectively leveraged to improve financial fraud detection
+beyond conventional transaction-level deep learning models?
+This problem can arise in various ways:
+Modeling Dimension:Without specific tools to handle multi-hop relational de-
+pendencies, traditional deep learning architectures such as MLPs, LSTMs, and
+Transformers rely on patterns that are sequential or tabular. While these mod-
+els have the ability to learn complex patterns and feature interactions over time,
+they cannot directly incorporate the graph structure that is commonly seen in fraud
+schemes. On the other hand, despite their design to handle graph-structured data
+naturally, GNN models may suffer from problems of high class imbalance, high
+6
+
+=== PDF PAGE 22 ===
+scalability, and temporal dependencies.
+Data Dimension:As a point of fact, the structural properties of financial trans-
+action data can differ significantly. For example, the Elliptic Bitcoin dataset has
+an explicit structure, where the data can be treated as a network. On the other
+hand, the IEEE-CIS Fraud Detection dataset is structured but has some hidden re-
+lationship information due to common attribute values (device IDs, email domains,
+IP addresses), which can be used to construct an implicit network. The best ap-
+proach may be highly dependent on the nature of the fraud signals: relationship vs.
+feature-based.
+Evaluation Dimension:Fraud detection typically involves substantial class im-
+balance, where fraudulent transactions represent a small minority of the total trans-
+actions. Recall (sensitivity to fraud), F1-score (harmonic mean of precision and
+recall), and Precision-recall AUC (area under precision-recall curve) are metrics
+that emphasize the importance of detecting minority classes, as accuracy measures
+are misleading in this context. Along with this, it is critical to have evaluation
+parameters to assess GNN and DL methods in an unbiased manner.
+Operational Dimension:For real-world fraud detection systems, millions of
+transactions need to be processed in real-time, and thus efficient inference and up-
+dating are necessary. In fact, building graphs from tabular data involves certain
+computational costs, and message passing in GNNs can also be computationally ex-
+pensive for large graphs. Furthermore, for the applicability of GNN-based methods,
+in addition to detection performance, certain computational viability and scalability
+are also necessary.
+7
+
+=== PDF PAGE 23 ===
+In this thesis, I investigate the factors under which graph modeling is effective for
+obtaining good prediction performance in detecting financial fraud and when non-
+graph approaches remain more effective. I benchmark existing neural networks on
+IEEE-CIS and Elliptic datasets and assess the impact of different graphs that can be
+constructed from the IEEE-CIS dataset on the performance of GNNs. This includes
+an assessment of the graph’s connectivity, isolation, number of connected compo-
+nents, density, and connectivity per each class, along with the detection measures in
+order to help understand the observed differences. The relationships are found for
+the settings studied; causality between the graph characteristics and performance is
+not established.
+1.4 Research Questions
+This thesis is motivated by the following three main research questions, which focus
+on the fundamental modeling, performance, and methodological issues of compara-
+tive fraud detection:
+RQ1: Can Graph Neural Networks (GCN, GraphSAGE, GAT) outper-
+form advanced deep learning architectures (MLP, LSTM, Transformer-
+based models) by learning network-level dependencies within financial
+transaction data?
+The current research aims to evaluate if there is an evident advantage of relational
+learning in detecting financial fraud. This is achieved by comparing different GNN
+models and deep learning baseline models using similar preprocessing, split of data,
+8
+
+=== PDF PAGE 24 ===
+handling of class imbalance, training methods, and evaluation metrics. The compar-
+ison concentrates on overall prediction accuracy of the models on both the IEEE-CIS
+and Elliptic datasets in terms of Recall, F1-score, PR-AUC, and ROC-AUC.
+RQ2: Under which dataset and graph-construction conditions do the
+evaluated GNNs provide useful fraud detection performance, and how
+are their performance differences associated with graph connectivity, iso-
+lation, and class-specific relationships?
+The research explores the posed question through performing comparative analysis
+using non-graph models on the IEEE-CIS and Elliptic datasets, and comparing
+five different graph structures for each GNN architecture. There are two types of
+gain observed: firstly, the gain in comparison with an alternative graph structure
+within the same GNN architecture, and secondly, the gain in comparison with a
+non-graph baseline model. The performance indicators used include the PR-AUC,
+F1-score, recall, and false positives. All of these are considered in relation to the
+graph properties.
+RQ3: Which modeling paradigm achieves superior fraud detection per-
+formance, particularly in terms of Recall, F1-score, and PR-AUC under
+highly imbalanced fraud detection conditions?
+The current research evaluates the model performance with respect to the class
+imbalance inherent in both datasets. All tested models are trained using positive-
+class weights, while the performance metrics include recall, precision, F1 score, PR
+AUC, and ROC AUC. The evaluation of the tradeoff between the detection of fraud
+and restriction of false positives is considered. Comparison with other methods for
+9
+
+=== PDF PAGE 25 ===
+addressing class imbalance is not provided.
+The research questions are operationalized through controlled experiments on the
+IEEE-CIS and Elliptic datasets, where the data splits and evaluation protocols are
+consistent and the metrics are comprehensively reported to allow direct comparison
+across the model families.
+1.5 Objectives and Contributions
+The thesis provides a comparative benchmarking analysis between well-known GNNs
+and other non-GNN deep learning models for fraud detection. The contribution of
+the thesis includes the analysis of the predictive performance on the IEEE-CIS and
+Elliptic datasets, the analysis of the variability among different runs of the model,
+and the analysis of the impact of using different constructions of the graphs in
+GNNs. Moreover, the experiments conducted with the IEEE-CIS dataset consider
+relationships between parties through card data, addresses, email domains, and IDs.
+The first objective is to explain the circumstances where graph models perform com-
+petitively, show improvement using a different graph approach, or perform poorly
+compared to their counterparts without graphs. Model ranking serves as the first
+source of information in the explanation. Consequently, the IEEE-CIS construction
+experiment examines if changes in the transaction relations bring any positive per-
+formance across various GNNs. Connectivity statistics related to the structure and
+classes help in the interpretation of the results, whereas the Elliptic database serves
+as the second source of context. Dataset differences do not serve as a stand-alone
+10
+
+=== PDF PAGE 26 ===
+assessment of the graph.
+This is achieved through:
+Contribution 1: Unified Comparative Evaluation Framework
+This paper introduces a comprehensive experimental setting for the comparison
+of six neural networks in terms of their ability to detect fraud in finances. The
+neural networks that will be assessed include three non-graph deep neural networks
+(Multi-Layer Perceptron, LSTM, Transformer), and three graph neural networks
+(GCN, GraphSAGE, GAT).
+The comparison process takes into account uniform preprocessing of the data set,
+chronologically split train/validate/test samples, and techniques for dealing with
+class imbalance using the weighted binary cross-entropy. However, for model check-
+pointing and early stopping, we need validation PR-AUC. Finally, the classification
+threshold is selected to maximize validation F1-score. We use this threshold with-
+out making any changes to our test data.Contribution 2: Graph Construction
+and Graph Structure Analysis
+With respect to the IEEE-CIS framework, the investigation evaluates a primary
+transaction graph as well as four alternative graphs constructed using card details,
+addresses, email domains, and common identifiers within a 24-hour interval. GCN,
+GraphSAGE, and GAT models are tested on these graphs to see how the choice of
+the relational data structure affects the performance of prediction.
+The measures used include PR-AUC, F1-score, recall, false positives, and graph
+theory measures such as average degree, the number of connected components, den-
+sity, the ratio of isolated nodes, and connectivity for each class. This comparison is
+11
+
+=== PDF PAGE 27 ===
+aimed at discovering any relationships between the construction of graphs and model
+performance without assuming that better connectivity will necessarily improve the
+result.
+The models are also tested on the native transaction graph of Elliptic, and the sam-
+pled complement experiment is conducted where the edges of the original graph are
+substituted by sampled non-edges. In this case, cross-dataset comparisons provide
+supplementary findings but fail to distinguish between graph structure and differ-
+ences in features and class distribution.
+Contribution 3: Repeated-Run Statistical Evaluation
+For the increase of accuracy during the comparison experiment, ten paired random
+seeds are used for the primary models. This helps to avoid coming to conclusions
+based on a single run of training since the performance of a neural network can be
+affected by random initialization, optimization, and threshold selection processes.
+In order to make a statistical comparison of the performance of the models in pairs,
+the Wilcoxon signed-rank test is used in this thesis. This paired non-parametric test
+is used for the determination of statistical significance of the difference in perfor-
+mance of the models being compared.
+Contribution 4: Reproducible Implementation and Open-Source Release
+To support reproducibility, the implementation developed for this thesis is orga-
+nized and released as a project repository. The repository includes the preprocess-
+ing scripts, graph construction scripts, model implementations, experiment runners,
+metric reporting, ranking scripts, and Wilcoxon statistical testing code used in the
+experiments.
+12
+
+=== PDF PAGE 28 ===
+The implementation is made available at:
+https://github.com/OmarMlaeb/FraudDetectionThesis
+This allows the experimental workflow to be inspected, reproduced, and extended
+in future work.
+Collectively, these contributions provide an empirical evaluation of when graph-
+based models are useful for financial fraud detection and when feature-based or
+sequence-based deep learning models remain more effective. The thesis shows that
+graph structure can provide useful information, especially in graph-native data, but
+that graph-based learning does not automatically guarantee superior fraud detection
+performance.
+1.6 Significance of the Study
+This research addresses an important theoretical, methodological, and practical gap
+with respect to graph neural networks, deep learning, and financial fraud detection.
+Theoretical Significance
+In this thesis, the comparative results between graph-based, feature-based, and
+sequence-based approaches for detecting fraud are empirically presented. The use of
+alternative IEEE-CIS networks allows us to study how the predictive power changes
+depending on the connections used by each GNN model. The obtained results refer
+to the studied datasets and experimental settings; the adversarial robustness is not
+considered.
+13
+
+=== PDF PAGE 29 ===
+The study also makes a contribution in the area of the interplay between the struc-
+ture of the graph and the problem of class imbalance. Indeed, recent theoretical
+work has demonstrated that the effectiveness of GNNs may be adversely impacted
+in the case of a class imbalance problem due to the dynamics of the message pass-
+ing mechanism [14], [15]. In this thesis, this issue is examined empirically through
+the use of class-weighted loss, threshold calibration, and evaluation metrics that are
+suitable for imbalanced fraud detection, including recall, F1-score, and PR-AUC.
+Methodological Significance
+Methodologically, this research establishes standardized evaluation protocols for
+comparing graph-based and feature-based fraud detection models. The lack of con-
+sistent benchmarking has hindered progress in the field, with different studies using
+different datasets, evaluation metrics, preprocessing procedures, and baseline im-
+plementations, making it difficult to draw general conclusions about relative model
+performance [3]. By implementing a comprehensive evaluation framework with con-
+trolled experimental conditions, this thesis provides a methodological template for
+future comparative studies.
+The methodology developed in the process of building the graph, based on the tabu-
+lar transaction data, is a significant methodological achievement. Although datasets
+like Elliptic have a clear graph structure, the majority of the real-world fraud detec-
+tion systems rely on tabular transaction data. The present thesis critically assesses
+the methodologies of building a significant graph based on the tabular data, which
+is applicable in the real world in the process of implementing GNN in the fraud
+detection systems based on the tabular data.
+14
+
+=== PDF PAGE 30 ===
+Practical Significance
+The detection of financial fraud involves the need for detecting fraud and misclas-
+sifying good cases as fraudulent. An improvement in the detection of fraud may
+be useful as it prevents fraud from going undetected while producing minimal false
+positive classifications. The current thesis provides empirical proof that would help
+in making decisions regarding model selection and graph construction.
+The results have practical implications for choosing models in fraud detection sys-
+tems as well. On one hand, financial organizations often work with tabular trans-
+action data; on the other hand, cryptocurrency and anti-money laundering tasks
+may involve naturally graph-structured transaction networks. Thus, analyzing both
+types of data helps clarify when graph-based models are appropriate and when
+feature-based or sequence-based deep learning models may be more effective.
+Furthermore, the results show that it is crucial to evaluate models used in the process
+of fraud detection by metrics like recall, precision, F1-score, PR-AUC, ROC-AUC,
+and confusion matrices. In the case of real-world fraud detection systems, if a model
+has high recall but generates a large number of false positives, then this model will
+hardly be applicable due to an increased number of false alarms.
+Broader Impact
+Outside the application in the detection of financial fraud, this research has signifi-
+cant implications in the anomaly detection of network systems. The methodologies
+and the research are relevant and applicable in other related domains, such as cy-
+bersecurity (identifying malicious actors in a computer network), healthcare fraud
+(identifying fraudulent insurance claims through a network of providers), and social
+15
+
+=== PDF PAGE 31 ===
+media (identifying coordinated inauthentic behavior). Thus, the comparative eval-
+uation methodologies and the methodologies in the construction of the graph, as
+presented in this research, are applicable in these domains as well.
+16
+
+=== PDF PAGE 32 ===
+Chapter Two
+Related Work
+2.1 Traditional and Deep Learning Approaches
+The history of the development of the methods of detecting fraud has witnessed
+the transition from rule-based systems, then statistical methods, and finally the
+emergence of deep learning techniques. In the following paragraphs, the fundamen-
+tal deep learning techniques, such as Multi-Layer Perceptrons, Long Short-Term
+Memory, and the Transformer, which have influenced the development of the latest
+techniques of detecting financial transaction-based fraud, shall be critically evalu-
+ated.
+2.1.1 Multi-Layer Perceptrons and Feature-Based Modeling
+Multi-Layer Perceptrons (MLPs) are a basic deep learning architecture for tabular
+classification. These models consist of fully connected layers with non-linear acti-
+17
+
+=== PDF PAGE 33 ===
+vation functions, such as ReLU, and can include dropout for regularization [4]. In
+this thesis, the MLP serves as a feature-based baseline for fraud detection using
+transaction attributes.
+However, MLPs’ rely on the independent and identically distributed (i.i.d.) assump-
+tion in which frequently limits their effectiveness. The structural relationships that
+define coordinated fraud schemes aren’t considered into account by MLPs since they
+regard each transaction as an independent observation [6], [1].
+2.1.2 Sequential Modeling with LSTMs and RNNs
+In order to overcome the shortcomings of static modeling, Recurrent Neural Net-
+works and Long Short-Term Memory networks were introduced to incorporate the
+time dependency of user behavior. Moreover, another seminal contribution was
+made by Jurgovsky et al. in 2018, in which credit card transactions were mod-
+eled as time-series data, and it was shown that sequence classification can enhance
+the detection accuracy significantly over traditional machine learning baselines [5].
+However, the LSTM model relies on a gate mechanism, consisting of input, forget,
+and output gates, which enables the long-term memory of transaction history, which
+is essential in identifying anomalies with respect to user behavior [5].
+Published research has investigated the use of LSTMs to incorporate transaction
+histories into credit-card fraud detection. Jurgovsky et al. evaluated sequence clas-
+sification as a way to use information from successive transactions [5]. This provides
+a basis for including an LSTM as a sequential baseline in the present comparison.
+However, a sequence model operating on an individual entity’s transaction history
+18
+
+=== PDF PAGE 34 ===
+does not explicitly represent the transaction network. Graph-based approaches pro-
+vide a different representation by incorporating connections between transactions
+[3].
+2.1.3 Transformer Architectures and Self-Attention
+The Transformer architecture uses self-attention to learn dependencies between in-
+put representations. Unlike recurrent architectures, its attention mechanism does
+not require sequential recurrent processing of the input [16].
+For tabular data, Gorishniy et al. introduced FT-Transformer, which converts nu-
+merical and categorical features into embeddings and applies Transformer layers
+to these feature representations [4]. This provides a published example of how self-
+attention can be adapted to model interactions between the features of an individual
+record.
+Such feature-based attention does not explicitly use a transaction graph. Therefore,
+tabular Transformers provide a relevant point of comparison with GNNs, which
+incorporate graph connectivity into their representations.
+2.1.4 Comparative Analysis of Deep Learning Baselines
+Feature-based, sequence-based, and graph-based methods use different input repre-
+sentations. Their relative performance depends on the dataset, available features,
+graph construction, and evaluation protocol. Published results should therefore be
+interpreted within their experimental settings rather than as evidence that one model
+19
+
+=== PDF PAGE 35 ===
+family is universally superior. Published comparative work on Elliptic has reported
+benefits from incorporating network information [3]. However, such findings should
+be interpreted within the evaluated datasets and experimental settings. They mo-
+tivate further comparison rather than establishing that graph-based architectures
+invariably outperform non-graph models.
+2.2 Foundations of Graph Neural Networks
+Graph Neural Networks (GNNs) embody a paradigm shift in fraud detection method-
+ologies, where the interactions between entities are learned and represented in the
+form of a graph. This section discusses the basic architectures of GCNs, Graph-
+SAGE, and GAT, which are the building blocks for modern relational learning in
+finance.
+2.2.1 Graph Convolutional Networks (GCN)
+Kipf and Welling (2017) introduced the Graph Convolutional Network (GCN) as a
+method for semi-supervised classification on graph-structured data [6]. Additionally,
+the GCN generalizes the notion of convolution on regular structures such as grids
+(images) to more irregular structures using a first-order approximation of spectral
+filterings on graphs [6]. However, the underlying mechanism is based on a message
+passing framework in which node representations are updated based on aggregations
+from their immediate neighbors. Mathematically, the update rule for a GCN layer
+20
+
+=== PDF PAGE 36 ===
+is defined as:
+H (l+1) =σ
+
+˜D−1/2 ˜A ˜D−1/2H (l)W (l)
+
+(2.1)
+where ˜Arepresents the adjacency matrix with self-loops, and ˜Dis the normalized
+degree matrix [6].
+In financial fraud detection, GCNs aggregate information from connected nodes
+to construct transaction representations [6]. Pareja et al. included a static GCN
+baseline in their Elliptic experiments and compared it with models incorporating
+temporal information [2]. This provides a published example of graph convolution
+applied to illicit transaction classification. GraphSAGE, in contrast, explicitly de-
+velops an inductive approach for generating representations for previously unseen
+nodes [7].
+2.2.2 GraphSAGE: Inductive Representation Learning
+In order to overcome the scalability and transductive restrictions of GCNs, Hamilton
+et al. (2017) proposed a new framework called GraphSAGE (Graph Sample and
+Aggregate) [7]. In addition to that, GraphSAGE is an inductive framework that
+learns a set of aggregator functions instead of a set of node embeddings. This enables
+the framework to generate representations for new nodes that have not been seen
+during training by sampling and aggregating features over local node neighborhoods
+[7]. In addition to that, it incorporates different types of aggregator functions such
+as Mean, Pooling, and LSTM [7].
+This is especially due to the inductive nature of the GraphSAGE approach. In the
+21
+
+=== PDF PAGE 37 ===
+case of fraud detection in a streaming environment, where new accounts are being
+added to the system continuously, the inductive nature of the approach is especially
+useful. In particular, the approach is useful for the identification of fraudulent
+patterns without having to retrain the model [1], [11]. Moreover, the approach is
+also shown to be superior to the GCN approach in the case of large-scale graphs due
+to the efficient neighborhood sampling strategy of the approach [1], [3].
+2.2.3 Graph Attention Networks (GAT)
+The Graph Attention Network (GAT) introduces a self-attention mechanism to the
+graph aggregation process, allowing nodes to assign different importance weights to
+different neighbors [9], [17]. Unlike GCN, which uses a fixed normalization based on
+the graph’s degree matrix, GAT learns the attention coefficientsα ij dynamically:
+αij =
+exp
+
+LeakyReLU
+
+⃗ aT [W⃗hi||W⃗hj]
+
+P
+k∈Ni exp
+
+LeakyReLU
+
+⃗ aT [W⃗hi||W⃗hk]
+ (2.2)
+Graph attention assigns learned weights to neighboring nodes when aggregating
+their representations [18]. This allows neighbors to contribute differently to the
+resulting node representation. However, attention weights alone do not establish
+that a particular connection is fraudulent.
+Published research has also combined graph modeling with temporal information
+and Transformer attention. For example, STA-GT incorporates temporal encoding
+and interactions between nodes to capture local and global information for transac-
+tion fraud detection [10].
+22
+
+=== PDF PAGE 38 ===
+2.2.4 Comparative Analysis of GNN Architectures
+A comparison of these basic GNN architecture designs shows that they have different
+trade-offs. For example, GCN has a robust spectral approach but faces scalability
+problems on large graphs. In contrast, GraphSAGE has inductive properties and ef-
+ficiency through neighborhood sampling; thus, it is more suitable for industrial-scale
+use cases [7], [3]. Another example is GAT, which has the highest expressiveness
+because it can learn weights on edges; however, it has a higher computational cost
+because of the use of attention in its design [8], [17]. In conclusion, which architec-
+ture to use depends on various properties of the dataset that are used in the study,
+including graph density, node addition frequency, and complexity of relational fraud
+patterns [3].
+2.3 GNNs in Financial Fraud Detection: State-
+of-the-Art (2023–2026)
+In the time period from 2023 to 2026, a new wave of GNN-based innovation has
+been designed to specifically tackle the complex needs of financial fraud cases.
+2.3.1 Temporal and Heterogeneous Graph Modeling
+Financial transactions contain temporal information as well as relationships between
+entities. Temporal graph modeling seeks to incorporate this information into the
+learned representations. For example, Tian and Liu proposed STA-GT, which in-
+23
+
+=== PDF PAGE 39 ===
+corporates temporal encoding into a heterogeneous graph neural network and uses
+a Transformer module to capture local and global information [10]. This provides a
+published example of combining temporal and relational information for transaction
+fraud detection.
+2.3.2 Hybrid GNN-Transformer Architectures
+Another notable trend is the integration of graph-based relational modeling with
+Transformer attention. For example, Tian and Liu proposed the Spatial-Temporal-
+Aware Graph Transformer (STA-GT) for transaction fraud detection [10]. The
+model incorporates temporal encoding into a heterogeneous graph neural network
+and uses a Transformer module to capture local and global information through
+interactions between nodes.
+This approach illustrates how graph structure, temporal information, and attention
+can be combined within a fraud detection architecture. It is discussed here as
+related work; the present thesis benchmarks GCN, GraphSAGE, and GAT against
+non-graph deep learning baselines rather than implementing STA-GT.
+2.3.3 Self-Supervised and Contrastive Representation Learn-
+ing
+In order to mitigate the problem of scarcity in labeled data related to fraud, recent
+studies have focused on the use of self-supervised or contrastive learning. In this
+regard, GNNs are trained to identify ”similar” and ”dissimilar” node pairs in the
+24
+
+=== PDF PAGE 40 ===
+embedding space, independent of labeled data related to fraud [9], [14]. In other
+words, the GNNs are trained on contrastive objectives such as InfoNCE or Triplet
+Loss, which enables the models to automatically acquire discriminative representa-
+tions for anomaly detection. In addition, recent studies have also demonstrated that
+dual-view contrastive learning, which leverages the node local structure and graph
+global structure, can enhance the recall of the imbalanced data set [14].
+2.4 Comparative Studies on Benchmark Datasets
+(IEEE-CIS & Elliptic)
+The evaluation of GNNs and deep learning models on standardized benchmarks like
+IEEE-CIS and Elliptic provides critical insights into their relative performance.
+2.4.1 The Elliptic Bitcoin Dataset
+The Elliptic Bitcoin dataset is a benchmark for illicit transaction classification. De-
+prez et al. compared network analytics approaches on this dataset, including engi-
+neered network features, random-walk methods, and GNNs, and reported improved
+predictive performance from network information in their experimental setting [3].
+Pareja et al. also evaluated static and dynamic graph-based methods on Ellip-
+tic, demonstrating the relevance of temporal modeling to transaction classification
+[2]. These studies motivate the present comparison while showing that conclusions
+should be tied to the models and evaluation settings examined.
+25
+
+=== PDF PAGE 41 ===
+2.4.2 The IEEE-CIS Fraud Detection Dataset
+On the other hand, the IEEE-CIS dataset is primarily tabular, so applying GNNs
+requires the construction of a graph from transaction attributes. The choice of
+relationships used to connect transactions may influence the information available for
+neighborhood aggregation. This motivates the comparison of feature-based models
+with GNNs and the evaluation of alternative graph constructions in this thesis.
+2.5 Handling Extreme Class Imbalance in Graphs
+A major methodological challenge faced in fraud detection systems is class imbal-
+ance, where fraudulent transactions are substantially outnumbered by legitimate
+transactions [11], [15].
+2.5.1 Foundations of Imbalance in Fraud Detection
+The work of Dal Pozzolo et al. in the year 2015 has provided the basic understanding
+of class imbalance in the context of credit card fraud detection using GNNs [19].
+The authors of this work have emphasized the effect of extreme skewness on the
+calibration of the model and the use of Recall and PR-AUC as opposed to accuracy
+in the context of class imbalance [19]. When class imbalance is considered in the
+context of GNNs, there is a phenomenon of ”message imbalance” where the features
+of a rare fraudulent node are overwhelmed by the features of thousands of benign
+nodes [14], [15].
+26
+
+=== PDF PAGE 42 ===
+2.5.2 Advanced Imbalance Mitigation Techniques
+To overcome this issue, recent GNN research has proposed the following graph-aware
+strategies:
+•Graph-Aware Sampling:Models like PC-GNN (Pick and Choose GNN)
+utilize label-balanced sub-samplers to ensure that fraudulent nodes are well-
+represented in each training batch [1], [11].
+•Weighted Loss Functions:Cost-sensitive learning assigns different im-
+portance to errors involving different classes [12]. In weighted binary cross-
+entropy, a larger positive-class weight increases the contribution of fraudulent
+examples to the training loss, helping to address their underrepresentation.
+•Rule Augmentation (REFUEL):The REFUEL framework extracts sym-
+bolic rules from the set of fraudulent instances and appends these as node
+features, effectively providing a “guided” signal for the GNN model, which is
+useful in light of scarce data [13].
+•Dual-View Representation Learning:This method employs a pair of
+encoders, which attempt to learn the “local” and “global” views of a node,
+effectively filtering the minority class signal from the noise of the majority
+class [14].
+The methods are reviewed as suggested approaches in the literature. In the present
+experiments, a binary cross-entropy loss with positive class weighting and validation-
+based threshold decision are used; none of the other imbalanced data mitigation
+methods that have been discussed are employed or evaluated.
+27
+
+=== PDF PAGE 43 ===
+2.5.3 Comparative Analysis of Existing Approaches
+In order to provide a structured overview of the already existing literature, a sum-
+mary of important characteristics of already reviewed approaches for fraud detection
+is provided in Table 2.1.
+Table 2.1:Comparison of Existing Fraud Detection Approaches
+Model Graph-based Temporal Explicit Imbalance Mechanism Domain
+GCN Yes No No General
+GraphSAGE Yes No No General
+Elliptic GCN Yes Partial No Bitcoin
+Credit Card GNN Yes Yes No Credit Card
+STAGN Yes Yes No Banking
+LSTM Sequence No Yes No Credit Card
+Calibration Method No No Yes General
+2.6 Identification of Research Gaps
+Significant advancements have been made in the area of GNN-based fraud detection,
+and yet, several critical gaps in the research area still persist:
+•Systematic Comparative Evaluation:The number of papers that com-
+pare the performance of recent GNN variants (GCN, GraphSAGE, and GAT)
+against recent deep learning variants (Transformer, LSTM, MLP) on the same
+datasets, after the same preprocessing, is limited. It is difficult to generalize,
+as most of the recent work only considers a few variants [3].
+•Graph Construction for Tabular Data:While methods exist for con-
+structing graphs from tabular data (as in IEEE-CIS), there is no consensus on
+the ”optimal” strategy. The effect of edge definition and graph topology on
+28
+
+=== PDF PAGE 44 ===
+the performance of GNNs has not been sufficiently investigated [3].
+•Real-Time Scalability and Latency:Some of the recent advanced GNNs,
+such as GAT using temporal attention, are computationally expensive. The
+balance between detection accuracy and latency in a production setting is an
+area that is a major need in the future research space [9], [17].
+•Robustness to Adversarial Camouflage:A major challenge is that fraud-
+sters are increasingly trying to ”camouflage” their activities by creating edges
+to legitimate nodes. Developing GNNs that are robust to such heterophilic or
+adversarial graph structures is a major need in the future work space [1], [15].
+In addition to the aforementioned issues, a fundamental modeling limitation of the
+existing approaches has also been identified. While the sequential models focus on
+the temporal dynamics of the data but fail to capture the relationships between the
+entities, the graph-based models are able to capture the relationships between the
+entities but often lack the capability to capture the temporal behavioral patterns.
+Moreover, most of the research have not focused specifically on the probability cal-
+ibration for extreme class imbalance, which is a critical aspect of financial systems’
+risk-sensitive decisions.
+This is because these constraints highlight the need to have a unified framework,
+which integrates time and relational modeling, and produces calibrated probability
+values, which can be deployed at scale.
+Moreover, in the real world, fraud detection systems have to handle a lot of transac-
+tions in real-time and have severe latency constraints. This makes the problem more
+29
+
+=== PDF PAGE 45 ===
+challenging in terms of scalability and deployment, especially when the problem is
+computationally expensive, like in the case of the graph-based model. Finally, the
+problem is made more complex because of the need to integrate financial institu-
+tions and the evolving nature of fraud, which again makes the need for effective AI
+solutions more important.
+The above-stated gaps are evaluated and analyzed comparatively using the graph-
+construction technique within a single evaluation setup. Scalability, adversarial
+robustness, and probability calibration are some of the possible research directions
+that could be followed in the future, but not the conclusions of the present study.
+2.6.1 Positioning of the Present Study
+In this thesis, there is a comparative benchmarking study along with a study on the
+sensitivity of construction of graph. The novelty of the research comes from empirical
+study on well-known neural networks in different transaction representations. The
+difference with other works arises in the research aim and the scope of experiment,
+as well as relationship between the models.
+In their systematic review of GNN methodologies for financial fraud detection, Motie
+and Raahemi categorize the relevant literature according to graph representations,
+learning techniques, and application areas [20]. In that respect, their paper presents
+a consolidation of prior work, including important research gaps. The current thesis
+adds to this perspective in that it conducts experimental analyses comparing GCN,
+GraphSAGE, and GAT with more traditional methods including MLP, LSTM, and
+Transformer models, using IEEE-CIS and Elliptic data sets. Thus, the contribution
+30
+
+=== PDF PAGE 46 ===
+provides an empirically-supported analysis based on one unified set of evaluations
+as opposed to different criteria used previously.
+Kim et al. describe the Dynamic Relation-Attentive Graph Neural Networks (DRAG)
+framework which learns relation-specific node representations and aggregates infor-
+mation over relations and layers through dynamic attention as shown in their re-
+search [21]. The experimental analysis performed by them uses YelpChi and Amazon
+datasets, with repeated runs and architecture ablation studies. This thesis explores
+the classification of financial transactions using IEEE-CIS and Elliptic dataset, us-
+ing known architectural models. In this experiment, the graph construction anal-
+ysis includes different sets of relationships available to each GNN. As opposed to
+the relation-specific aggregation method used by DRAG, the IEEE-CIS graphs gen-
+erated here generate unweighted transaction graphs that do not include distinct
+relation labels while performing message passing.
+Li et al. propose the Relation-Aware Heterogeneous Graph Neural Network (RHGNN)
+which combines relation-aware computation graph pre-processing, hybrid propaga-
+tion, and stochastic projection reduction [Li et al., 2024]. The evaluation considered
+in this work includes three datasets: T-Finance, YelpChi, and Amazon, where the
+emphasis is put on the efficiency of the proposed model for heterogeneous graphs.
+The current paper attempts to answer a different problem: how Graph Neural Net-
+works (GNNs) perform in comparison with non-graph neural networks, and how
+they perform differently based on the construction of transaction relationships via
+other means.
+Tian and Liu have proposed the Spatial-Temporal-Aware Graph Transformer (STA-
+31
+
+=== PDF PAGE 47 ===
+GT), which combines temporal encoding, heterogeneous graph representation, relation-
+level attention mechanism, and a Transformer module to obtain both local and global
+information [10]. Empirical experiments employ a private dataset along with the
+public TC dataset for comparison by conducting architectural ablation studies and
+analyzing the rate of false positives and false negatives. In this thesis, we consider
+different architectures of GNN and non-graph Transformers as two separate cases.
+The current thesis introduces 24-hour identification in order to apply a temporal
+restriction in edge selection and does not use STA-GT temporal encoding.
+The method proposed by Lin et al. FraudGT, is a graph Transformer with edge-
+based message passing gates and edge attribute-based attention bias, according to
+the work [Lin et al., 2024]. The experiments performed by Lin et al. focus on
+transaction-edge classification on large artificial graphs related to anti-money laun-
+dering tasks and include measures of accuracy, throughput, and latency comparisons.
+Transactions are modeled as nodes, and the IEEE-CIS relations are modeled as un-
+weighted edges based on shared attributes in the current thesis. The experiments
+in this paper focus on detection accuracy and sensitivity to the construction of the
+graph on the IEEE-CIS and Elliptic data sets. Computational efficiency is not con-
+sidered empirically in this paper. Moreover, the Transformer used here does not
+implement FraudGT.
+This research expands on the idea presented in the literature where Deprez et al.
+make comparisons of network-based techniques for anti-money laundering through
+analysis of Elliptic data [3]. This research conducts comparison among six neural
+network architectures based on two datasets’ structures as well as five IEEE-CIS
+graph settings: the main graph, together with the graphs which include cards, ad-
+32
+
+=== PDF PAGE 48 ===
+dresses, emails and common identifiers within 24 hours of time period. Each Graph
+Neural Network (GNN) is tested against these graph settings allowing to evaluate
+if the graph which improves the performance of one architecture does the same to
+other architectures.
+The main contribution is made to the integrated experimental design. The research
+considers PR-AUC, F1-score, recall, and number of false positives in combination
+with structural and class connectivity measures. Analysis of the ten-fold run results
+and Wilcoxon signed-rank test pairs provides the information on variations and
+differences in the performance of different configurations. Overall, these elements
+help to evaluate both performance of the model and its sensitivity to the provided
+transaction relations, without referring to anything separately invented.
+The comparison with these earlier works relates to their methodology and research
+focus. Since DRAG, RHGNN, STA-GT, and FraudGT are not used as baseline mod-
+els in this dissertation, the obtained results cannot prove any advantage over these
+tailored models. At the same time, the links between the graph characteristics and
+the performance in detection are explained in a descriptive way due to the differences
+in matching algorithms, the choice of edges, and graph coverage. These conclusions
+are based on the investigated architectures and construction methodology.
+33
+
+=== PDF PAGE 49 ===
+Chapter Three
+Proposed Approach
+3.1 Research Design and Overview
+The principal aim and objective of this particular research is to carry out a com-
+prehensive and rigorous comparative analysis in relation to Graph Neural Networks
+(GNNs) and sophisticated deep learning techniques for the detection of financial
+fraud. The overall framework and design of the research are based on a controlled
+experimental framework, wherein both relational and feature-based approaches are
+subject to comparative analysis under identical and comparable circumstances. The
+entire framework is comprised of four principal phases: data characterization, rela-
+tional modeling, model implementation, and performance evaluation under extreme
+class imbalance.
+This methodology assesses the impact of utilizing graph transactions on the effective-
+ness of fraud detection when compared to the baselines without graphs. It explores
+34
+
+=== PDF PAGE 50 ===
+the difference in results obtained from different data sets, architecture, and con-
+struction of graphs. The underlying aim of this study is to evaluate the effectiveness
+of the proposed approach by comparing the performance of Graph Convolutional
+Networks (GCNs), GraphSAGE, and Graph Attention Networks (GAT) with the
+performance of high-capacity deep learning models such as MLP, LSTM, and the
+Transformer architecture, with the aim of evaluating the effectiveness of relational
+learning [17], [14]. The experimental pipeline has been implemented using a unified
+stack based on Python 3.10 and PyTorch with PyTorch Geometric for consistent
+and reproducible experiments on the IEEE-CIS and Elliptic datasets.
+3.2 Data Sources and Characterization
+In this research, two benchmark datasets with unique paradigms in modeling fi-
+nancial fraud are utilized, namely, the IEEE-CIS Fraud Detection dataset, which
+is tabular-centric, and the Elliptic Bitcoin dataset, which is graph-centric. These
+datasets provide a comprehensive basis to test and compare model performance in
+a variety of structural settings.
+3.2.1 IEEE-CIS Fraud Detection Dataset
+The IEEE-CIS dataset, that’s given by the Vesta Corporation, is one of the most
+used and popular datasets for real-world credit card fraud detection. In addition,
+this dataset has two main tables,’train transaction’and’train identity’, in
+which they are linked based on a common field which is the’TransactionID’.
+35
+
+=== PDF PAGE 51 ===
+Technical Specifications:
+•Scale:Approximately 590,000 transactions.
+•Model Input Dimensionality:After preprocessing, each transaction is rep-
+resented by 358 input features.
+•Feature Composition:The transaction table includes numerical fields such
+asTransactionAmt, categorical fields such asProductCD,card4, andP emaildomain,
+and anonymized features namedV1throughV339. The identity table provides
+additional device and identity attributes.
+•Class Distribution:The class distribution is extremely imbalanced, where
+the fraud class is only 3.5% of all transactions.
+3.2.2 Elliptic Bitcoin Dataset
+Elliptic is the primary benchmark for anti-money laundering (AML) and unlawful
+activities in cryptocurrency networks. Contrary to the IEEE-CIS dataset, Elliptic
+is fundamentally designed to be a directed graph where transactions are the nodes
+and the flow of Bitcoin is the edges.
+Technical Specifications:
+•Scale:The scale of this graph is 203,769 nodes and 234,355 edges.
+•Node Features:The dataset provides 166 pre-calculated features per trans-
+action, including local transaction information and aggregated neighborhood
+36
+
+=== PDF PAGE 52 ===
+information [3]. The implemented model input contains 165 features after
+preprocessing.
+•Temporal Dynamics:The dataset is made up of 49 steps, where each step
+is spaced at an interval of about two weeks. In each of the steps, there exist
+transactions for less than three hours.
+•Labels:The nodes can be classified into ’licit’, ’illicit’ and ’unknown’.
+3.3 Data Preprocessing and Feature Engineering
+In order to maintain a fair comparison, the same preprocessing steps are applied to
+the two datasets. This includes the following:
+Missing Value Imputation:Features in the IEEE-CIS dataset that have over
+80% missing entries were removed to maintain data quality. The Elliptic Bitcoin
+dataset was treated by imputing medians into numerical fields and labeling missing
+categorical attributes as ‘Unknown’ to ensure the models could still process those
+records.
+Categorical Encoding:Categorical features were converted into numerical repre-
+sentations using label encoding before being supplied to the models.
+Numerical Scaling:The numerical input variables were standardized by calculat-
+ing the mean and standard deviation from the training data set. This transformation
+was then applied to both the validation and test data sets.
+Temporal Splitting:To avoid data leakage and better reflect how the model would
+37
+
+=== PDF PAGE 53 ===
+behave in a real-world setting, the datasets were split based on time instead of using
+random sampling. For the IEEE-CIS data, the earliest 80% of transactions were
+used for training, the next 10% for validation, and the remaining 10% for testing.
+The Elliptic dataset was split chronologically using its time-step information, so that
+evaluation used transactions occurring later than those used for training. Temporal
+evaluation on Elliptic is also used by Pareja et al. [2].
+The same chronological partitions were used across the ten runs and across graph
+constructions. Random seeds controlled stochastic aspects of model training rather
+than the assignment of transactions to the data partitions.
+3.4 Relational Modeling: Graph Construction from
+Tabular Data
+A key part of this study is converting the tabular IEEE-CIS dataset into a relational
+graph format so that Graph Neural Network (GNN) models can be applied. In this
+setup, each transaction is treated as a node, while connections between nodes (edges)
+are created based on shared transaction features or attributes.
+3.4.1 Main Transaction Graph Construction
+Each IEEE-CIS transaction is represented as a node. The main construction exam-
+ines 14 fields independently:card1–card6,addr1,addr2,P emaildomain,R emaildomain,
+DeviceInfo,id 30,id 31, andid 33.
+38
+
+=== PDF PAGE 54 ===
+For each field, transactions are grouped by equal nonmissing values. Transactions
+within each retained group are sorted byTransactionDT, and only consecutive
+transactions are connected. The connections obtained from all fields are combined,
+with duplicate relationships removed. Matching any one field can therefore establish
+an eligible relationship, but not every pair sharing that value is connected.
+In case of all five IEEE-CIS structures, the maximum value of matching group size
+was fixed at 1,000 transactions. Matching groups greater than 1,000 transactions in
+size were not considered for edge creation, but those consisting of 1,000 transactions
+were still considered. The transactions falling into the excluded groups were not
+discarded from the node set.
+The resulting graph contains transaction nodes connected by shared attributes. It
+does not introduce separate nodes for cards, addresses, devices, or email domains.
+3.4.2 Alternative IEEE-CIS Graph Constructions
+Four more approaches to graph construction were explored to see how the definition
+and selection of transaction relationships affect the performance of graph neural
+networks (GNNs). All approaches keep the same set of transaction nodes and input
+features but use different sets of edges.
+•Card Construction:Transactions are grouped together based on their joint
+signature built fromcard1–card6. The full signature consists of all six values,
+including the pattern of missing values. The transactions that have all six
+features missing do not create any edges. For partially observable signatures,
+39
+
+=== PDF PAGE 55 ===
+missing features are marked by a special sentinel. In each selected group,
+transactions are sorted byTransactionDT, and edges are created only for
+consecutive transactions.
+•Address Construction:Transactions are grouped together based on their
+joint signature built fromaddr1andaddr2. The transactions that have both
+fields missing do not create any edges, while partially observable signatures
+are processed the same way as in card construction. Edges are created only
+for consecutive transactions.
+•Email-Domain Construction:P emaildomainandR emaildomainare pro-
+cessed separately. For each of these variables, transactions are grouped into
+equal, non-missing values. Each group is sorted on the basis ofTransactionDT,
+and connections are made between transactions only in case the latter are con-
+secutive. The resulting set of edges is concatenated and duplicates removed.
+There is no need for a match between two fields, and missing values result in
+no connections.
+•Identifier-Time-Window Construction:DeviceInfo,id 30,id 31, and
+id 33are processed separately. In each of these, transactions are first grouped
+on the basis of identical non-missing values. After the application of the group-
+size condition, all unique transaction pairs where the difference between the
+timestamp values is less than or equal to 86,400 seconds are connected, even
+those that have 24 hours of difference between their timestamp values.
+All constructions reject matches of groups larger than the pre-defined maximum
+group size. All transactions that are not included in a given group will be nodes in
+40
+
+=== PDF PAGE 56 ===
+the graph and may get connections through some other valid group, if any.
+All constructions differ in terms of matching conditions and selection of edges. The
+card and address constructions use a joint signature, while the email-domain and
+identifier constructions work on each field separately. In addition, the former three
+constructions link consecutive transactions, while the temporal construction links
+all valid pairs in its window.
+3.4.3 Edge Representation and Graph Statistics
+Each relationship between two distinct transactions selected is saved in both di-
+rections. The graph is theoretically undirected; however, the implementation of
+the graph uses paired directed edges. Duplicate edges are removed and multiple
+relationships found in different attributes are considered just once without further
+weightings.
+Self-loops are not formed during the process of building the graph. Reported edge
+counts represent unique undirected relationships before any model-layer self-loop
+processing. For a graph withNnodes andEunique undirected edges, the average
+degree and density are defined as:
+¯d= 2E
+N , D= 2E
+N(N−1) .
+Self-information is handled by the model layers. In the implemented configuration,
+GCN and GAT add self-loops internally, whereas GraphSAGE incorporates each
+node’s own features through a separate root transformation. These operations do
+41
+
+=== PDF PAGE 57 ===
+not change the cached graph statistics.
+An isolated node is a transaction with no neighbors other than itself. Isolation is
+measured on the constructed graph before model-layer self-loop processing. The
+isolated-node percentage is calculated as
+100× Nisolated
+N .
+Class-specific connectivity is examined by counting unique undirected fraud–fraud,
+fraud–legitimate, and legitimate–legitimate edges, excluding self-loops. We also re-
+port the percentage of fraudulent nodes with at least one neighbor and the percent-
+age with at least one fraudulent neighbor. These quantities describe the constructed
+graphs and are not used as model input features.
+3.4.4 Graph Construction Evaluation Protocol
+Each model–graph combination was evaluated across ten runs using random seeds
+42–51. The results are reported using the average and standard deviation of PR-
+AUC, F1-score, recall and number of test set false positives in ten experiments. In
+each experiment, the false positives are counted using the classification threshold
+that maximizes validation F1-score.
+Graph structure is characterized using the number of nodes and edges, average
+degree, connected components, and graph density. These properties are examined
+alongside predictive performance to assess how changes in connectivity correspond
+to changes in model outcomes.
+42
+
+=== PDF PAGE 58 ===
+3.4.5 Graph Access Across Data Partitions
+During GNN learning, the graph includes training, validation, and test nodes, and
+the supervised loss is only computed on training nodes. Labels for validation and
+test nodes are not included in gradient-based optimization, although their node
+features and connectivity might be involved in the message-passing process. The
+aforementioned scenario is referred to as transductive evaluation. Therefore, tem-
+porally defined label splits do not imply that training representations depend only
+on data prior to the validation or test stages.
+Relations are stored bidirectionally. This implies that temporally defined edge selec-
+tion rules define which transactions can be connected but not that message passing
+should be restricted to the past.
+3.5 Theoretical Framework: Graph Neural Net-
+works
+This part talks about the math behind the three GNN variants that were tested in
+this study, as well as how they were built.
+3.5.1 Graph Convolutional Networks (GCN)
+Using a first-order approximation, GCNs work by doing spectral graph convolu-
+tions. The main idea is to change how a node looks by averaging the features of its
+43
+
+=== PDF PAGE 59 ===
+neighbors in the spectral domain [6]. The rule for updating by layer is:
+H (l+1) =σ
+
+˜D−1/2 ˜A ˜D−1/2H (l)W (l)
+
+(3.1)
+where ˜Dis the diagonal degree matrix of ˜AandW (l) is a trainable weight matrix.
+The symmetric degree normalization scales neighboring contributions according to
+node degrees [6].
+3.5.2 GraphSAGE (Sample and Aggregate)
+GraphSAGE uses a sampling approach to aggregate data in nodes, which solves
+the issue of scalability found with GCN models. Rather than working through the
+complete network (the adjacency matrix), GraphSAGE only collects data from the
+immediate surrounding node, providing a small subset of the nodes to be aggregated
+through evaluations of pre-defined functions (e.g., Mean, LSTM) [2]. An example
+of how nodevcan be updated by utilizing this approach:
+h(k)
+N(v) = aggregatek
+ 
+{h(k−1)
+u ,∀u∈ N(v)}
+
+h(k)
+v =σ
+
+W(k) ·concat
+
+h(k−1)
+v ,h (k)
+N(v)
+
+(3.2)
+By allowing the model to generalize to previously unobserved nodes, this technique
+provides a critical capability essential in these types of dynamic financial networks
+where transactions will be introduced continually [7], [1], [11].
+44
+
+=== PDF PAGE 60 ===
+3.5.3 Graph Attention Networks (GAT)
+GATs add a self-attention mechanism to the aggregation process, which lets nodes
+change how important their neighbors are. The attention coefficientijshows how
+important nodej’s features are to nodei[9], [17]:
+αij =
+exp
+
+LeakyReLU
+
+⃗ aT [W⃗hi||W⃗hj]
+
+P
+k∈Ni exp
+
+LeakyReLU
+
+⃗ aT [W⃗hi||W⃗hk]
+ (3.3)
+The last representation is a weighted sum of the features of the neighbors:h ′
+i =
+σ(P
+j∈Ni αijW ⃗hj).
+3.6 Theoretical Framework: Deep Learning Base-
+lines
+Three advanced deep learning models are used to set a strong benchmark. These
+models mainly use the feature matrixXwithout any clear relational data.
+•Multi-Layer Perceptron (MLP):A deep feedforward network with 3 to
+5 fully connected layers, ReLU activation, and Dropout to keep things from
+getting too regular. The MLP serves as a feature-based baseline for tabular
+classification [4].
+•Long Short-Term Memory (LSTM):Transactions for each user are ar-
+ranged in chronological order to capture temporal behavioral sequences. The
+LSTM keeps a hidden stateh t that stores information about past spending
+45
+
+=== PDF PAGE 61 ===
+habits, which makes it possible to find sudden changes in spending behavior
+[5], [17].
+•Transformer (Tabular Attention):The Transformer uses self-attention to
+learn dependencies within its input representation [16]. Its fraud detection
+performance is evaluated alongside the other baseline models in this thesis.
+3.7 Class Imbalance Mitigation Strategies
+In cases where there are very few instances of fraud compared to legitimate transac-
+tions, specific methods for learning have to be employed to ensure that the algorithm
+does not simply converge into predicting everything as legitimate [11], [19].
+3.7.1 Cost-Sensitive Learning
+To address class imbalance, all models are trained using binary cross-entropy with
+logits and positive-class weighting. The positive-class weight is defined as
+wpos = Nneg
+Npos
+,
+whereN neg andN pos denote the numbers of legitimate and fraudulent examples in
+the training set, respectively. This weighting increases the contribution of fraudulent
+examples to the loss, helping to counter the dominance of the majority class during
+training. It follows the general principle of cost-sensitive learning for imbalanced
+classification [12]. This experiment uses positive class weighted binary cross-entropy
+46
+
+=== PDF PAGE 62 ===
+to solve the problem of class imbalance. No methods like SMOTE, focal loss, and
+PC-GNN based sampling are used in the study. The classification threshold is
+computed separately based on the validation F1 score, as described in Section 3.8.
+3.8 Experimental Setup and Training Configura-
+tion
+Experiments were carried out on a computer running NVIDIA RTX 3080 Ti graphics
+card. The model was implemented in PyTorch 2.5.1, which supports CUDA 12.1
+and PyTorch Geometric.
+•Model Architectures:Three GNN architectures (GCN, GraphSAGE, and
+GAT) and three non-GNN architectures (MLP, LSTM, and Transformer) were
+considered in the evaluated models.
+•Optimization:The models were trained using Adam optimizer with a learn-
+ing rate of 10−3 and weight decay of 10−5. Binary cross-entropy loss with logits
+was used along with positive weighting to tackle class imbalance.
+•Early Stopping:PR-AUC scores were recorded on the validation data for
+early stopping and saving checkpoints.
+•Decision Threshold Selection:After the determination of the optimal
+model checkpoint according to the validation PR-AUC value, the classifica-
+tion threshold was set such that it maximized the F1-score on the validation
+dataset. The threshold thus calculated was used on the test dataset without
+47
+
+=== PDF PAGE 63 ===
+any change. The validation labels did not influence the threshold calculation
+on the test dataset.
+3.9 Evaluation Framework and Metrics
+In the presence of extreme class imbalance, traditional accuracy is a misleading
+metric. This study employs a multi-faceted evaluation framework focusing on the
+minority class.
+•Recall (Detection Rate):Calculates the percentage of real fraudulent
+transactions that the model properly detects. For financial organizations look-
+ing to reduce losses, this is the most important statistic [11], [19].
+•F1-Score:A balanced indicator of the model’s capacity to detect fraud with-
+out producing an excessive number of false alarms, it is the harmonic mean of
+precision and recall [17], [13].
+•Precision-Recall AUC (PR-AUC):In contrast to ROC-AUC, PR-AUC
+offers a more accurate evaluation in highly skewed datasets and is sensitive to
+the minority class’s performance [15], [19].
+•Precision:The proportion of transactions predicted as fraudulent that are
+truly fraudulent.
+•False Positives:The number of legitimate test transactions classified as
+fraudulent at the threshold selected using validation F1-score.
+48
+
+=== PDF PAGE 64 ===
+•ROC-AUC:A complementary measure of discrimination across classifica-
+tion thresholds, based on the relationship between the true-positive and false-
+positive rates.
+49
+
+=== PDF PAGE 65 ===
+Chapter Four
+Results
+4.1 Introduction
+This chapter presents the experimental outcomes of the fraud detection models
+built in this research work. The main objective of carrying out the experiments is
+to compare classical models against deep learning models with GNN for financial
+fraud detection in class-imbalanced situations.
+In this regard, two benchmark datasets have been used: IEEE-CIS Fraud Detec-
+tion Dataset and Elliptic Bitcoin Dataset. The IEEE-CIS dataset represents the
+transaction-based fraud detection setting while the Elliptic dataset represents the
+graph-based fraud detection setting.
+The considered models are divided into two types of models. The first type includes
+non-graph deep learning models: MLP, LSTM, and Transformer. The second type,
+on the other hand, includes graph neural network models: GCN, GraphSAGE, and
+50
+
+=== PDF PAGE 66 ===
+Graph Attention Network (GAT).
+To assess their performance, recall, precision, F1-score, PR-AUC, ROC-AUC, and
+confusion matrix values are used to evaluate the models. Since the task of fraud
+detection is an example of a highly unbalanced classification problem, PR-AUC and
+F1-score are consequently regarded as the most important metrics of evaluation. In
+addition, recall is also analyzed carefully since this metric reflects the model’s ability
+to detect the fraudulent transactions. Nevertheless, recall was not interpreted in
+isolation, as a high recall value can similarly be achieved by a model that considers
+many legitimate transactions to be fraudulent ones.
+Furthermore, in order to make the comparison more reliable, the main experiment is
+repeated using 10 pairs of random seeds. Following this, the Wilcoxon signed-rank
+test is performed on the pairs’ results.
+4.2 Experimental Setup
+All the experiments have been done in Python using PyTorch and PyTorch Geo-
+metric. Specifically, PyTorch was used to implement MLP, LSTM, and Transformer
+models while PyTorch Geometric was used to implement graph-based models like
+GCN, GraphSAGE, and GAT.
+For the IEEE-CIS dataset, the transactions and identities tables have been concate-
+nated on the TransactionID column. Subsequently, features with more than 80%
+missing values have been dropped. Regarding the remaining data, label encoding
+has been performed for categorical features, whereas missing values for numerical
+51
+
+=== PDF PAGE 67 ===
+features have been imputed using the median and scaled for standardizing the data.
+Finally, a chronological split has been done such that the earliest 80% of transac-
+tions are in the training set, the next 10% in the validation set, and the last 10% in
+the test set.
+In contrast, for the Elliptic dataset, the features of the nodes, class labels, and
+edge list of transactions are loaded initially. Next, labels have been transformed
+to binary form where 1 denotes illicit transactions and 0 denotes licit transactions.
+Meanwhile, nodes with unknown labels are not included in the supervised training,
+validation, and testing masks. Instead, the nodes with known labels are sorted based
+on their time step and, in a similar chronological fashion, split into 70% training,
+15% validation, and 15% test sets.
+Taining of all models was done using BCEWithLogitsLoss with weighting on the
+positive class due to imbalanced classes. To optimize the parameters, the Adam
+optimizer was used with a learning rate of 0.001 and weight decay of 1e-5. Furether-
+more, early stopping was used with the validation PR-AUC metric as a monitor. All
+models except GNN were trained with a maximum number of epochs equal to 50
+and a patience of 10, whereas the GNN models were trained with up to 100 epochs
+and a patience of 15.
+Following the training phase, the best checkpoint was selected based on validation
+PR-AUC. Subsequently, the classification threshold was fine-tuned on the validation
+dataset by optimizing the validation F1-score.
+52
+
+=== PDF PAGE 68 ===
+4.3 Graph Structure Analysis
+Before testing graph neural networks (GNN), the graph structures used in the ex-
+periment were first considered. This step is vital since the performance of GNNs
+largely depends on the characteristics of the underlying graph.
+Specifically, for the IEEE-CIS data, nodes were created for each transaction. Con-
+nections were then made between sequential transactions that had common identi-
+fiers, such as card fields, address fields, email domains, devices, and identity fields.
+However, in order not to introduce too much noise into the graph and not create
+overly connected subgraphs, matching groups containing more than 1,000 transac-
+tions were excluded from edge generation.
+However, for Elliptic, the given directed transaction graph is converted to an undi-
+rected version for the experiments using graph neural networks.
+Ultimately, Graph statistics of the original graphs and the graphs’ complements are
+shown in Table 4.1.
+Table 4.1:Graph Statistics for Original and Sampled Complement Graphs
+DatasetGraph VariantNodesEdgesAverage DegreeConnected ComponentsDensityFeatures
+IEEE-CISOriginal 590,540406,767 1.3776 255,381 0.00000233358
+IEEE-CISSampled Complement590,5405,905,400 20.0000 1 0.00003387358
+Elliptic Original 203,769234,355 2.3002 49 0.00001129165
+Elliptic Sampled Complement203,7692,037,690 20.0000 1 0.00009815165
+Initially, the IEEE-CIS graph possessed a very high level of sparsity and fragmen-
+tation. Specifically, despite containing 590,540 nodes, the graph had only 406,767
+edges and 255,381 connected components. Consequently, the average degree was
+just 1.3776 and the density was a minimal 0.00000233. As a direct result of this
+53
+
+=== PDF PAGE 69 ===
+layout, a considerable number of transactions was either isolated or connected to a
+few other nodes. Ultimately, this architecture limits the availability of neighboring
+transaction data to a significant fraction of the nodes. However, the statistics alone
+cannot predict how this will affect performance.
+Similarly, the initial Elliptic graph was sparse, but it was noticeably more struc-
+turally connected compared to IEEE-CIS. For instance, this graph had 203,769
+nodes, 234,355 edges, and an average degree of 2.3002 while consisting of just 49
+connected components. However, the above data do not necessarily indicate which
+of the two datasets would be more appropriate to use for classification via GNNs.
+In addition, a sampled-complement graph was constructed for each dataset. In this
+variant, the original edge set was replaced by randomly sampled non-edges, meaning
+relationships absent from the original graph. The resulting graphs had an average
+degree of 20, with 5,905,400 unique undirected edges for IEEE-CIS and 2,037,690 for
+Elliptic. Both sampled graphs contained one connected component. These graphs
+therefore differ from the original graphs in both connectivity and the relationships
+represented by their edges.
+Table 4.2:Structural Properties of Alternative IEEE-CIS Graph Constructions
+Construction Nodes Edges Average Degree Components Density
+Card 590,540 304,889 1.0326 285,651 1.75×10 −6
+Address 590,540 7,424 0.0251 583,116 4.26×10 −8
+Email domain 590,540 16,657 0.0564 574,435 9.55×10 −8
+Identifier, 24 hours 590,540 345,272 1.1693 553,796 1.98×10 −6
+All four graphs are sparse, varying greatly in terms of connectivity. Graphs depict-
+ing addresses and e-mail domain names are the most sparse in edges and have plenty
+of connected components. Despite having the greatest average degree of all four op-
+54
+
+=== PDF PAGE 70 ===
+tions, the graph of 24-hour identifiers consists of many connected components. This
+means that a higher number of edges does not necessarily mean a more widespread
+distribution of connections among transactions.
+Table 4.3:Isolated Transactions in IEEE-CIS Graph Constructions
+Construction Isolated Nodes Percentage (%)
+Main 251,474 42.5837
+Card 274,960 46.5608
+Address 582,899 98.7061
+Email domain 574,412 97.2689
+Identifier, 24 hours 549,109 92.9842
+Table 4.3 reports transactions with no non-self neighbors, using all 590,540 nodes as
+the denominator. The main graph has the lowest isolation percentage, at 42.5837%,
+followed by the card graph at 46.5608%. Isolation is substantially higher in the
+address, email-domain, and 24-hour identifier graphs, exceeding 92% in each case.
+The 24-hour identifier graph illustrates why average degree should be considered
+alongside isolation. Despite having an average degree of 1.1693, 92.9842% of its
+nodes are isolated. Its edges are therefore concentrated among a relatively small
+subset of transactions.
+Table 4.4:Class-Specific Connectivity of Alternative IEEE-CIS Graphs
+ConstructionFraud–FraudFraud–LegitimateLegitimate–LegitimateFraud Nodes withAny Neighbor (%)Fraud Nodes witha Fraud Neighbor (%)
+Main 8,475 18,644 379,648 65.67 50.41
+Card 5,124 11,623 288,142 54.16 35.46
+Address 260 467 6,697 2.45 1.76
+Email domain 275 539 15,843 2.54 1.82
+Identifier, 24 hours16,584 28,657 300,031 24.20 22.30
+Table 4.4 reports unique undirected edges classified using the true transaction labels,
+with self-loops excluded. Both node-connectivity percentages use the total number
+of fraudulent transactions as their denominator. This is a retrospective structural
+55
+
+=== PDF PAGE 71 ===
+analysis; held-out labels are not used to construct the graphs or optimize the models.
+The main graph connects the largest proportion of fraudulent transactions to at
+least one neighbor, at 65.67%, and has the highest proportion with at least one
+fraudulent neighbor, at 50.41%. Among the four alternative constructions, the card
+graph provides the broadest coverage, with corresponding values of 54.16% and
+35.46%.
+The 24-hour identifier graph contains the largest number of fraud–fraud edges,
+at 16,584, but these relationships cover a smaller proportion of fraudulent nodes.
+Therefore, a larger number of fraud–fraud edges does not necessarily indicate broader
+coverage of fraudulent transactions.
+The address and email-domain graphs provide limited coverage of fraudulent nodes.
+Only 2.45% and 2.54%, respectively, have any neighbor, while 1.76% and 1.82% have
+a fraudulent neighbor.
+4.4 Impact of IEEE-CIS Graph Construction
+Table 4.5 presents the performance of GCN, GraphSAGE, and GAT across the main
+graph and four alternative constructions. Results are reported as mean±standard
+deviation across ten runs using seeds 42–51.
+In terms of GraphSAGE, the email-domain graph provided the maximum values of
+the mean PR-AUC and F1-score equal to 0.3912 and 0.4025 correspondingly. In
+comparison with the main graph, this resulted in an absolute increase in the PR-
+56
+
+=== PDF PAGE 72 ===
+Table 4.5:IEEE-CIS GNN Performance Across Graph Constructions: Mean±
+Standard Deviation Across 10 Runs
+Model Construction PR-AUC F1-score Recall
+GraphSAGE Main 0.3432±0.0534 0.3788±0.0190 0.3972±0.0172
+GraphSAGE Card 0.3174±0.0547 0.3706±0.0229 0.3951±0.0102
+GraphSAGE Address 0.3665±0.0572 0.3917±0.0146 0.4175±0.0371
+GraphSAGE Email domain 0.3912±0.0142 0.4025±0.0100 0.4099±0.0325
+GraphSAGE Identifier, 24 h 0.3284±0.0491 0.3900±0.0125 0.3815±0.0254
+GCN Main 0.2939±0.0899 0.3470±0.0569 0.3645±0.0290
+GCN Card 0.2746±0.1083 0.3360±0.0718 0.3641±0.0243
+GCN Address 0.2777±0.1041 0.3328±0.0564 0.4033±0.0394
+GCN Email domain 0.2624±0.1042 0.3243±0.0579 0.3997±0.0386
+GCN Identifier, 24 h 0.3256±0.1061 0.3573±0.0634 0.3884±0.0418
+GAT Main 0.2480±0.1002 0.2964±0.0640 0.3306±0.0757
+GAT Card 0.2176±0.0993 0.2745±0.0688 0.3096±0.0984
+GAT Address 0.2032±0.0837 0.2727±0.0514 0.3046±0.0635
+GAT Email domain 0.1711±0.0552 0.2578±0.0401 0.3251±0.0857
+GAT Identifier, 24 h 0.2342±0.0926 0.2942±0.0635 0.3296±0.0841
+AUC value by 0.0480. The value of the PR-AUC standard deviation was lowered
+from 0.0534 to 0.0142. For the address graph, the value of the GraphSAGE recall
+was maximum (0.4175), however, the PR-AUC and F1-score were lower than those
+for the email-domain graph.
+With respect to GCN, the 24-hour identifier graph showed the maximum mean PR-
+AUC and F1-score equal to 0.3256 and 0.3573 correspondingly. Moreover, it is higher
+by 0.0317 than the PR-AUC of the main graph. However, the large value of the
+standard deviation of the PR-AUC equal to 0.1061 speaks of significant variability
+across the runs. The address and email-domain graphs increased mean recall relative
+to the main graph but reduced mean F1-score and PR-AUC.
+For GAT, all four variations failed to outperform the original graph in terms of
+57
+
+=== PDF PAGE 73 ===
+the average PR-AUC and F1-scores. The graph with email-domain associations
+obtained its minimum mean PR-AUC, equal to 0.1711. This shows that the same
+graph construction can affect different GNN architectures differently.
+Among all graph neural network (GNN) implementations considered, the highest
+average PR-AUC was produced by GraphSAGE with email-domain associations;
+yet, this value, 0.3912, was lower than the mean PR-AUC values of the MLP, LSTM,
+and Transformer approaches, equal to 0.4249, 0.4151, and 0.4104, correspondingly.
+This is true also for the GraphSAGE mean F1-score.
+Table 4.6:IEEE-CIS Test-Set False Positives Across Graph Constructions: Mean
+±Sample Standard Deviation Across 10 Runs
+Model Construction False Positives
+GraphSAGE Main 1,561.4±308.8
+GraphSAGE Card 1,649.9±344.4
+GraphSAGE Address 1,586.3±364.9
+GraphSAGE Email domain 1,391.4±325.6
+GraphSAGE Identifier, 24 h 1,273.7±236.9
+GCN Main 1,771.1±1,017.8
+GCN Card 2,049.0±1,448.9
+GCN Address 2,459.0±1,374.4
+GCN Email domain 2,603.1±1,542.1
+GCN Identifier, 24 h 1,950.7±1,370.9
+GAT Main 2,048.9±866.7
+GAT Card 2,156.7±1,360.2
+GAT Address 2,042.2±403.2
+GAT Email domain 2,617.5±978.4
+GAT Identifier, 24 h 2,006.1±737.0
+False-positive counts were measured at the threshold selected for each run using
+validation F1-score. Among the evaluated GNN configurations, GraphSAGE with
+the 24-hour identifier construction produced the lowest mean false-positive count of
+1,273.7. However, its mean recall was lower than that of GraphSAGE with email-
+58
+
+=== PDF PAGE 74 ===
+domain connections. The email-domain construction reduced GraphSAGE’s mean
+false-positive count from 1,561.4 to 1,391.4 relative to the main graph, while also in-
+creasing mean recall, F1-score, and PR-AUC. These results show that false-positive
+counts should be interpreted together with detection performance.
+The effects of graph construction are not limited to changes in mode ranking. In the
+case of GraphSAGE, email-domain connections positively affect the mean PR-AUC,
+F1-score, and recall as compared to the main graph, decreasing the mean number
+of false positives from 1,561.4 to 1,391.4. The standard deviation of the PR-AUC
+metric is also decreased from 0.0534 to 0.0142, which shows the lower variance in ten
+runs performed under this graph construction. At the same time, the use of 24-hour
+identifier graph increases the mean PR-AUC and recall metrics of GCN from 0.2939
+to 0.3256 and from 0.3645 to 0.3884, respectively, but increases mean false positives
+from 1,771.1 to 1,950.7 and PR-AUC standard deviation from 0.0899 to 0.1061.
+GAT maintains the highest mean PR-AUC and F1-score in the main graph. Thus,
+the positive effect of one construction may vary depending on the GNN model.
+4.5 Aggregate Results Across 10 Runs
+Comparisons between the different models were made using the average performance
+on ten pairs of random seeds. This approach makes for a more robust comparison
+than using just one instance, primarily because neural networks may converge dif-
+ferently depending on their initialization. Furthermore, this method accounts for
+variations in how the thresholds are set.
+59
+
+=== PDF PAGE 75 ===
+4.5.1 IEEE-CIS Aggregate Results
+As an initial finding, the mean performance metrics of the six main models on the
+IEEE-CIS dataset across 10 runs are comprehensively shown in Table 4.7.
+Table 4.7:Mean Performance Across 10 Runs on IEEE-CIS
+Model Recall Precision F1-score PR-AUC ROC-AUC
+MLP 0.3709 0.5482 0.4407 0.4249 0.8586
+LSTM 0.4006 0.4682 0.4310 0.4151 0.8558
+Transformer 0.4076 0.4911 0.4433 0.4104 0.8485
+GraphSAGE 0.3972 0.3648 0.3788 0.3432 0.8585
+GCN 0.3645 0.3455 0.3470 0.2939 0.8431
+GAT 0.3306 0.2798 0.2964 0.2480 0.8187
+The findings show that among all models, the Multilayer Perceptron (MLP) has
+performed the best on the IEEE-CIS dataset in terms of mean PR-AUC. In partic-
+ular, it has scored the highest value of PR-AUC (0.4249) and the highest precision
+(0.5482), with an F1-score of 0.4407 and a ROC-AUC of 0.8586. Consequently,
+the findings reveal that the MLP provides a strong balance of fraud detection and
+false-positive reduction, although it does not achieve the highest recall or F1-score.
+Ranked closely second to the MLP in terms of mean PR-AUC, there was the Long
+Short-Term Memory network (LSTM) with a mean PR-AUC of 0.4151 and a mean
+F1-score of 0.4310. Yet, despite scoring slightly lower than the MLP on these met-
+rics, the LSTM was still quite effective. Ultimately, the findings obtained for the
+LSTM model show that this sequential model is capable of detecting fraudulent
+transactions; however, it does not outperform the simple MLP in terms of mean
+PR-AUC or F1-score.
+60
+
+=== PDF PAGE 76 ===
+Among the six main configurations, Transformer has the highest mean recall, 0.4076,
+and the highest mean F1-score, 0.4433. It is evident from this result that the Trans-
+former achieved a competitive balance between identifying fraudulent transactions
+and limiting false positives. Thus, although its mean PR-AUC was lower than those
+of the MLP and LSTM, it achieved the strongest performance in terms of mean
+recall and F1-score.
+In terms of relational models, the best performance among Graph Neural Networks
+(GNNs) belongs to GraphSAGE, which secured the highest mean PR-AUC, 0.3432,
+and mean F1-score, 0.3788, among the GNNs. The second best GNN was the
+GCN with mean PR-AUC of 0.2939 and mean F1-score of 0.3470. Conversely, GAT
+demonstrated the lowest performance within GNNs, having mean PR-AUC of 0.2480
+and mean F1-score of 0.2964. Among the six main configurations, MLP achieved the
+highest mean ROC-AUC of 0.8586, slightly exceeding GraphSAGE-main at 0.8585.
+As it is seen from the IEEE-CIS results, non-graph deep learning algorithms such
+as MLP, LSTM, and Transformer exhibit higher mean PR-AUC and F1-score than
+the GNNs. That is, it can be said that feature-based and sequence-based model-
+ing were more effective on these metrics than relational modeling under the graph
+construction and experimental settings used in this study.
+4.5.2 Elliptic Aggregate Results
+Table 4.8 shows the average results of the six main algorithms that were tested using
+the Elliptic dataset for 10 runs.
+61
+
+=== PDF PAGE 77 ===
+Table 4.8:Mean Performance Across 10 Runs on Elliptic
+Model Recall Precision F1-score PR-AUC ROC-AUC
+Transformer 0.4304 0.8149 0.5620 0.5125 0.7994
+LSTM 0.4152 0.6647 0.5102 0.4880 0.8452
+MLP 0.4556 0.3430 0.3827 0.3901 0.7783
+GraphSAGE 0.4184 0.4112 0.4115 0.4089 0.7965
+GAT 0.3875 0.3696 0.3709 0.3421 0.8185
+GCN 0.4625 0.1746 0.2472 0.2233 0.7793
+Considering the overall assessment of the Elliptic data set, the Transformer model
+produced the best results in terms of mean PR-AUC, F1-score, and precision. In
+particular, the Transformer model attained the maximum value of mean PR-AUC
+of 0.5125, the maximum value of mean F1-score of 0.5620, and the maximum value
+of mean precision of 0.8149. Such an impressive combination means that the Trans-
+former model had the most balanced precision-recall score, with the greatest share
+of true positives out of all illicit transactions detected.
+In addition to the above, the next best-performing model was the LSTM model,
+which had a mean PR-AUC score of 0.4880 and a mean F1-score of 0.5102. Moreover,
+the LSTM model was able to achieve the highest mean ROC-AUC score of 0.8452,
+suggesting that the model ranked better using the ROC-AUC metric despite its
+superior PR balance achieved by the Transformer.
+The best performing model out of all the GNN models in relation to the mean PR-
+AUC and F1-score was GraphSAGE. In particular, GraphSAGE managed to score
+a mean PR-AUC of 0.4089 and a mean F1-score of 0.4115. This is higher than the
+mean PR-AUC and F1-score of the other two GNN models, namely GCN and GAT.
+62
+
+=== PDF PAGE 78 ===
+On the other hand, while GCN scored the highest mean recall of 0.4625, its mean
+precision was limited to 0.1746, resulting in a mean F1-score of 0.2472. It is evident
+from the figures above that GCN detected more illegal transactions but also misla-
+beled many legal transactions as illegal. In comparison, though the GAT model per-
+formed better than GCN in terms of mean PR-AUC (0.3421) and F1-score (0.3709),
+its performance on these parameters was not as good as GraphSAGE.
+As it can be observed from the Elliptic results, GraphSAGE surpassed the per-
+formance of the feature-based MLP in terms of mean PR-AUC and F1-score on
+the native graph dataset. However, even in this case, the sequence-based models
+LSTM and Transformer continued to perform better in terms of mean PR-AUC and
+F1-score than GNNs.
+4.6 Final Run Model Rankings and Confusion-
+Matrix Analysis
+Besides the 10 run average, the ranks of the latest models were used for analyzing
+confusion matrix characteristics. The reason for this is that PR-AUC and ROC-
+AUC are measures of ranking, while confusion matrices demonstrate the number of
+correct and wrong predictions for the selected threshold of classification.
+4.6.1 IEEE-CIS Final Run Results
+Table 4.9 shows the final run IEEE-CIS model results ranked by F1-score.
+63
+
+=== PDF PAGE 79 ===
+Table 4.9:Final-Run Results and Confusion Matrices on IEEE-CIS
+Model RecallPrecisionF1-scorePR-AUCROC-AUCTN FP FN TP
+LSTM 0.3972 0.5072 0.4455 0.4287 0.8562 55,987 854 1,334 879
+Transformer0.4180 0.4695 0.4423 0.3975 0.8389 55,796 1,045 1,288 925
+MLP 0.3439 0.4961 0.4062 0.3298 0.8616 56,068 773 1,452 761
+GraphSAGE0.3755 0.3976 0.3862 0.3451 0.8551 55,582 1,259 1,382 831
+GAT 0.4248 0.1947 0.2670 0.1391 0.8182 52,953 3,888 1,273 940
+GCN 0.3678 0.1729 0.2353 0.1232 0.8004 52,948 3,893 1,399 814
+The Multilayer Perceptron (MLP) demonstrated the smallest number of false posi-
+tives compared to all six models in the last experiment. In particular, MLP detected
+761 fraudulent transactions but returned 773 false positives. As a result, it demon-
+strated the precision of 0.4961 and F1-score of 0.4062. The MLP model demon-
+strated the highest receiver operating characteristic area under the curve (ROC-
+AUC) of 0.8616.
+Unlike MLP, the Long Short-Term Memory (LSTM) network found 879 fraudulent
+transactions, which means that its performance was better in terms of quantity.
+Despite the increased number of 854 false positives, the LSTM performed better
+than the MLP concerning recall and precision. As a result, LSTM has gained the
+highest F1-score of 0.4455 and PR-AUC of 0.4287.
+GraphSAGE algorithm predicted 831 frauds which was better than MLP but less
+than LSTM algorithm. Moreover, 1,259 false positives were predicted which nega-
+tively impacted precision and F1-score. Nonetheless, GraphSAGE reached the best
+PR-AUC and F1-score values compared to other GNN algorithms under considera-
+tion.
+Transformer predicted 925 of 2,213 frauds while 1,288 fraud cases remained not
+64
+
+=== PDF PAGE 80 ===
+detected. It predicted also 1,045 false positives. In comparison with LSTM, this
+architecture provided higher recall but worse precision and slightly decreased F1-
+score equal to 0.4423. Graph Attention Network (GAT) showed the best recall
+value from six considered models with 940 fraud predictions; however, this algorithm
+predicted also 3,888 false positives, resulting in low precision and F1-score values
+equal to 0.1947 and 0.2670, respectively.
+As one can see from these results, high recall is not sufficient criterion for estimation
+of the quality of fraud-detection models. Actually, an efficient model should mini-
+mize the number of false predictions too; therefore, PR-AUC and F1-score metrics
+are quite important in this case.
+4.6.2 Elliptic Final-Run Results
+Table 4.10 shows the final-run Elliptic model results grouped by model family.
+Table 4.10:Final-Run Results and Confusion Matrices on Elliptic
+Model Recall PrecisionF1-scorePR-AUCROC-AUC TN FP FN TP
+Transformer0.4363 0.7946 0.5633 0.5490 0.8539 8,378 46 230 178
+LSTM 0.4216 0.6880 0.5228 0.5197 0.8641 8,346 78 236 172
+MLP 0.4510 0.3333 0.3833 0.4069 0.7679 8,065 368 224 184
+GraphSAGE0.4363 0.4331 0.4347 0.4177 0.7883 8,200 233 230 178
+GAT 0.3995 0.3286 0.3606 0.3251 0.8181 8,100 333 245 163
+GCN 0.4657 0.1698 0.2489 0.2939 0.7725 7,504 929 218 190
+The results obtained through the LSTM and Transformer neural network are based
+on 8,832 test transactions due to the exclusion of nine target warm-ups from the
+original sequence, while the rest of the models use 8,841 transactions.
+65
+
+=== PDF PAGE 81 ===
+Overall, Transformer had the best final run performance on Elliptic dataset with
+the highest F1-score, highest PR-AUC, and highest precision. Concurrently, its
+confusion matrix shows that there are 46 false positives and 178 true positives for
+illicit transactions.
+Following closely behind, the LSTM model was second-best with 78 false positives
+and 172 true positives. Though it found fewer illicit transactions than the Trans-
+former, it nonetheless remained highly competitive and had the highest ROC-AUC
+score.
+Meanwhile, the best among the graph models was GraphSAGE. Interestingly, it
+found 178 illicit transactions which equals the number of true positives found by the
+Transformer, but it returned 233 false positives compared to 46 false positives from
+the Transformer, making its precision and F1-score significantly lower.
+On the other hand, GCN found the largest number of illicit transactions, with 190
+true positives, but also generated 929 false positives, showing high sensitivity but
+low false-positive control.
+All in all, the results show that graph-based models can identify illicit transactions,
+although the Transformer and LSTM models have better recall-precision balance.
+4.7 Sampled Complement Graph Ablation
+In order to evaluate the performance of GNNs on another type of graph architec-
+ture, a sampled-complement approach was considered, where the original edges are
+66
+
+=== PDF PAGE 82 ===
+replaced by random non-edges to produce graphs that have an average degree of
+20. In both sampled graphs, only one connected component could be found. Such a
+change in the experiment affects the graph connectivity and edge information, but
+not the density.
+Results from the Sampling Complement Graph Ablation Run are provided in Ta-
+ble 4.11 below.
+Table 4.11:Sampled Complement Graph Ablation Results
+Dataset Model Variant RecallPrecisionF1-scorePR-AUCROC-AUC
+IEEE-CIS
+GraphSAGE-sampled complement0.3159 0.2212 0.2602 0.1424 0.7999
+GCN-sampled complement 0.3692 0.1338 0.1964 0.1027 0.7097
+GAT-sampled complement 0.9986 0.0375 0.0722 0.0407 0.5055
+Elliptic
+GraphSAGE-sampled complement0.3578 0.3842 0.3706 0.2483 0.7581
+GCN-sampled complement 0.3382 0.0864 0.1376 0.0827 0.6743
+GAT-sampled complement 0.4877 0.0852 0.1451 0.0828 0.6628
+However, it is observed that the sampled complement structures were not able to
+improve predictive accuracy and performed poorly with respect to the PR-AUC
+measure as compared to the corresponding original graphs used in the study. This
+observation comes as a result of changes being made in the connectivity and edge
+identity, rather than the independent effects of graph density.
+For example, for the IEEE-CIS sampled complement GAT, the recall is quite high,
+reaching 0.9986, but precision is only 0.0375, and PR-AUC is 0.0407, which shows
+that this model essentially marks almost all cases as fraudulent. Similarly, the same
+pattern is observed on the Elliptic dataset, where the sampled complement GCN
+and GAT likewise had low PR-AUC performance.
+GraphSAGE achieved the best PR-AUC performance among all the sampled-complement
+67
+
+=== PDF PAGE 83 ===
+combinations for both datasets. However, it should be noted that all combinations
+have been evaluated in only one experiment, which means that no consistency with
+random seeds has been shown. Therefore, the experiment can be considered ex-
+ploratory.
+4.8 Wilcoxon Signed-Rank Statistical Testing
+In order to determine the statistical significance of the detected difference between
+the models, the Wilcoxon signed-rank test was applied to the paired experiments.
+Such an approach was chosen primarily because of its non-parametric character and
+its corresponding ability to compare paired data without making any assumptions
+regarding the normal distribution of the score differences.
+To facilitate this, equal random seeds were used for each model pair, thereby pro-
+ducing paired scores. Under this framework, the Null Hypothesis states that there is
+no difference between the two models, evaluated against a chosen significance level
+ofα= 0.05.
+Wilcoxon signed-rank tests were applied to the main-model and alternative graph-
+construction experiments with ten paired runs. Sampled-complement configurations
+were excluded because only one run was available for each configuration. The re-
+ported p-values are unadjusted for multiple comparisons and are interpreted at a
+nominal significance level of 0.05.
+68
+
+=== PDF PAGE 84 ===
+4.8.1 Wilcoxon Results on IEEE-CIS
+With regard to the IEEE-CIS dataset, the MLP achieved the highest mean PR-
+AUC, but the Wilcoxon signed-rank test did not establish statistical superiority
+over the LSTM in PR-AUC, F1-score, or ROC-AUC. The corresponding p-values
+were 0.2324, 0.3750, and 0.3223, respectively. Similarly, the PR-AUC differences
+between the MLP and Transformer, and between the LSTM and Transformer, were
+not statistically significant, with p-values of 0.2324 and 0.5566, respectively.
+Furthermore, the MLP performed significantly better than the graph-based architectures—
+GCN, GraphSAGE, and GAT—in PR-AUC and F1-score. In particular, the pair-
+wise PR-AUC comparisons between the MLP and GCN, GraphSAGE, and GAT
+produced p-values of 0.0020, 0.0059, and 0.0020, respectively.
+Simultaneously, the LSTM and Transformer also performed significantly better than
+the three GNN architectures in PR-AUC and F1-score. This collective outcome
+supports the stronger performance of the evaluated non-graph deep learning models
+on these metrics under the experimental settings used for IEEE-CIS.
+Table 4.12 summarizes the most important Wilcoxon findings for IEEE-CIS.
+Such outcomes suggest that the evaluated feature-based and sequence-based deep
+learning models surpassed the GNN models in PR-AUC and F1-score on IEEE-CIS,
+although no statistically significant PR-AUC differences were found among the three
+non-graph models.
+69
+
+=== PDF PAGE 85 ===
+Table 4.12:Main Wilcoxon Findings on IEEE-CIS
+Comparison Metric Higher Mean Modelp-value Significant atα= 0.05
+MLP vs LSTM PR-AUC MLP 0.2324 No
+MLP vs LSTM F1-score MLP 0.3750 No
+MLP vs GCN PR-AUC MLP 0.0020 Yes
+MLP vs GraphSAGEPR-AUC MLP 0.0059 Yes
+MLP vs GAT PR-AUC MLP 0.0020 Yes
+MLP vs TransformerPR-AUC MLP 0.2324 No
+LSTM vs GCN PR-AUC LSTM 0.0020 Yes
+LSTM vs GraphSAGEPR-AUC LSTM 0.0020 Yes
+LSTM vs GAT PR-AUC LSTM 0.0020 Yes
+LSTM vs TransformerPR-AUC LSTM 0.5566 No
+4.8.2 Wilcoxon Results for IEEE-CIS Graph Constructions
+The GraphSAGE algorithm using the email-domain links obtained a higher PR-AUC
+and F1-score when compared to the GraphSAGE algorithm from the original graph
+with unadjusted p-values of 0.0020 for both the performance metrics. Similarly,
+the 24-hour identification scheme obtained a higher GCN PR-AUC than its original
+graph with an unadjusted p-value of 0.0020.
+Even though the GraphSAGE algorithm using the email-domain links had a lower
+mean PR-AUC compared to the MLP model, the difference was not statistically
+significant (p= 0.0645) at the usual significance level of 0.05.
+4.8.3 Wilcoxon Results on Elliptic
+Specifically, with regard to the Elliptic dataset, the Transformer showed superior
+results compared to all other models in terms of both PR-AUC and F1-score met-
+rics. To be more precise, it performed significantly better than the LSTM, MLP,
+70
+
+=== PDF PAGE 86 ===
+GraphSAGE, GAT, and GCN variants.
+Consistently, the second-best performer was the LSTM, which likewise showed a
+significant improvement compared to the MLP, GCN, GraphSAGE, and GAT in
+both PR-AUC and F1-score. In contrast, among the group of graph neural networks
+(GNNs), GraphSAGE emerged as the best architecture, thereby demonstrating a
+clear superiority to both GCN and GAT in the PR-AUC and F1-score metrics.
+Table 4.13 summarizes the most important Wilcoxon findings for Elliptic.
+Table 4.13:Main Wilcoxon Findings on Elliptic
+Comparison Metric Higher Mean Modelp-valueSignificant atα= 0.05
+Transformer vs LSTM PR-AUC Transformer 0.0273 Yes
+Transformer vs LSTM F1-score Transformer 0.0020 Yes
+Transformer vs MLP PR-AUC Transformer 0.0020 Yes
+Transformer vs GraphSAGEPR-AUC Transformer 0.0020 Yes
+Transformer vs GAT PR-AUC Transformer 0.0020 Yes
+Transformer vs GCN PR-AUC Transformer 0.0020 Yes
+LSTM vs GraphSAGE PR-AUC LSTM 0.0020 Yes
+LSTM vs GAT PR-AUC LSTM 0.0020 Yes
+LSTM vs GCN PR-AUC LSTM 0.0020 Yes
+GraphSAGE vs GCN PR-AUC GraphSAGE 0.0020 Yes
+GraphSAGE vs GAT PR-AUC GraphSAGE 0.0059 Yes
+These results suggest that the Transformer was the best-performing architecture
+for Elliptic. Although GraphSAGE was the best graph-based method, it failed to
+statistically surpass the best non-graph deep neural network methods.
+4.9 Discussion
+The results are explained in terms of the settings when graph-based modeling is ef-
+fective, how much other graph representations can improve a Graph Neural Network
+71
+
+=== PDF PAGE 87 ===
+(GNN), and in what cases non-graph-based models still outperform. Outperforming
+another representation suggests dependence on the particular relations, but it does
+not mean superiority over non-graph-based models per se. Thus, the distinction
+between the model comparison and the construction comparison is made, and what
+graph properties are linked with the results is discussed.
+In the context of the IEEE-CIS dataset, the MLP, LSTM, and Transformer models
+demonstrated better mean PR-AUC and F1-scores than GNN models. However, in
+these models, the MLP had the best mean PR-AUC score, and the Transformer had
+the best mean F1-score. However, the differences between PR-AUC scores of these
+three models were not statistically significant. The possible cause of the models’
+performance is related to the intrinsic nature of the dataset, which is tabular in
+its nature with transactional features that have information. While there was a
+construction of the graph by means of shared identifiers, it was very sparse and
+fragmented, having 255,381 connected components.
+In addition, the results of the IEEE-CIS experiment showed that creating a graph
+out of tabular data is not always beneficial. In particular, shared identifiers may
+connect transactions whose relationships are not informative for fraud detection,
+potentially introducing noise into neighborhood aggregation.
+GraphSAGE: email-domain connections.The email-domain graph shows the
+highest mean PR-AUC and F1-score of GraphSAGE constructions. Edges link ad-
+jacent transactions in each group that have the same value in either email-domain
+column, processing each column separately. Groups with more than 1,000 transac-
+tions are not included in generating edges but still contribute to the list of nodes.
+72
+
+=== PDF PAGE 88 ===
+Transactions with large sets are ignored. In this way, a highly limited set of rela-
+tionships is generated where 97.2689% of all transactions have no relationship and
+2.54% of fraud transactions have any neighbor. Despite this, the GraphSAGE con-
+struction on this graph performs better than the one for the main graph in PR-AUC,
+F1-score, recall, and mean false positive count.
+It might be due to the fact that limiting the set of relationships to this limited
+set reduces the effect of less informative neighbors which were added by using the
+larger main graph. Nevertheless, the results do not show that the relationships of
+the email-domain graph are in general more informative than others. In this con-
+struction, most transactions get no information from other transactions. Thus, the
+observed improvement might be related to changes in the set of connected transac-
+tions, learned parameters shared by all nodes, or both.
+GCN: identifier connections within 24 hours.The 24-hour identifier graph
+produces the maximum mean PR-AUC and F1-scores for GCN. This construct links
+all pairs of transactions that qualify and have a common non-missing value in at
+least one of the selected identifiers, given that their time stamps are within 24 hours
+of each other. Links are not limited to sequential transactions. This graph has the
+maximum number of fraud-fraud edges equal to 16,584. But, 92.9842% of the total
+nodes are isolated, meaning that its edges have been generated from a small portion
+of transactions.
+This can be due to the fact that the neighborhoods generated based on the temporal
+constraint and pair selection rule could be more beneficial for GCN aggregation than
+neighborhoods created using the main graph. This is still a hypothesis since the
+73
+
+=== PDF PAGE 89 ===
+construction makes modifications to the selected attributes, temporal constraint,
+and pair selection rule. In addition, the increased mean PR-AUC score is also
+associated with an increase in false positives and variations between different runs.
+GAT: the broader main construction.The best average PR-AUC and F1-
+Score is attained by GAT using the main graph. This graph is based on consecutive
+transaction connections that were derived separately from fourteen features. It has
+the least isolation rate of 42.5837% and associates the most fraudulent transactions
+with a neighbor, with 65.67%.
+The greater number of connections may be the potential explanation of the higher
+performance of GAT using the main graph as construction: limitation of relations
+may eliminate important information for the model. Yet, there is no evidence that
+the attention mechanism of GAT manages to select important connections or that
+the higher number of connections leads to the better result.
+Implications for graph construction.However, no construction performs best
+on all three architectures. Specifically, the email-domain graph yields the highest
+GraphSAGE mean PR-AUC but the lowest GAT mean PR-AUC. In a similar vein,
+while the wider fraud-node coverage of the main graph does not make it the best
+construction for GraphSAGE and GCN, density, isolation, and fraud-fraud edge
+numbers cannot independently explain the ranking of the constructions.
+It is also important to take into consideration how the construction rules influence
+the interpretation of the statistics. First, the consecutive-transaction linkage limits
+the number of edges that could exist between nodes in eligible groups, while the
+74
+
+=== PDF PAGE 90 ===
+identifier-time-window construction allows for many edges to appear within a small
+group of transactions. The elimination of oversized groups will further limit the
+coverage of transactions.
+These architectural dependencies are shown through the structural measures, which
+apply to the whole graph, and the performance measures, which apply to the test set.
+Individual testing of connected and isolated test transactions as well as individual
+modifications of individual construction rules would have to be used in order to
+further investigate the suggested explanations.
+In the Elliptic dataset, GraphSAGE provided higher average values of PR-AUC
+and F1-score in comparison with the MLP; yet, there was no statistical difference
+according to the performed tests between the two algorithms. Transformer and
+LSTM performed better on these two indicators. Thus, the presence of a graph in the
+data set does not provide an advantage for the studied GNNs. One possible reason
+could be that the node features in Elliptic include already aggregated transactions,
+which can be used by non-graph algorithms as well.
+Similarly, the results show the need for analysis of several different measures of
+performance. Some models showed high recall and low precision. For example,
+the GAT algorithm used on the IEEE-CIS dataset achieved the highest recall rate
+in all the six main models in the final run, finding 940 fraudulent transactions
+but generating 3,888 false alarms. In comparison, the LSTM found 879 fraudulent
+transactions with 854 false alarms, which resulted in much higher F1-score. In
+real-world fraud detection systems, too many false alarms generate expenses due
+to increased work for fraud specialists and potential damage to the reputation of
+75
+
+=== PDF PAGE 91 ===
+legitimate clients.
+Therefore, PR-AUC and F1-score provide a better overall evaluation under class
+imbalance. Recall remains important, but it should be interpreted together with
+precision and false-positive counts.
+Despite the fact that the sampled-complement experiment failed to improve the
+prediction quality consistently and often led to worse PR-AUC values, it replaced the
+existing associations with the sampled non-edges while at the same time increasing
+the level of connectivity. In other words, the changes that were noticed can not be
+explained merely by the graph density.
+4.10 Answering the Research Questions
+RQ1: Can Graph Neural Networks (GCN, GraphSAGE, GAT) outper-
+form advanced deep learning architectures (MLP, LSTM, Transformer-
+based models) by learning network-level dependencies within financial
+transaction data?
+The findings show no conclusive evidence of the superiority of graph neural net-
+works (GNNs) compared to the non-graph models that were tested. The case with
+IEEE-CIS is that the non-graph models had a higher mean PR-AUC and F1-score
+compared to all the graph neural networks considered. However, there was no sta-
+tistically significant difference in the PR-AUC of the MLP and GraphSAGE with
+email-domain links (unadjusted Wilcoxon test, p = 0.0645). In that respect, the
+two models cannot be concluded to be equivalent.
+76
+
+=== PDF PAGE 92 ===
+For Elliptic, GraphSAGE achieved the highest mean PR-AUC and F1-score among
+the evaluated GNNs, while Transformer and LSTM achieved higher values on both
+metrics.
+RQ2: Under which dataset and graph-construction conditions do the
+evaluated GNNs provide useful fraud detection performance, and how
+are their performance differences associated with graph connectivity, iso-
+lation, and class-specific relationships?
+The value that could be derived from graph-based models depended on the architec-
+ture of the model, the way it was constructed, and the comparison point selected. On
+IEEE-CIS, For the IEEE-CIS dataset, GraphSAGE exhibited higher performance
+for the email domain graph than the general graph: PR-AUC was improved from
+0.3432 to 0.3912, F1-score from 0.3788 to 0.4025, and false positives from 1,561.4 to
+1,391.4. On the other hand, GCN achieved its best mean PR-AUC in the 24-hour
+identifier graph, whereas GAT showed its maximum mean PR-AUC in the main
+graph.
+The gains achieved by the graph-specific improvements did not result in an advan-
+tage over the non-graph approaches. The mean PR-AUC and F1 scores for all eval-
+uated IEEE-CIS GNN architectures were consistently below those for MLP, LSTM,
+and Transformer networks. The PR-AUC comparison between MLP and Graph-
+SAGE for the email domain links was not statistically significant in the provided
+unadjusted test (p= 0.0645). This outcome does not prove the equivalence of the
+models. In case of Elliptic data, the GraphSAGE outperformed MLP in terms of the
+mean PR-AUC and F1-score but lagged behind Transformer and LSTM networks.
+77
+
+=== PDF PAGE 93 ===
+No single property that explained the success or failure of any architectural form
+could be determined from the structural analysis. Increased connectivity and fraud
+node connectivity did not necessarily reflect good performance, while the strongest
+version of GraphSAGE was relatively sparse. As a result, the findings show that
+graph architecture construction should be evaluated on an architecture-specific ba-
+sis. The connections between the provided relations and performance have been
+established, not causations of graph properties.
+RQ3: Which modeling paradigm achieves superior fraud detection per-
+formance, particularly in terms of Recall, F1-score, and PR-AUC under
+highly imbalanced fraud detection conditions?
+Non-graph models showed better performance according to mean PR-AUC and F1
+score. In the case of IEEE-CIS data, MLP showed the best mean PR-AUC and
+precision, while Transformer showed the best mean F1 score. In the case of principal
+and alternative graph structures, GraphSAGE with address-based edges exhibited
+the best mean recall value of 0.4175. Differences of PR-AUC values between MLP,
+LSTM, and Transformer were not statistically significant. In the case of the Elliptic
+dataset, the Transformer model performed the best in mean PR-AUC, F1 score, and
+precision.
+GNN models sometimes achieved competitive recall. In particular, GCN achieved
+the highest mean recall on Elliptic, but its low precision resulted in a lower F1-
+score. Therefore, recall alone did not identify the strongest overall model. Under
+the class imbalance conditions and experimental settings of this study, non-graph
+deep learning provided the strongest overall results on the primary metrics of PR-
+78
+
+=== PDF PAGE 94 ===
+AUC and F1-score.
+79
+
+=== PDF PAGE 95 ===
+Chapter Five
+Conclusion and Future Work
+5.1 Conclusion
+In this thesis, the situations where existing graph neural networks perform well in
+fraud detection are evaluated along with the situations where the non-graph neural
+networks continue to outperform. This work includes benchmarking of IEEE-CIS
+and Elliptic datasets along with the investigation into the effect of transaction graph
+generation on the performance of GCN, GraphSAGE, and GAT.
+The two datasets provide separate evaluation settings: IEEE-CIS requires the de-
+velopment of relations using attributes from tables, while Elliptic offers transactions
+graph. In IEEE-CIS, there are five constructions that allow evaluating graph neu-
+ral networks architectures based on different definitions of relations between trans-
+actions. The comparisons performed show the strengths and weaknesses of each
+construction separately, and statistics about structure help to interpret the results
+80
+
+=== PDF PAGE 96 ===
+obtained. Neither the cross-dataset evaluation nor the construction experiments
+separate the effect of one graph property on performance.
+In total, six models were considered. On one hand, non-graph models consist of
+the MLP, LSTM, and Transformer, whereas the graph models include the GCN,
+GraphSAGE, and GAT. In terms of evaluation, recall, precision, F1-score, PR-AUC,
+ROC-AUC, and confusion matrices were applied. Moreover, taking into account the
+fact that there was significant class imbalance in fraud detection, emphasis was put
+on PR-AUC and F1-score as primary metrics, since accuracy has shown misleading
+results in such cases according to previous research [15], [19].
+From the results, it can be noted that there was no clear indication that the graph-
+based models outperformed the non-graph models across the board. In the case
+of the IEEE-CIS data set, MLP had the highest average PR-AUC value, while the
+Transformer had the highest average F1-score value. It was also found that the pro-
+cess of constructing the graph depends on the model used. For example, in the case
+of GraphSAGE, the best graph construction would be the one that involves email
+domain connectivity, while in the case of Graph Convolutional Network (GCN), the
+best graph construction is the 24-hour identifier construction.
+Conversely, on the Elliptic dataset, the best results in terms of overall performance
+are achieved by the Transformer network, followed by the LSTM algorithm. As
+for the GNNs, GraphSAGE turned out to be the best performing architecture and
+showed higher competitiveness in comparison to the IEEE-CIS case. This result is
+compatible with the potential usefulness of network information discussed in pub-
+lished Elliptic research [3], although the present comparison does not isolate graph
+81
+
+=== PDF PAGE 97 ===
+structure as the cause of the observed performance differences. However, even in
+the case of the Elliptic dataset, the best non-graph models still outperformed the
+GNN models in terms of PR-AUC and F1-score.
+The statistical tests further confirmed these findings. On IEEE-CIS, MLP achieved
+the highest mean PR-AUC, while Transformer achieved the highest mean F1-score.
+The reported tests did not establish significant PR-AUC differences among the three
+non-graph models. Among the GNN configurations, GraphSAGE with email-domain
+connections achieved the strongest mean PR-AUC, and its PR-AUC difference from
+MLP was not statistically significant in the reported unadjusted test. Similarly,
+for the Elliptic dataset, the Transformer algorithm significantly outperformed the
+competing algorithms, while GraphSAGE turned out to be the best performing GNN
+architecture. Thus, it can be said that the effectiveness of the models depends not
+only on the possibility to represent the data as a graph but also on the quality of
+the graph, the informativeness of the node features, and the class imbalance level.
+These results show that graph building should be considered together with the struc-
+ture of the model itself and not just assume that using graph-based models increases
+the effectiveness of fraud detection. The findings are specific to the datasets, model
+structures, and methodology used in this thesis.
+The sequence model experiment results use the first nine labeled instances of each
+fold since they cannot have incomplete windows of inputs. There is an inherent
+evaluation disparity with respect to other models in addition to a potential for bias.
+Validation set exclusions might influence choice of checkpointing and thresholds.
+There has been no quantification of the influence of this on the rankings/comparisons
+82
+
+=== PDF PAGE 98 ===
+between models.
+There are several limitations that need to be taken into account when consider-
+ing these findings. First, the experiment measures two different data sets using
+fixed partitions along time axis, so that variability between random seeds can be
+attributed mostly to stochastic properties of the training process itself and not to
+any differences due to independent sampling of data sets. Statistical tests used in
+the experiment are not corrected for multiple comparisons. Furthermore, only one
+instance of each sampled-complement configuration was tested. Alternative graphs
+differ by a number of variables at once, including attribute matching, pair selection
+rule, and group size effects, making it impossible to isolate the effect of each variable
+separately.
+5.2 Future Work
+Some areas for further research could include the following. First, further investiga-
+tion of graph construction approaches that are applicable to tabular data, such as
+the IEEE-CIS dataset, is possible. In this research, the graph was built on the basis
+of common ids; however, other options could be considered as well and provide a
+more significant structure. For example, one could use a heterogeneous graph that
+represents not only transactions but also such node types as cards, devices, accounts,
+and email domains.
+Second, the study of temporal graph neural networks is highly possible. Given
+that fraud actions have inherent temporal characteristics, and some datasets—for
+83
+
+=== PDF PAGE 99 ===
+example, IEEE-CIS and Elliptic—have time information, this structural dimension
+can be actively used in the process of fraud detection.
+Third, further investigation of some imbalance-aware GNN approaches is needed.
+Because datasets on fraud detection are significantly imbalanced, standard message-
+passing tends to weaken the minority class signal. Some examples of methods that
+could subsequently be applied are: graph-aware sampling, focal loss variants, minor-
+ity class neighborhood sampling, and dual-view graph representation learning [11],
+[14], [15].
+Fourth, further study related to the calibration and optimization of the threshold
+should be carried out, since the results show that some of the models can achieve
+high recall but low precision. In practice, this imbalance means that there are a large
+number of fraud detections along with many false positives. Accordingly, probability
+calibration and cost-sensitive thresholds based on false positive/negative costs could
+be considered for further research [19].
+Fifth, further testing of the model on more datasets would allow researchers to
+improve the generality of their conclusions. Specifically, testing models on a greater
+variety of banking, credit card, cryptocurrency, and anti-money laundering datasets
+would help to learn more about the exact circumstances under which the application
+of GNNs is beneficial or not compared to feature-based models.
+In conclusion, possible areas for future research include hybrid approaches that
+incorporate graph-based relational modeling together with temporal modeling or
+transformer-based attention mechanisms. The well-known STA-GT model serves
+as an excellent starting point in this direction [10]. Further research is needed to
+84
+
+=== PDF PAGE 100 ===
+determine if such combinations perform better than the models considered in this
+thesis.
+85
+
+=== PDF PAGE 101 ===
+Bibliography
+[1] G. Liu, J. Tang, Y. Tian, and J. Wang, “Graph neural network for credit card
+fraud detection,” in2021 International Conference on Cyber-Physical Social
+Intelligence (ICCSI), pp. 1–6, IEEE, 2021.
+[2] A. Pareja, G. Domeniconi, J. Chen, T. Ma, T. Suzumura, H. Kanezashi,
+T. Kaler, T. B. Schardl, and C. E. Leiserson, “EvolveGCN: Evolving graph
+convolutional networks for dynamic graphs,” inProceedings of the AAAI Con-
+ference on Artificial Intelligence, vol. 34, pp. 5363–5370, 2020.
+[3] B. Deprez, T. Vanderschueren, B. Baesens, T. Verdonck, and W. Verbeke, “Net-
+work analytics for anti-money laundering—a systematic literature review and
+experimental evaluation,”INFORMS Journal on Data Science, vol. 5, no. 2,
+pp. 119–154, 2025.
+[4] Y. Gorishniy, I. Rubachev, V. Khrulkov, and A. Babenko, “Revisiting deep
+learning models for tabular data,” inAdvances in Neural Information Process-
+ing Systems, vol. 34, pp. 18932–18943, 2021.
+[5] J. Jurgovsky, M. Granitzer, K. Ziegler, S. Calabretto, P.-E. Portier, L. He-
+Guelton, and O. Caelen, “Sequence classification for credit-card fraud detec-
+tion,”Expert systems with applications, vol. 100, pp. 234–245, 2018.
+86
+
+=== PDF PAGE 102 ===
+[6] T. N. Kipf and M. Welling, “Semi-supervised classification with graph con-
+volutional networks,”International Conference on Learning Representations
+(ICLR), 2017.
+[7] W. L. Hamilton, R. Ying, and J. Leskovec, “Inductive representation learn-
+ing on large graphs,”Advances in Neural Information Processing Systems
+(NeurIPS), vol. 30, 2017.
+[8] D. Cheng, X. Wang, Y. Zhang, and L. Zhang, “Graph neural network for fraud
+detection via spatial-temporal attention,”IEEE Transactions on Knowledge
+and Data Engineering, vol. 34, no. 8, pp. 3800–3813, 2022.
+[9] J. Wang, J. Liu, W. Zheng, and Y. Ge, “Temporal heterogeneous graph con-
+trastive learning for fraud detection in credit card transactions,”IEEE Access,
+2025.
+[10] Y. Tian and G. Liu, “Spatial-temporal-aware graph transformer for transaction
+fraud detection,”IEEE Transactions on Industrial Informatics, vol. 20, no. 11,
+pp. 12659–12668, 2024.
+[11] G. Tong and J. Shen, “Financial transaction fraud detector based on imbal-
+ance learning and graph neural network,”Applied Soft Computing, vol. 149,
+p. 110984, 2023.
+[12] H. He and E. A. Garcia, “Learning from imbalanced data,”IEEE Transactions
+on Knowledge and Data Engineering, vol. 21, no. 9, pp. 1263–1284, 2009.
+[13] M. Markwald and E. Demidova, “Refuel: rule extraction for imbalanced neural
+node classification,”Machine Learning, vol. 113, no. 9, pp. 6227–6246, 2024.
+87
+
+=== PDF PAGE 103 ===
+[14] Y. Song, Y. Wei, Y. Lu, Q. Sun, M. Shao, L.-e. Wang, C. Hu, X. Li, and X. Fu,
+“Mitigating message imbalance in fraud detection with dual-view graph rep-
+resentation learning,” inProceedings of the Thirty-Fourth International Joint
+Conference on Artificial Intelligence, pp. 3281–3289, 2025.
+[15] Y. Chen, Z. Zheng, J. Ma, and B. Zhou, “A graph neural network with
+imbalance-aware mechanism for enhanced fraud detection,” in2024 IEEE Cyber
+Science and Technology Congress (CyberSciTech), pp. 207–213, IEEE, 2024.
+[16] A. Vaswani, N. Shazeer, N. Parmar, J. Uszkoreit, L. Jones, A. N. Gomez,
+L. Kaiser, and I. Polosukhin, “Attention is all you need,” inAdvances in Neural
+Information Processing Systems, vol. 30, 2017.
+[17] A. Kesharwani and P. Shukla, “Ffdm- gnn: A financial fraud detection model
+using graph neural network,” in2024 International Conference on Computing,
+Sciences and Communications (ICCSC), pp. 1–6, IEEE, 2024.
+[18] P. Veliˇ ckovi´ c, G. Cucurull, A. Casanova, A. Romero, P. Li` o, and Y. Bengio,
+“Graph attention networks,” inInternational Conference on Learning Repre-
+sentations, 2018.
+[19] A. Dal Pozzolo, O. Caelen, R. A. Johnson, and G. Bontempi, “Calibrating prob-
+ability with undersampling for unbalanced classification.,” inSSCI, pp. 159–
+166, 2015.
+[20] S. Motie and B. Raahemi, “Financial fraud detection using graph neural net-
+works: A systematic review,”Expert Systems with Applications, vol. 240,
+p. 122156, 2024.
+88
+
+=== PDF PAGE 104 ===
+[21] H. Kim, J. Choi, and J. J. Whang, “Dynamic relation-attentive graph neural
+networks for fraud detection,” in2023 IEEE International Conference on Data
+Mining Workshops (ICDMW), pp. 1092–1096, IEEE, 2023.
+[22] F. Moradi, M. Tarif, and M. Homaei, “Ensemble-based fraud detection: A
+robust approach evaluated on ieee-cis,” in2025 15th International Conference
+on Computer and Knowledge Engineering (ICCKE), pp. 1–6, IEEE, 2025.
+[23] E. Li, J. Ouyang, S. Xiang, L. Qin, and L. Chen, “Relation-aware heterogeneous
+graph neural network for fraud detection,” inWeb and Big Data, vol. 14963 of
+Lecture Notes in Computer Science, pp. 240–255, Springer Nature Singapore,
+2024.
+[24] J. Lin, X. Guo, Y. Zhu, S. Mitchell, E. Altman, and J. Shun, “FraudGT: A
+simple, effective, and efficient graph transformer for financial fraud detection,”
+inProceedings of the 5th ACM International Conference on AI in Finance,
+ICAIF ’24, pp. 292–300, Association for Computing Machinery, 2024.
+89

@@ -1,0 +1,62 @@
+{
+  "main_max1000": {
+    "graph_file": "results/ieee_cis_graph_trainfit_main_max1000.pt",
+    "unique_nonself_undirected_edges": 406769,
+    "self_loop_columns": 0,
+    "isolated_nodes": 251474,
+    "isolated_percent": 42.58373691875233,
+    "fraud_fraud": 8476,
+    "fraud_legitimate": 18647,
+    "legitimate_legitimate": 379646,
+    "fraud_any_neighbor_percent": 65.66810240526544,
+    "fraud_fraud_neighbor_percent": 50.40894352223782
+  },
+  "card_max1000": {
+    "graph_file": "results/ieee_cis_graph_trainfit_card_max1000.pt",
+    "unique_nonself_undirected_edges": 304889,
+    "self_loop_columns": 0,
+    "isolated_nodes": 274960,
+    "isolated_percent": 46.56077488400447,
+    "fraud_fraud": 5124,
+    "fraud_legitimate": 11623,
+    "legitimate_legitimate": 288142,
+    "fraud_any_neighbor_percent": 54.15960896288051,
+    "fraud_fraud_neighbor_percent": 35.45951701108261
+  },
+  "address_max1000": {
+    "graph_file": "results/ieee_cis_graph_trainfit_address_max1000.pt",
+    "unique_nonself_undirected_edges": 7424,
+    "self_loop_columns": 0,
+    "isolated_nodes": 582899,
+    "isolated_percent": 98.70609950215058,
+    "fraud_fraud": 260,
+    "fraud_legitimate": 467,
+    "legitimate_legitimate": 6697,
+    "fraud_any_neighbor_percent": 2.4488215651163916,
+    "fraud_fraud_neighbor_percent": 1.7616028650244397
+  },
+  "email_domain_max1000": {
+    "graph_file": "results/ieee_cis_graph_trainfit_email_domain_max1000.pt",
+    "unique_nonself_undirected_edges": 16657,
+    "self_loop_columns": 0,
+    "isolated_nodes": 574412,
+    "isolated_percent": 97.26894029193619,
+    "fraud_fraud": 275,
+    "fraud_legitimate": 539,
+    "legitimate_legitimate": 15843,
+    "fraud_any_neighbor_percent": 2.535933794705512,
+    "fraud_fraud_neighbor_percent": 1.8196776847505203
+  },
+  "identifier_time_window_24h": {
+    "graph_file": "results/ieee_cis_graph_trainfit_identifier_time_window_24h.pt",
+    "unique_nonself_undirected_edges": 345272,
+    "self_loop_columns": 0,
+    "isolated_nodes": 549109,
+    "isolated_percent": 92.98421783452433,
+    "fraud_fraud": 16584,
+    "fraud_legitimate": 28657,
+    "legitimate_legitimate": 300031,
+    "fraud_any_neighbor_percent": 24.197841552533514,
+    "fraud_fraud_neighbor_percent": 22.300730774814888
+  }
+}

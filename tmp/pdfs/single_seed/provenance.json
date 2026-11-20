@@ -1,0 +1,229 @@
+{
+  "source_csv": "analysis\\supervisor_2026-10-13\\selected_per_seed_results.csv",
+  "source_sha256": "2e5de79d45654571f0566fb8c42a4cbde05094f9c3db30de11d994aeb9c1d138",
+  "script_sha256": "c319b50394389d97b05362a1505ceba38b3df153dd892f25223f940a568107a3",
+  "layout_script_sha256": "61cf274e8d0188e2dfa0338fd249c5c71d0cb814601a16642723cd3f25a02dde",
+  "preset": "thesis",
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51
+  ],
+  "pr_seed": 51,
+  "error_bars": "sample SD, ddof=1; not confidence intervals",
+  "predictions": [
+    {
+      "dataset": "IEEE-CIS",
+      "model": "MLP",
+      "seed": 51,
+      "run_id": "IEEE-CIS__MLP__seed51",
+      "checkpoint_path": "results/best_mlp_seed51_model.pt",
+      "checkpoint_sha256": "44f28aa965f62424c46f358ea565d09f3b07e9b98c41a2c517eb742e2c087455",
+      "prediction_file": "analysis\\supervisor_2026-10-13\\predictions\\IEEE-CIS__MLP__seed51.npz",
+      "sha256": "0829731fde27df5fa73cbc5a31c4b351020c24d1a81b7d1d07c176339bb94e97",
+      "saved_run_ap": 0.3298312991216947,
+      "recomputed_ap": 0.32983129912169473,
+      "absolute_ap_difference": 5.551115123125783e-17,
+      "test_count": 59054
+    },
+    {
+      "dataset": "IEEE-CIS",
+      "model": "LSTM",
+      "seed": 51,
+      "run_id": "IEEE-CIS__LSTM__seed51",
+      "checkpoint_path": "results/best_lstm_seed51_model.pt",
+      "checkpoint_sha256": "e713a71a947a73a51b785a01ac5619db0b8d20c621cfbc8cf9a3e384477c4e15",
+      "prediction_file": "analysis\\supervisor_2026-10-13\\predictions\\IEEE-CIS__LSTM__seed51.npz",
+      "sha256": "93a50189d553fa721c1073dea0a5c135a8a27ddbfd54458cb001fea8fd778703",
+      "saved_run_ap": 0.4287422305791964,
+      "recomputed_ap": 0.4287422305791964,
+      "absolute_ap_difference": 0.0,
+      "test_count": 59054
+    },
+    {
+      "dataset": "IEEE-CIS",
+      "model": "Transformer",
+      "seed": 51,
+      "run_id": "IEEE-CIS__Transformer__seed51",
+      "checkpoint_path": "results/best_transformer_seed51_model.pt",
+      "checkpoint_sha256": "c705a63098f85b0faf5124cebb5b32f3b6a7ebbd1e353a183f3002352a597361",
+      "prediction_file": "analysis\\supervisor_2026-10-13\\predictions\\IEEE-CIS__Transformer__seed51.npz",
+      "sha256": "3a42fe4c35b82a42140f8ad099dfef75b491248891ff2d8a360fa179cca572f9",
+      "saved_run_ap": 0.3974532087288834,
+      "recomputed_ap": 0.39745320872888346,
+      "absolute_ap_difference": 5.551115123125783e-17,
+      "test_count": 59054
+    },
+    {
+      "dataset": "IEEE-CIS",
+      "model": "GCN",
+      "seed": 51,
+      "run_id": "IEEE-CIS__GCN-main__seed51",
+      "checkpoint_path": "results/best_gcn_main_seed51_model.pt",
+      "checkpoint_sha256": "d750a9debe96628527e4da6d5898e506a177c0e2bc4add487721e5530b63df40",
+      "prediction_file": "analysis\\supervisor_2026-10-13\\predictions\\IEEE-CIS__GCN-main__seed51.npz",
+      "sha256": "487819e229b47130b87924dfbcb097bcd8c816b9e256e1b54e32bc11b7c4d287",
+      "saved_run_ap": 0.1231744706427292,
+      "recomputed_ap": 0.12317447064272928,
+      "absolute_ap_difference": 8.326672684688674e-17,
+      "test_count": 59054
+    },
+    {
+      "dataset": "IEEE-CIS",
+      "model": "GraphSAGE",
+      "seed": 51,
+      "run_id": "IEEE-CIS__GraphSAGE-main__seed51",
+      "checkpoint_path": "results/best_sage_main_seed51_model.pt",
+      "checkpoint_sha256": "a82c4476afd302cbba5a8893c744c2d92c38afc225e2dc91ab0266f90c4cce1d",
+      "prediction_file": "analysis\\supervisor_2026-10-13\\predictions\\IEEE-CIS__GraphSAGE-main__seed51.npz",
+      "sha256": "bd5e4308fc12f98bcd15253e6a3de09155ab3c49ad3cd7c39fb2d8155f0fc5cb",
+      "saved_run_ap": 0.3445690986516281,
+      "recomputed_ap": 0.3445690986516281,
+      "absolute_ap_difference": 0.0,
+      "test_count": 59054
+    },
+    {
+      "dataset": "IEEE-CIS",
+      "model": "GAT",
+      "seed": 51,
+      "run_id": "IEEE-CIS__GAT-main__seed51",
+      "checkpoint_path": "results/best_gat_main_seed51_model.pt",
+      "checkpoint_sha256": "89fd57e213c50ad6aeec2e16d144f53c559475ba55cddc69e5ce0819930820dc",
+      "prediction_file": "analysis\\supervisor_2026-10-13\\predictions\\IEEE-CIS__GAT-main__seed51.npz",
+      "sha256": "cd5f959e6a9048069f5d8598676652ba2e90f37e522915965000c4bd62081624",
+      "saved_run_ap": 0.1373924568724644,
+      "recomputed_ap": 0.13739245687246449,
+      "absolute_ap_difference": 8.326672684688674e-17,
+      "test_count": 59054
+    },
+    {
+      "dataset": "Elliptic",
+      "model": "MLP",
+      "seed": 51,
+      "run_id": "Elliptic__MLP__seed51",
+      "checkpoint_path": "results/best_elliptic_mlp_seed51_model.pt",
+      "checkpoint_sha256": "8810fe70bd696f55269a5499953dc6cce12c7314a2dc47bf316ec9ee725f5e4f",
+      "prediction_file": "analysis\\supervisor_2026-10-13\\predictions\\Elliptic__MLP__seed51.npz",
+      "sha256": "1676de6dc28f8b2f07c2ed294960c34f86e20cd2ae1b133dd169ff372b83cf3b",
+      "saved_run_ap": 0.4242455575533026,
+      "recomputed_ap": 0.4242455575533026,
+      "absolute_ap_difference": 0.0,
+      "test_count": 8841
+    },
+    {
+      "dataset": "Elliptic",
+      "model": "LSTM",
+      "seed": 51,
+      "run_id": "Elliptic__LSTM__seed51",
+      "checkpoint_path": "results/best_elliptic_lstm_seed51_model.pt",
+      "checkpoint_sha256": "b5daf304a32a52ea8256decfe6b9f0e095bd8b2a4a6207006be61e00b5aab383",
+      "prediction_file": "analysis\\supervisor_2026-10-13\\predictions\\Elliptic__LSTM__seed51.npz",
+      "sha256": "a63a117516cebb00af6770de4537cb13513f04958144422024ddcc903d96afd8",
+      "saved_run_ap": 0.5059698454284268,
+      "recomputed_ap": 0.5059698454284268,
+      "absolute_ap_difference": 0.0,
+      "test_count": 8841
+    },
+    {
+      "dataset": "Elliptic",
+      "model": "Transformer",
+      "seed": 51,
+      "run_id": "Elliptic__Transformer__seed51",
+      "checkpoint_path": "results/best_elliptic_transformer_seed51_model.pt",
+      "checkpoint_sha256": "2c3a924b2736ebd5e50938e781f709a1d993adc252c5660435b62e537343b364",
+      "prediction_file": "analysis\\supervisor_2026-10-13\\predictions\\Elliptic__Transformer__seed51.npz",
+      "sha256": "43347c0addb443745a3b4a205154318f993b3d41f84910b80adfc7ac57b9ea25",
+      "saved_run_ap": 0.4887081991594215,
+      "recomputed_ap": 0.4887081991594215,
+      "absolute_ap_difference": 0.0,
+      "test_count": 8841
+    },
+    {
+      "dataset": "Elliptic",
+      "model": "GCN",
+      "seed": 51,
+      "run_id": "Elliptic__GCN__seed51",
+      "checkpoint_path": "results/best_elliptic_gcn_seed51_model.pt",
+      "checkpoint_sha256": "cf21f2666ee742352102627fb4a3c6cc3f966a8c5dbd8b74e8bcf2d1de342dc0",
+      "prediction_file": "analysis\\supervisor_2026-10-13\\predictions\\Elliptic__GCN__seed51.npz",
+      "sha256": "d88cc6bc3e0eb38827118442e492dbe0a28b16e4cd8de4ff63c3045e0b7157c9",
+      "saved_run_ap": 0.1751347737025972,
+      "recomputed_ap": 0.17513477370259728,
+      "absolute_ap_difference": 8.326672684688674e-17,
+      "test_count": 8841
+    },
+    {
+      "dataset": "Elliptic",
+      "model": "GraphSAGE",
+      "seed": 51,
+      "run_id": "Elliptic__GraphSAGE__seed51",
+      "checkpoint_path": "results/best_elliptic_sage_seed51_model.pt",
+      "checkpoint_sha256": "e7bdf2522c766814f585eba0c4470ce4e43c748f074a4da753a87c1dca59893f",
+      "prediction_file": "analysis\\supervisor_2026-10-13\\predictions\\Elliptic__GraphSAGE__seed51.npz",
+      "sha256": "4286ce4a68de15ed721ecd7aa3b9bcd687e06a3b46bcb871e568dc2e4de77afb",
+      "saved_run_ap": 0.3485067674840219,
+      "recomputed_ap": 0.3485067674840219,
+      "absolute_ap_difference": 0.0,
+      "test_count": 8841
+    },
+    {
+      "dataset": "Elliptic",
+      "model": "GAT",
+      "seed": 51,
+      "run_id": "Elliptic__GAT__seed51",
+      "checkpoint_path": "results/best_elliptic_gat_seed51_model.pt",
+      "checkpoint_sha256": "e329fac104b3ce6f19763184cfe08f75c0edfb743b6299a78e49307d8505d5a7",
+      "prediction_file": "analysis\\supervisor_2026-10-13\\predictions\\Elliptic__GAT__seed51.npz",
+      "sha256": "5a9759a2391eadae36a504c4a0c484f2b0b11e0a827ab8ef9d52955c7423f702",
+      "saved_run_ap": 0.2893485462469333,
+      "recomputed_ap": 0.28934854624693335,
+      "absolute_ap_difference": 5.551115123125783e-17,
+      "test_count": 8841
+    }
+  ],
+  "construction_statistics": {
+    "source": "analysis\\supervisor_2026-10-13\\wilcoxon_holm_inference_verified.csv",
+    "sha256": "420b670d4624f0a9c046555a704a51c4820d31526ba948df2c308f4c8d7e6124",
+    "comparisons": 180,
+    "hypotheses_per_metric": 30,
+    "significant_after_holm": 0,
+    "minimum_p_holm": 0.05859375
+  },
+  "figures": [
+    {
+      "name": "01_pipeline",
+      "caption": "Experimental pipeline. Validation selects checkpoints and thresholds. The IEEE-CIS Transformer instead maximizes validation F1 subject to an alert rate of at most 20% for both selections. The final stage covers Wilcoxon/Holm tests and the four listed controls."
+    },
+    {
+      "name": "02_graph_constructions",
+      "caption": "C, A, E, D = card signature, address signature, email domain, device (stand-in for the identifier fields). Identifier rule: pairs within 24 h, inclusive. Main: union of per-field consecutive links; the real main graph treats card1-card6 and addr1-addr2 as separate fields. Synthetic illustration; bidirectional edges are shown once and model self-loops are omitted."
+    },
+    {
+      "name": "03_results_ieee-cis",
+      "caption": "IEEE-CIS: ten-seed means \u00b1 sample SD; GNNs use the main graph. AP is average precision. F1 and recall use validation-selected thresholds. \u2020 Different checkpoint/threshold procedure (Sec. 3.8)."
+    },
+    {
+      "name": "04_pr_curves_ieee-cis",
+      "caption": "IEEE-CIS; GNNs on the main graph. Single-run mode, seed 51. Each curve uses its validation-selected checkpoint; checkpoint paths and hashes appear in pr_curve_sources.csv."
+    },
+    {
+      "name": "03_results_elliptic",
+      "caption": "Elliptic: ten-seed means \u00b1 sample SD; GNNs use the native graph. AP is average precision. F1 and recall use validation-selected thresholds. "
+    },
+    {
+      "name": "04_pr_curves_elliptic",
+      "caption": "Elliptic; GNNs on the native graph. Single-run mode, seed 51. Each curve uses its validation-selected checkpoint; checkpoint paths and hashes appear in pr_curve_sources.csv."
+    },
+    {
+      "name": "05_graph_construction_results",
+      "caption": "IEEE-CIS construction comparison: ten-seed means \u00b1 sample SD. Dashed blue lines are the MLP means from the same saved result set. No construction comparison survives the prespecified Holm correction over 30 hypotheses per metric; descriptive improvements do not establish significance or equivalence."
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "label": "experiment_scalar_sort",
+  "python": "3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)]",
+  "numpy": "2.2.6",
+  "pandas": "2.3.3",
+  "NPY_DISABLE_CPU_FEATURES": "AVX2,AVX512F",
+  "by_column": [
+    {
+      "column": "card1",
+      "quicksort_edges": 292969,
+      "mergesort_edges": 292969,
+      "symmetric_difference": 16
+    },
+    {
+      "column": "card2",
+      "quicksort_edges": 93868,
+      "mergesort_edges": 93868,
+      "symmetric_difference": 12
+    },
+    {
+      "column": "card3",
+      "quicksort_edges": 7158,
+      "mergesort_edges": 7158,
+      "symmetric_difference": 0
+    },
+    {
+      "column": "card4",
+      "quicksort_edges": 0,
+      "mergesort_edges": 0,
+      "symmetric_difference": 0
+    },
+    {
+      "column": "card5",
+      "quicksort_edges": 10744,
+      "mergesort_edges": 10744,
+      "symmetric_difference": 0
+    },
+    {
+      "column": "card6",
+      "quicksort_edges": 43,
+      "mergesort_edges": 43,
+      "symmetric_difference": 0
+    },
+    {
+      "column": "addr1",
+      "quicksort_edges": 7469,
+      "mergesort_edges": 7469,
+      "symmetric_difference": 0
+    },
+    {
+      "column": "addr2",
+      "quicksort_edges": 1197,
+      "mergesort_edges": 1197,
+      "symmetric_difference": 0
+    },
+    {
+      "column": "P_emaildomain",
+      "quicksort_edges": 10352,
+      "mergesort_edges": 10352,
+      "symmetric_difference": 0
+    },
+    {
+      "column": "R_emaildomain",
+      "quicksort_edges": 9287,
+      "mergesort_edges": 9287,
+      "symmetric_difference": 0
+    },
+    {
+      "column": "DeviceInfo",
+      "quicksort_edges": 27467,
+      "mergesort_edges": 27467,
+      "symmetric_difference": 4
+    },
+    {
+      "column": "id_30",
+      "quicksort_edges": 13210,
+      "mergesort_edges": 13210,
+      "symmetric_difference": 4
+    },
+    {
+      "column": "id_31",
+      "quicksort_edges": 13985,
+      "mergesort_edges": 13985,
+      "symmetric_difference": 0
+    },
+    {
+      "column": "id_33",
+      "quicksort_edges": 6922,
+      "mergesort_edges": 6922,
+      "symmetric_difference": 0
+    }
+  ],
+  "not_an_experiment_graph": true,
+  "quicksort": {
+    "edges": 406767,
+    "transaction_edge_sha256": "6d45824bfdba0b2454f965440afceb74de3287e3d4774586a4a78ec0495f8708",
+    "artifact_sha256": "14b137f86785701bec651476e2ee4e170804e40dd1e67fb0c90a7de2810fe62e",
+    "path": "graph_diagnostics\\diagnostic_experiment_scalar_sort_quicksort.npz"
+  },
+  "mergesort": {
+    "edges": 406764,
+    "transaction_edge_sha256": "40f823377837a0c9728e916195a67de81efc77ffe953ca2ddef504b969cfd01f",
+    "artifact_sha256": "7f5fa81ef5a3950836f33af6e9589d737daeffcee4b12b6c314d8a07589f1892",
+    "path": "graph_diagnostics\\diagnostic_experiment_scalar_sort_mergesort.npz"
+  }
+}

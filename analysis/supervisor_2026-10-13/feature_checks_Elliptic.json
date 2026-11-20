@@ -1,0 +1,20 @@
+[
+  {
+    "graph_path": "results/elliptic_graph.pt",
+    "features_equal": true,
+    "labels_equal": true,
+    "shape": [
+      203769,
+      165
+    ],
+    "feature_tensor_sha256": "a1d490ea5108f2122c0dcca8343b4ed1cbd92805028a963e8415ad6826fba09b",
+    "label_tensor_sha256": "a185ea5399a1538b55430df6a133de3d7b39e7e6988b42266121baacce79cff5",
+    "node_ids_sha256": "7de057207d7ee79caab5bcacca1832629159592114fcd83d48bf3d1fe3f0fda2",
+    "test_ids_sha256": "ab68019ed7f4d3f2988edd3412a5f38f2ca4b61076f6af9029c7be9d1e0ef2ee",
+    "train_mask_equal": true,
+    "val_mask_equal": true,
+    "test_mask_equal": true,
+    "raw_edgelist_matches_saved_ordered_edges": true,
+    "accepted": true
+  }
+]

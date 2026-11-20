@@ -1,0 +1,51 @@
+% Add \usepackage{graphicx} to your preamble.
+% Paths assume thesis_figures/ is beside your main .tex file.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\linewidth]{tmp/pdfs/single_seed/01_pipeline.pdf}
+\caption{Experimental pipeline. Validation selects checkpoints and thresholds. The IEEE-CIS Transformer instead maximizes validation F1 subject to an alert rate of at most 20\% for both selections. The final stage covers Wilcoxon/Holm tests and the four listed controls.}
+\label{fig:01-pipeline}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\linewidth]{tmp/pdfs/single_seed/02_graph_constructions.pdf}
+\caption{C, A, E, D = card signature, address signature, email domain, device (stand-in for the identifier fields). Identifier rule: pairs within 24 h, inclusive. Main: union of per-field consecutive links; the real main graph treats card1-card6 and addr1-addr2 as separate fields. Synthetic illustration; bidirectional edges are shown once and model self-loops are omitted.}
+\label{fig:02-graph-constructions}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\linewidth]{tmp/pdfs/single_seed/03_results_ieee-cis.pdf}
+\caption{IEEE-CIS: ten-seed means $\pm$ sample SD; GNNs use the main graph. AP is average precision. F1 and recall use validation-selected thresholds. † Different checkpoint/threshold procedure (Sec. 3.8).}
+\label{fig:03-results-ieee-cis}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\linewidth]{tmp/pdfs/single_seed/04_pr_curves_ieee-cis.pdf}
+\caption{IEEE-CIS; GNNs on the main graph. Single-run mode, seed 51. Each curve uses its validation-selected checkpoint; checkpoint paths and hashes appear in pr\_curve\_sources.csv.}
+\label{fig:04-pr-curves-ieee-cis}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\linewidth]{tmp/pdfs/single_seed/03_results_elliptic.pdf}
+\caption{Elliptic: ten-seed means $\pm$ sample SD; GNNs use the native graph. AP is average precision. F1 and recall use validation-selected thresholds. }
+\label{fig:03-results-elliptic}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\linewidth]{tmp/pdfs/single_seed/04_pr_curves_elliptic.pdf}
+\caption{Elliptic; GNNs on the native graph. Single-run mode, seed 51. Each curve uses its validation-selected checkpoint; checkpoint paths and hashes appear in pr\_curve\_sources.csv.}
+\label{fig:04-pr-curves-elliptic}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\linewidth]{tmp/pdfs/single_seed/05_graph_construction_results.pdf}
+\caption{IEEE-CIS construction comparison: ten-seed means $\pm$ sample SD. Dashed blue lines are the MLP means from the same saved result set. No construction comparison survives the prespecified Holm correction over 30 hypotheses per metric; descriptive improvements do not establish significance or equivalence.}
+\label{fig:05-graph-construction-results}
+\end{figure}

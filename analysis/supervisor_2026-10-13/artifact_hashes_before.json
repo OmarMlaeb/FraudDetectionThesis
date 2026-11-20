@@ -1,0 +1,2130 @@
+[
+  {
+    "path": "data/elliptic_bitcoin_dataset/elliptic_txs_classes.csv",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\data\\elliptic_bitcoin_dataset\\elliptic_txs_classes.csv",
+    "exists": true,
+    "bytes": 3305144,
+    "sha256": "93e2e7b2405c735ba752bf6ba06b947561deddd1f5a8fc91e46f6a4c0e439493"
+  },
+  {
+    "path": "data/elliptic_bitcoin_dataset/elliptic_txs_edgelist.csv",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\data\\elliptic_bitcoin_dataset\\elliptic_txs_edgelist.csv",
+    "exists": true,
+    "bytes": 4470584,
+    "sha256": "a35053ba68a98e4382cae2ba65b9d9e36b23b6439e02dff084971b1b72a5156e"
+  },
+  {
+    "path": "data/elliptic_bitcoin_dataset/elliptic_txs_features.csv",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\data\\elliptic_bitcoin_dataset\\elliptic_txs_features.csv",
+    "exists": true,
+    "bytes": 689683771,
+    "sha256": "fd7f83573443c9e302e371d3f110e3b6224160f5d1ed8a287757936127800ff0"
+  },
+  {
+    "path": "data/ieee-cis/train_identity.csv",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\data\\ieee-cis\\train_identity.csv",
+    "exists": true,
+    "bytes": 26529680,
+    "sha256": "b63c725d8377be90a995268d97f347c17d456b95db45807adcf9f59cd603c37c"
+  },
+  {
+    "path": "data/ieee-cis/train_transaction.csv",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\data\\ieee-cis\\train_transaction.csv",
+    "exists": true,
+    "bytes": 683351067,
+    "sha256": "3a5c83ab6b3cc13dcabe5ffa9f522307fd5f7f7b6e6f6a60c32284ca6283d642"
+  },
+  {
+    "path": "results/best_elliptic_gat_seed42_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_elliptic_gat_seed42_model.pt",
+    "exists": true,
+    "bytes": 124090,
+    "sha256": "ad1c2669d57e9df0f014ca7aefe92e908a00047ec07cfc76b608f85cbeafaae6"
+  },
+  {
+    "path": "results/best_elliptic_gat_seed43_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_elliptic_gat_seed43_model.pt",
+    "exists": true,
+    "bytes": 124090,
+    "sha256": "27907f6487e36f11b54e58155841c3648edda032ade5f201f76c374001dc4738"
+  },
+  {
+    "path": "results/best_elliptic_gat_seed44_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_elliptic_gat_seed44_model.pt",
+    "exists": true,
+    "bytes": 124090,
+    "sha256": "8e9a2bc786da5f3379e175decff0c1bc1023b42e629a6a3e704249bb42ec6f31"
+  },
+  {
+    "path": "results/best_elliptic_gat_seed45_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_elliptic_gat_seed45_model.pt",
+    "exists": true,
+    "bytes": 124090,
+    "sha256": "4b75bcc5dd8db2b5194a7d445f9cd4b2e1d6b7ee7364ebc22c34de2de5c9bb5e"
+  },
+  {
+    "path": "results/best_elliptic_gat_seed46_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_elliptic_gat_seed46_model.pt",
+    "exists": true,
+    "bytes": 124090,
+    "sha256": "c1cca8d3fe7cf38c721067b45181f6071fe193ae16f709f740faea286e8999a3"
+  },
+  {
+    "path": "results/best_elliptic_gat_seed47_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_elliptic_gat_seed47_model.pt",
+    "exists": true,
+    "bytes": 124090,
+    "sha256": "1321efe8428f34687dc06019b1cb10b7ba45b933f9d7bafec198665747db66bc"
+  },
+  {
+    "path": "results/best_elliptic_gat_seed48_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_elliptic_gat_seed48_model.pt",
+    "exists": true,
+    "bytes": 124090,
+    "sha256": "3e3ff292122f006a070e1ae9563f335c554d58ceef4bb48f2c120bb6e0567286"
+  },
+  {
+    "path": "results/best_elliptic_gat_seed49_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_elliptic_gat_seed49_model.pt",
+    "exists": true,
+    "bytes": 124090,
+    "sha256": "32efd584b78b458105d8fdb39dc8f9846b4a4901b7612dda1be46a31f0ed7ad9"
+  },
+  {
+    "path": "results/best_elliptic_gat_seed50_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_elliptic_gat_seed50_model.pt",
+    "exists": true,
+    "bytes": 124090,
+    "sha256": "64bbd71ef30da79731dfe70555e547fbeb51ab3a19d7307ec589398fce8db15b"
+  },
+  {
+    "path": "results/best_elliptic_gat_seed51_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_elliptic_gat_seed51_model.pt",
+    "exists": true,
+    "bytes": 124090,
+    "sha256": "e329fac104b3ce6f19763184cfe08f75c0edfb743b6299a78e49307d8505d5a7"
+  },
+  {
+    "path": "results/best_elliptic_gcn_seed42_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_elliptic_gcn_seed42_model.pt",
+    "exists": true,
+    "bytes": 154670,
+    "sha256": "d9d61e899fa23963f1d678e4547bffe23259bf8d2b3353cd197b05c207c33d7e"
+  },
+  {
+    "path": "results/best_elliptic_gcn_seed43_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_elliptic_gcn_seed43_model.pt",
+    "exists": true,
+    "bytes": 154670,
+    "sha256": "517bbd574f379cf64c6279ade188eb75188a6da05c8fec0a539ac4c162df2ea1"
+  },
+  {
+    "path": "results/best_elliptic_gcn_seed44_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_elliptic_gcn_seed44_model.pt",
+    "exists": true,
+    "bytes": 154670,
+    "sha256": "7cb26b494fc1d533a51af622bf5953a6a011434125b1ea4a374cb4f6938c8939"
+  },
+  {
+    "path": "results/best_elliptic_gcn_seed45_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_elliptic_gcn_seed45_model.pt",
+    "exists": true,
+    "bytes": 154670,
+    "sha256": "36ceae3b1a31fe78fb34d292f667846dee2da5bc61b9c392bb368493be2decae"
+  },
+  {
+    "path": "results/best_elliptic_gcn_seed46_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_elliptic_gcn_seed46_model.pt",
+    "exists": true,
+    "bytes": 154670,
+    "sha256": "10f52020e2a7ca25f17d827e778e88aebdb6226b5d2f1dc8982038d6ef9b7794"
+  },
+  {
+    "path": "results/best_elliptic_gcn_seed47_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_elliptic_gcn_seed47_model.pt",
+    "exists": true,
+    "bytes": 154670,
+    "sha256": "4e9ec8238cbf6307e2fb2fc03d62cd453c7015a48cf5d7e9eb11a8d1d4ec9fe9"
+  },
+  {
+    "path": "results/best_elliptic_gcn_seed48_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_elliptic_gcn_seed48_model.pt",
+    "exists": true,
+    "bytes": 154670,
+    "sha256": "3e4fe52ca50c6144f6df8be510ae03576c99903964c50f909d0fcd5b1fc2718a"
+  },
+  {
+    "path": "results/best_elliptic_gcn_seed49_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_elliptic_gcn_seed49_model.pt",
+    "exists": true,
+    "bytes": 154670,
+    "sha256": "66dbdfb4d049cc3b0ed2c49176b122c850a09d32697938baf5c50a2b60f6673d"
+  },
+  {
+    "path": "results/best_elliptic_gcn_seed50_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_elliptic_gcn_seed50_model.pt",
+    "exists": true,
+    "bytes": 154670,
+    "sha256": "d66f1e2fb1ed1e87748fe366f87bf1ded7e999e786ca9e13329e6425476272fa"
+  },
+  {
+    "path": "results/best_elliptic_gcn_seed51_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_elliptic_gcn_seed51_model.pt",
+    "exists": true,
+    "bytes": 154670,
+    "sha256": "cf21f2666ee742352102627fb4a3c6cc3f966a8c5dbd8b74e8bcf2d1de342dc0"
+  },
+  {
+    "path": "results/best_elliptic_lstm_seed42_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_elliptic_lstm_seed42_model.pt",
+    "exists": true,
+    "bytes": 640548,
+    "sha256": "0cd0c2416bcf76268814fbd873d8efe2517d114d0d2c963670c6ba3a7e5e8e11"
+  },
+  {
+    "path": "results/best_elliptic_lstm_seed43_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_elliptic_lstm_seed43_model.pt",
+    "exists": true,
+    "bytes": 640548,
+    "sha256": "428b995ab9e4b2ba194f93cfe5bc0be5c186e7251ca98129e47b327128c9d3b3"
+  },
+  {
+    "path": "results/best_elliptic_lstm_seed44_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_elliptic_lstm_seed44_model.pt",
+    "exists": true,
+    "bytes": 640548,
+    "sha256": "e63c88fc0b927215f26b86a53664e850d9fe0922253d192aa6a94f014fbd7c1c"
+  },
+  {
+    "path": "results/best_elliptic_lstm_seed45_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_elliptic_lstm_seed45_model.pt",
+    "exists": true,
+    "bytes": 640548,
+    "sha256": "8e062510cdf2730470e26550af7d752b9fb7bc0a29699f22a488d378211f03ec"
+  },
+  {
+    "path": "results/best_elliptic_lstm_seed46_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_elliptic_lstm_seed46_model.pt",
+    "exists": true,
+    "bytes": 640548,
+    "sha256": "2acce61d4cd113cf652048313c485b3fc8549e8e3e91b6bfc73fde3918512efa"
+  },
+  {
+    "path": "results/best_elliptic_lstm_seed47_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_elliptic_lstm_seed47_model.pt",
+    "exists": true,
+    "bytes": 640548,
+    "sha256": "674559382cb33f5803973eb4620b24e5a616c9de422682bc08a08c012ef460db"
+  },
+  {
+    "path": "results/best_elliptic_lstm_seed48_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_elliptic_lstm_seed48_model.pt",
+    "exists": true,
+    "bytes": 640548,
+    "sha256": "93d6449308db91bffa950267b1218914b9af9ff737d44c15a34a53e7d4d936e1"
+  },
+  {
+    "path": "results/best_elliptic_lstm_seed49_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_elliptic_lstm_seed49_model.pt",
+    "exists": true,
+    "bytes": 640548,
+    "sha256": "f841a32eb92dee368ed698da441c56d2e66aa105ca1c2c039c0401b8ba3ddf30"
+  },
+  {
+    "path": "results/best_elliptic_lstm_seed50_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_elliptic_lstm_seed50_model.pt",
+    "exists": true,
+    "bytes": 640548,
+    "sha256": "1d6e36cd1bd9c8d91435549aed1408c76661f42c5925396d0034ce00c0b24b56"
+  },
+  {
+    "path": "results/best_elliptic_lstm_seed51_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_elliptic_lstm_seed51_model.pt",
+    "exists": true,
+    "bytes": 640548,
+    "sha256": "b5daf304a32a52ea8256decfe6b9f0e095bd8b2a4a6207006be61e00b5aab383"
+  },
+  {
+    "path": "results/best_elliptic_mlp_seed42_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_elliptic_mlp_seed42_model.pt",
+    "exists": true,
+    "bytes": 338580,
+    "sha256": "7a75808bd7b8587d3986b27712b31c19fee34314f620e398a315f6837a21e372"
+  },
+  {
+    "path": "results/best_elliptic_mlp_seed43_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_elliptic_mlp_seed43_model.pt",
+    "exists": true,
+    "bytes": 338580,
+    "sha256": "463ba7b6ba622d0e44279329af868cd0741708d9af1a5c033e125827e5a1eb73"
+  },
+  {
+    "path": "results/best_elliptic_mlp_seed44_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_elliptic_mlp_seed44_model.pt",
+    "exists": true,
+    "bytes": 338580,
+    "sha256": "4baf5358c2d4678dfd2afeedda20ebabe741fff4c93468a55bb915763962a741"
+  },
+  {
+    "path": "results/best_elliptic_mlp_seed45_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_elliptic_mlp_seed45_model.pt",
+    "exists": true,
+    "bytes": 338580,
+    "sha256": "9e5c739d57b224c1e68a8a323090935f51d58f1978079b796eab2ceedc339a2c"
+  },
+  {
+    "path": "results/best_elliptic_mlp_seed46_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_elliptic_mlp_seed46_model.pt",
+    "exists": true,
+    "bytes": 338580,
+    "sha256": "7cca0ca3abac122a8a81e85e055093f3444e4a93213256d04fe164b899088e68"
+  },
+  {
+    "path": "results/best_elliptic_mlp_seed47_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_elliptic_mlp_seed47_model.pt",
+    "exists": true,
+    "bytes": 338580,
+    "sha256": "0a86eca31c878829839aa5c2cd499dca9bf76946a4e3978fa1a4d120f10660ee"
+  },
+  {
+    "path": "results/best_elliptic_mlp_seed48_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_elliptic_mlp_seed48_model.pt",
+    "exists": true,
+    "bytes": 338580,
+    "sha256": "bb1a98fe3d4bcc67c98d3ccfa3ff10fffe9f73564259899a4484bc1b80ed18ff"
+  },
+  {
+    "path": "results/best_elliptic_mlp_seed49_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_elliptic_mlp_seed49_model.pt",
+    "exists": true,
+    "bytes": 338580,
+    "sha256": "1778338b2c3e9f96fabbff463d1ee93e39966b5a984bdbd03a2638e724ae9dea"
+  },
+  {
+    "path": "results/best_elliptic_mlp_seed50_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_elliptic_mlp_seed50_model.pt",
+    "exists": true,
+    "bytes": 338580,
+    "sha256": "d3b8a24047864b1bdf75abbc92a5ba9f91ece2638a7d6db5e09b1fc6f660e8eb"
+  },
+  {
+    "path": "results/best_elliptic_mlp_seed51_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_elliptic_mlp_seed51_model.pt",
+    "exists": true,
+    "bytes": 338580,
+    "sha256": "8810fe70bd696f55269a5499953dc6cce12c7314a2dc47bf316ec9ee725f5e4f"
+  },
+  {
+    "path": "results/best_elliptic_sage_seed42_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_elliptic_sage_seed42_model.pt",
+    "exists": true,
+    "bytes": 305376,
+    "sha256": "1d36e21b128e66c1f8c96f754d04fc62b216ab15f8fad6dd5bca9bc3cc1d0703"
+  },
+  {
+    "path": "results/best_elliptic_sage_seed43_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_elliptic_sage_seed43_model.pt",
+    "exists": true,
+    "bytes": 305376,
+    "sha256": "b76486da2c9254c7f37e816244115c87f51f9099045b75870fbdc06270017da7"
+  },
+  {
+    "path": "results/best_elliptic_sage_seed44_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_elliptic_sage_seed44_model.pt",
+    "exists": true,
+    "bytes": 305376,
+    "sha256": "13609bcc210aaa32623b72f4a5d7d269d4a022ed1aeb07cf01726138a2e6d5d5"
+  },
+  {
+    "path": "results/best_elliptic_sage_seed45_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_elliptic_sage_seed45_model.pt",
+    "exists": true,
+    "bytes": 305376,
+    "sha256": "5a154397457ff40761130426c77cacebc6f584a8a250d9cd0099669d6d9d2332"
+  },
+  {
+    "path": "results/best_elliptic_sage_seed46_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_elliptic_sage_seed46_model.pt",
+    "exists": true,
+    "bytes": 305376,
+    "sha256": "941ab4de9e4e72ab0acc6ab2a6e6f432340cb8ba5229a717424c1d45ef6012fe"
+  },
+  {
+    "path": "results/best_elliptic_sage_seed47_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_elliptic_sage_seed47_model.pt",
+    "exists": true,
+    "bytes": 305376,
+    "sha256": "10702efb3fc789f1992965d821a72c4818b777511d868d0971ae22618aa72060"
+  },
+  {
+    "path": "results/best_elliptic_sage_seed48_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_elliptic_sage_seed48_model.pt",
+    "exists": true,
+    "bytes": 305376,
+    "sha256": "370cc5a40c22e8e90d0c1fd36ef0febc9921173fddf60f4ec961423a5933cdd9"
+  },
+  {
+    "path": "results/best_elliptic_sage_seed49_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_elliptic_sage_seed49_model.pt",
+    "exists": true,
+    "bytes": 305376,
+    "sha256": "8e3a84d2e0b079007581bd3c37842b9deddc76955d62a8f4d7b3f592d2d894e2"
+  },
+  {
+    "path": "results/best_elliptic_sage_seed50_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_elliptic_sage_seed50_model.pt",
+    "exists": true,
+    "bytes": 305376,
+    "sha256": "cdce6e35ef26044ee56c42edfcab966c50aa9c3b58ecd247670c32f0bc2ba722"
+  },
+  {
+    "path": "results/best_elliptic_sage_seed51_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_elliptic_sage_seed51_model.pt",
+    "exists": true,
+    "bytes": 305376,
+    "sha256": "e7bdf2522c766814f585eba0c4470ce4e43c748f074a4da753a87c1dca59893f"
+  },
+  {
+    "path": "results/best_elliptic_transformer_seed42_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_elliptic_transformer_seed42_model.pt",
+    "exists": true,
+    "bytes": 1195702,
+    "sha256": "559a5686e497794622d798d600dead5462552b0b0b0e233b7bae212f909a82b4"
+  },
+  {
+    "path": "results/best_elliptic_transformer_seed43_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_elliptic_transformer_seed43_model.pt",
+    "exists": true,
+    "bytes": 1195702,
+    "sha256": "ebe400b1658b42755d0cdcce9008f9b3c3e766614c9458846809afac7b783d77"
+  },
+  {
+    "path": "results/best_elliptic_transformer_seed44_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_elliptic_transformer_seed44_model.pt",
+    "exists": true,
+    "bytes": 1195702,
+    "sha256": "10447fc28ef6ec85f82afa9fbeb1c6edef14a45c45c58ba3f99d70f4e0dc53f9"
+  },
+  {
+    "path": "results/best_elliptic_transformer_seed45_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_elliptic_transformer_seed45_model.pt",
+    "exists": true,
+    "bytes": 1195702,
+    "sha256": "0c0e4c73c8c797d1cb8225f7ca3de7aa743f3d78879f1901def91adaeacf4f14"
+  },
+  {
+    "path": "results/best_elliptic_transformer_seed46_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_elliptic_transformer_seed46_model.pt",
+    "exists": true,
+    "bytes": 1195702,
+    "sha256": "93900ae1cb4cb9096916aca7558ed24f675505ddc452d6c31a4814a4f48a0d1b"
+  },
+  {
+    "path": "results/best_elliptic_transformer_seed47_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_elliptic_transformer_seed47_model.pt",
+    "exists": true,
+    "bytes": 1195702,
+    "sha256": "c9ee37a29c2096da822634a2f4657469aa8828b71789f95ef782c39792687a07"
+  },
+  {
+    "path": "results/best_elliptic_transformer_seed48_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_elliptic_transformer_seed48_model.pt",
+    "exists": true,
+    "bytes": 1195702,
+    "sha256": "a8eecc67fb8a5e655ba7a5db96e0d71d167ccaf6c184504c3c20ea424f2da3a4"
+  },
+  {
+    "path": "results/best_elliptic_transformer_seed49_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_elliptic_transformer_seed49_model.pt",
+    "exists": true,
+    "bytes": 1195702,
+    "sha256": "8399260bb563a8d09b620c746bf544c48c573586b16e05694e1f19ff509a5383"
+  },
+  {
+    "path": "results/best_elliptic_transformer_seed50_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_elliptic_transformer_seed50_model.pt",
+    "exists": true,
+    "bytes": 1195702,
+    "sha256": "8e7aefb38134d64cd52956b5452cb5a2eff32d04338f17f60e87820526921d1b"
+  },
+  {
+    "path": "results/best_elliptic_transformer_seed51_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_elliptic_transformer_seed51_model.pt",
+    "exists": true,
+    "bytes": 1195702,
+    "sha256": "2c3a924b2736ebd5e50938e781f709a1d993adc252c5660435b62e537343b364"
+  },
+  {
+    "path": "results/best_gat_address_seed42_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gat_address_seed42_model.pt",
+    "exists": true,
+    "bytes": 222892,
+    "sha256": "573fdf73d41367c98a3bbefc99ad75eb05ab1986df5e1a0cf8df57e3de3028dc"
+  },
+  {
+    "path": "results/best_gat_address_seed43_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gat_address_seed43_model.pt",
+    "exists": true,
+    "bytes": 222892,
+    "sha256": "dc487b2dba8580522cef3d24c13de0f0aa1f616d9e706a4eb1a8bcfb58b279bf"
+  },
+  {
+    "path": "results/best_gat_address_seed44_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gat_address_seed44_model.pt",
+    "exists": true,
+    "bytes": 222892,
+    "sha256": "d6ef4b6f45ea1f7f1ebbd17e56783b290a70ecf58412dad923b2726879dbffa4"
+  },
+  {
+    "path": "results/best_gat_address_seed45_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gat_address_seed45_model.pt",
+    "exists": true,
+    "bytes": 222892,
+    "sha256": "bbcf017b79158a57a10df35f301efe7ea6ce16362fb51ef46039592a84140c17"
+  },
+  {
+    "path": "results/best_gat_address_seed46_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gat_address_seed46_model.pt",
+    "exists": true,
+    "bytes": 222892,
+    "sha256": "69387a870c139b763b9c3ffb1c69b0b1c7232f980cdb040817e3c0bcc89672c1"
+  },
+  {
+    "path": "results/best_gat_address_seed47_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gat_address_seed47_model.pt",
+    "exists": true,
+    "bytes": 222892,
+    "sha256": "b3b26b719f31a5fd34037a84fbbc73980adf26e0e5c4e63d614f821cb4c456ab"
+  },
+  {
+    "path": "results/best_gat_address_seed48_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gat_address_seed48_model.pt",
+    "exists": true,
+    "bytes": 222892,
+    "sha256": "9b64570d1d90ab0bae53d4ed82c28cf26cf3ac2ec79ab7a3a11774dddfb094d2"
+  },
+  {
+    "path": "results/best_gat_address_seed49_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gat_address_seed49_model.pt",
+    "exists": true,
+    "bytes": 222892,
+    "sha256": "9b57d05f75e4598db1536e2105eb02ac06e6c85053c2ddfeecd4110ddaf6d90d"
+  },
+  {
+    "path": "results/best_gat_address_seed50_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gat_address_seed50_model.pt",
+    "exists": true,
+    "bytes": 222892,
+    "sha256": "16c91c92e484400e19b2fdbb563c05eb574e535ca981c28a3b15dba4fdbdd594"
+  },
+  {
+    "path": "results/best_gat_address_seed51_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gat_address_seed51_model.pt",
+    "exists": true,
+    "bytes": 222892,
+    "sha256": "cccbef6e777a4780e682be793111d995d8be954cecc16a2f5585060f08519ae9"
+  },
+  {
+    "path": "results/best_gat_card_seed42_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gat_card_seed42_model.pt",
+    "exists": true,
+    "bytes": 222850,
+    "sha256": "e91a59c1848dd54435bf977692d788833153af49a3e1f6c2748f639b9e9edb11"
+  },
+  {
+    "path": "results/best_gat_card_seed43_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gat_card_seed43_model.pt",
+    "exists": true,
+    "bytes": 222850,
+    "sha256": "e1528ff5997e5f8f003c6ad5e41853b313cf682bd3d0f391ee17a2afe100e822"
+  },
+  {
+    "path": "results/best_gat_card_seed44_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gat_card_seed44_model.pt",
+    "exists": true,
+    "bytes": 222850,
+    "sha256": "f702d11adc447c51cc1be17c7bbb924797662a859638f0d09e87733525b5cf24"
+  },
+  {
+    "path": "results/best_gat_card_seed45_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gat_card_seed45_model.pt",
+    "exists": true,
+    "bytes": 222850,
+    "sha256": "2b41133474124685a4706dc4a29e572bd00d4f214b828f98869410d7059575de"
+  },
+  {
+    "path": "results/best_gat_card_seed46_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gat_card_seed46_model.pt",
+    "exists": true,
+    "bytes": 222850,
+    "sha256": "84a8abb2559bbf3f6b5be7d45756a225dfb3f74ce79c786c9372db8d033c3580"
+  },
+  {
+    "path": "results/best_gat_card_seed47_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gat_card_seed47_model.pt",
+    "exists": true,
+    "bytes": 222850,
+    "sha256": "b729b1d758b35497d3a7d3caa55994d967149320a30b1546c1e4f4939a56b4cd"
+  },
+  {
+    "path": "results/best_gat_card_seed48_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gat_card_seed48_model.pt",
+    "exists": true,
+    "bytes": 222850,
+    "sha256": "d1e4ec9d07fcad8fe03257ae3eab7d221c95a17eb09d0114774f76926c4491c8"
+  },
+  {
+    "path": "results/best_gat_card_seed49_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gat_card_seed49_model.pt",
+    "exists": true,
+    "bytes": 222850,
+    "sha256": "e55ed7d104aaa3edf19391912744be31e38799384d5673ea9fdbb2f4c1a3b1a3"
+  },
+  {
+    "path": "results/best_gat_card_seed50_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gat_card_seed50_model.pt",
+    "exists": true,
+    "bytes": 222850,
+    "sha256": "7161109eeec9eb1f9cc99b0190079707fadc96e5c7fe89d6bb08e31b34cb338f"
+  },
+  {
+    "path": "results/best_gat_card_seed51_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gat_card_seed51_model.pt",
+    "exists": true,
+    "bytes": 222850,
+    "sha256": "c1bad51d6785b73607ec077c40bb4fb3dc52bb78b02f2c3b36aedd066f3cfd04"
+  },
+  {
+    "path": "results/best_gat_email_domain_seed42_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gat_email_domain_seed42_model.pt",
+    "exists": true,
+    "bytes": 223026,
+    "sha256": "c4d8501dd3e5d08b4ef66ec6725c25bc7844101e1ff1473ceff967f87c9b25ce"
+  },
+  {
+    "path": "results/best_gat_email_domain_seed43_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gat_email_domain_seed43_model.pt",
+    "exists": true,
+    "bytes": 223026,
+    "sha256": "07dce3f429e709cbcff1437e1e8c7420f4e8554d1989caca30ab77604484c4a8"
+  },
+  {
+    "path": "results/best_gat_email_domain_seed44_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gat_email_domain_seed44_model.pt",
+    "exists": true,
+    "bytes": 223026,
+    "sha256": "1260545e0e66de7d88a4eb5c7549535fc2ac5b97c6bae353fae3b4d87485871c"
+  },
+  {
+    "path": "results/best_gat_email_domain_seed45_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gat_email_domain_seed45_model.pt",
+    "exists": true,
+    "bytes": 223026,
+    "sha256": "2aa88573e010e766eebcd6e09c08e77bf7c657327ed34df1b473bfba0e69e9c5"
+  },
+  {
+    "path": "results/best_gat_email_domain_seed46_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gat_email_domain_seed46_model.pt",
+    "exists": true,
+    "bytes": 223026,
+    "sha256": "bd0737ad00a873b60c2cf4bbf728392339c61619dd7c70cb176282427a33c185"
+  },
+  {
+    "path": "results/best_gat_email_domain_seed47_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gat_email_domain_seed47_model.pt",
+    "exists": true,
+    "bytes": 223026,
+    "sha256": "3c30401eddad05fa3eacc8119b516072da9b48090c41793d163154b57b8b8ab7"
+  },
+  {
+    "path": "results/best_gat_email_domain_seed48_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gat_email_domain_seed48_model.pt",
+    "exists": true,
+    "bytes": 223026,
+    "sha256": "de2c93704280ae727843208d0ea07c8d00be8dd4396c7c04b83d555c40fc6183"
+  },
+  {
+    "path": "results/best_gat_email_domain_seed49_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gat_email_domain_seed49_model.pt",
+    "exists": true,
+    "bytes": 223026,
+    "sha256": "dc7895daf8dae64f6115278ebc1aa64c04e134656982058febde12bf11bda95d"
+  },
+  {
+    "path": "results/best_gat_email_domain_seed50_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gat_email_domain_seed50_model.pt",
+    "exists": true,
+    "bytes": 223026,
+    "sha256": "92fddb8ddca9855b14c027b3f44417ec6c0d502ee3812b64168618acbe9c16be"
+  },
+  {
+    "path": "results/best_gat_email_domain_seed51_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gat_email_domain_seed51_model.pt",
+    "exists": true,
+    "bytes": 223026,
+    "sha256": "c9057729dbf55b82d8fa8787ed30266dc79d0d4f011a23f6b294a42ec73305dd"
+  },
+  {
+    "path": "results/best_gat_identifier_time_window_24h_seed42_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gat_identifier_time_window_24h_seed42_model.pt",
+    "exists": true,
+    "bytes": 223222,
+    "sha256": "b7e38cdc12171e7ad9772140894ff8390f914e425fb85c1fb40f8fdb5dbd4836"
+  },
+  {
+    "path": "results/best_gat_identifier_time_window_24h_seed43_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gat_identifier_time_window_24h_seed43_model.pt",
+    "exists": true,
+    "bytes": 223222,
+    "sha256": "6781594e336eb0e8edee8423fbe03cde18732c893711dc4c16ba47dfc1d02d1c"
+  },
+  {
+    "path": "results/best_gat_identifier_time_window_24h_seed44_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gat_identifier_time_window_24h_seed44_model.pt",
+    "exists": true,
+    "bytes": 223222,
+    "sha256": "64e07aeb9899dec088550fde57b98990b5f23a54afbe5d0e58580bfb473d198a"
+  },
+  {
+    "path": "results/best_gat_identifier_time_window_24h_seed45_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gat_identifier_time_window_24h_seed45_model.pt",
+    "exists": true,
+    "bytes": 223222,
+    "sha256": "b2fd0ae7d00e8848e132d356ee93dbe56f2d2c74315e0d5a73e80a80b2a5021f"
+  },
+  {
+    "path": "results/best_gat_identifier_time_window_24h_seed46_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gat_identifier_time_window_24h_seed46_model.pt",
+    "exists": true,
+    "bytes": 223222,
+    "sha256": "7cf33e6a4cb3480e4ccd447d1c2b8e9b1a881f1d42c9639aa5a16448322a057c"
+  },
+  {
+    "path": "results/best_gat_identifier_time_window_24h_seed47_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gat_identifier_time_window_24h_seed47_model.pt",
+    "exists": true,
+    "bytes": 223222,
+    "sha256": "05e3b96c49006d9b7f11071326997674f84c1b59a9181bed900cf74c00bea37b"
+  },
+  {
+    "path": "results/best_gat_identifier_time_window_24h_seed48_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gat_identifier_time_window_24h_seed48_model.pt",
+    "exists": true,
+    "bytes": 223222,
+    "sha256": "f76a05fdae69769b40c45c43b009e28020c25b4dcb99d29c401b74fd1045c5e3"
+  },
+  {
+    "path": "results/best_gat_identifier_time_window_24h_seed49_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gat_identifier_time_window_24h_seed49_model.pt",
+    "exists": true,
+    "bytes": 223222,
+    "sha256": "d5b34acdfda2f5c45089a47c37b4c8d5b4c175b0eafa7e15d7db07d8ef0dc916"
+  },
+  {
+    "path": "results/best_gat_identifier_time_window_24h_seed50_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gat_identifier_time_window_24h_seed50_model.pt",
+    "exists": true,
+    "bytes": 223222,
+    "sha256": "83ece337a6dd1a180d1f22c850c46df15569b93a99186e489c45037770695503"
+  },
+  {
+    "path": "results/best_gat_identifier_time_window_24h_seed51_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gat_identifier_time_window_24h_seed51_model.pt",
+    "exists": true,
+    "bytes": 223222,
+    "sha256": "21972c80b4ab852b7bc7afe53865445be09878cedcca899d849e127d349610d3"
+  },
+  {
+    "path": "results/best_gat_main_seed42_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gat_main_seed42_model.pt",
+    "exists": true,
+    "bytes": 222850,
+    "sha256": "c7e14ad086ffe9582dfddceea8f3d5f371c118fa7a9c9bbaa8c6c822b5770cd6"
+  },
+  {
+    "path": "results/best_gat_main_seed43_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gat_main_seed43_model.pt",
+    "exists": true,
+    "bytes": 222850,
+    "sha256": "82940964f89830ef073a8e2d68a6972bf0dc35cd2757987da01963a0669590a7"
+  },
+  {
+    "path": "results/best_gat_main_seed44_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gat_main_seed44_model.pt",
+    "exists": true,
+    "bytes": 222850,
+    "sha256": "78bc1e981a570f27f52f3e59b95f7e1ebafa21d7dc2f57dbe5782aaf56e291af"
+  },
+  {
+    "path": "results/best_gat_main_seed45_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gat_main_seed45_model.pt",
+    "exists": true,
+    "bytes": 222850,
+    "sha256": "02d9c96ece253bdd83e1401ebe4f35d8d56f84a41f24289d06bb165ee9ca36e9"
+  },
+  {
+    "path": "results/best_gat_main_seed46_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gat_main_seed46_model.pt",
+    "exists": true,
+    "bytes": 222850,
+    "sha256": "e16dcefd7231664423fac7fba82ce5e545069ab55d1ce46d7f8d5660846aa4a4"
+  },
+  {
+    "path": "results/best_gat_main_seed47_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gat_main_seed47_model.pt",
+    "exists": true,
+    "bytes": 222850,
+    "sha256": "3f0df5a0a0d79bdbdebd5b1cdf30cf9ade83ae20c9cfaafb73d6b9b0590da822"
+  },
+  {
+    "path": "results/best_gat_main_seed48_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gat_main_seed48_model.pt",
+    "exists": true,
+    "bytes": 222850,
+    "sha256": "1d58fae054dc7ee1c264a33676e686e00260918133f8660b66c53be01fb7992b"
+  },
+  {
+    "path": "results/best_gat_main_seed49_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gat_main_seed49_model.pt",
+    "exists": true,
+    "bytes": 222850,
+    "sha256": "5645c0a42c3fcbba765881b4abf03cad4f439ac935293c0a0ffddd10dc2138fc"
+  },
+  {
+    "path": "results/best_gat_main_seed50_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gat_main_seed50_model.pt",
+    "exists": true,
+    "bytes": 222850,
+    "sha256": "4a30213f5571f7cc154fd9c1706b99e23711a9d3c2a0d7e20202f15ffffeb036"
+  },
+  {
+    "path": "results/best_gat_main_seed51_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gat_main_seed51_model.pt",
+    "exists": true,
+    "bytes": 222850,
+    "sha256": "89fd57e213c50ad6aeec2e16d144f53c559475ba55cddc69e5ce0819930820dc"
+  },
+  {
+    "path": "results/best_gcn_address_seed42_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gcn_address_seed42_model.pt",
+    "exists": true,
+    "bytes": 253476,
+    "sha256": "92a915237ba46ab4b4796a0657ea5ed5ed77db149273ba5a0bb304374993e6dc"
+  },
+  {
+    "path": "results/best_gcn_address_seed43_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gcn_address_seed43_model.pt",
+    "exists": true,
+    "bytes": 253476,
+    "sha256": "021c1454cfaf5d254831da3aad8bf4ffd5dbf16b04cc70f05a3b7d9cfb412985"
+  },
+  {
+    "path": "results/best_gcn_address_seed44_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gcn_address_seed44_model.pt",
+    "exists": true,
+    "bytes": 253476,
+    "sha256": "0748a61383965b614f003be459a942d73451528b90b818d4c86406373ad700e1"
+  },
+  {
+    "path": "results/best_gcn_address_seed45_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gcn_address_seed45_model.pt",
+    "exists": true,
+    "bytes": 253476,
+    "sha256": "e506ea91eb9327cd72411d976477073a96cf4ee2994555f54d75480cd0673513"
+  },
+  {
+    "path": "results/best_gcn_address_seed46_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gcn_address_seed46_model.pt",
+    "exists": true,
+    "bytes": 253476,
+    "sha256": "5c731bab5f20858ea3eaec60fd39f3639ef6641034a983174d19afeec19b8835"
+  },
+  {
+    "path": "results/best_gcn_address_seed47_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gcn_address_seed47_model.pt",
+    "exists": true,
+    "bytes": 253476,
+    "sha256": "ef66e1d66b4a2b38254b0627d571b25ed6358a63c6b8e48025d8c7847199c054"
+  },
+  {
+    "path": "results/best_gcn_address_seed48_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gcn_address_seed48_model.pt",
+    "exists": true,
+    "bytes": 253476,
+    "sha256": "97c286621e4f42b2145ec1e855881b9b32488afb6e7161648a927fe0bd8fd216"
+  },
+  {
+    "path": "results/best_gcn_address_seed49_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gcn_address_seed49_model.pt",
+    "exists": true,
+    "bytes": 253476,
+    "sha256": "96f8a9e22ddccec27d16a50d7f88dfad6cb51863e1095c2dc12ec6fc4b71ca20"
+  },
+  {
+    "path": "results/best_gcn_address_seed50_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gcn_address_seed50_model.pt",
+    "exists": true,
+    "bytes": 253476,
+    "sha256": "5075c4ba136b802f0d582952c126b215b67e93556048171378fc7834a1dfcfe5"
+  },
+  {
+    "path": "results/best_gcn_address_seed51_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gcn_address_seed51_model.pt",
+    "exists": true,
+    "bytes": 253476,
+    "sha256": "d077bceaf9819701881de082863f3294417cad41c522d7777ce4f62eb4c21e5f"
+  },
+  {
+    "path": "results/best_gcn_card_seed42_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gcn_card_seed42_model.pt",
+    "exists": true,
+    "bytes": 253446,
+    "sha256": "cd9a7b5458a2050321df43d6cb009fc8969e27ca0654ea327a928602eaf6e513"
+  },
+  {
+    "path": "results/best_gcn_card_seed43_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gcn_card_seed43_model.pt",
+    "exists": true,
+    "bytes": 253446,
+    "sha256": "b7ebc0bd4cfddf9ea19eaabb163da14394ec59c2756bb6b3d282a1f1f1e12228"
+  },
+  {
+    "path": "results/best_gcn_card_seed44_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gcn_card_seed44_model.pt",
+    "exists": true,
+    "bytes": 253446,
+    "sha256": "264f4d08964c70c05eac99a5276cc9f9de6d9cfaca40bc36448c401bc59e716c"
+  },
+  {
+    "path": "results/best_gcn_card_seed45_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gcn_card_seed45_model.pt",
+    "exists": true,
+    "bytes": 253446,
+    "sha256": "dd83a5a968a032a14ebf38b258a15cf15b9c87632cbf2e227ba86a5c048dbce8"
+  },
+  {
+    "path": "results/best_gcn_card_seed46_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gcn_card_seed46_model.pt",
+    "exists": true,
+    "bytes": 253446,
+    "sha256": "05f54ff1c8a6b1601117b8032136a93e996bd8747e252be440e618d11a247b6d"
+  },
+  {
+    "path": "results/best_gcn_card_seed47_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gcn_card_seed47_model.pt",
+    "exists": true,
+    "bytes": 253446,
+    "sha256": "28794899ed84dbb2915ebbc547c4bc7e791709797272279b551a1b0e2988fe13"
+  },
+  {
+    "path": "results/best_gcn_card_seed48_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gcn_card_seed48_model.pt",
+    "exists": true,
+    "bytes": 253446,
+    "sha256": "c5842182d5b3da69337c9779641ccd1aa46ace19be234e75ff22471d06014162"
+  },
+  {
+    "path": "results/best_gcn_card_seed49_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gcn_card_seed49_model.pt",
+    "exists": true,
+    "bytes": 253446,
+    "sha256": "c41f14b54beccbbf17a42d8e699437e8fa11e551fcf445fc8447fe770aad55b7"
+  },
+  {
+    "path": "results/best_gcn_card_seed50_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gcn_card_seed50_model.pt",
+    "exists": true,
+    "bytes": 253446,
+    "sha256": "fff042b5bcec5ed14433758787c70eb5f4269619db6091030bd80973bb8a4d18"
+  },
+  {
+    "path": "results/best_gcn_card_seed51_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gcn_card_seed51_model.pt",
+    "exists": true,
+    "bytes": 253446,
+    "sha256": "ffaff7d465fecbaa7300b5a564e6e6d651f25c8c734d985f0ba2a4f181c38a46"
+  },
+  {
+    "path": "results/best_gcn_email_domain_seed42_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gcn_email_domain_seed42_model.pt",
+    "exists": true,
+    "bytes": 253526,
+    "sha256": "56476226fc087276cfad1bfc2f5c8a5c9c7e53bb6ce871803cbbd0f942b739e3"
+  },
+  {
+    "path": "results/best_gcn_email_domain_seed43_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gcn_email_domain_seed43_model.pt",
+    "exists": true,
+    "bytes": 253526,
+    "sha256": "6de75730212ec96cb17eae0750cef8bd77c3851dda1866e448212625e9f673ec"
+  },
+  {
+    "path": "results/best_gcn_email_domain_seed44_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gcn_email_domain_seed44_model.pt",
+    "exists": true,
+    "bytes": 253526,
+    "sha256": "aa68ff9bd7b505b6b1f50b5def40c272194267f3e83ba4307d6930038dc85fc0"
+  },
+  {
+    "path": "results/best_gcn_email_domain_seed45_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gcn_email_domain_seed45_model.pt",
+    "exists": true,
+    "bytes": 253526,
+    "sha256": "b29d7617b405fe55604ab2b6d0ffab8a2c055b9b4bd898efb4b54c9073f51818"
+  },
+  {
+    "path": "results/best_gcn_email_domain_seed46_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gcn_email_domain_seed46_model.pt",
+    "exists": true,
+    "bytes": 253526,
+    "sha256": "3a8031d3e59c3d352dbb587d195794a7440ad7849070fe20bf758dd7263c5cb7"
+  },
+  {
+    "path": "results/best_gcn_email_domain_seed47_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gcn_email_domain_seed47_model.pt",
+    "exists": true,
+    "bytes": 253526,
+    "sha256": "fe8cd61a75e83b4700ea209686d006b87c4066b4d9e4691b6168197ba78e9700"
+  },
+  {
+    "path": "results/best_gcn_email_domain_seed48_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gcn_email_domain_seed48_model.pt",
+    "exists": true,
+    "bytes": 253526,
+    "sha256": "6c84c71a7b1873ccabfb4ff9c36754e63811fe63d4439a39507148e0a1540eb7"
+  },
+  {
+    "path": "results/best_gcn_email_domain_seed49_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gcn_email_domain_seed49_model.pt",
+    "exists": true,
+    "bytes": 253526,
+    "sha256": "1e1e4492a0818586b794f7de71f7965c3f8cf86eb7385f495766a38eec0f0d92"
+  },
+  {
+    "path": "results/best_gcn_email_domain_seed50_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gcn_email_domain_seed50_model.pt",
+    "exists": true,
+    "bytes": 253526,
+    "sha256": "2eb8f5a6f041230def4dd27c01b520f35497e521d667bcc19f1dd857f4327e74"
+  },
+  {
+    "path": "results/best_gcn_email_domain_seed51_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gcn_email_domain_seed51_model.pt",
+    "exists": true,
+    "bytes": 253526,
+    "sha256": "82b1b9a0e6842f804abec44a649182482a9f29ab93b9801905c549c5ed5e0b78"
+  },
+  {
+    "path": "results/best_gcn_identifier_time_window_24h_seed42_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gcn_identifier_time_window_24h_seed42_model.pt",
+    "exists": true,
+    "bytes": 253666,
+    "sha256": "a58497c4b9630a0ac21af745271f4be877feebe179a79420b8b6df0b48e044b5"
+  },
+  {
+    "path": "results/best_gcn_identifier_time_window_24h_seed43_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gcn_identifier_time_window_24h_seed43_model.pt",
+    "exists": true,
+    "bytes": 253666,
+    "sha256": "f50507cd0377c9cc6c0f575f6aaff6e720f95c8a66adae9367972e58dd714222"
+  },
+  {
+    "path": "results/best_gcn_identifier_time_window_24h_seed44_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gcn_identifier_time_window_24h_seed44_model.pt",
+    "exists": true,
+    "bytes": 253666,
+    "sha256": "37f9bb3f5cc0e656d4955257ddb0365ba3077e0388eb914b91d84c864c3cda98"
+  },
+  {
+    "path": "results/best_gcn_identifier_time_window_24h_seed45_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gcn_identifier_time_window_24h_seed45_model.pt",
+    "exists": true,
+    "bytes": 253666,
+    "sha256": "f80e2d0aa9b1adf833c1a8f7a04d97806bcd23db4f69e5e78aae53790f437e2e"
+  },
+  {
+    "path": "results/best_gcn_identifier_time_window_24h_seed46_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gcn_identifier_time_window_24h_seed46_model.pt",
+    "exists": true,
+    "bytes": 253666,
+    "sha256": "5616254e086884537fa40a37ba0d5b604c172a4ee0d9366b3904fcfaa879624f"
+  },
+  {
+    "path": "results/best_gcn_identifier_time_window_24h_seed47_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gcn_identifier_time_window_24h_seed47_model.pt",
+    "exists": true,
+    "bytes": 253666,
+    "sha256": "545ddcf371c876dc16e31a0835c823ab6357fdff20fbd6c783e9387ad3be3efa"
+  },
+  {
+    "path": "results/best_gcn_identifier_time_window_24h_seed48_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gcn_identifier_time_window_24h_seed48_model.pt",
+    "exists": true,
+    "bytes": 253666,
+    "sha256": "9e31176e448a6d9024179632522662e06085d7757ea35bf3ce5325bb9cc2a34f"
+  },
+  {
+    "path": "results/best_gcn_identifier_time_window_24h_seed49_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gcn_identifier_time_window_24h_seed49_model.pt",
+    "exists": true,
+    "bytes": 253666,
+    "sha256": "06de2836437b41e5787c9846c34621889a0dbfd3001c945a1f68426a0da19c5c"
+  },
+  {
+    "path": "results/best_gcn_identifier_time_window_24h_seed50_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gcn_identifier_time_window_24h_seed50_model.pt",
+    "exists": true,
+    "bytes": 253666,
+    "sha256": "07a7b0278b835e8354f31af6db0a140bf47e0e36f4c11fe1b2444e53919d7f9c"
+  },
+  {
+    "path": "results/best_gcn_identifier_time_window_24h_seed51_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gcn_identifier_time_window_24h_seed51_model.pt",
+    "exists": true,
+    "bytes": 253666,
+    "sha256": "3f20d0f342a8dd22f167189840a339c1d2806a251ab5ea1684f4d624a6a7d511"
+  },
+  {
+    "path": "results/best_gcn_main_seed42_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gcn_main_seed42_model.pt",
+    "exists": true,
+    "bytes": 253446,
+    "sha256": "2cde2b1a26f3701eb9272e214874190ca0eab281aca9aaf533a17eaff19fb810"
+  },
+  {
+    "path": "results/best_gcn_main_seed43_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gcn_main_seed43_model.pt",
+    "exists": true,
+    "bytes": 253446,
+    "sha256": "983b22efac98189f5705a9bb435a94702cf96f941b23daae17cfbb02dc22fcad"
+  },
+  {
+    "path": "results/best_gcn_main_seed44_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gcn_main_seed44_model.pt",
+    "exists": true,
+    "bytes": 253446,
+    "sha256": "5db4d7728ae7db9078d730469dd6a7cb55c7d88c265f58347e8f5096f93e0224"
+  },
+  {
+    "path": "results/best_gcn_main_seed45_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gcn_main_seed45_model.pt",
+    "exists": true,
+    "bytes": 253446,
+    "sha256": "1648341e1918be29dcf8d8c5e8d9b570dc9c8fe88875e77117cc8ecfc35348d6"
+  },
+  {
+    "path": "results/best_gcn_main_seed46_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gcn_main_seed46_model.pt",
+    "exists": true,
+    "bytes": 253446,
+    "sha256": "d09000c95bdf7492f60a7ce9ef9e2d351f952356d1e91e7512f87d8a599476b9"
+  },
+  {
+    "path": "results/best_gcn_main_seed47_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gcn_main_seed47_model.pt",
+    "exists": true,
+    "bytes": 253446,
+    "sha256": "2a338d4828322a227cc568e5fc3d8ff9948fd1e2e01c0c8b711afd1dd82a8d33"
+  },
+  {
+    "path": "results/best_gcn_main_seed48_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gcn_main_seed48_model.pt",
+    "exists": true,
+    "bytes": 253446,
+    "sha256": "55085fa8140c79e322d5324fcc1c5e4f1094a53ba28da8bc071e2d0f26ec423d"
+  },
+  {
+    "path": "results/best_gcn_main_seed49_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gcn_main_seed49_model.pt",
+    "exists": true,
+    "bytes": 253446,
+    "sha256": "8bd62d00528ab5f3b4dd25afd8fad6a66fc4ba1ea4b5bf52a099b44930229181"
+  },
+  {
+    "path": "results/best_gcn_main_seed50_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gcn_main_seed50_model.pt",
+    "exists": true,
+    "bytes": 253446,
+    "sha256": "7dd0fd6d91115db98ffec3cfbe9e535b53b7ccd4e82924e13aef95b96e08ee1c"
+  },
+  {
+    "path": "results/best_gcn_main_seed51_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_gcn_main_seed51_model.pt",
+    "exists": true,
+    "bytes": 253446,
+    "sha256": "d750a9debe96628527e4da6d5898e506a177c0e2bc4add487721e5530b63df40"
+  },
+  {
+    "path": "results/best_lstm_seed42_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_lstm_seed42_model.pt",
+    "exists": true,
+    "bytes": 1035731,
+    "sha256": "a83fbec0d97926f00c4d0451c6361dafb0cf3e140d59a1ee30b1395634117496"
+  },
+  {
+    "path": "results/best_lstm_seed43_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_lstm_seed43_model.pt",
+    "exists": true,
+    "bytes": 1035731,
+    "sha256": "5f959eb50cbcdbc846c7b5a9b0d9439d48602cba8b0c43b41faafce2571425d7"
+  },
+  {
+    "path": "results/best_lstm_seed44_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_lstm_seed44_model.pt",
+    "exists": true,
+    "bytes": 1035731,
+    "sha256": "3573906b8839f88131823cb98903f7e3dcc24ee25339a1aef03b5c3479bdd4f0"
+  },
+  {
+    "path": "results/best_lstm_seed45_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_lstm_seed45_model.pt",
+    "exists": true,
+    "bytes": 1035731,
+    "sha256": "128f8e5abc576a7911af6adfab4d2d827883ceca956ebc47edfa8f6839f5a6ae"
+  },
+  {
+    "path": "results/best_lstm_seed46_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_lstm_seed46_model.pt",
+    "exists": true,
+    "bytes": 1035731,
+    "sha256": "071f55aa4fe9602ded2537f11043d16b31fe73103c3243b9c41ee1dcdc364c53"
+  },
+  {
+    "path": "results/best_lstm_seed47_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_lstm_seed47_model.pt",
+    "exists": true,
+    "bytes": 1035731,
+    "sha256": "fd8ce8c231c9e05bd1e47da9f480fdf9eb9a2d9db6c91b277dc3e75b632925c9"
+  },
+  {
+    "path": "results/best_lstm_seed48_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_lstm_seed48_model.pt",
+    "exists": true,
+    "bytes": 1035731,
+    "sha256": "c5c2a9e2c68655ac732638f20d64b969cee3577b764d1935f96f9297c3d48d27"
+  },
+  {
+    "path": "results/best_lstm_seed49_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_lstm_seed49_model.pt",
+    "exists": true,
+    "bytes": 1035731,
+    "sha256": "266aaa4c760006b025402bd0fc56d602cf84c89e0e9d06daa0e8c38734c5be0b"
+  },
+  {
+    "path": "results/best_lstm_seed50_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_lstm_seed50_model.pt",
+    "exists": true,
+    "bytes": 1035731,
+    "sha256": "8fefb7021a22c43b55fc62268a344004932f138be291065d61957e182e3de35c"
+  },
+  {
+    "path": "results/best_lstm_seed51_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_lstm_seed51_model.pt",
+    "exists": true,
+    "bytes": 1035731,
+    "sha256": "e713a71a947a73a51b785a01ac5619db0b8d20c621cfbc8cf9a3e384477c4e15"
+  },
+  {
+    "path": "results/best_mlp_seed42_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_mlp_seed42_model.pt",
+    "exists": true,
+    "bytes": 536040,
+    "sha256": "1b8e09d07d60cf7653da586e0b6f1f1da2d583390dfff5e3eefd19ab32fd1f58"
+  },
+  {
+    "path": "results/best_mlp_seed43_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_mlp_seed43_model.pt",
+    "exists": true,
+    "bytes": 536040,
+    "sha256": "fd95927fe5b0edf087f1e7e4e8f17a4aac8e33eefbc1e8001fd7475b03e1d68d"
+  },
+  {
+    "path": "results/best_mlp_seed44_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_mlp_seed44_model.pt",
+    "exists": true,
+    "bytes": 536040,
+    "sha256": "ecd5b730a7af0e70cb3796bcca0a6e6511dbefc4b41a1c6f00bdcbea4cf94f16"
+  },
+  {
+    "path": "results/best_mlp_seed45_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_mlp_seed45_model.pt",
+    "exists": true,
+    "bytes": 536040,
+    "sha256": "fc54945c8cfac382660026760da6db71c83240b62a754ab19f0798a4b054820e"
+  },
+  {
+    "path": "results/best_mlp_seed46_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_mlp_seed46_model.pt",
+    "exists": true,
+    "bytes": 536040,
+    "sha256": "493c387f1497a775c4f5069f76679db673522c2c38eb0ee19ee2183c4c03a023"
+  },
+  {
+    "path": "results/best_mlp_seed47_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_mlp_seed47_model.pt",
+    "exists": true,
+    "bytes": 536040,
+    "sha256": "aa248da18b7ddaae07b5763b1ed1745a2a683be0ea4ee8b886a20e80e19767b7"
+  },
+  {
+    "path": "results/best_mlp_seed48_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_mlp_seed48_model.pt",
+    "exists": true,
+    "bytes": 536040,
+    "sha256": "5001ade525698d383af6c7814708e91bca64ca6d645b722ff543f89274deef64"
+  },
+  {
+    "path": "results/best_mlp_seed49_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_mlp_seed49_model.pt",
+    "exists": true,
+    "bytes": 536040,
+    "sha256": "60c595bf5ff438b7f02a285e74e57f916583df94b5917fc4a65909c3a53ccef0"
+  },
+  {
+    "path": "results/best_mlp_seed50_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_mlp_seed50_model.pt",
+    "exists": true,
+    "bytes": 536040,
+    "sha256": "6e26c0f39c2441985903f98e7c67336fa253485364f4d2c897328e7cd7c0fa40"
+  },
+  {
+    "path": "results/best_mlp_seed51_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_mlp_seed51_model.pt",
+    "exists": true,
+    "bytes": 536040,
+    "sha256": "44f28aa965f62424c46f358ea565d09f3b07e9b98c41a2c517eb742e2c087455"
+  },
+  {
+    "path": "results/best_sage_address_seed42_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_sage_address_seed42_model.pt",
+    "exists": true,
+    "bytes": 502996,
+    "sha256": "05ae7ef6219e4b5a2288697e4ccf565434c1bc50c9d0c2ab78bc3288387a4388"
+  },
+  {
+    "path": "results/best_sage_address_seed43_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_sage_address_seed43_model.pt",
+    "exists": true,
+    "bytes": 502996,
+    "sha256": "ddacd4fb6e129fa6c59cab3ee03eb1bcaab1f5c1dde2d8e83006b023b70b8ad2"
+  },
+  {
+    "path": "results/best_sage_address_seed44_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_sage_address_seed44_model.pt",
+    "exists": true,
+    "bytes": 502996,
+    "sha256": "34b844f5e3c27d607f983e38381bfa44818dacec01d9e59169d386eaaa6ab16a"
+  },
+  {
+    "path": "results/best_sage_address_seed45_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_sage_address_seed45_model.pt",
+    "exists": true,
+    "bytes": 502996,
+    "sha256": "e3a96667b622ad51aa99b5716ec579f00d044ebdf2eb6b603b74c19d623359c5"
+  },
+  {
+    "path": "results/best_sage_address_seed46_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_sage_address_seed46_model.pt",
+    "exists": true,
+    "bytes": 502996,
+    "sha256": "aac2d28a79664552e76b31501bb34ed79718bad1442fb5094834b4f5407de41d"
+  },
+  {
+    "path": "results/best_sage_address_seed47_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_sage_address_seed47_model.pt",
+    "exists": true,
+    "bytes": 502996,
+    "sha256": "318e70f4c8c13e8926f574dfb0d7d02f3987c8d1a8b398d018bf499fc2481972"
+  },
+  {
+    "path": "results/best_sage_address_seed48_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_sage_address_seed48_model.pt",
+    "exists": true,
+    "bytes": 502996,
+    "sha256": "6368dc776a6318482e15b7c267d63199ad9bb7d1ebded8d68865eec3e2374b60"
+  },
+  {
+    "path": "results/best_sage_address_seed49_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_sage_address_seed49_model.pt",
+    "exists": true,
+    "bytes": 502996,
+    "sha256": "3c71d16cfc8cf6298c0dd85e9655b9b42979c6f5fefa2405a9c517ccceb18e4d"
+  },
+  {
+    "path": "results/best_sage_address_seed50_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_sage_address_seed50_model.pt",
+    "exists": true,
+    "bytes": 502996,
+    "sha256": "e08cc2e1553f9fb5be72cdaf142bf9fa1eb4f4d142406b15dc86da556a73ef0e"
+  },
+  {
+    "path": "results/best_sage_address_seed51_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_sage_address_seed51_model.pt",
+    "exists": true,
+    "bytes": 502996,
+    "sha256": "bc68456c91c84df140916c27a014ea32aef412b9feee9b96396066deaaafd312"
+  },
+  {
+    "path": "results/best_sage_card_seed42_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_sage_card_seed42_model.pt",
+    "exists": true,
+    "bytes": 502960,
+    "sha256": "1b8509de7ea8ea221986a76aa8b4b0cbbd941acccf4c859d9345023b238e9f85"
+  },
+  {
+    "path": "results/best_sage_card_seed43_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_sage_card_seed43_model.pt",
+    "exists": true,
+    "bytes": 502960,
+    "sha256": "d63dbe55dd96358c746be7039074db5778e0efdfe8a1a583d41cdefa6ec58e0d"
+  },
+  {
+    "path": "results/best_sage_card_seed44_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_sage_card_seed44_model.pt",
+    "exists": true,
+    "bytes": 502960,
+    "sha256": "6d55a27e655ed25f2cad595ed79b9e06255dd2be186b1be424bc7726b82ab755"
+  },
+  {
+    "path": "results/best_sage_card_seed45_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_sage_card_seed45_model.pt",
+    "exists": true,
+    "bytes": 502960,
+    "sha256": "f68cb6a64838b4e107ae54f7b85f7d5e692bf12c6cf78f75aa04d22736118d43"
+  },
+  {
+    "path": "results/best_sage_card_seed46_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_sage_card_seed46_model.pt",
+    "exists": true,
+    "bytes": 502960,
+    "sha256": "ac08ad1f3ab50203e9c59c8ecbea47c52448d5842f9a6d350c02a7c4743e0b20"
+  },
+  {
+    "path": "results/best_sage_card_seed47_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_sage_card_seed47_model.pt",
+    "exists": true,
+    "bytes": 502960,
+    "sha256": "e5a9f42c3f5ded30168a0d3bfb34f1af044f19811bb34d384bbe49dc8f9ab6df"
+  },
+  {
+    "path": "results/best_sage_card_seed48_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_sage_card_seed48_model.pt",
+    "exists": true,
+    "bytes": 502960,
+    "sha256": "e9d9acd656f4a3a0c1b34d4176d16c23f8515fc0a2f7b5e468a809f3777b7d55"
+  },
+  {
+    "path": "results/best_sage_card_seed49_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_sage_card_seed49_model.pt",
+    "exists": true,
+    "bytes": 502960,
+    "sha256": "821e1335ea500f357c3e4c0b4e9b628127c055d9893ac261ca9677a22927a21f"
+  },
+  {
+    "path": "results/best_sage_card_seed50_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_sage_card_seed50_model.pt",
+    "exists": true,
+    "bytes": 502960,
+    "sha256": "1a0d290ae1370bf5d7385d6e43d8614dfb9a5762dea3268105cbf849a5d87bf5"
+  },
+  {
+    "path": "results/best_sage_card_seed51_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_sage_card_seed51_model.pt",
+    "exists": true,
+    "bytes": 502960,
+    "sha256": "062265ef02145e58a9b553ee61ddd54c9f477188fb433ad8a879beec63d6ec83"
+  },
+  {
+    "path": "results/best_sage_email_domain_seed42_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_sage_email_domain_seed42_model.pt",
+    "exists": true,
+    "bytes": 503056,
+    "sha256": "1663b1c32d21ce348927e4d06beed9432a1e6b55446082e95e504bc3dbf28e95"
+  },
+  {
+    "path": "results/best_sage_email_domain_seed43_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_sage_email_domain_seed43_model.pt",
+    "exists": true,
+    "bytes": 503056,
+    "sha256": "9de47463ce2839c079a57cc1b9a2caee0f6c73d8a705cd75ae2d03d426d360bb"
+  },
+  {
+    "path": "results/best_sage_email_domain_seed44_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_sage_email_domain_seed44_model.pt",
+    "exists": true,
+    "bytes": 503056,
+    "sha256": "553375deddf48e1fcaad5f45151d6d7982098006dcb147cca2dee0e8a238b738"
+  },
+  {
+    "path": "results/best_sage_email_domain_seed45_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_sage_email_domain_seed45_model.pt",
+    "exists": true,
+    "bytes": 503056,
+    "sha256": "d1f9257745f9d33594834431affb6fd2c94d706c75067ec1be506384cc3838f7"
+  },
+  {
+    "path": "results/best_sage_email_domain_seed46_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_sage_email_domain_seed46_model.pt",
+    "exists": true,
+    "bytes": 503056,
+    "sha256": "c934529a69e22d7a1673250e9f217eb91f651c7807eeb5082d12ddc947883a6f"
+  },
+  {
+    "path": "results/best_sage_email_domain_seed47_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_sage_email_domain_seed47_model.pt",
+    "exists": true,
+    "bytes": 503056,
+    "sha256": "d4b16b5d937f750fd4996cad83b7741a037ff1fa2bfc21e77a854bf327dd8b31"
+  },
+  {
+    "path": "results/best_sage_email_domain_seed48_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_sage_email_domain_seed48_model.pt",
+    "exists": true,
+    "bytes": 503056,
+    "sha256": "7542269307387e4fdad9442ee66deb8c873b634455903e1744fdfa0687ab4d26"
+  },
+  {
+    "path": "results/best_sage_email_domain_seed49_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_sage_email_domain_seed49_model.pt",
+    "exists": true,
+    "bytes": 503056,
+    "sha256": "c35b8daeb6dd3dd555b816631542908ebd23b67026b0f08f9b59fdf607f04bec"
+  },
+  {
+    "path": "results/best_sage_email_domain_seed50_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_sage_email_domain_seed50_model.pt",
+    "exists": true,
+    "bytes": 503056,
+    "sha256": "d447da7eaaa86e3d368c52b0a116b11b5d6a6b3291a8ba664807f6bb1e5ed227"
+  },
+  {
+    "path": "results/best_sage_email_domain_seed51_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_sage_email_domain_seed51_model.pt",
+    "exists": true,
+    "bytes": 503056,
+    "sha256": "493281f822dfe36b51c350ed6b986b39123edc73442ca5f224101e568b910785"
+  },
+  {
+    "path": "results/best_sage_identifier_time_window_24h_seed42_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_sage_identifier_time_window_24h_seed42_model.pt",
+    "exists": true,
+    "bytes": 503224,
+    "sha256": "6f54201b4a785ee681928a9e7137c6a350deffffea66cf49621b48d195aa8a7e"
+  },
+  {
+    "path": "results/best_sage_identifier_time_window_24h_seed43_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_sage_identifier_time_window_24h_seed43_model.pt",
+    "exists": true,
+    "bytes": 503224,
+    "sha256": "5d06156b3c98e6f8f3bc418b063a9654d5e10a8770aa43267c0f988dccb76e12"
+  },
+  {
+    "path": "results/best_sage_identifier_time_window_24h_seed44_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_sage_identifier_time_window_24h_seed44_model.pt",
+    "exists": true,
+    "bytes": 503224,
+    "sha256": "3a1be49ea105a0a24fe7a12dd44b5108b6ddd13f45cc2ea97708aefa68ae896b"
+  },
+  {
+    "path": "results/best_sage_identifier_time_window_24h_seed45_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_sage_identifier_time_window_24h_seed45_model.pt",
+    "exists": true,
+    "bytes": 503224,
+    "sha256": "41143b154570e62438e57f001011adb9e7014344efd2039200ce1a38aaac83f6"
+  },
+  {
+    "path": "results/best_sage_identifier_time_window_24h_seed46_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_sage_identifier_time_window_24h_seed46_model.pt",
+    "exists": true,
+    "bytes": 503224,
+    "sha256": "13608fbcd7fe635e544e4001272d62490f2b0530643a03be0054ba7a8488ce65"
+  },
+  {
+    "path": "results/best_sage_identifier_time_window_24h_seed47_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_sage_identifier_time_window_24h_seed47_model.pt",
+    "exists": true,
+    "bytes": 503224,
+    "sha256": "7918d127fd9239ec170d92385fb5569375128715983b2f81af9c5ead321c7194"
+  },
+  {
+    "path": "results/best_sage_identifier_time_window_24h_seed48_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_sage_identifier_time_window_24h_seed48_model.pt",
+    "exists": true,
+    "bytes": 503224,
+    "sha256": "8744e95394b2483d8ca5bda0ec8d67105c9dc8c767129b95d93bda4c66968186"
+  },
+  {
+    "path": "results/best_sage_identifier_time_window_24h_seed49_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_sage_identifier_time_window_24h_seed49_model.pt",
+    "exists": true,
+    "bytes": 503224,
+    "sha256": "6e100568f2b67dbe5d7ab62afbc85fb25450ef1abd6cffc9d2e3d53adca57fd3"
+  },
+  {
+    "path": "results/best_sage_identifier_time_window_24h_seed50_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_sage_identifier_time_window_24h_seed50_model.pt",
+    "exists": true,
+    "bytes": 503224,
+    "sha256": "e0b82dd33031d3e204121a50473220ccd65e93c31c898bc79c67f017f9241bc6"
+  },
+  {
+    "path": "results/best_sage_identifier_time_window_24h_seed51_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_sage_identifier_time_window_24h_seed51_model.pt",
+    "exists": true,
+    "bytes": 503224,
+    "sha256": "834b7b8a3a3eb8d2f398392b3f98bee3f9229f9da8e5e84041f5f13321de1493"
+  },
+  {
+    "path": "results/best_sage_main_seed42_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_sage_main_seed42_model.pt",
+    "exists": true,
+    "bytes": 502960,
+    "sha256": "7e6dddd2c9c513eca39edf4b836ef7d8d300605ecd6cf98e790db402dc9a1e74"
+  },
+  {
+    "path": "results/best_sage_main_seed43_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_sage_main_seed43_model.pt",
+    "exists": true,
+    "bytes": 502960,
+    "sha256": "b35c9eb51b2ed6e94932bacade20c2e38e496711e4818f03147023f62c9ec74f"
+  },
+  {
+    "path": "results/best_sage_main_seed44_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_sage_main_seed44_model.pt",
+    "exists": true,
+    "bytes": 502960,
+    "sha256": "baac38cc0616d1d26e80add2ca9a8e15c9600d7583a7bf725fd87817e2f95e1d"
+  },
+  {
+    "path": "results/best_sage_main_seed45_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_sage_main_seed45_model.pt",
+    "exists": true,
+    "bytes": 502960,
+    "sha256": "44d61e19dfde07f5556566ab14073966a13b2273203d91189d876506b2dd051d"
+  },
+  {
+    "path": "results/best_sage_main_seed46_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_sage_main_seed46_model.pt",
+    "exists": true,
+    "bytes": 502960,
+    "sha256": "eb26f1a325ad64c146df0511bdce74982f314ef22f2ef1e9be8b4e617292b42c"
+  },
+  {
+    "path": "results/best_sage_main_seed47_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_sage_main_seed47_model.pt",
+    "exists": true,
+    "bytes": 502960,
+    "sha256": "f88df9221e2187ee3a53cac135d26dca153fc02828e413dfa4f218eec869f676"
+  },
+  {
+    "path": "results/best_sage_main_seed48_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_sage_main_seed48_model.pt",
+    "exists": true,
+    "bytes": 502960,
+    "sha256": "21c44ccd1c84a0534cda78babe9f82fe0eee730701087a3f44788dfc685d1086"
+  },
+  {
+    "path": "results/best_sage_main_seed49_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_sage_main_seed49_model.pt",
+    "exists": true,
+    "bytes": 502960,
+    "sha256": "0618a9f0fb73f8e5fd793746f824d92245a1adee0b964a1d7afe72b5979bec9d"
+  },
+  {
+    "path": "results/best_sage_main_seed50_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_sage_main_seed50_model.pt",
+    "exists": true,
+    "bytes": 502960,
+    "sha256": "6cd0cbebb28d874519fb546439ca76ff34212ebc66b0c7b93756d6dacd2081f0"
+  },
+  {
+    "path": "results/best_sage_main_seed51_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_sage_main_seed51_model.pt",
+    "exists": true,
+    "bytes": 502960,
+    "sha256": "a82c4476afd302cbba5a8893c744c2d92c38afc225e2dc91ab0266f90c4cce1d"
+  },
+  {
+    "path": "results/best_transformer_seed42_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_transformer_seed42_model.pt",
+    "exists": true,
+    "bytes": 1294203,
+    "sha256": "fc09754a835d5db5ab2d1647cfa066ee005dbf1d9a540d747c2c48ef72ef3a37"
+  },
+  {
+    "path": "results/best_transformer_seed43_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_transformer_seed43_model.pt",
+    "exists": true,
+    "bytes": 1294203,
+    "sha256": "1e2f0044aea5f20da2c47c02e05adc996889007b2998d5f4ec114a513defbb84"
+  },
+  {
+    "path": "results/best_transformer_seed44_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_transformer_seed44_model.pt",
+    "exists": true,
+    "bytes": 1294203,
+    "sha256": "476992c3c51513da0a348fd0fc261762477bbb9d691614a7dc4901a296bebf94"
+  },
+  {
+    "path": "results/best_transformer_seed45_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_transformer_seed45_model.pt",
+    "exists": true,
+    "bytes": 1294203,
+    "sha256": "13f17666548fa95e75353b7fd2ba071041980ebce4cf3e06cbcbf345f69046fa"
+  },
+  {
+    "path": "results/best_transformer_seed46_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_transformer_seed46_model.pt",
+    "exists": true,
+    "bytes": 1294203,
+    "sha256": "7f2923402d05503b94839e5bce11af81fe8ea137bd86c5f88743918bf7e71826"
+  },
+  {
+    "path": "results/best_transformer_seed47_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_transformer_seed47_model.pt",
+    "exists": true,
+    "bytes": 1294203,
+    "sha256": "bd5842e34b58d9a5d386479255739dc1d133bd461aa10b84bf1795eca26dc399"
+  },
+  {
+    "path": "results/best_transformer_seed48_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_transformer_seed48_model.pt",
+    "exists": true,
+    "bytes": 1294203,
+    "sha256": "7ffea9e33b05c23c9faa6ecdfe54807401769e750f30f319408674de76379329"
+  },
+  {
+    "path": "results/best_transformer_seed49_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_transformer_seed49_model.pt",
+    "exists": true,
+    "bytes": 1294203,
+    "sha256": "a9726d5970e44cc0775f12e500c173b869322560df1a917fe89d08455afdcfca"
+  },
+  {
+    "path": "results/best_transformer_seed50_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_transformer_seed50_model.pt",
+    "exists": true,
+    "bytes": 1294203,
+    "sha256": "27cdbbecc710b407a19b7e44be576afaabb539f106968fcc08d375bad026546e"
+  },
+  {
+    "path": "results/best_transformer_seed51_model.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\best_transformer_seed51_model.pt",
+    "exists": true,
+    "bytes": 1294203,
+    "sha256": "c705a63098f85b0faf5124cebb5b32f3b6a7ebbd1e353a183f3002352a597361"
+  },
+  {
+    "path": "results/elliptic_graph.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\elliptic_graph.pt",
+    "exists": true,
+    "bytes": 143415950,
+    "sha256": "055e7ad61d6f1e925c01d136fd840c880219585a73c501270ab065e55de52c44"
+  },
+  {
+    "path": "results/ieee_cis_graph.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\ieee_cis_graph.pt",
+    "exists": true,
+    "bytes": 862806414,
+    "sha256": "6eee556e4bf7c6091a81ead4ee9717419e107b88e97caa9db9d01de4b3cae0e0"
+  },
+  {
+    "path": "results/ieee_cis_graph_edges_address_max1000.csv",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\ieee_cis_graph_edges_address_max1000.csv",
+    "exists": true,
+    "bytes": 210285,
+    "sha256": "9529b13e92fe978a2b9a11946793b54d0a71ddf945f3695b82a6292df95de19f"
+  },
+  {
+    "path": "results/ieee_cis_graph_edges_card_max1000.csv",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\ieee_cis_graph_edges_card_max1000.csv",
+    "exists": true,
+    "bytes": 8928603,
+    "sha256": "b4da84020d03cf7a1aac0f916c1569648e30fb985b654341af2e6843662a2002"
+  },
+  {
+    "path": "results/ieee_cis_graph_edges_email_domain_max1000.csv",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\ieee_cis_graph_edges_email_domain_max1000.csv",
+    "exists": true,
+    "bytes": 482133,
+    "sha256": "b500d139fc57c8088948642be4204e91b52faa3e2bb93a7ed6097184f0856d1b"
+  },
+  {
+    "path": "results/ieee_cis_graph_edges_identifier_time_window_24h.csv",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\ieee_cis_graph_edges_identifier_time_window_24h.csv",
+    "exists": true,
+    "bytes": 9857177,
+    "sha256": "39a2c46e581d4db7bbea12a50e00dbc099b374cf6d4f100220c1d51dfd142bdf"
+  },
+  {
+    "path": "results/ieee_cis_graph_model_results.csv",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\ieee_cis_graph_model_results.csv",
+    "exists": true,
+    "bytes": 28322,
+    "sha256": "e1113749c1e313483451d03841aa954f9548f4fb6d91a33bd693f0787b0aa87d"
+  },
+  {
+    "path": "results/ieee_cis_graph_trainfit.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\ieee_cis_graph_trainfit.pt",
+    "exists": true,
+    "bytes": 862806632,
+    "sha256": "9b1255c82be18bb0b406ad82f99cd8b498f24beaa0be756ae35d50467d559e76"
+  },
+  {
+    "path": "results/ieee_cis_graph_trainfit_address_max1000.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\ieee_cis_graph_trainfit_address_max1000.pt",
+    "exists": true,
+    "bytes": 850027912,
+    "sha256": "e7e65fa6b1d0758d84bd43a8e3d601256aaba8c753f4cd66c2f2095e7f43ccf7"
+  },
+  {
+    "path": "results/ieee_cis_graph_trainfit_card_max1000.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\ieee_cis_graph_trainfit_card_max1000.pt",
+    "exists": true,
+    "bytes": 859546730,
+    "sha256": "9ff50ea303c0f150b24e15335dbd6cd127bcf1b2bdd4cbd289b10948e185a9c1"
+  },
+  {
+    "path": "results/ieee_cis_graph_trainfit_email_domain_max1000.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\ieee_cis_graph_trainfit_email_domain_max1000.pt",
+    "exists": true,
+    "bytes": 850323514,
+    "sha256": "0374744e905f01fba1e761c6af587fd78232baf652d1cda72cff1039a9e57675"
+  },
+  {
+    "path": "results/ieee_cis_graph_trainfit_identifier_time_window_24h.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\ieee_cis_graph_trainfit_identifier_time_window_24h.pt",
+    "exists": true,
+    "bytes": 860839222,
+    "sha256": "467c5c919bd4887b664fe34ba1e063534916a47fd416f752d5d4cacf4b8492b5"
+  },
+  {
+    "path": "results/ieee_cis_graph_trainfit_main_max1000.pt",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\ieee_cis_graph_trainfit_main_max1000.pt",
+    "exists": true,
+    "bytes": 862806890,
+    "sha256": "6118895d98d28d37695abe0f0be7813029bd198bedef9f3b3e1a165ea8b3987b"
+  },
+  {
+    "path": "results/model_results.csv",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\results\\model_results.csv",
+    "exists": true,
+    "bytes": 44226,
+    "sha256": "f13664e2f2eed994421072d85273f56eb23076f6323ac90f85f6d28cbb780bde"
+  },
+  {
+    "path": "src/__init__.py",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\src\\__init__.py",
+    "exists": true,
+    "bytes": 1,
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "path": "src/common/__init__.py",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\src\\common\\__init__.py",
+    "exists": true,
+    "bytes": 1,
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "path": "src/common/early_stopping.py",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\src\\common\\early_stopping.py",
+    "exists": true,
+    "bytes": 700,
+    "sha256": "59d3ad52023d954546fb49ae5f85f0a23f82a6f847f75a29ad08adf74992f3ce"
+  },
+  {
+    "path": "src/common/graph_stats.py",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\src\\common\\graph_stats.py",
+    "exists": true,
+    "bytes": 2241,
+    "sha256": "4287fc6b4987516a12d4d9dbd3a75fab7408b0b9e49add63ca779c37885a7a99"
+  },
+  {
+    "path": "src/common/graph_variants.py",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\src\\common\\graph_variants.py",
+    "exists": true,
+    "bytes": 2489,
+    "sha256": "94f34d4e800f2c8cf8d5d93e52661a6bb8df71f02c958cbb11ff6f08846c479d"
+  },
+  {
+    "path": "src/common/metrics.py",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\src\\common\\metrics.py",
+    "exists": true,
+    "bytes": 7236,
+    "sha256": "e2465338a11360b61b3baea8c7a5fb095b15a39a15dfdbba0947370adbd1181c"
+  },
+  {
+    "path": "src/common/ranking.py",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\src\\common\\ranking.py",
+    "exists": true,
+    "bytes": 6146,
+    "sha256": "ac73ec1a41fc986f00f5907cd56b96ddd6bca57bbaec0b368c5cb6e155f90efd"
+  },
+  {
+    "path": "src/common/wilcoxon.py",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\src\\common\\wilcoxon.py",
+    "exists": true,
+    "bytes": 5958,
+    "sha256": "38e52044633ac4462e93a52d5233aba310c0ccba2a0b6117e61ab19f2058b587"
+  },
+  {
+    "path": "src/compare_ieee_graph_constructions.py",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\src\\compare_ieee_graph_constructions.py",
+    "exists": true,
+    "bytes": 101,
+    "sha256": "12e1c81a621925db3613f8abef91b72f96901bf83492431e3647a763be9b05c3"
+  },
+  {
+    "path": "src/elliptic/__init__.py",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\src\\elliptic\\__init__.py",
+    "exists": true,
+    "bytes": 1,
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "path": "src/elliptic/build_graph.py",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\src\\elliptic\\build_graph.py",
+    "exists": true,
+    "bytes": 1503,
+    "sha256": "cbc9a37b078708eddc999b1d9b6fff84b3732bf041303606e879f3b3ced5fdda"
+  },
+  {
+    "path": "src/elliptic/data.py",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\src\\elliptic\\data.py",
+    "exists": true,
+    "bytes": 5357,
+    "sha256": "f56756adae1ea218be5fbe532e1f7882208667ef7a2ef5dca7451756835aba84"
+  },
+  {
+    "path": "src/elliptic/gnn_models.py",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\src\\elliptic\\gnn_models.py",
+    "exists": true,
+    "bytes": 2777,
+    "sha256": "d618ae737a71bdf634338e7625f0474cd6d726f17a09b945bcd8fe269dea1404"
+  },
+  {
+    "path": "src/elliptic/models.py",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\src\\elliptic\\models.py",
+    "exists": true,
+    "bytes": 2488,
+    "sha256": "5f08e82b1390c0aa0bdf331b26ca36ee664f12fce574a786ef4137a4c2957a7e"
+  },
+  {
+    "path": "src/elliptic/run_all.py",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\src\\elliptic\\run_all.py",
+    "exists": true,
+    "bytes": 1197,
+    "sha256": "5ec0e190894b771944e081a18cbbd9f1b9d348d21336342fb0a10141c09ccfcb"
+  },
+  {
+    "path": "src/elliptic/sequence.py",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\src\\elliptic\\sequence.py",
+    "exists": true,
+    "bytes": 1343,
+    "sha256": "7f99deac9776a2c52efed9d041024ebc2b224217acc93809b82d5acaf992af4a"
+  },
+  {
+    "path": "src/elliptic/train_gat.py",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\src\\elliptic\\train_gat.py",
+    "exists": true,
+    "bytes": 86,
+    "sha256": "ffcb008866492537257cd680aed28c54814cb9f2f4418d238d91a65161be0fa4"
+  },
+  {
+    "path": "src/elliptic/train_gcn.py",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\src\\elliptic\\train_gcn.py",
+    "exists": true,
+    "bytes": 86,
+    "sha256": "e9bdda710dfe120e5fef28c9e40d45fe41d5f41f2e1c581d7e7162a8c01d9086"
+  },
+  {
+    "path": "src/elliptic/train_gnn.py",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\src\\elliptic\\train_gnn.py",
+    "exists": true,
+    "bytes": 7089,
+    "sha256": "5a42ed2ec20b4f6bad2f818439628a3419f489c1848483e327d8d6371ad015dc"
+  },
+  {
+    "path": "src/elliptic/train_graphsage.py",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\src\\elliptic\\train_graphsage.py",
+    "exists": true,
+    "bytes": 87,
+    "sha256": "bee7746a78639691074c6cc61084b578380ad46b97b1a122ab1d7e2aa610e43f"
+  },
+  {
+    "path": "src/elliptic/train_lstm.py",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\src\\elliptic\\train_lstm.py",
+    "exists": true,
+    "bytes": 5598,
+    "sha256": "f704a73ecd1ebe851afcc49d2afdc432f1777a364e0da2a55ab2db9a441e15d2"
+  },
+  {
+    "path": "src/elliptic/train_mlp.py",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\src\\elliptic\\train_mlp.py",
+    "exists": true,
+    "bytes": 4956,
+    "sha256": "7cc24ead7433cb7b571760ef599bc252d327738a17a3142a2dce599f6ef4c537"
+  },
+  {
+    "path": "src/elliptic/train_transformer.py",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\src\\elliptic\\train_transformer.py",
+    "exists": true,
+    "bytes": 6441,
+    "sha256": "f3ad5fb5e335e008e3e1d6d37e52901ed06370e34b100e2baef146a68fff395d"
+  },
+  {
+    "path": "src/ieee_cis/__init__.py",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\src\\ieee_cis\\__init__.py",
+    "exists": true,
+    "bytes": 1,
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "path": "src/ieee_cis/analyze_connectivity.py",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\src\\ieee_cis\\analyze_connectivity.py",
+    "exists": true,
+    "bytes": 6085,
+    "sha256": "967205c73c5e3d00b949d7c725da0e849734744e5afd525d751fc6292fee3a10"
+  },
+  {
+    "path": "src/ieee_cis/build_graph.py",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\src\\ieee_cis\\build_graph.py",
+    "exists": true,
+    "bytes": 3418,
+    "sha256": "b719f743f08c2bcffac535ca2e463e6aad22a9ff7d329ed2532a44032a76049f"
+  },
+  {
+    "path": "src/ieee_cis/compare_graph_construction_results.py",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\src\\ieee_cis\\compare_graph_construction_results.py",
+    "exists": true,
+    "bytes": 10140,
+    "sha256": "138139f17940a038a0e40e788bd1d5256dddd12f18805fc4ab05b5630e35255b"
+  },
+  {
+    "path": "src/ieee_cis/gnn_models.py",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\src\\ieee_cis\\gnn_models.py",
+    "exists": true,
+    "bytes": 2777,
+    "sha256": "d618ae737a71bdf634338e7625f0474cd6d726f17a09b945bcd8fe269dea1404"
+  },
+  {
+    "path": "src/ieee_cis/graph_data.py",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\src\\ieee_cis\\graph_data.py",
+    "exists": true,
+    "bytes": 12397,
+    "sha256": "39c0a8d2ce1656b54962afcc4a66f86c560e2792f5dfa057c247b92dd8a90718"
+  },
+  {
+    "path": "src/ieee_cis/models.py",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\src\\ieee_cis\\models.py",
+    "exists": true,
+    "bytes": 2488,
+    "sha256": "5f08e82b1390c0aa0bdf331b26ca36ee664f12fce574a786ef4137a4c2957a7e"
+  },
+  {
+    "path": "src/ieee_cis/preprocessing.py",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\src\\ieee_cis\\preprocessing.py",
+    "exists": true,
+    "bytes": 5035,
+    "sha256": "d5ff00750a9ad82050b73a4a1f578366a45e604e9ec81bdf111f05d368e6d3f9"
+  },
+  {
+    "path": "src/ieee_cis/run_all.py",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\src\\ieee_cis\\run_all.py",
+    "exists": true,
+    "bytes": 1197,
+    "sha256": "c20bf4b01a6bd79deb599506d3e73423925420a2bfc14d6ea20303fa47cee256"
+  },
+  {
+    "path": "src/ieee_cis/run_graph_construction_experiments.py",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\src\\ieee_cis\\run_graph_construction_experiments.py",
+    "exists": true,
+    "bytes": 3266,
+    "sha256": "26087d39d4fed82a9e1ca81285b25e27c81af7a537fc8ec11e919312503e1268"
+  },
+  {
+    "path": "src/ieee_cis/train_gat.py",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\src\\ieee_cis\\train_gat.py",
+    "exists": true,
+    "bytes": 86,
+    "sha256": "ffcb008866492537257cd680aed28c54814cb9f2f4418d238d91a65161be0fa4"
+  },
+  {
+    "path": "src/ieee_cis/train_gcn.py",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\src\\ieee_cis\\train_gcn.py",
+    "exists": true,
+    "bytes": 86,
+    "sha256": "e9bdda710dfe120e5fef28c9e40d45fe41d5f41f2e1c581d7e7162a8c01d9086"
+  },
+  {
+    "path": "src/ieee_cis/train_gnn.py",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\src\\ieee_cis\\train_gnn.py",
+    "exists": true,
+    "bytes": 8928,
+    "sha256": "2b496042740d89a1f96612a87ffe17bd971bde17d02c1845cc5517d7d58c1b1d"
+  },
+  {
+    "path": "src/ieee_cis/train_graphsage.py",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\src\\ieee_cis\\train_graphsage.py",
+    "exists": true,
+    "bytes": 87,
+    "sha256": "bee7746a78639691074c6cc61084b578380ad46b97b1a122ab1d7e2aa610e43f"
+  },
+  {
+    "path": "src/ieee_cis/train_lstm.py",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\src\\ieee_cis\\train_lstm.py",
+    "exists": true,
+    "bytes": 6238,
+    "sha256": "e5979d5ace10d79e1e379aff4d99931ef13504ae0e84618da88a6384e1a0342d"
+  },
+  {
+    "path": "src/ieee_cis/train_mlp.py",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\src\\ieee_cis\\train_mlp.py",
+    "exists": true,
+    "bytes": 5240,
+    "sha256": "2609fff1bc85c578b169fe44d4595271634ea5bafeb42a12d85f5c9e18b21dc8"
+  },
+  {
+    "path": "src/ieee_cis/train_transformer.py",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\src\\ieee_cis\\train_transformer.py",
+    "exists": true,
+    "bytes": 8819,
+    "sha256": "60fcdfb06d102c1af1b3dbbc609a7321d974816032710c6e556cd4f2866e4db0"
+  },
+  {
+    "path": "src/rank_models.py",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\src\\rank_models.py",
+    "exists": true,
+    "bytes": 128,
+    "sha256": "cd9711457a8d5ed485aa0b49cd76e265eb53c8dd56e54f98dcdb41cea019511f"
+  },
+  {
+    "path": "src/run_elliptic_all.py",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\src\\run_elliptic_all.py",
+    "exists": true,
+    "bytes": 74,
+    "sha256": "2ed5750f70d1afbbc5537d8efa4962be138440d968475a9d1e1a781f34cfaf90"
+  },
+  {
+    "path": "src/run_ieee_all.py",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\src\\run_ieee_all.py",
+    "exists": true,
+    "bytes": 74,
+    "sha256": "3639cd5dedf05dcc0e2375f623328f60de0c3bab73fff3424a54ec13ad589975"
+  },
+  {
+    "path": "src/run_ieee_graph_constructions.py",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\src\\run_ieee_graph_constructions.py",
+    "exists": true,
+    "bytes": 101,
+    "sha256": "968fefe206cd934eb8c0da10aef0f7bf6617c36d944b95feb0e0d5c6cf8468c7"
+  },
+  {
+    "path": "src/run_wilcoxon_tests.py",
+    "absolute_path": "C:\\Users\\user\\Desktop\\FraudDetectionThesis\\src\\run_wilcoxon_tests.py",
+    "exists": true,
+    "bytes": 849,
+    "sha256": "5045dcd597580e6f572f26396c11c9bd93c55da86c58c3438681c39a143ee7e5"
+  }
+]

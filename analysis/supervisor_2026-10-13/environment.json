@@ -1,0 +1,14 @@
+{
+  "python": "3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26300-SP0",
+  "torch": "2.5.1+cu121",
+  "torch_geometric": "2.7.0",
+  "numpy": "2.2.6",
+  "pandas": "2.3.3",
+  "scipy": "1.15.3",
+  "sklearn": "1.7.2",
+  "gpu": "NVIDIA GeForce RTX 3080 Ti",
+  "git_head": "55a8d113703d7b95a1057952d158c7626c1caeee",
+  "portable_runtime_source": "https://www.python.org/ftp/python/3.10.0/python-3.10.0-embed-amd64.zip",
+  "portable_runtime_sha256": "7509ff71fae8e96eb26631dbae3eff88e47b65e3dca399140c74efbc678ba339"
+}

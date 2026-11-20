@@ -1,0 +1,1562 @@
+[
+  {
+    "id": "complement__ieee__pr_auc",
+    "family": "complement",
+    "dataset": "ieee",
+    "metric": "pr_auc",
+    "comparisons": [
+      {
+        "construction": "main",
+        "model": "gcn"
+      },
+      {
+        "construction": "main",
+        "model": "sage"
+      },
+      {
+        "construction": "main",
+        "model": "gat"
+      }
+    ],
+    "difference": "new minus verified original",
+    "expected_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "alternative": "two-sided",
+    "zero_method": "wilcox: discard exact zeros",
+    "ties": "average ranks of absolute differences",
+    "method": "exhaustive sign permutation; 2*lower tail of min(W+,W-), capped at 1; all zero p=1",
+    "correction": "Holm over entire planned family; incomplete comparisons use p=1 only for adjustment",
+    "incomplete": "No inferential p-value until all ten pairs present",
+    "alpha": 0.05
+  },
+  {
+    "id": "complement__ieee__f1_score",
+    "family": "complement",
+    "dataset": "ieee",
+    "metric": "f1_score",
+    "comparisons": [
+      {
+        "construction": "main",
+        "model": "gcn"
+      },
+      {
+        "construction": "main",
+        "model": "sage"
+      },
+      {
+        "construction": "main",
+        "model": "gat"
+      }
+    ],
+    "difference": "new minus verified original",
+    "expected_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "alternative": "two-sided",
+    "zero_method": "wilcox: discard exact zeros",
+    "ties": "average ranks of absolute differences",
+    "method": "exhaustive sign permutation; 2*lower tail of min(W+,W-), capped at 1; all zero p=1",
+    "correction": "Holm over entire planned family; incomplete comparisons use p=1 only for adjustment",
+    "incomplete": "No inferential p-value until all ten pairs present",
+    "alpha": 0.05
+  },
+  {
+    "id": "complement__ieee__recall",
+    "family": "complement",
+    "dataset": "ieee",
+    "metric": "recall",
+    "comparisons": [
+      {
+        "construction": "main",
+        "model": "gcn"
+      },
+      {
+        "construction": "main",
+        "model": "sage"
+      },
+      {
+        "construction": "main",
+        "model": "gat"
+      }
+    ],
+    "difference": "new minus verified original",
+    "expected_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "alternative": "two-sided",
+    "zero_method": "wilcox: discard exact zeros",
+    "ties": "average ranks of absolute differences",
+    "method": "exhaustive sign permutation; 2*lower tail of min(W+,W-), capped at 1; all zero p=1",
+    "correction": "Holm over entire planned family; incomplete comparisons use p=1 only for adjustment",
+    "incomplete": "No inferential p-value until all ten pairs present",
+    "alpha": 0.05
+  },
+  {
+    "id": "complement__ieee__precision",
+    "family": "complement",
+    "dataset": "ieee",
+    "metric": "precision",
+    "comparisons": [
+      {
+        "construction": "main",
+        "model": "gcn"
+      },
+      {
+        "construction": "main",
+        "model": "sage"
+      },
+      {
+        "construction": "main",
+        "model": "gat"
+      }
+    ],
+    "difference": "new minus verified original",
+    "expected_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "alternative": "two-sided",
+    "zero_method": "wilcox: discard exact zeros",
+    "ties": "average ranks of absolute differences",
+    "method": "exhaustive sign permutation; 2*lower tail of min(W+,W-), capped at 1; all zero p=1",
+    "correction": "Holm over entire planned family; incomplete comparisons use p=1 only for adjustment",
+    "incomplete": "No inferential p-value until all ten pairs present",
+    "alpha": 0.05
+  },
+  {
+    "id": "complement__ieee__roc_auc",
+    "family": "complement",
+    "dataset": "ieee",
+    "metric": "roc_auc",
+    "comparisons": [
+      {
+        "construction": "main",
+        "model": "gcn"
+      },
+      {
+        "construction": "main",
+        "model": "sage"
+      },
+      {
+        "construction": "main",
+        "model": "gat"
+      }
+    ],
+    "difference": "new minus verified original",
+    "expected_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "alternative": "two-sided",
+    "zero_method": "wilcox: discard exact zeros",
+    "ties": "average ranks of absolute differences",
+    "method": "exhaustive sign permutation; 2*lower tail of min(W+,W-), capped at 1; all zero p=1",
+    "correction": "Holm over entire planned family; incomplete comparisons use p=1 only for adjustment",
+    "incomplete": "No inferential p-value until all ten pairs present",
+    "alpha": 0.05
+  },
+  {
+    "id": "complement__ieee__false_positive",
+    "family": "complement",
+    "dataset": "ieee",
+    "metric": "false_positive",
+    "comparisons": [
+      {
+        "construction": "main",
+        "model": "gcn"
+      },
+      {
+        "construction": "main",
+        "model": "sage"
+      },
+      {
+        "construction": "main",
+        "model": "gat"
+      }
+    ],
+    "difference": "new minus verified original",
+    "expected_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "alternative": "two-sided",
+    "zero_method": "wilcox: discard exact zeros",
+    "ties": "average ranks of absolute differences",
+    "method": "exhaustive sign permutation; 2*lower tail of min(W+,W-), capped at 1; all zero p=1",
+    "correction": "Holm over entire planned family; incomplete comparisons use p=1 only for adjustment",
+    "incomplete": "No inferential p-value until all ten pairs present",
+    "alpha": 0.05
+  },
+  {
+    "id": "complement__elliptic__pr_auc",
+    "family": "complement",
+    "dataset": "elliptic",
+    "metric": "pr_auc",
+    "comparisons": [
+      {
+        "construction": "native",
+        "model": "gcn"
+      },
+      {
+        "construction": "native",
+        "model": "sage"
+      },
+      {
+        "construction": "native",
+        "model": "gat"
+      }
+    ],
+    "difference": "new minus verified original",
+    "expected_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "alternative": "two-sided",
+    "zero_method": "wilcox: discard exact zeros",
+    "ties": "average ranks of absolute differences",
+    "method": "exhaustive sign permutation; 2*lower tail of min(W+,W-), capped at 1; all zero p=1",
+    "correction": "Holm over entire planned family; incomplete comparisons use p=1 only for adjustment",
+    "incomplete": "No inferential p-value until all ten pairs present",
+    "alpha": 0.05
+  },
+  {
+    "id": "complement__elliptic__f1_score",
+    "family": "complement",
+    "dataset": "elliptic",
+    "metric": "f1_score",
+    "comparisons": [
+      {
+        "construction": "native",
+        "model": "gcn"
+      },
+      {
+        "construction": "native",
+        "model": "sage"
+      },
+      {
+        "construction": "native",
+        "model": "gat"
+      }
+    ],
+    "difference": "new minus verified original",
+    "expected_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "alternative": "two-sided",
+    "zero_method": "wilcox: discard exact zeros",
+    "ties": "average ranks of absolute differences",
+    "method": "exhaustive sign permutation; 2*lower tail of min(W+,W-), capped at 1; all zero p=1",
+    "correction": "Holm over entire planned family; incomplete comparisons use p=1 only for adjustment",
+    "incomplete": "No inferential p-value until all ten pairs present",
+    "alpha": 0.05
+  },
+  {
+    "id": "complement__elliptic__recall",
+    "family": "complement",
+    "dataset": "elliptic",
+    "metric": "recall",
+    "comparisons": [
+      {
+        "construction": "native",
+        "model": "gcn"
+      },
+      {
+        "construction": "native",
+        "model": "sage"
+      },
+      {
+        "construction": "native",
+        "model": "gat"
+      }
+    ],
+    "difference": "new minus verified original",
+    "expected_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "alternative": "two-sided",
+    "zero_method": "wilcox: discard exact zeros",
+    "ties": "average ranks of absolute differences",
+    "method": "exhaustive sign permutation; 2*lower tail of min(W+,W-), capped at 1; all zero p=1",
+    "correction": "Holm over entire planned family; incomplete comparisons use p=1 only for adjustment",
+    "incomplete": "No inferential p-value until all ten pairs present",
+    "alpha": 0.05
+  },
+  {
+    "id": "complement__elliptic__precision",
+    "family": "complement",
+    "dataset": "elliptic",
+    "metric": "precision",
+    "comparisons": [
+      {
+        "construction": "native",
+        "model": "gcn"
+      },
+      {
+        "construction": "native",
+        "model": "sage"
+      },
+      {
+        "construction": "native",
+        "model": "gat"
+      }
+    ],
+    "difference": "new minus verified original",
+    "expected_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "alternative": "two-sided",
+    "zero_method": "wilcox: discard exact zeros",
+    "ties": "average ranks of absolute differences",
+    "method": "exhaustive sign permutation; 2*lower tail of min(W+,W-), capped at 1; all zero p=1",
+    "correction": "Holm over entire planned family; incomplete comparisons use p=1 only for adjustment",
+    "incomplete": "No inferential p-value until all ten pairs present",
+    "alpha": 0.05
+  },
+  {
+    "id": "complement__elliptic__roc_auc",
+    "family": "complement",
+    "dataset": "elliptic",
+    "metric": "roc_auc",
+    "comparisons": [
+      {
+        "construction": "native",
+        "model": "gcn"
+      },
+      {
+        "construction": "native",
+        "model": "sage"
+      },
+      {
+        "construction": "native",
+        "model": "gat"
+      }
+    ],
+    "difference": "new minus verified original",
+    "expected_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "alternative": "two-sided",
+    "zero_method": "wilcox: discard exact zeros",
+    "ties": "average ranks of absolute differences",
+    "method": "exhaustive sign permutation; 2*lower tail of min(W+,W-), capped at 1; all zero p=1",
+    "correction": "Holm over entire planned family; incomplete comparisons use p=1 only for adjustment",
+    "incomplete": "No inferential p-value until all ten pairs present",
+    "alpha": 0.05
+  },
+  {
+    "id": "complement__elliptic__false_positive",
+    "family": "complement",
+    "dataset": "elliptic",
+    "metric": "false_positive",
+    "comparisons": [
+      {
+        "construction": "native",
+        "model": "gcn"
+      },
+      {
+        "construction": "native",
+        "model": "sage"
+      },
+      {
+        "construction": "native",
+        "model": "gat"
+      }
+    ],
+    "difference": "new minus verified original",
+    "expected_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "alternative": "two-sided",
+    "zero_method": "wilcox: discard exact zeros",
+    "ties": "average ranks of absolute differences",
+    "method": "exhaustive sign permutation; 2*lower tail of min(W+,W-), capped at 1; all zero p=1",
+    "correction": "Holm over entire planned family; incomplete comparisons use p=1 only for adjustment",
+    "incomplete": "No inferential p-value until all ten pairs present",
+    "alpha": 0.05
+  },
+  {
+    "id": "local__elliptic__pr_auc",
+    "family": "local",
+    "dataset": "elliptic",
+    "metric": "pr_auc",
+    "comparisons": [
+      {
+        "construction": "native",
+        "model": "mlp"
+      },
+      {
+        "construction": "native",
+        "model": "lstm"
+      },
+      {
+        "construction": "native",
+        "model": "transformer"
+      },
+      {
+        "construction": "native",
+        "model": "gcn"
+      },
+      {
+        "construction": "native",
+        "model": "sage"
+      },
+      {
+        "construction": "native",
+        "model": "gat"
+      }
+    ],
+    "difference": "new minus verified original",
+    "expected_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "alternative": "two-sided",
+    "zero_method": "wilcox: discard exact zeros",
+    "ties": "average ranks of absolute differences",
+    "method": "exhaustive sign permutation; 2*lower tail of min(W+,W-), capped at 1; all zero p=1",
+    "correction": "Holm over entire planned family; incomplete comparisons use p=1 only for adjustment",
+    "incomplete": "No inferential p-value until all ten pairs present",
+    "alpha": 0.05
+  },
+  {
+    "id": "local__elliptic__f1_score",
+    "family": "local",
+    "dataset": "elliptic",
+    "metric": "f1_score",
+    "comparisons": [
+      {
+        "construction": "native",
+        "model": "mlp"
+      },
+      {
+        "construction": "native",
+        "model": "lstm"
+      },
+      {
+        "construction": "native",
+        "model": "transformer"
+      },
+      {
+        "construction": "native",
+        "model": "gcn"
+      },
+      {
+        "construction": "native",
+        "model": "sage"
+      },
+      {
+        "construction": "native",
+        "model": "gat"
+      }
+    ],
+    "difference": "new minus verified original",
+    "expected_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "alternative": "two-sided",
+    "zero_method": "wilcox: discard exact zeros",
+    "ties": "average ranks of absolute differences",
+    "method": "exhaustive sign permutation; 2*lower tail of min(W+,W-), capped at 1; all zero p=1",
+    "correction": "Holm over entire planned family; incomplete comparisons use p=1 only for adjustment",
+    "incomplete": "No inferential p-value until all ten pairs present",
+    "alpha": 0.05
+  },
+  {
+    "id": "local__elliptic__recall",
+    "family": "local",
+    "dataset": "elliptic",
+    "metric": "recall",
+    "comparisons": [
+      {
+        "construction": "native",
+        "model": "mlp"
+      },
+      {
+        "construction": "native",
+        "model": "lstm"
+      },
+      {
+        "construction": "native",
+        "model": "transformer"
+      },
+      {
+        "construction": "native",
+        "model": "gcn"
+      },
+      {
+        "construction": "native",
+        "model": "sage"
+      },
+      {
+        "construction": "native",
+        "model": "gat"
+      }
+    ],
+    "difference": "new minus verified original",
+    "expected_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "alternative": "two-sided",
+    "zero_method": "wilcox: discard exact zeros",
+    "ties": "average ranks of absolute differences",
+    "method": "exhaustive sign permutation; 2*lower tail of min(W+,W-), capped at 1; all zero p=1",
+    "correction": "Holm over entire planned family; incomplete comparisons use p=1 only for adjustment",
+    "incomplete": "No inferential p-value until all ten pairs present",
+    "alpha": 0.05
+  },
+  {
+    "id": "local__elliptic__precision",
+    "family": "local",
+    "dataset": "elliptic",
+    "metric": "precision",
+    "comparisons": [
+      {
+        "construction": "native",
+        "model": "mlp"
+      },
+      {
+        "construction": "native",
+        "model": "lstm"
+      },
+      {
+        "construction": "native",
+        "model": "transformer"
+      },
+      {
+        "construction": "native",
+        "model": "gcn"
+      },
+      {
+        "construction": "native",
+        "model": "sage"
+      },
+      {
+        "construction": "native",
+        "model": "gat"
+      }
+    ],
+    "difference": "new minus verified original",
+    "expected_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "alternative": "two-sided",
+    "zero_method": "wilcox: discard exact zeros",
+    "ties": "average ranks of absolute differences",
+    "method": "exhaustive sign permutation; 2*lower tail of min(W+,W-), capped at 1; all zero p=1",
+    "correction": "Holm over entire planned family; incomplete comparisons use p=1 only for adjustment",
+    "incomplete": "No inferential p-value until all ten pairs present",
+    "alpha": 0.05
+  },
+  {
+    "id": "local__elliptic__roc_auc",
+    "family": "local",
+    "dataset": "elliptic",
+    "metric": "roc_auc",
+    "comparisons": [
+      {
+        "construction": "native",
+        "model": "mlp"
+      },
+      {
+        "construction": "native",
+        "model": "lstm"
+      },
+      {
+        "construction": "native",
+        "model": "transformer"
+      },
+      {
+        "construction": "native",
+        "model": "gcn"
+      },
+      {
+        "construction": "native",
+        "model": "sage"
+      },
+      {
+        "construction": "native",
+        "model": "gat"
+      }
+    ],
+    "difference": "new minus verified original",
+    "expected_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "alternative": "two-sided",
+    "zero_method": "wilcox: discard exact zeros",
+    "ties": "average ranks of absolute differences",
+    "method": "exhaustive sign permutation; 2*lower tail of min(W+,W-), capped at 1; all zero p=1",
+    "correction": "Holm over entire planned family; incomplete comparisons use p=1 only for adjustment",
+    "incomplete": "No inferential p-value until all ten pairs present",
+    "alpha": 0.05
+  },
+  {
+    "id": "local__elliptic__false_positive",
+    "family": "local",
+    "dataset": "elliptic",
+    "metric": "false_positive",
+    "comparisons": [
+      {
+        "construction": "native",
+        "model": "mlp"
+      },
+      {
+        "construction": "native",
+        "model": "lstm"
+      },
+      {
+        "construction": "native",
+        "model": "transformer"
+      },
+      {
+        "construction": "native",
+        "model": "gcn"
+      },
+      {
+        "construction": "native",
+        "model": "sage"
+      },
+      {
+        "construction": "native",
+        "model": "gat"
+      }
+    ],
+    "difference": "new minus verified original",
+    "expected_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "alternative": "two-sided",
+    "zero_method": "wilcox: discard exact zeros",
+    "ties": "average ranks of absolute differences",
+    "method": "exhaustive sign permutation; 2*lower tail of min(W+,W-), capped at 1; all zero p=1",
+    "correction": "Holm over entire planned family; incomplete comparisons use p=1 only for adjustment",
+    "incomplete": "No inferential p-value until all ten pairs present",
+    "alpha": 0.05
+  },
+  {
+    "id": "random__ieee__pr_auc",
+    "family": "random",
+    "dataset": "ieee",
+    "metric": "pr_auc",
+    "comparisons": [
+      {
+        "construction": "main",
+        "model": "gcn"
+      },
+      {
+        "construction": "main",
+        "model": "sage"
+      },
+      {
+        "construction": "main",
+        "model": "gat"
+      },
+      {
+        "construction": "card",
+        "model": "gcn"
+      },
+      {
+        "construction": "card",
+        "model": "sage"
+      },
+      {
+        "construction": "card",
+        "model": "gat"
+      },
+      {
+        "construction": "address",
+        "model": "gcn"
+      },
+      {
+        "construction": "address",
+        "model": "sage"
+      },
+      {
+        "construction": "address",
+        "model": "gat"
+      },
+      {
+        "construction": "email_domain",
+        "model": "gcn"
+      },
+      {
+        "construction": "email_domain",
+        "model": "sage"
+      },
+      {
+        "construction": "email_domain",
+        "model": "gat"
+      },
+      {
+        "construction": "identifier_time_window-24h",
+        "model": "gcn"
+      },
+      {
+        "construction": "identifier_time_window-24h",
+        "model": "sage"
+      },
+      {
+        "construction": "identifier_time_window-24h",
+        "model": "gat"
+      }
+    ],
+    "difference": "new minus verified original",
+    "expected_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "alternative": "two-sided",
+    "zero_method": "wilcox: discard exact zeros",
+    "ties": "average ranks of absolute differences",
+    "method": "exhaustive sign permutation; 2*lower tail of min(W+,W-), capped at 1; all zero p=1",
+    "correction": "Holm over entire planned family; incomplete comparisons use p=1 only for adjustment",
+    "incomplete": "No inferential p-value until all ten pairs present",
+    "alpha": 0.05
+  },
+  {
+    "id": "random__ieee__f1_score",
+    "family": "random",
+    "dataset": "ieee",
+    "metric": "f1_score",
+    "comparisons": [
+      {
+        "construction": "main",
+        "model": "gcn"
+      },
+      {
+        "construction": "main",
+        "model": "sage"
+      },
+      {
+        "construction": "main",
+        "model": "gat"
+      },
+      {
+        "construction": "card",
+        "model": "gcn"
+      },
+      {
+        "construction": "card",
+        "model": "sage"
+      },
+      {
+        "construction": "card",
+        "model": "gat"
+      },
+      {
+        "construction": "address",
+        "model": "gcn"
+      },
+      {
+        "construction": "address",
+        "model": "sage"
+      },
+      {
+        "construction": "address",
+        "model": "gat"
+      },
+      {
+        "construction": "email_domain",
+        "model": "gcn"
+      },
+      {
+        "construction": "email_domain",
+        "model": "sage"
+      },
+      {
+        "construction": "email_domain",
+        "model": "gat"
+      },
+      {
+        "construction": "identifier_time_window-24h",
+        "model": "gcn"
+      },
+      {
+        "construction": "identifier_time_window-24h",
+        "model": "sage"
+      },
+      {
+        "construction": "identifier_time_window-24h",
+        "model": "gat"
+      }
+    ],
+    "difference": "new minus verified original",
+    "expected_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "alternative": "two-sided",
+    "zero_method": "wilcox: discard exact zeros",
+    "ties": "average ranks of absolute differences",
+    "method": "exhaustive sign permutation; 2*lower tail of min(W+,W-), capped at 1; all zero p=1",
+    "correction": "Holm over entire planned family; incomplete comparisons use p=1 only for adjustment",
+    "incomplete": "No inferential p-value until all ten pairs present",
+    "alpha": 0.05
+  },
+  {
+    "id": "random__ieee__recall",
+    "family": "random",
+    "dataset": "ieee",
+    "metric": "recall",
+    "comparisons": [
+      {
+        "construction": "main",
+        "model": "gcn"
+      },
+      {
+        "construction": "main",
+        "model": "sage"
+      },
+      {
+        "construction": "main",
+        "model": "gat"
+      },
+      {
+        "construction": "card",
+        "model": "gcn"
+      },
+      {
+        "construction": "card",
+        "model": "sage"
+      },
+      {
+        "construction": "card",
+        "model": "gat"
+      },
+      {
+        "construction": "address",
+        "model": "gcn"
+      },
+      {
+        "construction": "address",
+        "model": "sage"
+      },
+      {
+        "construction": "address",
+        "model": "gat"
+      },
+      {
+        "construction": "email_domain",
+        "model": "gcn"
+      },
+      {
+        "construction": "email_domain",
+        "model": "sage"
+      },
+      {
+        "construction": "email_domain",
+        "model": "gat"
+      },
+      {
+        "construction": "identifier_time_window-24h",
+        "model": "gcn"
+      },
+      {
+        "construction": "identifier_time_window-24h",
+        "model": "sage"
+      },
+      {
+        "construction": "identifier_time_window-24h",
+        "model": "gat"
+      }
+    ],
+    "difference": "new minus verified original",
+    "expected_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "alternative": "two-sided",
+    "zero_method": "wilcox: discard exact zeros",
+    "ties": "average ranks of absolute differences",
+    "method": "exhaustive sign permutation; 2*lower tail of min(W+,W-), capped at 1; all zero p=1",
+    "correction": "Holm over entire planned family; incomplete comparisons use p=1 only for adjustment",
+    "incomplete": "No inferential p-value until all ten pairs present",
+    "alpha": 0.05
+  },
+  {
+    "id": "random__ieee__precision",
+    "family": "random",
+    "dataset": "ieee",
+    "metric": "precision",
+    "comparisons": [
+      {
+        "construction": "main",
+        "model": "gcn"
+      },
+      {
+        "construction": "main",
+        "model": "sage"
+      },
+      {
+        "construction": "main",
+        "model": "gat"
+      },
+      {
+        "construction": "card",
+        "model": "gcn"
+      },
+      {
+        "construction": "card",
+        "model": "sage"
+      },
+      {
+        "construction": "card",
+        "model": "gat"
+      },
+      {
+        "construction": "address",
+        "model": "gcn"
+      },
+      {
+        "construction": "address",
+        "model": "sage"
+      },
+      {
+        "construction": "address",
+        "model": "gat"
+      },
+      {
+        "construction": "email_domain",
+        "model": "gcn"
+      },
+      {
+        "construction": "email_domain",
+        "model": "sage"
+      },
+      {
+        "construction": "email_domain",
+        "model": "gat"
+      },
+      {
+        "construction": "identifier_time_window-24h",
+        "model": "gcn"
+      },
+      {
+        "construction": "identifier_time_window-24h",
+        "model": "sage"
+      },
+      {
+        "construction": "identifier_time_window-24h",
+        "model": "gat"
+      }
+    ],
+    "difference": "new minus verified original",
+    "expected_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "alternative": "two-sided",
+    "zero_method": "wilcox: discard exact zeros",
+    "ties": "average ranks of absolute differences",
+    "method": "exhaustive sign permutation; 2*lower tail of min(W+,W-), capped at 1; all zero p=1",
+    "correction": "Holm over entire planned family; incomplete comparisons use p=1 only for adjustment",
+    "incomplete": "No inferential p-value until all ten pairs present",
+    "alpha": 0.05
+  },
+  {
+    "id": "random__ieee__roc_auc",
+    "family": "random",
+    "dataset": "ieee",
+    "metric": "roc_auc",
+    "comparisons": [
+      {
+        "construction": "main",
+        "model": "gcn"
+      },
+      {
+        "construction": "main",
+        "model": "sage"
+      },
+      {
+        "construction": "main",
+        "model": "gat"
+      },
+      {
+        "construction": "card",
+        "model": "gcn"
+      },
+      {
+        "construction": "card",
+        "model": "sage"
+      },
+      {
+        "construction": "card",
+        "model": "gat"
+      },
+      {
+        "construction": "address",
+        "model": "gcn"
+      },
+      {
+        "construction": "address",
+        "model": "sage"
+      },
+      {
+        "construction": "address",
+        "model": "gat"
+      },
+      {
+        "construction": "email_domain",
+        "model": "gcn"
+      },
+      {
+        "construction": "email_domain",
+        "model": "sage"
+      },
+      {
+        "construction": "email_domain",
+        "model": "gat"
+      },
+      {
+        "construction": "identifier_time_window-24h",
+        "model": "gcn"
+      },
+      {
+        "construction": "identifier_time_window-24h",
+        "model": "sage"
+      },
+      {
+        "construction": "identifier_time_window-24h",
+        "model": "gat"
+      }
+    ],
+    "difference": "new minus verified original",
+    "expected_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "alternative": "two-sided",
+    "zero_method": "wilcox: discard exact zeros",
+    "ties": "average ranks of absolute differences",
+    "method": "exhaustive sign permutation; 2*lower tail of min(W+,W-), capped at 1; all zero p=1",
+    "correction": "Holm over entire planned family; incomplete comparisons use p=1 only for adjustment",
+    "incomplete": "No inferential p-value until all ten pairs present",
+    "alpha": 0.05
+  },
+  {
+    "id": "random__ieee__false_positive",
+    "family": "random",
+    "dataset": "ieee",
+    "metric": "false_positive",
+    "comparisons": [
+      {
+        "construction": "main",
+        "model": "gcn"
+      },
+      {
+        "construction": "main",
+        "model": "sage"
+      },
+      {
+        "construction": "main",
+        "model": "gat"
+      },
+      {
+        "construction": "card",
+        "model": "gcn"
+      },
+      {
+        "construction": "card",
+        "model": "sage"
+      },
+      {
+        "construction": "card",
+        "model": "gat"
+      },
+      {
+        "construction": "address",
+        "model": "gcn"
+      },
+      {
+        "construction": "address",
+        "model": "sage"
+      },
+      {
+        "construction": "address",
+        "model": "gat"
+      },
+      {
+        "construction": "email_domain",
+        "model": "gcn"
+      },
+      {
+        "construction": "email_domain",
+        "model": "sage"
+      },
+      {
+        "construction": "email_domain",
+        "model": "gat"
+      },
+      {
+        "construction": "identifier_time_window-24h",
+        "model": "gcn"
+      },
+      {
+        "construction": "identifier_time_window-24h",
+        "model": "sage"
+      },
+      {
+        "construction": "identifier_time_window-24h",
+        "model": "gat"
+      }
+    ],
+    "difference": "new minus verified original",
+    "expected_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "alternative": "two-sided",
+    "zero_method": "wilcox: discard exact zeros",
+    "ties": "average ranks of absolute differences",
+    "method": "exhaustive sign permutation; 2*lower tail of min(W+,W-), capped at 1; all zero p=1",
+    "correction": "Holm over entire planned family; incomplete comparisons use p=1 only for adjustment",
+    "incomplete": "No inferential p-value until all ten pairs present",
+    "alpha": 0.05
+  },
+  {
+    "id": "random__elliptic__pr_auc",
+    "family": "random",
+    "dataset": "elliptic",
+    "metric": "pr_auc",
+    "comparisons": [
+      {
+        "construction": "native",
+        "model": "gcn"
+      },
+      {
+        "construction": "native",
+        "model": "sage"
+      },
+      {
+        "construction": "native",
+        "model": "gat"
+      }
+    ],
+    "difference": "new minus verified original",
+    "expected_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "alternative": "two-sided",
+    "zero_method": "wilcox: discard exact zeros",
+    "ties": "average ranks of absolute differences",
+    "method": "exhaustive sign permutation; 2*lower tail of min(W+,W-), capped at 1; all zero p=1",
+    "correction": "Holm over entire planned family; incomplete comparisons use p=1 only for adjustment",
+    "incomplete": "No inferential p-value until all ten pairs present",
+    "alpha": 0.05
+  },
+  {
+    "id": "random__elliptic__f1_score",
+    "family": "random",
+    "dataset": "elliptic",
+    "metric": "f1_score",
+    "comparisons": [
+      {
+        "construction": "native",
+        "model": "gcn"
+      },
+      {
+        "construction": "native",
+        "model": "sage"
+      },
+      {
+        "construction": "native",
+        "model": "gat"
+      }
+    ],
+    "difference": "new minus verified original",
+    "expected_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "alternative": "two-sided",
+    "zero_method": "wilcox: discard exact zeros",
+    "ties": "average ranks of absolute differences",
+    "method": "exhaustive sign permutation; 2*lower tail of min(W+,W-), capped at 1; all zero p=1",
+    "correction": "Holm over entire planned family; incomplete comparisons use p=1 only for adjustment",
+    "incomplete": "No inferential p-value until all ten pairs present",
+    "alpha": 0.05
+  },
+  {
+    "id": "random__elliptic__recall",
+    "family": "random",
+    "dataset": "elliptic",
+    "metric": "recall",
+    "comparisons": [
+      {
+        "construction": "native",
+        "model": "gcn"
+      },
+      {
+        "construction": "native",
+        "model": "sage"
+      },
+      {
+        "construction": "native",
+        "model": "gat"
+      }
+    ],
+    "difference": "new minus verified original",
+    "expected_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "alternative": "two-sided",
+    "zero_method": "wilcox: discard exact zeros",
+    "ties": "average ranks of absolute differences",
+    "method": "exhaustive sign permutation; 2*lower tail of min(W+,W-), capped at 1; all zero p=1",
+    "correction": "Holm over entire planned family; incomplete comparisons use p=1 only for adjustment",
+    "incomplete": "No inferential p-value until all ten pairs present",
+    "alpha": 0.05
+  },
+  {
+    "id": "random__elliptic__precision",
+    "family": "random",
+    "dataset": "elliptic",
+    "metric": "precision",
+    "comparisons": [
+      {
+        "construction": "native",
+        "model": "gcn"
+      },
+      {
+        "construction": "native",
+        "model": "sage"
+      },
+      {
+        "construction": "native",
+        "model": "gat"
+      }
+    ],
+    "difference": "new minus verified original",
+    "expected_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "alternative": "two-sided",
+    "zero_method": "wilcox: discard exact zeros",
+    "ties": "average ranks of absolute differences",
+    "method": "exhaustive sign permutation; 2*lower tail of min(W+,W-), capped at 1; all zero p=1",
+    "correction": "Holm over entire planned family; incomplete comparisons use p=1 only for adjustment",
+    "incomplete": "No inferential p-value until all ten pairs present",
+    "alpha": 0.05
+  },
+  {
+    "id": "random__elliptic__roc_auc",
+    "family": "random",
+    "dataset": "elliptic",
+    "metric": "roc_auc",
+    "comparisons": [
+      {
+        "construction": "native",
+        "model": "gcn"
+      },
+      {
+        "construction": "native",
+        "model": "sage"
+      },
+      {
+        "construction": "native",
+        "model": "gat"
+      }
+    ],
+    "difference": "new minus verified original",
+    "expected_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "alternative": "two-sided",
+    "zero_method": "wilcox: discard exact zeros",
+    "ties": "average ranks of absolute differences",
+    "method": "exhaustive sign permutation; 2*lower tail of min(W+,W-), capped at 1; all zero p=1",
+    "correction": "Holm over entire planned family; incomplete comparisons use p=1 only for adjustment",
+    "incomplete": "No inferential p-value until all ten pairs present",
+    "alpha": 0.05
+  },
+  {
+    "id": "random__elliptic__false_positive",
+    "family": "random",
+    "dataset": "elliptic",
+    "metric": "false_positive",
+    "comparisons": [
+      {
+        "construction": "native",
+        "model": "gcn"
+      },
+      {
+        "construction": "native",
+        "model": "sage"
+      },
+      {
+        "construction": "native",
+        "model": "gat"
+      }
+    ],
+    "difference": "new minus verified original",
+    "expected_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "alternative": "two-sided",
+    "zero_method": "wilcox: discard exact zeros",
+    "ties": "average ranks of absolute differences",
+    "method": "exhaustive sign permutation; 2*lower tail of min(W+,W-), capped at 1; all zero p=1",
+    "correction": "Holm over entire planned family; incomplete comparisons use p=1 only for adjustment",
+    "incomplete": "No inferential p-value until all ten pairs present",
+    "alpha": 0.05
+  }
+]

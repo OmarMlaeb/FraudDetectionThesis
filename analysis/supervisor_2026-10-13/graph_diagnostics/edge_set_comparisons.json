@@ -1,0 +1,65 @@
+[
+  {
+    "reference": "results/ieee_cis_graph_trainfit_main_max1000.pt",
+    "candidate": "results/ieee_cis_graph.pt",
+    "only_in_saved_inference_graph": 0,
+    "only_in_candidate": 0,
+    "same_edge_set": true
+  },
+  {
+    "reference": "results/ieee_cis_graph_trainfit_main_max1000.pt",
+    "candidate": "results/ieee_cis_graph_trainfit.pt",
+    "only_in_saved_inference_graph": 0,
+    "only_in_candidate": 0,
+    "same_edge_set": true
+  },
+  {
+    "reference": "results/ieee_cis_graph_trainfit_main_max1000.pt",
+    "candidate": "results/ieee_cis_graph_trainfit_main_max1000.pt",
+    "only_in_saved_inference_graph": 0,
+    "only_in_candidate": 0,
+    "same_edge_set": true
+  },
+  {
+    "reference": "results/ieee_cis_graph_trainfit_main_max1000.pt",
+    "candidate": "diagnostic_audit_runtime_mergesort.npz",
+    "only_in_saved_inference_graph": 24,
+    "only_in_candidate": 19,
+    "same_edge_set": false
+  },
+  {
+    "reference": "results/ieee_cis_graph_trainfit_main_max1000.pt",
+    "candidate": "diagnostic_audit_runtime_quicksort.npz",
+    "only_in_saved_inference_graph": 24,
+    "only_in_candidate": 19,
+    "same_edge_set": false
+  },
+  {
+    "reference": "results/ieee_cis_graph_trainfit_main_max1000.pt",
+    "candidate": "diagnostic_experiment_packages_mergesort.npz",
+    "only_in_saved_inference_graph": 24,
+    "only_in_candidate": 19,
+    "same_edge_set": false
+  },
+  {
+    "reference": "results/ieee_cis_graph_trainfit_main_max1000.pt",
+    "candidate": "diagnostic_experiment_packages_quicksort.npz",
+    "only_in_saved_inference_graph": 0,
+    "only_in_candidate": 0,
+    "same_edge_set": true
+  },
+  {
+    "reference": "results/ieee_cis_graph_trainfit_main_max1000.pt",
+    "candidate": "diagnostic_experiment_scalar_sort_mergesort.npz",
+    "only_in_saved_inference_graph": 24,
+    "only_in_candidate": 19,
+    "same_edge_set": false
+  },
+  {
+    "reference": "results/ieee_cis_graph_trainfit_main_max1000.pt",
+    "candidate": "diagnostic_experiment_scalar_sort_quicksort.npz",
+    "only_in_saved_inference_graph": 28,
+    "only_in_candidate": 26,
+    "same_edge_set": false
+  }
+]

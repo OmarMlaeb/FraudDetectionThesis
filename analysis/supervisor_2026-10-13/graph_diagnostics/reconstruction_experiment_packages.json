@@ -1,0 +1,105 @@
+{
+  "label": "experiment_packages",
+  "python": "3.10.0 (tags/v3.10.0:b494f59, Oct  4 2021, 19:00:18) [MSC v.1929 64 bit (AMD64)]",
+  "numpy": "2.2.6",
+  "pandas": "2.3.3",
+  "by_column": [
+    {
+      "column": "card1",
+      "quicksort_edges": 292969,
+      "mergesort_edges": 292969,
+      "symmetric_difference": 32
+    },
+    {
+      "column": "card2",
+      "quicksort_edges": 93868,
+      "mergesort_edges": 93868,
+      "symmetric_difference": 8
+    },
+    {
+      "column": "card3",
+      "quicksort_edges": 7158,
+      "mergesort_edges": 7158,
+      "symmetric_difference": 0
+    },
+    {
+      "column": "card4",
+      "quicksort_edges": 0,
+      "mergesort_edges": 0,
+      "symmetric_difference": 0
+    },
+    {
+      "column": "card5",
+      "quicksort_edges": 10744,
+      "mergesort_edges": 10744,
+      "symmetric_difference": 0
+    },
+    {
+      "column": "card6",
+      "quicksort_edges": 43,
+      "mergesort_edges": 43,
+      "symmetric_difference": 0
+    },
+    {
+      "column": "addr1",
+      "quicksort_edges": 7469,
+      "mergesort_edges": 7469,
+      "symmetric_difference": 0
+    },
+    {
+      "column": "addr2",
+      "quicksort_edges": 1197,
+      "mergesort_edges": 1197,
+      "symmetric_difference": 0
+    },
+    {
+      "column": "P_emaildomain",
+      "quicksort_edges": 10352,
+      "mergesort_edges": 10352,
+      "symmetric_difference": 4
+    },
+    {
+      "column": "R_emaildomain",
+      "quicksort_edges": 9287,
+      "mergesort_edges": 9287,
+      "symmetric_difference": 0
+    },
+    {
+      "column": "DeviceInfo",
+      "quicksort_edges": 27467,
+      "mergesort_edges": 27467,
+      "symmetric_difference": 0
+    },
+    {
+      "column": "id_30",
+      "quicksort_edges": 13210,
+      "mergesort_edges": 13210,
+      "symmetric_difference": 4
+    },
+    {
+      "column": "id_31",
+      "quicksort_edges": 13985,
+      "mergesort_edges": 13985,
+      "symmetric_difference": 0
+    },
+    {
+      "column": "id_33",
+      "quicksort_edges": 6922,
+      "mergesort_edges": 6922,
+      "symmetric_difference": 0
+    }
+  ],
+  "not_an_experiment_graph": true,
+  "quicksort": {
+    "edges": 406769,
+    "transaction_edge_sha256": "113cea140702632b0e8a00f16fcd13993e9f8b6deb40f99adeb0080752df6293",
+    "artifact_sha256": "c6d7a57f5bad7dca56e0c92888eed39b9d3e2786515142c87d01b76bae426eb4",
+    "path": "graph_diagnostics\\diagnostic_experiment_packages_quicksort.npz"
+  },
+  "mergesort": {
+    "edges": 406764,
+    "transaction_edge_sha256": "40f823377837a0c9728e916195a67de81efc77ffe953ca2ddef504b969cfd01f",
+    "artifact_sha256": "7f5fa81ef5a3950836f33af6e9589d737daeffcee4b12b6c314d8a07589f1892",
+    "path": "graph_diagnostics\\diagnostic_experiment_packages_mergesort.npz"
+  }
+}

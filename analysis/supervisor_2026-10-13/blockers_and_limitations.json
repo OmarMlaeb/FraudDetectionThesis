@@ -1,0 +1,23 @@
+{
+  "required_subgroup_analysis_blocked": false,
+  "wilcoxon_holm_blocked": false,
+  "missing_selected_artifacts": [],
+  "checkpoint_mismatches": [],
+  "limitations": [
+    {
+      "issue": "No isolated labeled Elliptic test targets",
+      "impact": "N=0 for isolated groups; AP/F1/recall/rates undefined. No subgroup performance contrast is estimable.",
+      "requires_retraining": false
+    },
+    {
+      "issue": "Original 406767-edge reconstruction artifact absent",
+      "impact": "Its count and class counts are reproduced diagnostically via sorting dispatch; exact historical edge-set identity cannot be proven. Saved 406769 inference graph and every selected checkpoint reproduce.",
+      "requires_retraining": false
+    },
+    {
+      "issue": "Floating-point ranking differences",
+      "impact": "Largest absolute AP difference 1.77607274794e-05, ROC-AUC difference 1.58996246391e-07; all confusion counts, validation F1 and threshold checks pass. Full deltas recorded.",
+      "requires_retraining": false
+    }
+  ]
+}

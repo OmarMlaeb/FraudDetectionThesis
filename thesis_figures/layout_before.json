@@ -1,0 +1,814 @@
+{
+  "plotted_summary.csv": [
+    {
+      "dataset": "Elliptic",
+      "architecture": "GAT",
+      "construction": "native",
+      "pr_auc_mean": 0.3420500109819711,
+      "pr_auc_std": 0.0422230283174482,
+      "pr_auc_count": 10,
+      "f1_score_mean": 0.3708619551105369,
+      "f1_score_std": 0.0315262016859614,
+      "f1_score_count": 10,
+      "recall_mean": 0.3874999999999999,
+      "recall_std": 0.0333359363971434,
+      "recall_count": 10
+    },
+    {
+      "dataset": "Elliptic",
+      "architecture": "GCN",
+      "construction": "native",
+      "pr_auc_mean": 0.2232600405517323,
+      "pr_auc_std": 0.0508528481444362,
+      "pr_auc_count": 10,
+      "f1_score_mean": 0.2472091133819124,
+      "f1_score_std": 0.0307450713098564,
+      "f1_score_count": 10,
+      "recall_mean": 0.4625,
+      "recall_std": 0.0712149354103688,
+      "recall_count": 10
+    },
+    {
+      "dataset": "Elliptic",
+      "architecture": "GraphSAGE",
+      "construction": "native",
+      "pr_auc_mean": 0.4088931443934392,
+      "pr_auc_std": 0.0306895700605879,
+      "pr_auc_count": 10,
+      "f1_score_mean": 0.4115446947683914,
+      "f1_score_std": 0.0400611459096533,
+      "f1_score_count": 10,
+      "recall_mean": 0.4183823529411764,
+      "recall_std": 0.0397070590750617,
+      "recall_count": 10
+    },
+    {
+      "dataset": "Elliptic",
+      "architecture": "LSTM",
+      "construction": "native",
+      "pr_auc_mean": 0.4880112201589757,
+      "pr_auc_std": 0.0167893775868675,
+      "pr_auc_count": 10,
+      "f1_score_mean": 0.510178200449627,
+      "f1_score_std": 0.0138581966860659,
+      "f1_score_count": 10,
+      "recall_mean": 0.4151960784313725,
+      "recall_std": 0.0133347750085641,
+      "recall_count": 10
+    },
+    {
+      "dataset": "Elliptic",
+      "architecture": "MLP",
+      "construction": "native",
+      "pr_auc_mean": 0.3900576448551059,
+      "pr_auc_std": 0.0486610051206746,
+      "pr_auc_count": 10,
+      "f1_score_mean": 0.3826994131247142,
+      "f1_score_std": 0.0533713924204791,
+      "f1_score_count": 10,
+      "recall_mean": 0.4556372549019607,
+      "recall_std": 0.0279323362539463,
+      "recall_count": 10
+    },
+    {
+      "dataset": "Elliptic",
+      "architecture": "Transformer",
+      "construction": "native",
+      "pr_auc_mean": 0.5124600541829989,
+      "pr_auc_std": 0.0208483038806937,
+      "pr_auc_count": 10,
+      "f1_score_mean": 0.5619567082746016,
+      "f1_score_std": 0.0193121884217984,
+      "f1_score_count": 10,
+      "recall_mean": 0.430392156862745,
+      "recall_std": 0.0245424619026386,
+      "recall_count": 10
+    },
+    {
+      "dataset": "IEEE-CIS",
+      "architecture": "GAT",
+      "construction": "address",
+      "pr_auc_mean": 0.2031836513659613,
+      "pr_auc_std": 0.0837476138132472,
+      "pr_auc_count": 10,
+      "f1_score_mean": 0.272707684928966,
+      "f1_score_std": 0.0513854858491886,
+      "f1_score_count": 10,
+      "recall_mean": 0.3046091278807049,
+      "recall_std": 0.0634996703361336,
+      "recall_count": 10
+    },
+    {
+      "dataset": "IEEE-CIS",
+      "architecture": "GAT",
+      "construction": "card",
+      "pr_auc_mean": 0.2176449356945381,
+      "pr_auc_std": 0.0992653197374792,
+      "pr_auc_count": 10,
+      "f1_score_mean": 0.2744922915853248,
+      "f1_score_std": 0.0688367906219789,
+      "f1_score_count": 10,
+      "recall_mean": 0.3096249435155896,
+      "recall_std": 0.0984216684202263,
+      "recall_count": 10
+    },
+    {
+      "dataset": "IEEE-CIS",
+      "architecture": "GAT",
+      "construction": "email_domain",
+      "pr_auc_mean": 0.1711490735426598,
+      "pr_auc_std": 0.0551689081979808,
+      "pr_auc_count": 10,
+      "f1_score_mean": 0.2577594159030648,
+      "f1_score_std": 0.0401356639921576,
+      "f1_score_count": 10,
+      "recall_mean": 0.3250790781744238,
+      "recall_std": 0.0857013635382076,
+      "recall_count": 10
+    },
+    {
+      "dataset": "IEEE-CIS",
+      "architecture": "GAT",
+      "construction": "identifier_time_window-24h",
+      "pr_auc_mean": 0.2342316977121632,
+      "pr_auc_std": 0.0926282552740657,
+      "pr_auc_count": 10,
+      "f1_score_mean": 0.2941960961427753,
+      "f1_score_std": 0.0634522166975065,
+      "f1_score_count": 10,
+      "recall_mean": 0.3295978309986443,
+      "recall_std": 0.0840607329188219,
+      "recall_count": 10
+    },
+    {
+      "dataset": "IEEE-CIS",
+      "architecture": "GAT",
+      "construction": "main",
+      "pr_auc_mean": 0.247969206311674,
+      "pr_auc_std": 0.1001581353129499,
+      "pr_auc_count": 10,
+      "f1_score_mean": 0.2963929771076235,
+      "f1_score_std": 0.063966420573546,
+      "f1_score_count": 10,
+      "recall_mean": 0.3305919566199728,
+      "recall_std": 0.0756522538877455,
+      "recall_count": 10
+    },
+    {
+      "dataset": "IEEE-CIS",
+      "architecture": "GCN",
+      "construction": "address",
+      "pr_auc_mean": 0.2777019182940131,
+      "pr_auc_std": 0.1040926221182061,
+      "pr_auc_count": 10,
+      "f1_score_mean": 0.332847798984539,
+      "f1_score_std": 0.0564043807926495,
+      "f1_score_count": 10,
+      "recall_mean": 0.4033438770899232,
+      "recall_std": 0.0393954167543379,
+      "recall_count": 10
+    },
+    {
+      "dataset": "IEEE-CIS",
+      "architecture": "GCN",
+      "construction": "card",
+      "pr_auc_mean": 0.274623860761751,
+      "pr_auc_std": 0.1083275827686532,
+      "pr_auc_count": 10,
+      "f1_score_mean": 0.3360165663621151,
+      "f1_score_std": 0.0717936458047473,
+      "f1_score_count": 10,
+      "recall_mean": 0.3640759150474469,
+      "recall_std": 0.0243491882350324,
+      "recall_count": 10
+    },
+    {
+      "dataset": "IEEE-CIS",
+      "architecture": "GCN",
+      "construction": "email_domain",
+      "pr_auc_mean": 0.2624464625471,
+      "pr_auc_std": 0.1041520705713966,
+      "pr_auc_count": 10,
+      "f1_score_mean": 0.3243180665063344,
+      "f1_score_std": 0.057930491015082,
+      "f1_score_count": 10,
+      "recall_mean": 0.3996836873023045,
+      "recall_std": 0.0385707605270714,
+      "recall_count": 10
+    },
+    {
+      "dataset": "IEEE-CIS",
+      "architecture": "GCN",
+      "construction": "identifier_time_window-24h",
+      "pr_auc_mean": 0.325611969942026,
+      "pr_auc_std": 0.1060660089800478,
+      "pr_auc_count": 10,
+      "f1_score_mean": 0.3573487163332119,
+      "f1_score_std": 0.0633868981747387,
+      "f1_score_count": 10,
+      "recall_mean": 0.3883868052417532,
+      "recall_std": 0.0417876742180098,
+      "recall_count": 10
+    },
+    {
+      "dataset": "IEEE-CIS",
+      "architecture": "GCN",
+      "construction": "main",
+      "pr_auc_mean": 0.2938947783427996,
+      "pr_auc_std": 0.0899282178415978,
+      "pr_auc_count": 10,
+      "f1_score_mean": 0.3470181738571276,
+      "f1_score_std": 0.0569265503817606,
+      "f1_score_count": 10,
+      "recall_mean": 0.3645277903298689,
+      "recall_std": 0.0289929244330762,
+      "recall_count": 10
+    },
+    {
+      "dataset": "IEEE-CIS",
+      "architecture": "GraphSAGE",
+      "construction": "address",
+      "pr_auc_mean": 0.3665065945390656,
+      "pr_auc_std": 0.0571764099382339,
+      "pr_auc_count": 10,
+      "f1_score_mean": 0.391662109695839,
+      "f1_score_std": 0.0146277226559239,
+      "f1_score_count": 10,
+      "recall_mean": 0.4175327609579756,
+      "recall_std": 0.0371008900811458,
+      "recall_count": 10
+    },
+    {
+      "dataset": "IEEE-CIS",
+      "architecture": "GraphSAGE",
+      "construction": "card",
+      "pr_auc_mean": 0.3174243255867049,
+      "pr_auc_std": 0.0547339369145971,
+      "pr_auc_count": 10,
+      "f1_score_mean": 0.3705649152018563,
+      "f1_score_std": 0.0229136314838385,
+      "f1_score_count": 10,
+      "recall_mean": 0.3950745594215996,
+      "recall_std": 0.0101937695551103,
+      "recall_count": 10
+    },
+    {
+      "dataset": "IEEE-CIS",
+      "architecture": "GraphSAGE",
+      "construction": "email_domain",
+      "pr_auc_mean": 0.3911952016550474,
+      "pr_auc_std": 0.0141923065044526,
+      "pr_auc_count": 10,
+      "f1_score_mean": 0.4024695258540331,
+      "f1_score_std": 0.0099566860691698,
+      "f1_score_count": 10,
+      "recall_mean": 0.4098508811568007,
+      "recall_std": 0.0325371122823297,
+      "recall_count": 10
+    },
+    {
+      "dataset": "IEEE-CIS",
+      "architecture": "GraphSAGE",
+      "construction": "identifier_time_window-24h",
+      "pr_auc_mean": 0.3284371080160586,
+      "pr_auc_std": 0.0490858247330429,
+      "pr_auc_count": 10,
+      "f1_score_mean": 0.3899944695121121,
+      "f1_score_std": 0.0124938138015101,
+      "f1_score_count": 10,
+      "recall_mean": 0.3814731134206958,
+      "recall_std": 0.0253898691384785,
+      "recall_count": 10
+    },
+    {
+      "dataset": "IEEE-CIS",
+      "architecture": "GraphSAGE",
+      "construction": "main",
+      "pr_auc_mean": 0.3431741472393073,
+      "pr_auc_std": 0.053410344633748,
+      "pr_auc_count": 10,
+      "f1_score_mean": 0.3788134066986656,
+      "f1_score_std": 0.0190126803502015,
+      "f1_score_count": 10,
+      "recall_mean": 0.3972435607772254,
+      "recall_std": 0.0171705340166444,
+      "recall_count": 10
+    },
+    {
+      "dataset": "IEEE-CIS",
+      "architecture": "LSTM",
+      "construction": "none",
+      "pr_auc_mean": 0.4150954593696519,
+      "pr_auc_std": 0.0088148271972613,
+      "pr_auc_count": 10,
+      "f1_score_mean": 0.4309849836911643,
+      "f1_score_std": 0.0094656731827045,
+      "f1_score_count": 10,
+      "recall_mean": 0.4005874378671487,
+      "recall_std": 0.0180036372596658,
+      "recall_count": 10
+    },
+    {
+      "dataset": "IEEE-CIS",
+      "architecture": "MLP",
+      "construction": "none",
+      "pr_auc_mean": 0.4248846279291471,
+      "pr_auc_std": 0.0420183771404429,
+      "pr_auc_count": 10,
+      "f1_score_mean": 0.4406854152334905,
+      "f1_score_std": 0.0183366510627206,
+      "f1_score_count": 10,
+      "recall_mean": 0.370944419340262,
+      "recall_std": 0.0263033423855661,
+      "recall_count": 10
+    },
+    {
+      "dataset": "IEEE-CIS",
+      "architecture": "Transformer",
+      "construction": "none",
+      "pr_auc_mean": 0.4103675313300704,
+      "pr_auc_std": 0.0151675525962154,
+      "pr_auc_count": 10,
+      "f1_score_mean": 0.4432672372162344,
+      "f1_score_std": 0.0088198461895298,
+      "f1_score_count": 10,
+      "recall_mean": 0.4075915047446904,
+      "recall_std": 0.0248015092185603,
+      "recall_count": 10
+    }
+  ],
+  "connected_isolated_summary.csv": [
+    {
+      "construction": "address",
+      "group": "connected",
+      "architecture": "GAT",
+      "mean": 0.5749885696636742,
+      "std": 0.0791895482522067,
+      "count": 10
+    },
+    {
+      "construction": "address",
+      "group": "connected",
+      "architecture": "GCN",
+      "mean": 0.6115883756804923,
+      "std": 0.1268062191660402,
+      "count": 10
+    },
+    {
+      "construction": "address",
+      "group": "connected",
+      "architecture": "GraphSAGE",
+      "mean": 0.3810283808803848,
+      "std": 0.0328942406402272,
+      "count": 10
+    },
+    {
+      "construction": "address",
+      "group": "connected",
+      "architecture": "MLP",
+      "mean": 0.6802589996698013,
+      "std": 0.0335844214774206,
+      "count": 10
+    },
+    {
+      "construction": "address",
+      "group": "isolated",
+      "architecture": "GAT",
+      "mean": 0.2005941135498633,
+      "std": 0.0829621628378428,
+      "count": 10
+    },
+    {
+      "construction": "address",
+      "group": "isolated",
+      "architecture": "GCN",
+      "mean": 0.2749569145780713,
+      "std": 0.1033095320942837,
+      "count": 10
+    },
+    {
+      "construction": "address",
+      "group": "isolated",
+      "architecture": "GraphSAGE",
+      "mean": 0.3668725716135592,
+      "std": 0.0576192816536069,
+      "count": 10
+    },
+    {
+      "construction": "address",
+      "group": "isolated",
+      "architecture": "MLP",
+      "mean": 0.4201541186667206,
+      "std": 0.0430691020039989,
+      "count": 10
+    },
+    {
+      "construction": "card",
+      "group": "connected",
+      "architecture": "GAT",
+      "mean": 0.3330430121632021,
+      "std": 0.0832719806736487,
+      "count": 10
+    },
+    {
+      "construction": "card",
+      "group": "connected",
+      "architecture": "GCN",
+      "mean": 0.3204226200953706,
+      "std": 0.0480459454451556,
+      "count": 10
+    },
+    {
+      "construction": "card",
+      "group": "connected",
+      "architecture": "GraphSAGE",
+      "mean": 0.4271227478620966,
+      "std": 0.0053169632730477,
+      "count": 10
+    },
+    {
+      "construction": "card",
+      "group": "connected",
+      "architecture": "MLP",
+      "mean": 0.4922698261373154,
+      "std": 0.0099020967779117,
+      "count": 10
+    },
+    {
+      "construction": "card",
+      "group": "isolated",
+      "architecture": "GAT",
+      "mean": 0.1690974009783034,
+      "std": 0.088153616397656,
+      "count": 10
+    },
+    {
+      "construction": "card",
+      "group": "isolated",
+      "architecture": "GCN",
+      "mean": 0.2693581215490013,
+      "std": 0.1266041048373069,
+      "count": 10
+    },
+    {
+      "construction": "card",
+      "group": "isolated",
+      "architecture": "GraphSAGE",
+      "mean": 0.2439938035464415,
+      "std": 0.0559734974060787,
+      "count": 10
+    },
+    {
+      "construction": "card",
+      "group": "isolated",
+      "architecture": "MLP",
+      "mean": 0.3620333313124307,
+      "std": 0.0608346919435463,
+      "count": 10
+    },
+    {
+      "construction": "email_domain",
+      "group": "connected",
+      "architecture": "GAT",
+      "mean": 0.233348102238946,
+      "std": 0.0583461270353454,
+      "count": 10
+    },
+    {
+      "construction": "email_domain",
+      "group": "connected",
+      "architecture": "GCN",
+      "mean": 0.1397383184309804,
+      "std": 0.0395480954644585,
+      "count": 10
+    },
+    {
+      "construction": "email_domain",
+      "group": "connected",
+      "architecture": "GraphSAGE",
+      "mean": 0.2652331270928714,
+      "std": 0.0225560903475145,
+      "count": 10
+    },
+    {
+      "construction": "email_domain",
+      "group": "connected",
+      "architecture": "MLP",
+      "mean": 0.2673716737646495,
+      "std": 0.0470698670578441,
+      "count": 10
+    },
+    {
+      "construction": "email_domain",
+      "group": "isolated",
+      "architecture": "GAT",
+      "mean": 0.171328069883566,
+      "std": 0.0559377052912202,
+      "count": 10
+    },
+    {
+      "construction": "email_domain",
+      "group": "isolated",
+      "architecture": "GCN",
+      "mean": 0.2664816524838343,
+      "std": 0.1065160670002102,
+      "count": 10
+    },
+    {
+      "construction": "email_domain",
+      "group": "isolated",
+      "architecture": "GraphSAGE",
+      "mean": 0.3958823658043349,
+      "std": 0.0148363420796687,
+      "count": 10
+    },
+    {
+      "construction": "email_domain",
+      "group": "isolated",
+      "architecture": "MLP",
+      "mean": 0.4296757002870374,
+      "std": 0.043364149966849,
+      "count": 10
+    },
+    {
+      "construction": "identifier_time_window-24h",
+      "group": "connected",
+      "architecture": "GAT",
+      "mean": 0.2933291806336887,
+      "std": 0.0883813783709419,
+      "count": 10
+    },
+    {
+      "construction": "identifier_time_window-24h",
+      "group": "connected",
+      "architecture": "GCN",
+      "mean": 0.4696060789029756,
+      "std": 0.138203801989994,
+      "count": 10
+    },
+    {
+      "construction": "identifier_time_window-24h",
+      "group": "connected",
+      "architecture": "GraphSAGE",
+      "mean": 0.4271446021551328,
+      "std": 0.1107355072965109,
+      "count": 10
+    },
+    {
+      "construction": "identifier_time_window-24h",
+      "group": "connected",
+      "architecture": "MLP",
+      "mean": 0.6228100103589701,
+      "std": 0.0342364795995005,
+      "count": 10
+    },
+    {
+      "construction": "identifier_time_window-24h",
+      "group": "isolated",
+      "architecture": "GAT",
+      "mean": 0.2271881553101233,
+      "std": 0.1002258096862616,
+      "count": 10
+    },
+    {
+      "construction": "identifier_time_window-24h",
+      "group": "isolated",
+      "architecture": "GCN",
+      "mean": 0.2638809936498257,
+      "std": 0.0912710320385545,
+      "count": 10
+    },
+    {
+      "construction": "identifier_time_window-24h",
+      "group": "isolated",
+      "architecture": "GraphSAGE",
+      "mean": 0.3011649343001893,
+      "std": 0.0098657031187005,
+      "count": 10
+    },
+    {
+      "construction": "identifier_time_window-24h",
+      "group": "isolated",
+      "architecture": "MLP",
+      "mean": 0.3436398784462482,
+      "std": 0.0391604507598496,
+      "count": 10
+    },
+    {
+      "construction": "main",
+      "group": "connected",
+      "architecture": "GAT",
+      "mean": 0.3131270507449543,
+      "std": 0.0889143034102746,
+      "count": 10
+    },
+    {
+      "construction": "main",
+      "group": "connected",
+      "architecture": "GCN",
+      "mean": 0.3564579307713511,
+      "std": 0.0786093535943898,
+      "count": 10
+    },
+    {
+      "construction": "main",
+      "group": "connected",
+      "architecture": "GraphSAGE",
+      "mean": 0.4546942263780795,
+      "std": 0.0077762792785372,
+      "count": 10
+    },
+    {
+      "construction": "main",
+      "group": "connected",
+      "architecture": "MLP",
+      "mean": 0.5071354834164508,
+      "std": 0.0154709335256377,
+      "count": 10
+    },
+    {
+      "construction": "main",
+      "group": "isolated",
+      "architecture": "GAT",
+      "mean": 0.1587461744482586,
+      "std": 0.080893914724419,
+      "count": 10
+    },
+    {
+      "construction": "main",
+      "group": "isolated",
+      "architecture": "GCN",
+      "mean": 0.2022271302957092,
+      "std": 0.0767169151451296,
+      "count": 10
+    },
+    {
+      "construction": "main",
+      "group": "isolated",
+      "architecture": "GraphSAGE",
+      "mean": 0.1744706437966531,
+      "std": 0.0422541021762868,
+      "count": 10
+    },
+    {
+      "construction": "main",
+      "group": "isolated",
+      "architecture": "MLP",
+      "mean": 0.2664917523069831,
+      "std": 0.0548376196443226,
+      "count": 10
+    }
+  ],
+  "elliptic_controls_summary.csv": [
+    {
+      "arm": "local",
+      "architecture": "GAT",
+      "pr_auc_mean": 0.3668854425221687,
+      "pr_auc_std": 0.0855300142554319,
+      "pr_auc_count": 10,
+      "f1_score_mean": 0.3562394296948014,
+      "f1_score_std": 0.0782003013391433,
+      "f1_score_count": 10
+    },
+    {
+      "arm": "local",
+      "architecture": "GCN",
+      "pr_auc_mean": 0.1569211896988717,
+      "pr_auc_std": 0.0215103775943463,
+      "pr_auc_count": 10,
+      "f1_score_mean": 0.2493925997095649,
+      "f1_score_std": 0.0258131884536975,
+      "f1_score_count": 10
+    },
+    {
+      "arm": "local",
+      "architecture": "GraphSAGE",
+      "pr_auc_mean": 0.4154995196771628,
+      "pr_auc_std": 0.0742133605009668,
+      "pr_auc_count": 10,
+      "f1_score_mean": 0.3841924360181764,
+      "f1_score_std": 0.0905453690443783,
+      "f1_score_count": 10
+    },
+    {
+      "arm": "local",
+      "architecture": "LSTM",
+      "pr_auc_mean": 0.4415015174858278,
+      "pr_auc_std": 0.0170912016484345,
+      "pr_auc_count": 10,
+      "f1_score_mean": 0.4864528060692871,
+      "f1_score_std": 0.0172665476440656,
+      "f1_score_count": 10
+    },
+    {
+      "arm": "local",
+      "architecture": "MLP",
+      "pr_auc_mean": 0.4602358187367376,
+      "pr_auc_std": 0.0143404333607377,
+      "pr_auc_count": 10,
+      "f1_score_mean": 0.5654503776310459,
+      "f1_score_std": 0.0211275561573391,
+      "f1_score_count": 10
+    },
+    {
+      "arm": "local",
+      "architecture": "Transformer",
+      "pr_auc_mean": 0.5235622218881705,
+      "pr_auc_std": 0.0088626154146077,
+      "pr_auc_count": 10,
+      "f1_score_mean": 0.5923506781550952,
+      "f1_score_std": 0.0107869363672598,
+      "f1_score_count": 10
+    },
+    {
+      "arm": "original",
+      "architecture": "GAT",
+      "pr_auc_mean": 0.3420500109819711,
+      "pr_auc_std": 0.0422230283174482,
+      "pr_auc_count": 10,
+      "f1_score_mean": 0.3708619551105369,
+      "f1_score_std": 0.0315262016859614,
+      "f1_score_count": 10
+    },
+    {
+      "arm": "original",
+      "architecture": "GCN",
+      "pr_auc_mean": 0.2232600405517323,
+      "pr_auc_std": 0.0508528481444362,
+      "pr_auc_count": 10,
+      "f1_score_mean": 0.2472091133819124,
+      "f1_score_std": 0.0307450713098564,
+      "f1_score_count": 10
+    },
+    {
+      "arm": "original",
+      "architecture": "GraphSAGE",
+      "pr_auc_mean": 0.4088931443934392,
+      "pr_auc_std": 0.0306895700605879,
+      "pr_auc_count": 10,
+      "f1_score_mean": 0.4115446947683914,
+      "f1_score_std": 0.0400611459096533,
+      "f1_score_count": 10
+    },
+    {
+      "arm": "original",
+      "architecture": "LSTM",
+      "pr_auc_mean": 0.4880112201589757,
+      "pr_auc_std": 0.0167893775868675,
+      "pr_auc_count": 10,
+      "f1_score_mean": 0.510178200449627,
+      "f1_score_std": 0.0138581966860659,
+      "f1_score_count": 10
+    },
+    {
+      "arm": "original",
+      "architecture": "MLP",
+      "pr_auc_mean": 0.3900576448551059,
+      "pr_auc_std": 0.0486610051206746,
+      "pr_auc_count": 10,
+      "f1_score_mean": 0.3826994131247142,
+      "f1_score_std": 0.0533713924204791,
+      "f1_score_count": 10
+    },
+    {
+      "arm": "original",
+      "architecture": "Transformer",
+      "pr_auc_mean": 0.5124600541829989,
+      "pr_auc_std": 0.0208483038806937,
+      "pr_auc_count": 10,
+      "f1_score_mean": 0.5619567082746016,
+      "f1_score_std": 0.0193121884217984,
+      "f1_score_count": 10
+    },
+    {
+      "arm": "random",
+      "architecture": "GAT",
+      "pr_auc_mean": 0.1979490490697348,
+      "pr_auc_std": 0.0309599542227404,
+      "pr_auc_count": 10,
+      "f1_score_mean": 0.2819736433881458,
+      "f1_score_std": 0.0437100795741482,
+      "f1_score_count": 10
+    },
+    {
+      "arm": "random",
+      "architecture": "GCN",
+      "pr_auc_mean": 0.0858608500649711,
+      "pr_auc_std": 0.0094104464028095,
+      "pr_auc_count": 10,
+      "f1_score_mean": 0.1492551456497401,
+      "f1_score_std": 0.0115775820089347,
+      "f1_score_count": 10
+    },
+    {
+      "arm": "random",
+      "architecture": "GraphSAGE",
+      "pr_auc_mean": 0.1693544896306745,
+      "pr_auc_std": 0.0125010102472421,
+      "pr_auc_count": 10,
+      "f1_score_mean": 0.2901707076828294,
+      "f1_score_std": 0.0164288480816351,
+      "f1_score_count": 10
+    }
+  ]
+}

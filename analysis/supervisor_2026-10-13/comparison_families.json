@@ -1,0 +1,2378 @@
+[
+  {
+    "family_id": "IEEE-CIS__core__pr_auc",
+    "dataset": "IEEE-CIS",
+    "metric": "pr_auc",
+    "planned_hypotheses": 15,
+    "comparisons": [
+      [
+        "MLP",
+        "LSTM"
+      ],
+      [
+        "MLP",
+        "Transformer"
+      ],
+      [
+        "MLP",
+        "GCN-main"
+      ],
+      [
+        "MLP",
+        "GraphSAGE-main"
+      ],
+      [
+        "MLP",
+        "GAT-main"
+      ],
+      [
+        "LSTM",
+        "Transformer"
+      ],
+      [
+        "LSTM",
+        "GCN-main"
+      ],
+      [
+        "LSTM",
+        "GraphSAGE-main"
+      ],
+      [
+        "LSTM",
+        "GAT-main"
+      ],
+      [
+        "Transformer",
+        "GCN-main"
+      ],
+      [
+        "Transformer",
+        "GraphSAGE-main"
+      ],
+      [
+        "Transformer",
+        "GAT-main"
+      ],
+      [
+        "GCN-main",
+        "GraphSAGE-main"
+      ],
+      [
+        "GCN-main",
+        "GAT-main"
+      ],
+      [
+        "GraphSAGE-main",
+        "GAT-main"
+      ]
+    ],
+    "alpha": 0.05,
+    "adjustment": "Holm step-down",
+    "alternative": "two-sided",
+    "zero_method": "wilcox",
+    "p_value_method": "exhaustive sign permutation of average absolute ranks",
+    "effect": "median(A-B)",
+    "higher_is_better": true,
+    "required_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ]
+  },
+  {
+    "family_id": "IEEE-CIS__core__f1_score",
+    "dataset": "IEEE-CIS",
+    "metric": "f1_score",
+    "planned_hypotheses": 15,
+    "comparisons": [
+      [
+        "MLP",
+        "LSTM"
+      ],
+      [
+        "MLP",
+        "Transformer"
+      ],
+      [
+        "MLP",
+        "GCN-main"
+      ],
+      [
+        "MLP",
+        "GraphSAGE-main"
+      ],
+      [
+        "MLP",
+        "GAT-main"
+      ],
+      [
+        "LSTM",
+        "Transformer"
+      ],
+      [
+        "LSTM",
+        "GCN-main"
+      ],
+      [
+        "LSTM",
+        "GraphSAGE-main"
+      ],
+      [
+        "LSTM",
+        "GAT-main"
+      ],
+      [
+        "Transformer",
+        "GCN-main"
+      ],
+      [
+        "Transformer",
+        "GraphSAGE-main"
+      ],
+      [
+        "Transformer",
+        "GAT-main"
+      ],
+      [
+        "GCN-main",
+        "GraphSAGE-main"
+      ],
+      [
+        "GCN-main",
+        "GAT-main"
+      ],
+      [
+        "GraphSAGE-main",
+        "GAT-main"
+      ]
+    ],
+    "alpha": 0.05,
+    "adjustment": "Holm step-down",
+    "alternative": "two-sided",
+    "zero_method": "wilcox",
+    "p_value_method": "exhaustive sign permutation of average absolute ranks",
+    "effect": "median(A-B)",
+    "higher_is_better": true,
+    "required_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ]
+  },
+  {
+    "family_id": "IEEE-CIS__core__recall",
+    "dataset": "IEEE-CIS",
+    "metric": "recall",
+    "planned_hypotheses": 15,
+    "comparisons": [
+      [
+        "MLP",
+        "LSTM"
+      ],
+      [
+        "MLP",
+        "Transformer"
+      ],
+      [
+        "MLP",
+        "GCN-main"
+      ],
+      [
+        "MLP",
+        "GraphSAGE-main"
+      ],
+      [
+        "MLP",
+        "GAT-main"
+      ],
+      [
+        "LSTM",
+        "Transformer"
+      ],
+      [
+        "LSTM",
+        "GCN-main"
+      ],
+      [
+        "LSTM",
+        "GraphSAGE-main"
+      ],
+      [
+        "LSTM",
+        "GAT-main"
+      ],
+      [
+        "Transformer",
+        "GCN-main"
+      ],
+      [
+        "Transformer",
+        "GraphSAGE-main"
+      ],
+      [
+        "Transformer",
+        "GAT-main"
+      ],
+      [
+        "GCN-main",
+        "GraphSAGE-main"
+      ],
+      [
+        "GCN-main",
+        "GAT-main"
+      ],
+      [
+        "GraphSAGE-main",
+        "GAT-main"
+      ]
+    ],
+    "alpha": 0.05,
+    "adjustment": "Holm step-down",
+    "alternative": "two-sided",
+    "zero_method": "wilcox",
+    "p_value_method": "exhaustive sign permutation of average absolute ranks",
+    "effect": "median(A-B)",
+    "higher_is_better": true,
+    "required_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ]
+  },
+  {
+    "family_id": "IEEE-CIS__core__precision",
+    "dataset": "IEEE-CIS",
+    "metric": "precision",
+    "planned_hypotheses": 15,
+    "comparisons": [
+      [
+        "MLP",
+        "LSTM"
+      ],
+      [
+        "MLP",
+        "Transformer"
+      ],
+      [
+        "MLP",
+        "GCN-main"
+      ],
+      [
+        "MLP",
+        "GraphSAGE-main"
+      ],
+      [
+        "MLP",
+        "GAT-main"
+      ],
+      [
+        "LSTM",
+        "Transformer"
+      ],
+      [
+        "LSTM",
+        "GCN-main"
+      ],
+      [
+        "LSTM",
+        "GraphSAGE-main"
+      ],
+      [
+        "LSTM",
+        "GAT-main"
+      ],
+      [
+        "Transformer",
+        "GCN-main"
+      ],
+      [
+        "Transformer",
+        "GraphSAGE-main"
+      ],
+      [
+        "Transformer",
+        "GAT-main"
+      ],
+      [
+        "GCN-main",
+        "GraphSAGE-main"
+      ],
+      [
+        "GCN-main",
+        "GAT-main"
+      ],
+      [
+        "GraphSAGE-main",
+        "GAT-main"
+      ]
+    ],
+    "alpha": 0.05,
+    "adjustment": "Holm step-down",
+    "alternative": "two-sided",
+    "zero_method": "wilcox",
+    "p_value_method": "exhaustive sign permutation of average absolute ranks",
+    "effect": "median(A-B)",
+    "higher_is_better": true,
+    "required_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ]
+  },
+  {
+    "family_id": "IEEE-CIS__core__roc_auc",
+    "dataset": "IEEE-CIS",
+    "metric": "roc_auc",
+    "planned_hypotheses": 15,
+    "comparisons": [
+      [
+        "MLP",
+        "LSTM"
+      ],
+      [
+        "MLP",
+        "Transformer"
+      ],
+      [
+        "MLP",
+        "GCN-main"
+      ],
+      [
+        "MLP",
+        "GraphSAGE-main"
+      ],
+      [
+        "MLP",
+        "GAT-main"
+      ],
+      [
+        "LSTM",
+        "Transformer"
+      ],
+      [
+        "LSTM",
+        "GCN-main"
+      ],
+      [
+        "LSTM",
+        "GraphSAGE-main"
+      ],
+      [
+        "LSTM",
+        "GAT-main"
+      ],
+      [
+        "Transformer",
+        "GCN-main"
+      ],
+      [
+        "Transformer",
+        "GraphSAGE-main"
+      ],
+      [
+        "Transformer",
+        "GAT-main"
+      ],
+      [
+        "GCN-main",
+        "GraphSAGE-main"
+      ],
+      [
+        "GCN-main",
+        "GAT-main"
+      ],
+      [
+        "GraphSAGE-main",
+        "GAT-main"
+      ]
+    ],
+    "alpha": 0.05,
+    "adjustment": "Holm step-down",
+    "alternative": "two-sided",
+    "zero_method": "wilcox",
+    "p_value_method": "exhaustive sign permutation of average absolute ranks",
+    "effect": "median(A-B)",
+    "higher_is_better": true,
+    "required_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ]
+  },
+  {
+    "family_id": "IEEE-CIS__core__false_positive",
+    "dataset": "IEEE-CIS",
+    "metric": "false_positive",
+    "planned_hypotheses": 15,
+    "comparisons": [
+      [
+        "MLP",
+        "LSTM"
+      ],
+      [
+        "MLP",
+        "Transformer"
+      ],
+      [
+        "MLP",
+        "GCN-main"
+      ],
+      [
+        "MLP",
+        "GraphSAGE-main"
+      ],
+      [
+        "MLP",
+        "GAT-main"
+      ],
+      [
+        "LSTM",
+        "Transformer"
+      ],
+      [
+        "LSTM",
+        "GCN-main"
+      ],
+      [
+        "LSTM",
+        "GraphSAGE-main"
+      ],
+      [
+        "LSTM",
+        "GAT-main"
+      ],
+      [
+        "Transformer",
+        "GCN-main"
+      ],
+      [
+        "Transformer",
+        "GraphSAGE-main"
+      ],
+      [
+        "Transformer",
+        "GAT-main"
+      ],
+      [
+        "GCN-main",
+        "GraphSAGE-main"
+      ],
+      [
+        "GCN-main",
+        "GAT-main"
+      ],
+      [
+        "GraphSAGE-main",
+        "GAT-main"
+      ]
+    ],
+    "alpha": 0.05,
+    "adjustment": "Holm step-down",
+    "alternative": "two-sided",
+    "zero_method": "wilcox",
+    "p_value_method": "exhaustive sign permutation of average absolute ranks",
+    "effect": "median(A-B)",
+    "higher_is_better": false,
+    "required_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ]
+  },
+  {
+    "family_id": "Elliptic__core__pr_auc",
+    "dataset": "Elliptic",
+    "metric": "pr_auc",
+    "planned_hypotheses": 15,
+    "comparisons": [
+      [
+        "MLP",
+        "LSTM"
+      ],
+      [
+        "MLP",
+        "Transformer"
+      ],
+      [
+        "MLP",
+        "GCN"
+      ],
+      [
+        "MLP",
+        "GraphSAGE"
+      ],
+      [
+        "MLP",
+        "GAT"
+      ],
+      [
+        "LSTM",
+        "Transformer"
+      ],
+      [
+        "LSTM",
+        "GCN"
+      ],
+      [
+        "LSTM",
+        "GraphSAGE"
+      ],
+      [
+        "LSTM",
+        "GAT"
+      ],
+      [
+        "Transformer",
+        "GCN"
+      ],
+      [
+        "Transformer",
+        "GraphSAGE"
+      ],
+      [
+        "Transformer",
+        "GAT"
+      ],
+      [
+        "GCN",
+        "GraphSAGE"
+      ],
+      [
+        "GCN",
+        "GAT"
+      ],
+      [
+        "GraphSAGE",
+        "GAT"
+      ]
+    ],
+    "alpha": 0.05,
+    "adjustment": "Holm step-down",
+    "alternative": "two-sided",
+    "zero_method": "wilcox",
+    "p_value_method": "exhaustive sign permutation of average absolute ranks",
+    "effect": "median(A-B)",
+    "higher_is_better": true,
+    "required_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ]
+  },
+  {
+    "family_id": "Elliptic__core__f1_score",
+    "dataset": "Elliptic",
+    "metric": "f1_score",
+    "planned_hypotheses": 15,
+    "comparisons": [
+      [
+        "MLP",
+        "LSTM"
+      ],
+      [
+        "MLP",
+        "Transformer"
+      ],
+      [
+        "MLP",
+        "GCN"
+      ],
+      [
+        "MLP",
+        "GraphSAGE"
+      ],
+      [
+        "MLP",
+        "GAT"
+      ],
+      [
+        "LSTM",
+        "Transformer"
+      ],
+      [
+        "LSTM",
+        "GCN"
+      ],
+      [
+        "LSTM",
+        "GraphSAGE"
+      ],
+      [
+        "LSTM",
+        "GAT"
+      ],
+      [
+        "Transformer",
+        "GCN"
+      ],
+      [
+        "Transformer",
+        "GraphSAGE"
+      ],
+      [
+        "Transformer",
+        "GAT"
+      ],
+      [
+        "GCN",
+        "GraphSAGE"
+      ],
+      [
+        "GCN",
+        "GAT"
+      ],
+      [
+        "GraphSAGE",
+        "GAT"
+      ]
+    ],
+    "alpha": 0.05,
+    "adjustment": "Holm step-down",
+    "alternative": "two-sided",
+    "zero_method": "wilcox",
+    "p_value_method": "exhaustive sign permutation of average absolute ranks",
+    "effect": "median(A-B)",
+    "higher_is_better": true,
+    "required_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ]
+  },
+  {
+    "family_id": "Elliptic__core__recall",
+    "dataset": "Elliptic",
+    "metric": "recall",
+    "planned_hypotheses": 15,
+    "comparisons": [
+      [
+        "MLP",
+        "LSTM"
+      ],
+      [
+        "MLP",
+        "Transformer"
+      ],
+      [
+        "MLP",
+        "GCN"
+      ],
+      [
+        "MLP",
+        "GraphSAGE"
+      ],
+      [
+        "MLP",
+        "GAT"
+      ],
+      [
+        "LSTM",
+        "Transformer"
+      ],
+      [
+        "LSTM",
+        "GCN"
+      ],
+      [
+        "LSTM",
+        "GraphSAGE"
+      ],
+      [
+        "LSTM",
+        "GAT"
+      ],
+      [
+        "Transformer",
+        "GCN"
+      ],
+      [
+        "Transformer",
+        "GraphSAGE"
+      ],
+      [
+        "Transformer",
+        "GAT"
+      ],
+      [
+        "GCN",
+        "GraphSAGE"
+      ],
+      [
+        "GCN",
+        "GAT"
+      ],
+      [
+        "GraphSAGE",
+        "GAT"
+      ]
+    ],
+    "alpha": 0.05,
+    "adjustment": "Holm step-down",
+    "alternative": "two-sided",
+    "zero_method": "wilcox",
+    "p_value_method": "exhaustive sign permutation of average absolute ranks",
+    "effect": "median(A-B)",
+    "higher_is_better": true,
+    "required_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ]
+  },
+  {
+    "family_id": "Elliptic__core__precision",
+    "dataset": "Elliptic",
+    "metric": "precision",
+    "planned_hypotheses": 15,
+    "comparisons": [
+      [
+        "MLP",
+        "LSTM"
+      ],
+      [
+        "MLP",
+        "Transformer"
+      ],
+      [
+        "MLP",
+        "GCN"
+      ],
+      [
+        "MLP",
+        "GraphSAGE"
+      ],
+      [
+        "MLP",
+        "GAT"
+      ],
+      [
+        "LSTM",
+        "Transformer"
+      ],
+      [
+        "LSTM",
+        "GCN"
+      ],
+      [
+        "LSTM",
+        "GraphSAGE"
+      ],
+      [
+        "LSTM",
+        "GAT"
+      ],
+      [
+        "Transformer",
+        "GCN"
+      ],
+      [
+        "Transformer",
+        "GraphSAGE"
+      ],
+      [
+        "Transformer",
+        "GAT"
+      ],
+      [
+        "GCN",
+        "GraphSAGE"
+      ],
+      [
+        "GCN",
+        "GAT"
+      ],
+      [
+        "GraphSAGE",
+        "GAT"
+      ]
+    ],
+    "alpha": 0.05,
+    "adjustment": "Holm step-down",
+    "alternative": "two-sided",
+    "zero_method": "wilcox",
+    "p_value_method": "exhaustive sign permutation of average absolute ranks",
+    "effect": "median(A-B)",
+    "higher_is_better": true,
+    "required_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ]
+  },
+  {
+    "family_id": "Elliptic__core__roc_auc",
+    "dataset": "Elliptic",
+    "metric": "roc_auc",
+    "planned_hypotheses": 15,
+    "comparisons": [
+      [
+        "MLP",
+        "LSTM"
+      ],
+      [
+        "MLP",
+        "Transformer"
+      ],
+      [
+        "MLP",
+        "GCN"
+      ],
+      [
+        "MLP",
+        "GraphSAGE"
+      ],
+      [
+        "MLP",
+        "GAT"
+      ],
+      [
+        "LSTM",
+        "Transformer"
+      ],
+      [
+        "LSTM",
+        "GCN"
+      ],
+      [
+        "LSTM",
+        "GraphSAGE"
+      ],
+      [
+        "LSTM",
+        "GAT"
+      ],
+      [
+        "Transformer",
+        "GCN"
+      ],
+      [
+        "Transformer",
+        "GraphSAGE"
+      ],
+      [
+        "Transformer",
+        "GAT"
+      ],
+      [
+        "GCN",
+        "GraphSAGE"
+      ],
+      [
+        "GCN",
+        "GAT"
+      ],
+      [
+        "GraphSAGE",
+        "GAT"
+      ]
+    ],
+    "alpha": 0.05,
+    "adjustment": "Holm step-down",
+    "alternative": "two-sided",
+    "zero_method": "wilcox",
+    "p_value_method": "exhaustive sign permutation of average absolute ranks",
+    "effect": "median(A-B)",
+    "higher_is_better": true,
+    "required_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ]
+  },
+  {
+    "family_id": "Elliptic__core__false_positive",
+    "dataset": "Elliptic",
+    "metric": "false_positive",
+    "planned_hypotheses": 15,
+    "comparisons": [
+      [
+        "MLP",
+        "LSTM"
+      ],
+      [
+        "MLP",
+        "Transformer"
+      ],
+      [
+        "MLP",
+        "GCN"
+      ],
+      [
+        "MLP",
+        "GraphSAGE"
+      ],
+      [
+        "MLP",
+        "GAT"
+      ],
+      [
+        "LSTM",
+        "Transformer"
+      ],
+      [
+        "LSTM",
+        "GCN"
+      ],
+      [
+        "LSTM",
+        "GraphSAGE"
+      ],
+      [
+        "LSTM",
+        "GAT"
+      ],
+      [
+        "Transformer",
+        "GCN"
+      ],
+      [
+        "Transformer",
+        "GraphSAGE"
+      ],
+      [
+        "Transformer",
+        "GAT"
+      ],
+      [
+        "GCN",
+        "GraphSAGE"
+      ],
+      [
+        "GCN",
+        "GAT"
+      ],
+      [
+        "GraphSAGE",
+        "GAT"
+      ]
+    ],
+    "alpha": 0.05,
+    "adjustment": "Holm step-down",
+    "alternative": "two-sided",
+    "zero_method": "wilcox",
+    "p_value_method": "exhaustive sign permutation of average absolute ranks",
+    "effect": "median(A-B)",
+    "higher_is_better": false,
+    "required_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ]
+  },
+  {
+    "family_id": "IEEE-CIS__construction__pr_auc",
+    "dataset": "IEEE-CIS",
+    "metric": "pr_auc",
+    "planned_hypotheses": 30,
+    "comparisons": [
+      [
+        "GCN-main",
+        "GCN-card"
+      ],
+      [
+        "GCN-main",
+        "GCN-address"
+      ],
+      [
+        "GCN-main",
+        "GCN-email_domain"
+      ],
+      [
+        "GCN-main",
+        "GCN-identifier_time_window-24h"
+      ],
+      [
+        "GCN-card",
+        "GCN-address"
+      ],
+      [
+        "GCN-card",
+        "GCN-email_domain"
+      ],
+      [
+        "GCN-card",
+        "GCN-identifier_time_window-24h"
+      ],
+      [
+        "GCN-address",
+        "GCN-email_domain"
+      ],
+      [
+        "GCN-address",
+        "GCN-identifier_time_window-24h"
+      ],
+      [
+        "GCN-email_domain",
+        "GCN-identifier_time_window-24h"
+      ],
+      [
+        "GraphSAGE-main",
+        "GraphSAGE-card"
+      ],
+      [
+        "GraphSAGE-main",
+        "GraphSAGE-address"
+      ],
+      [
+        "GraphSAGE-main",
+        "GraphSAGE-email_domain"
+      ],
+      [
+        "GraphSAGE-main",
+        "GraphSAGE-identifier_time_window-24h"
+      ],
+      [
+        "GraphSAGE-card",
+        "GraphSAGE-address"
+      ],
+      [
+        "GraphSAGE-card",
+        "GraphSAGE-email_domain"
+      ],
+      [
+        "GraphSAGE-card",
+        "GraphSAGE-identifier_time_window-24h"
+      ],
+      [
+        "GraphSAGE-address",
+        "GraphSAGE-email_domain"
+      ],
+      [
+        "GraphSAGE-address",
+        "GraphSAGE-identifier_time_window-24h"
+      ],
+      [
+        "GraphSAGE-email_domain",
+        "GraphSAGE-identifier_time_window-24h"
+      ],
+      [
+        "GAT-main",
+        "GAT-card"
+      ],
+      [
+        "GAT-main",
+        "GAT-address"
+      ],
+      [
+        "GAT-main",
+        "GAT-email_domain"
+      ],
+      [
+        "GAT-main",
+        "GAT-identifier_time_window-24h"
+      ],
+      [
+        "GAT-card",
+        "GAT-address"
+      ],
+      [
+        "GAT-card",
+        "GAT-email_domain"
+      ],
+      [
+        "GAT-card",
+        "GAT-identifier_time_window-24h"
+      ],
+      [
+        "GAT-address",
+        "GAT-email_domain"
+      ],
+      [
+        "GAT-address",
+        "GAT-identifier_time_window-24h"
+      ],
+      [
+        "GAT-email_domain",
+        "GAT-identifier_time_window-24h"
+      ]
+    ],
+    "alpha": 0.05,
+    "adjustment": "Holm step-down",
+    "alternative": "two-sided",
+    "zero_method": "wilcox",
+    "p_value_method": "exhaustive sign permutation of average absolute ranks",
+    "effect": "median(A-B)",
+    "higher_is_better": true,
+    "required_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ]
+  },
+  {
+    "family_id": "IEEE-CIS__construction__f1_score",
+    "dataset": "IEEE-CIS",
+    "metric": "f1_score",
+    "planned_hypotheses": 30,
+    "comparisons": [
+      [
+        "GCN-main",
+        "GCN-card"
+      ],
+      [
+        "GCN-main",
+        "GCN-address"
+      ],
+      [
+        "GCN-main",
+        "GCN-email_domain"
+      ],
+      [
+        "GCN-main",
+        "GCN-identifier_time_window-24h"
+      ],
+      [
+        "GCN-card",
+        "GCN-address"
+      ],
+      [
+        "GCN-card",
+        "GCN-email_domain"
+      ],
+      [
+        "GCN-card",
+        "GCN-identifier_time_window-24h"
+      ],
+      [
+        "GCN-address",
+        "GCN-email_domain"
+      ],
+      [
+        "GCN-address",
+        "GCN-identifier_time_window-24h"
+      ],
+      [
+        "GCN-email_domain",
+        "GCN-identifier_time_window-24h"
+      ],
+      [
+        "GraphSAGE-main",
+        "GraphSAGE-card"
+      ],
+      [
+        "GraphSAGE-main",
+        "GraphSAGE-address"
+      ],
+      [
+        "GraphSAGE-main",
+        "GraphSAGE-email_domain"
+      ],
+      [
+        "GraphSAGE-main",
+        "GraphSAGE-identifier_time_window-24h"
+      ],
+      [
+        "GraphSAGE-card",
+        "GraphSAGE-address"
+      ],
+      [
+        "GraphSAGE-card",
+        "GraphSAGE-email_domain"
+      ],
+      [
+        "GraphSAGE-card",
+        "GraphSAGE-identifier_time_window-24h"
+      ],
+      [
+        "GraphSAGE-address",
+        "GraphSAGE-email_domain"
+      ],
+      [
+        "GraphSAGE-address",
+        "GraphSAGE-identifier_time_window-24h"
+      ],
+      [
+        "GraphSAGE-email_domain",
+        "GraphSAGE-identifier_time_window-24h"
+      ],
+      [
+        "GAT-main",
+        "GAT-card"
+      ],
+      [
+        "GAT-main",
+        "GAT-address"
+      ],
+      [
+        "GAT-main",
+        "GAT-email_domain"
+      ],
+      [
+        "GAT-main",
+        "GAT-identifier_time_window-24h"
+      ],
+      [
+        "GAT-card",
+        "GAT-address"
+      ],
+      [
+        "GAT-card",
+        "GAT-email_domain"
+      ],
+      [
+        "GAT-card",
+        "GAT-identifier_time_window-24h"
+      ],
+      [
+        "GAT-address",
+        "GAT-email_domain"
+      ],
+      [
+        "GAT-address",
+        "GAT-identifier_time_window-24h"
+      ],
+      [
+        "GAT-email_domain",
+        "GAT-identifier_time_window-24h"
+      ]
+    ],
+    "alpha": 0.05,
+    "adjustment": "Holm step-down",
+    "alternative": "two-sided",
+    "zero_method": "wilcox",
+    "p_value_method": "exhaustive sign permutation of average absolute ranks",
+    "effect": "median(A-B)",
+    "higher_is_better": true,
+    "required_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ]
+  },
+  {
+    "family_id": "IEEE-CIS__construction__recall",
+    "dataset": "IEEE-CIS",
+    "metric": "recall",
+    "planned_hypotheses": 30,
+    "comparisons": [
+      [
+        "GCN-main",
+        "GCN-card"
+      ],
+      [
+        "GCN-main",
+        "GCN-address"
+      ],
+      [
+        "GCN-main",
+        "GCN-email_domain"
+      ],
+      [
+        "GCN-main",
+        "GCN-identifier_time_window-24h"
+      ],
+      [
+        "GCN-card",
+        "GCN-address"
+      ],
+      [
+        "GCN-card",
+        "GCN-email_domain"
+      ],
+      [
+        "GCN-card",
+        "GCN-identifier_time_window-24h"
+      ],
+      [
+        "GCN-address",
+        "GCN-email_domain"
+      ],
+      [
+        "GCN-address",
+        "GCN-identifier_time_window-24h"
+      ],
+      [
+        "GCN-email_domain",
+        "GCN-identifier_time_window-24h"
+      ],
+      [
+        "GraphSAGE-main",
+        "GraphSAGE-card"
+      ],
+      [
+        "GraphSAGE-main",
+        "GraphSAGE-address"
+      ],
+      [
+        "GraphSAGE-main",
+        "GraphSAGE-email_domain"
+      ],
+      [
+        "GraphSAGE-main",
+        "GraphSAGE-identifier_time_window-24h"
+      ],
+      [
+        "GraphSAGE-card",
+        "GraphSAGE-address"
+      ],
+      [
+        "GraphSAGE-card",
+        "GraphSAGE-email_domain"
+      ],
+      [
+        "GraphSAGE-card",
+        "GraphSAGE-identifier_time_window-24h"
+      ],
+      [
+        "GraphSAGE-address",
+        "GraphSAGE-email_domain"
+      ],
+      [
+        "GraphSAGE-address",
+        "GraphSAGE-identifier_time_window-24h"
+      ],
+      [
+        "GraphSAGE-email_domain",
+        "GraphSAGE-identifier_time_window-24h"
+      ],
+      [
+        "GAT-main",
+        "GAT-card"
+      ],
+      [
+        "GAT-main",
+        "GAT-address"
+      ],
+      [
+        "GAT-main",
+        "GAT-email_domain"
+      ],
+      [
+        "GAT-main",
+        "GAT-identifier_time_window-24h"
+      ],
+      [
+        "GAT-card",
+        "GAT-address"
+      ],
+      [
+        "GAT-card",
+        "GAT-email_domain"
+      ],
+      [
+        "GAT-card",
+        "GAT-identifier_time_window-24h"
+      ],
+      [
+        "GAT-address",
+        "GAT-email_domain"
+      ],
+      [
+        "GAT-address",
+        "GAT-identifier_time_window-24h"
+      ],
+      [
+        "GAT-email_domain",
+        "GAT-identifier_time_window-24h"
+      ]
+    ],
+    "alpha": 0.05,
+    "adjustment": "Holm step-down",
+    "alternative": "two-sided",
+    "zero_method": "wilcox",
+    "p_value_method": "exhaustive sign permutation of average absolute ranks",
+    "effect": "median(A-B)",
+    "higher_is_better": true,
+    "required_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ]
+  },
+  {
+    "family_id": "IEEE-CIS__construction__precision",
+    "dataset": "IEEE-CIS",
+    "metric": "precision",
+    "planned_hypotheses": 30,
+    "comparisons": [
+      [
+        "GCN-main",
+        "GCN-card"
+      ],
+      [
+        "GCN-main",
+        "GCN-address"
+      ],
+      [
+        "GCN-main",
+        "GCN-email_domain"
+      ],
+      [
+        "GCN-main",
+        "GCN-identifier_time_window-24h"
+      ],
+      [
+        "GCN-card",
+        "GCN-address"
+      ],
+      [
+        "GCN-card",
+        "GCN-email_domain"
+      ],
+      [
+        "GCN-card",
+        "GCN-identifier_time_window-24h"
+      ],
+      [
+        "GCN-address",
+        "GCN-email_domain"
+      ],
+      [
+        "GCN-address",
+        "GCN-identifier_time_window-24h"
+      ],
+      [
+        "GCN-email_domain",
+        "GCN-identifier_time_window-24h"
+      ],
+      [
+        "GraphSAGE-main",
+        "GraphSAGE-card"
+      ],
+      [
+        "GraphSAGE-main",
+        "GraphSAGE-address"
+      ],
+      [
+        "GraphSAGE-main",
+        "GraphSAGE-email_domain"
+      ],
+      [
+        "GraphSAGE-main",
+        "GraphSAGE-identifier_time_window-24h"
+      ],
+      [
+        "GraphSAGE-card",
+        "GraphSAGE-address"
+      ],
+      [
+        "GraphSAGE-card",
+        "GraphSAGE-email_domain"
+      ],
+      [
+        "GraphSAGE-card",
+        "GraphSAGE-identifier_time_window-24h"
+      ],
+      [
+        "GraphSAGE-address",
+        "GraphSAGE-email_domain"
+      ],
+      [
+        "GraphSAGE-address",
+        "GraphSAGE-identifier_time_window-24h"
+      ],
+      [
+        "GraphSAGE-email_domain",
+        "GraphSAGE-identifier_time_window-24h"
+      ],
+      [
+        "GAT-main",
+        "GAT-card"
+      ],
+      [
+        "GAT-main",
+        "GAT-address"
+      ],
+      [
+        "GAT-main",
+        "GAT-email_domain"
+      ],
+      [
+        "GAT-main",
+        "GAT-identifier_time_window-24h"
+      ],
+      [
+        "GAT-card",
+        "GAT-address"
+      ],
+      [
+        "GAT-card",
+        "GAT-email_domain"
+      ],
+      [
+        "GAT-card",
+        "GAT-identifier_time_window-24h"
+      ],
+      [
+        "GAT-address",
+        "GAT-email_domain"
+      ],
+      [
+        "GAT-address",
+        "GAT-identifier_time_window-24h"
+      ],
+      [
+        "GAT-email_domain",
+        "GAT-identifier_time_window-24h"
+      ]
+    ],
+    "alpha": 0.05,
+    "adjustment": "Holm step-down",
+    "alternative": "two-sided",
+    "zero_method": "wilcox",
+    "p_value_method": "exhaustive sign permutation of average absolute ranks",
+    "effect": "median(A-B)",
+    "higher_is_better": true,
+    "required_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ]
+  },
+  {
+    "family_id": "IEEE-CIS__construction__roc_auc",
+    "dataset": "IEEE-CIS",
+    "metric": "roc_auc",
+    "planned_hypotheses": 30,
+    "comparisons": [
+      [
+        "GCN-main",
+        "GCN-card"
+      ],
+      [
+        "GCN-main",
+        "GCN-address"
+      ],
+      [
+        "GCN-main",
+        "GCN-email_domain"
+      ],
+      [
+        "GCN-main",
+        "GCN-identifier_time_window-24h"
+      ],
+      [
+        "GCN-card",
+        "GCN-address"
+      ],
+      [
+        "GCN-card",
+        "GCN-email_domain"
+      ],
+      [
+        "GCN-card",
+        "GCN-identifier_time_window-24h"
+      ],
+      [
+        "GCN-address",
+        "GCN-email_domain"
+      ],
+      [
+        "GCN-address",
+        "GCN-identifier_time_window-24h"
+      ],
+      [
+        "GCN-email_domain",
+        "GCN-identifier_time_window-24h"
+      ],
+      [
+        "GraphSAGE-main",
+        "GraphSAGE-card"
+      ],
+      [
+        "GraphSAGE-main",
+        "GraphSAGE-address"
+      ],
+      [
+        "GraphSAGE-main",
+        "GraphSAGE-email_domain"
+      ],
+      [
+        "GraphSAGE-main",
+        "GraphSAGE-identifier_time_window-24h"
+      ],
+      [
+        "GraphSAGE-card",
+        "GraphSAGE-address"
+      ],
+      [
+        "GraphSAGE-card",
+        "GraphSAGE-email_domain"
+      ],
+      [
+        "GraphSAGE-card",
+        "GraphSAGE-identifier_time_window-24h"
+      ],
+      [
+        "GraphSAGE-address",
+        "GraphSAGE-email_domain"
+      ],
+      [
+        "GraphSAGE-address",
+        "GraphSAGE-identifier_time_window-24h"
+      ],
+      [
+        "GraphSAGE-email_domain",
+        "GraphSAGE-identifier_time_window-24h"
+      ],
+      [
+        "GAT-main",
+        "GAT-card"
+      ],
+      [
+        "GAT-main",
+        "GAT-address"
+      ],
+      [
+        "GAT-main",
+        "GAT-email_domain"
+      ],
+      [
+        "GAT-main",
+        "GAT-identifier_time_window-24h"
+      ],
+      [
+        "GAT-card",
+        "GAT-address"
+      ],
+      [
+        "GAT-card",
+        "GAT-email_domain"
+      ],
+      [
+        "GAT-card",
+        "GAT-identifier_time_window-24h"
+      ],
+      [
+        "GAT-address",
+        "GAT-email_domain"
+      ],
+      [
+        "GAT-address",
+        "GAT-identifier_time_window-24h"
+      ],
+      [
+        "GAT-email_domain",
+        "GAT-identifier_time_window-24h"
+      ]
+    ],
+    "alpha": 0.05,
+    "adjustment": "Holm step-down",
+    "alternative": "two-sided",
+    "zero_method": "wilcox",
+    "p_value_method": "exhaustive sign permutation of average absolute ranks",
+    "effect": "median(A-B)",
+    "higher_is_better": true,
+    "required_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ]
+  },
+  {
+    "family_id": "IEEE-CIS__construction__false_positive",
+    "dataset": "IEEE-CIS",
+    "metric": "false_positive",
+    "planned_hypotheses": 30,
+    "comparisons": [
+      [
+        "GCN-main",
+        "GCN-card"
+      ],
+      [
+        "GCN-main",
+        "GCN-address"
+      ],
+      [
+        "GCN-main",
+        "GCN-email_domain"
+      ],
+      [
+        "GCN-main",
+        "GCN-identifier_time_window-24h"
+      ],
+      [
+        "GCN-card",
+        "GCN-address"
+      ],
+      [
+        "GCN-card",
+        "GCN-email_domain"
+      ],
+      [
+        "GCN-card",
+        "GCN-identifier_time_window-24h"
+      ],
+      [
+        "GCN-address",
+        "GCN-email_domain"
+      ],
+      [
+        "GCN-address",
+        "GCN-identifier_time_window-24h"
+      ],
+      [
+        "GCN-email_domain",
+        "GCN-identifier_time_window-24h"
+      ],
+      [
+        "GraphSAGE-main",
+        "GraphSAGE-card"
+      ],
+      [
+        "GraphSAGE-main",
+        "GraphSAGE-address"
+      ],
+      [
+        "GraphSAGE-main",
+        "GraphSAGE-email_domain"
+      ],
+      [
+        "GraphSAGE-main",
+        "GraphSAGE-identifier_time_window-24h"
+      ],
+      [
+        "GraphSAGE-card",
+        "GraphSAGE-address"
+      ],
+      [
+        "GraphSAGE-card",
+        "GraphSAGE-email_domain"
+      ],
+      [
+        "GraphSAGE-card",
+        "GraphSAGE-identifier_time_window-24h"
+      ],
+      [
+        "GraphSAGE-address",
+        "GraphSAGE-email_domain"
+      ],
+      [
+        "GraphSAGE-address",
+        "GraphSAGE-identifier_time_window-24h"
+      ],
+      [
+        "GraphSAGE-email_domain",
+        "GraphSAGE-identifier_time_window-24h"
+      ],
+      [
+        "GAT-main",
+        "GAT-card"
+      ],
+      [
+        "GAT-main",
+        "GAT-address"
+      ],
+      [
+        "GAT-main",
+        "GAT-email_domain"
+      ],
+      [
+        "GAT-main",
+        "GAT-identifier_time_window-24h"
+      ],
+      [
+        "GAT-card",
+        "GAT-address"
+      ],
+      [
+        "GAT-card",
+        "GAT-email_domain"
+      ],
+      [
+        "GAT-card",
+        "GAT-identifier_time_window-24h"
+      ],
+      [
+        "GAT-address",
+        "GAT-email_domain"
+      ],
+      [
+        "GAT-address",
+        "GAT-identifier_time_window-24h"
+      ],
+      [
+        "GAT-email_domain",
+        "GAT-identifier_time_window-24h"
+      ]
+    ],
+    "alpha": 0.05,
+    "adjustment": "Holm step-down",
+    "alternative": "two-sided",
+    "zero_method": "wilcox",
+    "p_value_method": "exhaustive sign permutation of average absolute ranks",
+    "effect": "median(A-B)",
+    "higher_is_better": false,
+    "required_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ]
+  },
+  {
+    "family_id": "IEEE-CIS__alternative_gnn_vs_mlp__pr_auc",
+    "dataset": "IEEE-CIS",
+    "metric": "pr_auc",
+    "planned_hypotheses": 12,
+    "comparisons": [
+      [
+        "GCN-card",
+        "MLP"
+      ],
+      [
+        "GCN-address",
+        "MLP"
+      ],
+      [
+        "GCN-email_domain",
+        "MLP"
+      ],
+      [
+        "GCN-identifier_time_window-24h",
+        "MLP"
+      ],
+      [
+        "GraphSAGE-card",
+        "MLP"
+      ],
+      [
+        "GraphSAGE-address",
+        "MLP"
+      ],
+      [
+        "GraphSAGE-email_domain",
+        "MLP"
+      ],
+      [
+        "GraphSAGE-identifier_time_window-24h",
+        "MLP"
+      ],
+      [
+        "GAT-card",
+        "MLP"
+      ],
+      [
+        "GAT-address",
+        "MLP"
+      ],
+      [
+        "GAT-email_domain",
+        "MLP"
+      ],
+      [
+        "GAT-identifier_time_window-24h",
+        "MLP"
+      ]
+    ],
+    "alpha": 0.05,
+    "adjustment": "Holm step-down",
+    "alternative": "two-sided",
+    "zero_method": "wilcox",
+    "p_value_method": "exhaustive sign permutation of average absolute ranks",
+    "effect": "median(A-B)",
+    "higher_is_better": true,
+    "required_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ]
+  },
+  {
+    "family_id": "IEEE-CIS__alternative_gnn_vs_mlp__f1_score",
+    "dataset": "IEEE-CIS",
+    "metric": "f1_score",
+    "planned_hypotheses": 12,
+    "comparisons": [
+      [
+        "GCN-card",
+        "MLP"
+      ],
+      [
+        "GCN-address",
+        "MLP"
+      ],
+      [
+        "GCN-email_domain",
+        "MLP"
+      ],
+      [
+        "GCN-identifier_time_window-24h",
+        "MLP"
+      ],
+      [
+        "GraphSAGE-card",
+        "MLP"
+      ],
+      [
+        "GraphSAGE-address",
+        "MLP"
+      ],
+      [
+        "GraphSAGE-email_domain",
+        "MLP"
+      ],
+      [
+        "GraphSAGE-identifier_time_window-24h",
+        "MLP"
+      ],
+      [
+        "GAT-card",
+        "MLP"
+      ],
+      [
+        "GAT-address",
+        "MLP"
+      ],
+      [
+        "GAT-email_domain",
+        "MLP"
+      ],
+      [
+        "GAT-identifier_time_window-24h",
+        "MLP"
+      ]
+    ],
+    "alpha": 0.05,
+    "adjustment": "Holm step-down",
+    "alternative": "two-sided",
+    "zero_method": "wilcox",
+    "p_value_method": "exhaustive sign permutation of average absolute ranks",
+    "effect": "median(A-B)",
+    "higher_is_better": true,
+    "required_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ]
+  },
+  {
+    "family_id": "IEEE-CIS__alternative_gnn_vs_mlp__recall",
+    "dataset": "IEEE-CIS",
+    "metric": "recall",
+    "planned_hypotheses": 12,
+    "comparisons": [
+      [
+        "GCN-card",
+        "MLP"
+      ],
+      [
+        "GCN-address",
+        "MLP"
+      ],
+      [
+        "GCN-email_domain",
+        "MLP"
+      ],
+      [
+        "GCN-identifier_time_window-24h",
+        "MLP"
+      ],
+      [
+        "GraphSAGE-card",
+        "MLP"
+      ],
+      [
+        "GraphSAGE-address",
+        "MLP"
+      ],
+      [
+        "GraphSAGE-email_domain",
+        "MLP"
+      ],
+      [
+        "GraphSAGE-identifier_time_window-24h",
+        "MLP"
+      ],
+      [
+        "GAT-card",
+        "MLP"
+      ],
+      [
+        "GAT-address",
+        "MLP"
+      ],
+      [
+        "GAT-email_domain",
+        "MLP"
+      ],
+      [
+        "GAT-identifier_time_window-24h",
+        "MLP"
+      ]
+    ],
+    "alpha": 0.05,
+    "adjustment": "Holm step-down",
+    "alternative": "two-sided",
+    "zero_method": "wilcox",
+    "p_value_method": "exhaustive sign permutation of average absolute ranks",
+    "effect": "median(A-B)",
+    "higher_is_better": true,
+    "required_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ]
+  },
+  {
+    "family_id": "IEEE-CIS__alternative_gnn_vs_mlp__precision",
+    "dataset": "IEEE-CIS",
+    "metric": "precision",
+    "planned_hypotheses": 12,
+    "comparisons": [
+      [
+        "GCN-card",
+        "MLP"
+      ],
+      [
+        "GCN-address",
+        "MLP"
+      ],
+      [
+        "GCN-email_domain",
+        "MLP"
+      ],
+      [
+        "GCN-identifier_time_window-24h",
+        "MLP"
+      ],
+      [
+        "GraphSAGE-card",
+        "MLP"
+      ],
+      [
+        "GraphSAGE-address",
+        "MLP"
+      ],
+      [
+        "GraphSAGE-email_domain",
+        "MLP"
+      ],
+      [
+        "GraphSAGE-identifier_time_window-24h",
+        "MLP"
+      ],
+      [
+        "GAT-card",
+        "MLP"
+      ],
+      [
+        "GAT-address",
+        "MLP"
+      ],
+      [
+        "GAT-email_domain",
+        "MLP"
+      ],
+      [
+        "GAT-identifier_time_window-24h",
+        "MLP"
+      ]
+    ],
+    "alpha": 0.05,
+    "adjustment": "Holm step-down",
+    "alternative": "two-sided",
+    "zero_method": "wilcox",
+    "p_value_method": "exhaustive sign permutation of average absolute ranks",
+    "effect": "median(A-B)",
+    "higher_is_better": true,
+    "required_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ]
+  },
+  {
+    "family_id": "IEEE-CIS__alternative_gnn_vs_mlp__roc_auc",
+    "dataset": "IEEE-CIS",
+    "metric": "roc_auc",
+    "planned_hypotheses": 12,
+    "comparisons": [
+      [
+        "GCN-card",
+        "MLP"
+      ],
+      [
+        "GCN-address",
+        "MLP"
+      ],
+      [
+        "GCN-email_domain",
+        "MLP"
+      ],
+      [
+        "GCN-identifier_time_window-24h",
+        "MLP"
+      ],
+      [
+        "GraphSAGE-card",
+        "MLP"
+      ],
+      [
+        "GraphSAGE-address",
+        "MLP"
+      ],
+      [
+        "GraphSAGE-email_domain",
+        "MLP"
+      ],
+      [
+        "GraphSAGE-identifier_time_window-24h",
+        "MLP"
+      ],
+      [
+        "GAT-card",
+        "MLP"
+      ],
+      [
+        "GAT-address",
+        "MLP"
+      ],
+      [
+        "GAT-email_domain",
+        "MLP"
+      ],
+      [
+        "GAT-identifier_time_window-24h",
+        "MLP"
+      ]
+    ],
+    "alpha": 0.05,
+    "adjustment": "Holm step-down",
+    "alternative": "two-sided",
+    "zero_method": "wilcox",
+    "p_value_method": "exhaustive sign permutation of average absolute ranks",
+    "effect": "median(A-B)",
+    "higher_is_better": true,
+    "required_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ]
+  },
+  {
+    "family_id": "IEEE-CIS__alternative_gnn_vs_mlp__false_positive",
+    "dataset": "IEEE-CIS",
+    "metric": "false_positive",
+    "planned_hypotheses": 12,
+    "comparisons": [
+      [
+        "GCN-card",
+        "MLP"
+      ],
+      [
+        "GCN-address",
+        "MLP"
+      ],
+      [
+        "GCN-email_domain",
+        "MLP"
+      ],
+      [
+        "GCN-identifier_time_window-24h",
+        "MLP"
+      ],
+      [
+        "GraphSAGE-card",
+        "MLP"
+      ],
+      [
+        "GraphSAGE-address",
+        "MLP"
+      ],
+      [
+        "GraphSAGE-email_domain",
+        "MLP"
+      ],
+      [
+        "GraphSAGE-identifier_time_window-24h",
+        "MLP"
+      ],
+      [
+        "GAT-card",
+        "MLP"
+      ],
+      [
+        "GAT-address",
+        "MLP"
+      ],
+      [
+        "GAT-email_domain",
+        "MLP"
+      ],
+      [
+        "GAT-identifier_time_window-24h",
+        "MLP"
+      ]
+    ],
+    "alpha": 0.05,
+    "adjustment": "Holm step-down",
+    "alternative": "two-sided",
+    "zero_method": "wilcox",
+    "p_value_method": "exhaustive sign permutation of average absolute ranks",
+    "effect": "median(A-B)",
+    "higher_is_better": false,
+    "required_seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ]
+  }
+]

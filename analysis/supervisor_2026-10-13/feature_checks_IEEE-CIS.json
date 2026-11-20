@@ -1,0 +1,87 @@
+[
+  {
+    "graph_path": "results/ieee_cis_graph_trainfit_main_max1000.pt",
+    "features_equal": true,
+    "labels_equal": true,
+    "shape": [
+      590540,
+      358
+    ],
+    "feature_tensor_sha256": "7202e0906122c65350f1fdbc40a2922a1bfbd86709b267cc8495449bf9b483ba",
+    "label_tensor_sha256": "5f4791873477f13e7a4a557139841eb6518727d152fdbb8008e06aede8cc28e0",
+    "node_ids_sha256": "c6000677db8cdc678845714220307d47544fdbe1dd6811ec8bdda47613bd7f1a",
+    "test_ids_sha256": "101a6fc6884cb8de332e657a6ba8f492146b78709df36c482e9ea2c42b234773",
+    "train_mask_equal": true,
+    "val_mask_equal": true,
+    "test_mask_equal": true,
+    "accepted": true
+  },
+  {
+    "graph_path": "results/ieee_cis_graph_trainfit_card_max1000.pt",
+    "features_equal": true,
+    "labels_equal": true,
+    "shape": [
+      590540,
+      358
+    ],
+    "feature_tensor_sha256": "7202e0906122c65350f1fdbc40a2922a1bfbd86709b267cc8495449bf9b483ba",
+    "label_tensor_sha256": "5f4791873477f13e7a4a557139841eb6518727d152fdbb8008e06aede8cc28e0",
+    "node_ids_sha256": "c6000677db8cdc678845714220307d47544fdbe1dd6811ec8bdda47613bd7f1a",
+    "test_ids_sha256": "101a6fc6884cb8de332e657a6ba8f492146b78709df36c482e9ea2c42b234773",
+    "train_mask_equal": true,
+    "val_mask_equal": true,
+    "test_mask_equal": true,
+    "accepted": true
+  },
+  {
+    "graph_path": "results/ieee_cis_graph_trainfit_address_max1000.pt",
+    "features_equal": true,
+    "labels_equal": true,
+    "shape": [
+      590540,
+      358
+    ],
+    "feature_tensor_sha256": "7202e0906122c65350f1fdbc40a2922a1bfbd86709b267cc8495449bf9b483ba",
+    "label_tensor_sha256": "5f4791873477f13e7a4a557139841eb6518727d152fdbb8008e06aede8cc28e0",
+    "node_ids_sha256": "c6000677db8cdc678845714220307d47544fdbe1dd6811ec8bdda47613bd7f1a",
+    "test_ids_sha256": "101a6fc6884cb8de332e657a6ba8f492146b78709df36c482e9ea2c42b234773",
+    "train_mask_equal": true,
+    "val_mask_equal": true,
+    "test_mask_equal": true,
+    "accepted": true
+  },
+  {
+    "graph_path": "results/ieee_cis_graph_trainfit_email_domain_max1000.pt",
+    "features_equal": true,
+    "labels_equal": true,
+    "shape": [
+      590540,
+      358
+    ],
+    "feature_tensor_sha256": "7202e0906122c65350f1fdbc40a2922a1bfbd86709b267cc8495449bf9b483ba",
+    "label_tensor_sha256": "5f4791873477f13e7a4a557139841eb6518727d152fdbb8008e06aede8cc28e0",
+    "node_ids_sha256": "c6000677db8cdc678845714220307d47544fdbe1dd6811ec8bdda47613bd7f1a",
+    "test_ids_sha256": "101a6fc6884cb8de332e657a6ba8f492146b78709df36c482e9ea2c42b234773",
+    "train_mask_equal": true,
+    "val_mask_equal": true,
+    "test_mask_equal": true,
+    "accepted": true
+  },
+  {
+    "graph_path": "results/ieee_cis_graph_trainfit_identifier_time_window_24h.pt",
+    "features_equal": true,
+    "labels_equal": true,
+    "shape": [
+      590540,
+      358
+    ],
+    "feature_tensor_sha256": "7202e0906122c65350f1fdbc40a2922a1bfbd86709b267cc8495449bf9b483ba",
+    "label_tensor_sha256": "5f4791873477f13e7a4a557139841eb6518727d152fdbb8008e06aede8cc28e0",
+    "node_ids_sha256": "c6000677db8cdc678845714220307d47544fdbe1dd6811ec8bdda47613bd7f1a",
+    "test_ids_sha256": "101a6fc6884cb8de332e657a6ba8f492146b78709df36c482e9ea2c42b234773",
+    "train_mask_equal": true,
+    "val_mask_equal": true,
+    "test_mask_equal": true,
+    "accepted": true
+  }
+]

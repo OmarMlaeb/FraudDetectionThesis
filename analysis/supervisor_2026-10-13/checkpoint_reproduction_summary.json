@@ -1,0 +1,11 @@
+{
+  "selected": 240,
+  "accepted": 240,
+  "required_gnn_mlp": 200,
+  "sequence_runs": 40,
+  "all_confusion_counts_exact": true,
+  "max_absolute_ap_difference": 1.776072747938784e-05,
+  "max_absolute_roc_auc_difference": 1.5899624639104104e-07,
+  "missing": [],
+  "mismatches": []
+}

@@ -1,0 +1,95 @@
+[
+  {
+    "version": "results/ieee_cis_graph.pt",
+    "kind": "saved_cache",
+    "edges": 406769,
+    "self_loop_columns": 0,
+    "file_sha256": "6eee556e4bf7c6091a81ead4ee9717419e107b88e97caa9db9d01de4b3cae0e0",
+    "transaction_edge_sha256": "113cea140702632b0e8a00f16fcd13993e9f8b6deb40f99adeb0080752df6293",
+    "fraud_fraud_edges": 8476,
+    "fraud_legitimate_edges": 18647,
+    "legitimate_legitimate_edges": 379646
+  },
+  {
+    "version": "results/ieee_cis_graph_trainfit.pt",
+    "kind": "saved_cache",
+    "edges": 406769,
+    "self_loop_columns": 0,
+    "file_sha256": "9b1255c82be18bb0b406ad82f99cd8b498f24beaa0be756ae35d50467d559e76",
+    "transaction_edge_sha256": "113cea140702632b0e8a00f16fcd13993e9f8b6deb40f99adeb0080752df6293",
+    "fraud_fraud_edges": 8476,
+    "fraud_legitimate_edges": 18647,
+    "legitimate_legitimate_edges": 379646
+  },
+  {
+    "version": "results/ieee_cis_graph_trainfit_main_max1000.pt",
+    "kind": "saved_cache",
+    "edges": 406769,
+    "self_loop_columns": 0,
+    "file_sha256": "6118895d98d28d37695abe0f0be7813029bd198bedef9f3b3e1a165ea8b3987b",
+    "transaction_edge_sha256": "113cea140702632b0e8a00f16fcd13993e9f8b6deb40f99adeb0080752df6293",
+    "fraud_fraud_edges": 8476,
+    "fraud_legitimate_edges": 18647,
+    "legitimate_legitimate_edges": 379646
+  },
+  {
+    "version": "diagnostic_audit_runtime_mergesort.npz",
+    "kind": "diagnostic_only",
+    "edges": 406764,
+    "file_sha256": "5e65a825d1c97ff882bb8e34d3930f151a74899b3047461340ac583b20ce572b",
+    "transaction_edge_sha256": "40f823377837a0c9728e916195a67de81efc77ffe953ca2ddef504b969cfd01f",
+    "fraud_fraud_edges": 8475,
+    "fraud_legitimate_edges": 18644,
+    "legitimate_legitimate_edges": 379645
+  },
+  {
+    "version": "diagnostic_audit_runtime_quicksort.npz",
+    "kind": "diagnostic_only",
+    "edges": 406764,
+    "file_sha256": "5e65a825d1c97ff882bb8e34d3930f151a74899b3047461340ac583b20ce572b",
+    "transaction_edge_sha256": "40f823377837a0c9728e916195a67de81efc77ffe953ca2ddef504b969cfd01f",
+    "fraud_fraud_edges": 8475,
+    "fraud_legitimate_edges": 18644,
+    "legitimate_legitimate_edges": 379645
+  },
+  {
+    "version": "diagnostic_experiment_packages_mergesort.npz",
+    "kind": "diagnostic_only",
+    "edges": 406764,
+    "file_sha256": "7f5fa81ef5a3950836f33af6e9589d737daeffcee4b12b6c314d8a07589f1892",
+    "transaction_edge_sha256": "40f823377837a0c9728e916195a67de81efc77ffe953ca2ddef504b969cfd01f",
+    "fraud_fraud_edges": 8475,
+    "fraud_legitimate_edges": 18644,
+    "legitimate_legitimate_edges": 379645
+  },
+  {
+    "version": "diagnostic_experiment_packages_quicksort.npz",
+    "kind": "diagnostic_only",
+    "edges": 406769,
+    "file_sha256": "c6d7a57f5bad7dca56e0c92888eed39b9d3e2786515142c87d01b76bae426eb4",
+    "transaction_edge_sha256": "113cea140702632b0e8a00f16fcd13993e9f8b6deb40f99adeb0080752df6293",
+    "fraud_fraud_edges": 8476,
+    "fraud_legitimate_edges": 18647,
+    "legitimate_legitimate_edges": 379646
+  },
+  {
+    "version": "diagnostic_experiment_scalar_sort_mergesort.npz",
+    "kind": "diagnostic_only",
+    "edges": 406764,
+    "file_sha256": "7f5fa81ef5a3950836f33af6e9589d737daeffcee4b12b6c314d8a07589f1892",
+    "transaction_edge_sha256": "40f823377837a0c9728e916195a67de81efc77ffe953ca2ddef504b969cfd01f",
+    "fraud_fraud_edges": 8475,
+    "fraud_legitimate_edges": 18644,
+    "legitimate_legitimate_edges": 379645
+  },
+  {
+    "version": "diagnostic_experiment_scalar_sort_quicksort.npz",
+    "kind": "diagnostic_only",
+    "edges": 406767,
+    "file_sha256": "14b137f86785701bec651476e2ee4e170804e40dd1e67fb0c90a7de2810fe62e",
+    "transaction_edge_sha256": "6d45824bfdba0b2454f965440afceb74de3287e3d4774586a4a78ec0495f8708",
+    "fraud_fraud_edges": 8475,
+    "fraud_legitimate_edges": 18644,
+    "legitimate_legitimate_edges": 379648
+  }
+]

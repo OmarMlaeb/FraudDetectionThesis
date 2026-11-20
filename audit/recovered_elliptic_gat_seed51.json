@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-08-30T13:24:40",
+  "model": "Elliptic-GAT",
+  "recall": "0.34558823529411764",
+  "precision": "0.37105263157894736",
+  "f1_score": "0.35786802030456855",
+  "pr_auc": "0.28934854624693335",
+  "roc_auc": "0.816581915583736",
+  "true_negative": "8194",
+  "false_positive": "239",
+  "false_negative": "267",
+  "true_positive": "141",
+  "threshold": "0.92",
+  "threshold_strategy": "f1",
+  "validation_f1_at_threshold": "0.5374800637958532",
+  "seed": "51",
+  "source": "2be96ee:results/model_results.csv",
+  "source_line": 247,
+  "removed_by": "5333c55"
+}
